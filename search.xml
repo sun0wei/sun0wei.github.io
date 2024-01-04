@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>PS教程</title>
+      <link href="/2024/01/04/PS%E6%95%99%E7%A8%8B/"/>
+      <url>/2024/01/04/PS%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客搭建历程</title>
       <link href="/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8E%86%E7%A8%8B/"/>
       <url>/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8E%86%E7%A8%8B/</url>
       
-        <content type="html"><![CDATA[<h1 id="npm图床使用"><a href="#npm图床使用" class="headerlink" title="npm图床使用"></a>npm图床使用</h1><p>图床：指一些可以把<span class='p red'>图片等资源</span>存放到网上并且引用到其他网站使用的服务，就像以前的网络相册，你可以用它来存储你博客中的图片👍。<span class='p pink'>（可以用来存图片供其它网站使用）</span></p><p><a href="https://blog.anheyu.com/posts/72ea.html">https://blog.anheyu.com/posts/72ea.html</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="npm图床使用"><a href="#npm图床使用" class="headerlink" title="npm图床使用"></a>npm图床使用</h1><details class="folding-tag" blue><summary> 什么是图床？干嘛用的？ </summary>              <div class='content'>              <p>指一些可以把图片等资源存放到网上并且引用到其他网站使用的服务，就像以前的网络相册，<span class='p red'>你可以用它来存储你博客中的图片👍。</span></p>              </div>            </details><details class="folding-tag" red><summary> 操作方法 </summary>              <div class='content'>              <p>这里我用了<a href="https://www.fomal.cc/posts/d7fb1ba1.html的PicGo结合Vika图床的教程，自己我感觉此方法上传图片&amp;生成链接更方便。">https://www.fomal.cc/posts/d7fb1ba1.html的PicGo结合Vika图床的教程，自己我感觉此方法上传图片&amp;生成链接更方便。</a></p><details class="folding-tag" red><summary> 后期操作 </summary>              <div class='content'>              <p>…………<br>…………<br>…………</p>              </div>            </details>              </div>            </details>]]></content>
       
       
       <categories>
