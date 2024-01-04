@@ -653,12 +653,65 @@ button#go-up:hover #percent {
 [data-theme="light"] #fps {
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: var(--backdrop-filter);
-  padding: 4px;
-  border-radius: 4px;
+  padding: 0px;
+  border-radius: 6px;
 }
 [data-theme="dark"] #fps {
   background-color: rgba(0, 0, 0, 0.72);
   backdrop-filter: var(--backdrop-filter);
-  padding: 4px;
-  border-radius: 4px;
+  padding: 0px;
+  border-radius: 6px;
+}
+
+/* 顶栏常驻 */
+.nav-fixed #nav{
+  transform: translateY(58px)!important;
+  -webkit-transform: translateY(58px)!important;
+  -moz-transform: translateY(58px)!important;
+  -ms-transform: translateY(58px)!important;
+  -o-transform: translateY(58px)!important;
+}
+#nav{
+  transition: none!important;
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  -ms-transition: none!important;
+  -o-transition: none!important;
+}
+
+
+/* 右边滚动栏样式 */
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(pink);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: var(--theme-color);
 }
