@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>如何写博客文章？</title>
+      <link href="/2024/01/05/%E5%A6%82%E4%BD%95%E5%86%99%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%EF%BC%9F/"/>
+      <url>/2024/01/05/%E5%A6%82%E4%BD%95%E5%86%99%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="建立文章框架？"><a href="#建立文章框架？" class="headerlink" title="建立文章框架？"></a>建立文章框架？<span class='p red'>【待完善】</span></h1><details class="folding-tag" red><summary> 文章框架 </summary>              <div class='content'>              <p>官方文档链接：<a href="https://butterfly.js.org/posts/dc584b87/#Post-Front-matter">https://butterfly.js.org/posts/dc584b87/#Post-Front-matter</a><br>他写得太简单了，不调试一遍看不懂😒，所以自己写了一份，要用的时候直接将下面代码复制到md文件最上面即可<br><span class='p red'>……的为我不懂的，后面再继续完善</span><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标题 #文章的标题</span><br><span class="line">date: 2024-1-5 10:26:00 #文章的创建日期</span><br><span class="line">updated: 2024-1-5 10:27:00 #文章的更新日期</span><br><span class="line">tags: Blog #文章的标签</span><br><span class="line">categories: Blog教程 #文章的分类</span><br><span class="line">keywords: #…………</span><br><span class="line">description: 这是一篇文章的描述部分 #文章的描述</span><br><span class="line">top_img: #文章顶部的图片</span><br><span class="line">comments: #显示文章评论模块，默认为true</span><br><span class="line">cover: #…………</span><br><span class="line">toc: #…………</span><br><span class="line">toc_number: #…………</span><br><span class="line">toc_style_simple: #…………</span><br><span class="line">copyright: #…………</span><br><span class="line">copyright_author: #文章的作者</span><br><span class="line">copyright_author_href: #文章作者的链接</span><br><span class="line">copyright_url: #…………</span><br><span class="line">copyright_info: #…………</span><br><span class="line">mathjax: #…………</span><br><span class="line">katex: #…………</span><br><span class="line">aplayer: #…………</span><br><span class="line">highlight_shrink: #…………</span><br><span class="line">aside: #是否显示侧边栏，默认为true</span><br><span class="line">abcjs: #…………</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>              </div>            </details><h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>移动应用开发</title>
       <link href="/2024/01/04/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
       <url>/2024/01/04/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/</url>
@@ -13,7 +38,7 @@
       
       <categories>
           
-          <category> 移动应用开发 </category>
+          <category> 核心技术 </category>
           
       </categories>
       
@@ -29,23 +54,23 @@
     
     
     <entry>
-      <title>HTML_CSS_JS教程</title>
-      <link href="/2024/01/04/HTML-CSS-JS%E6%95%99%E7%A8%8B/"/>
-      <url>/2024/01/04/HTML-CSS-JS%E6%95%99%E7%A8%8B/</url>
+      <title>前端开发</title>
+      <link href="/2024/01/04/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+      <url>/2024/01/04/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> HTML_CSS_JS教程 </category>
+          <category> 核心技术 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> HTML_CSS_JS </tag>
+            <tag> 前端开发 </tag>
             
         </tags>
       
@@ -63,7 +88,7 @@
       
       <categories>
           
-          <category> JSP教程 </category>
+          <category> 核心技术 </category>
           
       </categories>
       
@@ -88,7 +113,7 @@
       
       <categories>
           
-          <category> Word教程 </category>
+          <category> 核心技术 </category>
           
       </categories>
       
@@ -113,7 +138,7 @@
       
       <categories>
           
-          <category> PS教程 </category>
+          <category> 核心技术 </category>
           
       </categories>
       
@@ -130,8 +155,8 @@
     
     <entry>
       <title>博客搭建历程</title>
-      <link href="/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8E%86%E7%A8%8B/"/>
-      <url>/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8E%86%E7%A8%8B/</url>
+      <link href="/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+      <url>/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
       
         <content type="html"><![CDATA[<h1 id="npm图床使用"><a href="#npm图床使用" class="headerlink" title="npm图床使用"></a>npm图床使用</h1><details class="folding-tag" blue><summary> 什么是图床？干嘛用的？ </summary>              <div class='content'>              <p>指一些可以把图片等资源存放到网上并且引用到其他网站使用的服务，就像以前的网络相册，<span class='p red'>你可以用它来存储你博客中的图片👍。</span></p>              </div>            </details><details class="folding-tag" red><summary> 操作方法 </summary>              <div class='content'>              <p>这里我用了 <a href="https://www.fomal.cc/posts/d7fb1ba1.html">https://www.fomal.cc/posts/d7fb1ba1.html</a> 的PicGo结合Vika图床的教程，自我感觉此方法上传图片&amp;生成链接更方便。</p><details class="folding-tag" red><summary> 后期操作 </summary>              <div class='content'>              <p>…………<br>…………<br>…………</p>              </div>            </details>              </div>            </details>]]></content>
       
@@ -145,7 +170,7 @@
       
         <tags>
             
-            <tag> 博客 </tag>
+            <tag> Blog </tag>
             
         </tags>
       
@@ -157,6 +182,31 @@
       <title>日记测试</title>
       <link href="/2023/12/23/%E6%97%A5%E8%AE%B0%E6%B5%8B%E8%AF%95/"/>
       <url>/2023/12/23/%E6%97%A5%E8%AE%B0%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="c329c088c5d9f3c161a700cdc5601c53188a0decb24395ab36f60eb83a886550">e11f5c7b8c5bb4d28e761a488ab92d24a3e5f94d1fdb8c7bd69aba8d2cc4f04d</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-xray">      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">您好, 这里需要密码.</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>日记测试</title>
+      <link href="/2023/12/23/%E4%BA%BA%E7%94%9F%E8%BD%AC%E6%8A%98/"/>
+      <url>/2023/12/23/%E4%BA%BA%E7%94%9F%E8%BD%AC%E6%8A%98/</url>
       
         <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="c329c088c5d9f3c161a700cdc5601c53188a0decb24395ab36f60eb83a886550">e11f5c7b8c5bb4d28e761a488ab92d24a3e5f94d1fdb8c7bd69aba8d2cc4f04d</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-xray">      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">您好, 这里需要密码.</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
@@ -192,12 +242,6 @@
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
       
     </entry>
     
