@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>名人名言</title>
+      <link href="/2024/01/11/%E5%90%8D%E4%BA%BA%E5%90%8D%E8%A8%80/"/>
+      <url>/2024/01/11/%E5%90%8D%E4%BA%BA%E5%90%8D%E8%A8%80/</url>
+      
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">  <script id="hbeData" type="hbeData" data-hmacdigest="08acbd2bbe79ae5e92a20e39897b8cf38cc4071f5416eca4d33549cc1606271c">e11f5c7b8c5bb4d28e761a488ab92d24d88e5c9c0abcb8f6d4bc7278a639aa958392032f4755d521ee76b21c1469d73e621e180b78e076ee3fac2f048417901a85887c06f61b72ed439ba343c35989cac0e0bcf49982f541018c689207462e90fade8c364d162343583e979dece455893975698e23670c9d06617e03683e191d67cf7efbf57e9dbc646e202dbed11852384da04e03fa70827aea57602a3038aa8bbb44db6869ca18b4e67f26eeb6096f229a65de8b73e0000977a38ce4c82565d0e345f801fbf2a1b2cc8d70a990b5ded87af688b8f0940846f75ad0fe62e2c324cd13e0dff68576a8368208e0f2e2b882a4ae93a62e08606147f90c0a866622a9262fca735adc96ab19263a6406cac3dbab4bc456aa2ea5fc95a9b4604e04c39b955b6c60422e8d1d59ece3b2ca2486</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-xray">      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">您好, 这里需要密码.</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 私人日记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>webstack主题教程</title>
+      <link href="/2024/01/05/webstack%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/"/>
+      <url>/2024/01/05/webstack%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<p>看这位大佬的吧…<br><a href="https://blog.hclonely.com/posts/3cd4fb34/">https://blog.hclonely.com/posts/3cd4fb34/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何写博客文章？</title>
       <link href="/2024/01/05/%E5%A6%82%E4%BD%95%E5%86%99%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%EF%BC%9F/"/>
       <url>/2024/01/05/%E5%A6%82%E4%BD%95%E5%86%99%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%EF%BC%9F/</url>
@@ -154,11 +204,11 @@
     
     
     <entry>
-      <title>博客搭建历程</title>
-      <link href="/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
-      <url>/2024/01/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+      <title>butterfly主题教程</title>
+      <link href="/2024/01/04/butterfly%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/"/>
+      <url>/2024/01/04/butterfly%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/</url>
       
-        <content type="html"><![CDATA[<h1 id="npm图床使用"><a href="#npm图床使用" class="headerlink" title="npm图床使用"></a>npm图床使用</h1><details class="folding-tag" blue><summary> 什么是图床？干嘛用的？ </summary>              <div class='content'>              <p>指一些可以把图片等资源存放到网上并且引用到其他网站使用的服务，就像以前的网络相册，<span class='p red'>你可以用它来存储你博客中的图片👍。</span></p>              </div>            </details><details class="folding-tag" red><summary> 操作方法 </summary>              <div class='content'>              <p>这里我用了 <a href="https://www.fomal.cc/posts/d7fb1ba1.html">https://www.fomal.cc/posts/d7fb1ba1.html</a> 的PicGo结合Vika图床的教程，自我感觉此方法上传图片&amp;生成链接更方便。</p><details class="folding-tag" red><summary> 后期操作 </summary>              <div class='content'>              <p>…………<br>…………<br>…………</p>              </div>            </details>              </div>            </details><h1 id="wowjs动画"><a href="#wowjs动画" class="headerlink" title="wowjs动画"></a>wowjs动画</h1><details class="folding-tag" blue><summary> 什么是wowjs？干嘛用的？ </summary>              <div class='content'>              <p>动画嘛，就是让对应的class标签动起来，比如刚进入我网站时右边个人名片的名字会动一下…..<br><span class='p red'>你可以用它来你页面中某些class标签拥有动态效果👍。</span></p>              </div>            </details><details class="folding-tag" red><summary> 操作方法 </summary>              <div class='content'>              <p>这里我用了 <a href="https://www.fomal.cc/posts/eec9786.html#6cc1c33e76184cd9af3b7dea4d8bdc16">https://www.fomal.cc/posts/eec9786.html#6cc1c33e76184cd9af3b7dea4d8bdc16</a> 的wowjs动画教程。</p><details class="folding-tag" red><summary> 后期操作 </summary>              <div class='content'>              <p>…………<br>…………<br>…………</p>              </div>            </details>              </div>            </details>]]></content>
+        <content type="html"><![CDATA[<h1 id="npm图床使用"><a href="#npm图床使用" class="headerlink" title="npm图床使用"></a>npm图床使用</h1><details class="folding-tag" blue><summary> 什么是图床？干嘛用的？ </summary>              <div class='content'>              <p>指一些可以把图片等资源存放到网上并且引用到其他网站使用的服务，就像以前的网络相册，<span class='p red'>你可以用它来存储你博客中的图片👍。</span></p>              </div>            </details><details class="folding-tag" red><summary> 操作方法 </summary>              <div class='content'>              <p>这里我用了 <a href="https://www.fomal.cc/posts/d7fb1ba1.html">https://www.fomal.cc/posts/d7fb1ba1.html</a> 的PicGo结合Vika图床的教程，自我感觉此方法上传图片&amp;生成链接更方便。</p><details class="folding-tag" red><summary> 后期操作 </summary>              <div class='content'>              <p>…………<br>…………<br>…………</p>              </div>            </details>              </div>            </details><h1 id="wowjs动画"><a href="#wowjs动画" class="headerlink" title="wowjs动画"></a>wowjs动画</h1><details class="folding-tag" blue><summary> 什么是wowjs？干嘛用的？ </summary>              <div class='content'>              <p>动画嘛，就是让对应的class标签动起来，比如刚进入我网站时右边个人名片的名字会动一下…..<br><span class='p red'>你可以用它来你页面中某些class标签拥有动态效果👍。</span></p>              </div>            </details><details class="folding-tag" red><summary> 操作方法 </summary>              <div class='content'>              <p>这里我用了 <a href="https://www.fomal.cc/posts/eec9786.html#6cc1c33e76184cd9af3b7dea4d8bdc16">https://www.fomal.cc/posts/eec9786.html#6cc1c33e76184cd9af3b7dea4d8bdc16</a> 的wowjs动画教程。</p><details class="folding-tag" red><summary> 后期操作 </summary>              <div class='content'>              <p>…………<br>…………<br>…………</p>              </div>            </details>              </div>            </details><h1 id="如何部署主题？"><a href="#如何部署主题？" class="headerlink" title="如何部署主题？"></a>如何部署主题？</h1><details class="folding-tag" blue><summary> 部署主题 </summary>              <div class='content'>              <hr><p><span class='p red'><strong>**</strong></span></p>              </div>            </details><details class="folding-tag" red><summary> 操作方法 </summary>              <div class='content'>              <p>参考<a href="https://www.bilibili.com/video/BV1G84y1B7NH/?spm_id_from=333.788&amp;vd_source=56702900e9e0d9b8847ef4077f6bac26">https://www.bilibili.com/video/BV1G84y1B7NH/?spm_id_from=333.788&amp;vd_source=56702900e9e0d9b8847ef4077f6bac26</a> 教程，从第6min-7min左右…</p><p>参考<a href="https://www.bilibili.com/video/BV1Ke4y1v7Qr/?p=12&amp;spm_id_from=pageDriver">https://www.bilibili.com/video/BV1Ke4y1v7Qr/?p=12&amp;spm_id_from=pageDriver</a> 教程，从第5min-左右…</p><p>…………<br>…………<br>后期再整理，第一次上传至github时要npm install hexo-deployer-git —save</p><details class="folding-tag" red><summary> 后期操作 </summary>              <div class='content'>              <p>…………<br>…………<br>…………</p>              </div>            </details>              </div>            </details>]]></content>
       
       
       <categories>
