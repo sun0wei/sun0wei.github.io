@@ -33,7 +33,7 @@
       <link href="/posts/0.html"/>
       <url>/posts/0.html</url>
       
-        <content type="html"><![CDATA[<hr /><hr />]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       
@@ -52,6 +52,33 @@
       <categories>
           
           <category> 演示 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+            <tag> 外挂标签 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown语法与外挂标签写法</title>
+      <link href="/posts/866f8dd.html"/>
+      <url>/posts/866f8dd.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
           
       </categories>
       
