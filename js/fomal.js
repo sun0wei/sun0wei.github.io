@@ -3148,7 +3148,7 @@ function changeBgColor() {
 }
 
 // 必应每日壁纸API
-let bingDayBg = screen.width <= 768 ? "url(https://bing.img.run/m.php)" : "url(https://bing.img.run/1920x1080.php)";
+let bingDayBg = screen.width <= 768 ? "url(https://bing.img.run/uhd.php)" : "url(https://bing.img.run/1920x1080.php)";
 // 必应历史壁纸API
 // let bingHistoryBg = screen.width <= 768 ? "url(https://bing.img.run/rand_m.php)" : "url(https://bing.img.run/rand.php)";
 // EEE.DOG
