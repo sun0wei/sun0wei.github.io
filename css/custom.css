@@ -1,8 +1,8 @@
 /* 帧率检测 */
 #fps {
   position: fixed;
-  left: 3px;
-  top: 60px;
+  right: 10px;
+  bottom: 3px;
   z-index: 1919810;
 }
 [data-theme="light"] #fps {
