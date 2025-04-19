@@ -49,9 +49,22 @@
 }
 
 
-/* 鼠标悬停时隐藏头像 */
-.card-info-avatar :hover {
+
+
+
+
+
+
+
+
+.card-info-avatar,
+.author-info__name {
+  transition: opacity 0.3s ease;
+}
+
+.author_top:hover .card-info-avatar,
+.author_top:hover .author-info__name {
   opacity: 0;
-  /* 或者完全隐藏：display: none; */
-  transition: opacity 0.3s ease; /* 平滑过渡 */
+  /* 或者使用 visibility 属性 */
+  /* visibility: hidden; */
 }
