@@ -675,7 +675,7 @@ if (document.body.clientWidth > 992) {
         borderRadius: 5 + 'px',
         right: 55.6 + 'px',
         nekoImg: "https://pic1.imgdb.cn/item/6803883158cb8da5c8b61f74.png",
-        hoverMsg: "到底了😵",
+        hoverMsg: "你好~喵",
         color: "var(--theme-color)",
         during: 500,
         blog_body: "body",
