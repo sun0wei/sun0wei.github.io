@@ -47,3 +47,11 @@
   color: #fff;
   background-color: var(--theme-color);
 }
+
+
+/* 鼠标悬停时隐藏头像 */
+.card-info-avatar .avatar-img:hover img {
+  opacity: 0;
+  /* 或者完全隐藏：display: none; */
+  transition: opacity 0.3s ease; /* 平滑过渡 */
+}
