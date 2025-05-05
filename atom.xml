@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2025-05-01T08:40:00.000Z</updated>
+  <updated>2025-05-05T03:09:26.812Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>资金管理【连载】</title>
+    <link href="https://blog.sunwei.online/posts/e3897d6d.html"/>
+    <id>https://blog.sunwei.online/posts/e3897d6d.html</id>
+    <published>2025-05-05T03:09:21.905Z</published>
+    <updated>2025-05-05T03:09:26.812Z</updated>
+    
+    
+    <summary type="html">用于记录自己的收入/支出情况，同时起警戒作用！</summary>
+    
+    
+    
+    <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+    <category term="自我控制" scheme="https://blog.sunwei.online/tags/%E8%87%AA%E6%88%91%E6%8E%A7%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>本地与github同步【连载】</title>
+    <link href="https://blog.sunwei.online/posts/7bbbbf58.html"/>
+    <id>https://blog.sunwei.online/posts/7bbbbf58.html</id>
+    <published>2025-05-05T02:29:00.000Z</published>
+    <updated>2025-05-05T02:39:17.801Z</updated>
+    
+    <content type="html"><![CDATA[<h1>hexo c; hexo g; hexo d;</h1><p><code>hexo c; hexo g; hexo s;</code> 是用于“①清理 Hexo 的缓存文件与生成的静态 public 文件夹。②根据博客的源代码（如 Markdown 文章、主题、配置等）生成静态网页文件。③启动一个本地服务器（默认端口 4000），用于实时预览博客效果。”</p><p>所以，<code>hexo c; hexo g; hexo d;</code> 是用于“①……②……③将 public 文件夹中的静态文件自动部署到远程仓库（如 GitHub）”</p><table><thead><tr><th>代码</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td><code>hexo c; hexo g; hexo d;</code></td><td>最基本的上传github代码</td><td>①如果已有public文件夹，则会在原public文件夹基础上新添加已生成的，但不会删除不应该生成的文件（所以出现本地与网站布置不一致时，可以将public文件夹全删除了，再三连就能解决问题）。②三连时，本地上传到github的所需时间非常长，有时达到3min以上。</td></tr></tbody></table>]]></content>
+    
+    
+    <summary type="html">记录了如何将本地博客上传到github的多种方法行优点&amp;&amp;缺点。</summary>
+    
+    
+    
+    <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
+    
+    
+    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
+    
+  </entry>
   
   <entry>
     <title>分类&amp;标签等汇总【连载】</title>
@@ -36,7 +76,7 @@
   </entry>
   
   <entry>
-    <title>文章属性&amp;值</title>
+    <title>文章属性&amp;值【连载】</title>
     <link href="https://blog.sunwei.online/posts/e4f91ab7.html"/>
     <id>https://blog.sunwei.online/posts/e4f91ab7.html</id>
     <published>2025-05-01T05:38:00.000Z</published>
@@ -46,25 +86,6 @@
     
     
     <summary type="html">记录了写博客文章时，可能用到的文章属性&amp;值，方便写文章的查询！</summary>
-    
-    
-    
-    <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
-    
-    
-    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Butterfly外挂标签</title>
-    <link href="https://blog.sunwei.online/posts/96709c09.html"/>
-    <id>https://blog.sunwei.online/posts/96709c09.html</id>
-    <published>2025-04-28T14:56:00.000Z</published>
-    <updated>2025-04-28T14:56:00.000Z</updated>
-    
-    
-    <summary type="html">Butterfly外挂标签，写博客文章教程。</summary>
     
     
     
@@ -97,6 +118,25 @@
   </entry>
   
   <entry>
+    <title>Butterfly外挂标签【连载】</title>
+    <link href="https://blog.sunwei.online/posts/96709c09.html"/>
+    <id>https://blog.sunwei.online/posts/96709c09.html</id>
+    <published>2025-04-28T14:56:00.000Z</published>
+    <updated>2025-04-28T14:56:00.000Z</updated>
+    
+    
+    <summary type="html">Butterfly外挂标签，写博客文章教程。</summary>
+    
+    
+    
+    <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
+    
+    
+    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
     <title>文件后缀汇总【连载】</title>
     <link href="https://blog.sunwei.online/posts/34823162.html"/>
     <id>https://blog.sunwei.online/posts/34823162.html</id>
@@ -120,9 +160,9 @@
     <link href="https://blog.sunwei.online/posts/7cb43f71.html"/>
     <id>https://blog.sunwei.online/posts/7cb43f71.html</id>
     <published>2025-04-19T12:55:00.000Z</published>
-    <updated>2025-05-04T11:32:50.188Z</updated>
+    <updated>2025-05-05T01:33:50.560Z</updated>
     
-    <content type="html"><![CDATA[<p>qwertyuiopqwertyuiopf fdcdd<br>我后悔了！！</p>]]></content>
+    <content type="html"><![CDATA[<p>TMD， 希望有用！无语了，好像有用！</p>]]></content>
     
     
     <summary type="html">读蛊真人，有感，作此文！</summary>
@@ -181,7 +221,7 @@
   </entry>
   
   <entry>
-    <title>后悔の事</title>
+    <title>后悔の事【连载】</title>
     <link href="https://blog.sunwei.online/posts/b2c4a846.html"/>
     <id>https://blog.sunwei.online/posts/b2c4a846.html</id>
     <published>2025-02-09T07:39:00.000Z</published>
@@ -204,7 +244,7 @@
   </entry>
   
   <entry>
-    <title>Markdown语法</title>
+    <title>Markdown语法【连载】</title>
     <link href="https://blog.sunwei.online/posts/866f8dd.html"/>
     <id>https://blog.sunwei.online/posts/866f8dd.html</id>
     <published>2025-01-09T10:19:03.000Z</published>

@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>资金管理【连载】</title>
+      <link href="/posts/e3897d6d.html"/>
+      <url>/posts/e3897d6d.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 自我控制 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本地与github同步【连载】</title>
+      <link href="/posts/7bbbbf58.html"/>
+      <url>/posts/7bbbbf58.html</url>
+      
+        <content type="html"><![CDATA[<h1>hexo c; hexo g; hexo d;</h1><p><code>hexo c; hexo g; hexo s;</code> 是用于“①清理 Hexo 的缓存文件与生成的静态 public 文件夹。②根据博客的源代码（如 Markdown 文章、主题、配置等）生成静态网页文件。③启动一个本地服务器（默认端口 4000），用于实时预览博客效果。”</p><p>所以，<code>hexo c; hexo g; hexo d;</code> 是用于“①……②……③将 public 文件夹中的静态文件自动部署到远程仓库（如 GitHub）”</p><table><thead><tr><th>代码</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td><code>hexo c; hexo g; hexo d;</code></td><td>最基本的上传github代码</td><td>①如果已有public文件夹，则会在原public文件夹基础上新添加已生成的，但不会删除不应该生成的文件（所以出现本地与网站布置不一致时，可以将public文件夹全删除了，再三连就能解决问题）。②三连时，本地上传到github的所需时间非常长，有时达到3min以上。</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站后续 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 查阅中心 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类&amp;标签等汇总【连载】</title>
       <link href="/posts/e3462f83.html"/>
       <url>/posts/e3462f83.html</url>
@@ -29,36 +79,11 @@
     
     
     <entry>
-      <title>文章属性&amp;值</title>
+      <title>文章属性&amp;值【连载】</title>
       <link href="/posts/e4f91ab7.html"/>
       <url>/posts/e4f91ab7.html</url>
       
         <content type="html"><![CDATA[<h1>常见文章属性&amp;值</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean; hexo s</span><br><span class="line">hexo clean; hexo g; hexo d</span><br><span class="line">git add .; git commit -m &quot;npm publish&quot;; npm version patch; </span><br><span class="line">git push</span><br></pre></td></tr></table></figure><h1>说明</h1><table><thead><tr><th>属性</th><th>值</th><th>说明</th></tr></thead><tbody><tr><td>1</td><td>100，000</td><td>无</td></tr><tr><td>2</td><td>200，000</td><td>无</td></tr><tr><td>3</td><td>300,600</td><td>重要</td></tr></tbody></table><h1>样例</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean; hexo s</span><br><span class="line">hexo clean; hexo g; hexo d</span><br><span class="line">git add .; git commit -m &quot;npm publish&quot;; npm version patch; </span><br><span class="line">git push</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 建站后续 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 查阅中心 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Butterfly外挂标签</title>
-      <link href="/posts/96709c09.html"/>
-      <url>/posts/96709c09.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
@@ -104,6 +129,31 @@
     
     
     <entry>
+      <title>Butterfly外挂标签【连载】</title>
+      <link href="/posts/96709c09.html"/>
+      <url>/posts/96709c09.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站后续 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 查阅中心 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>文件后缀汇总【连载】</title>
       <link href="/posts/34823162.html"/>
       <url>/posts/34823162.html</url>
@@ -133,7 +183,7 @@
       <link href="/posts/7cb43f71.html"/>
       <url>/posts/7cb43f71.html</url>
       
-        <content type="html"><![CDATA[<p>qwertyuiopqwertyuiopf fdcdd<br>我后悔了！！</p>]]></content>
+        <content type="html"><![CDATA[<p>TMD， 希望有用！无语了，好像有用！</p>]]></content>
       
       
       <categories>
@@ -206,7 +256,7 @@
     
     
     <entry>
-      <title>后悔の事</title>
+      <title>后悔の事【连载】</title>
       <link href="/posts/b2c4a846.html"/>
       <url>/posts/b2c4a846.html</url>
       
@@ -233,7 +283,7 @@
     
     
     <entry>
-      <title>Markdown语法</title>
+      <title>Markdown语法【连载】</title>
       <link href="/posts/866f8dd.html"/>
       <url>/posts/866f8dd.html</url>
       
