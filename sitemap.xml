@@ -2,25 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.sunwei.online/bilibili/wantWatch/0.json</loc>
-    
-    <lastmod>2025-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/bilibili/watching/0.json</loc>
-    
-    <lastmod>2025-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/bilibili/watched/0.json</loc>
+    <loc>https://blog.sunwei.online/bilibili/watched/2.json</loc>
     
     <lastmod>2025-05-07</lastmod>
     
@@ -65,7 +47,25 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/bilibili/watched/2.json</loc>
+    <loc>https://blog.sunwei.online/bilibili/wantWatch/0.json</loc>
+    
+    <lastmod>2025-05-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/bilibili/watching/0.json</loc>
+    
+    <lastmod>2025-05-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/bilibili/watched/0.json</loc>
     
     <lastmod>2025-05-07</lastmod>
     
