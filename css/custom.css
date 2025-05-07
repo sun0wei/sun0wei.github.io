@@ -231,8 +231,8 @@ opacity: .92;
 
 /* 减小按钮的上下间距 */
 .tab-to-top {
-  margin-top: -30px !important;
-  margin-bottom: -30px !important;
+  margin-top: -20px !important;
+  margin-bottom: -50px !important;
   opacity: 0.5;  /* 可选：降低透明度 */
 }
 
