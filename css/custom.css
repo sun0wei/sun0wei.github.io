@@ -228,3 +228,20 @@ opacity: .92;
     background-repeat: no-repeat !important;
   }
 }
+
+/* 减小按钮的上下间距 */
+.tab-to-top {
+  margin-top: -30px !important;
+  margin-bottom: -30px !important;
+  opacity: 0.5;  /* 可选：降低透明度 */
+}
+
+/* 鼠标悬停时显示按钮 */
+.tab-to-top {
+  display: none;
+}
+.post-content h1:hover .tab-to-top,
+.post-content h2:hover .tab-to-top {
+  display: inline-block;
+}
+
