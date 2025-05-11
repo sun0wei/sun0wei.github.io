@@ -6083,9 +6083,9 @@ blockquote.pullquote.right {
 #article-container .tabs {
   position: relative;
   margin: 0 0 20px;
-  border-right: 1px solid var(--tab-border-color);
-  border-bottom: 1px solid var(--tab-border-color);
-  border-left: 1px solid var(--tab-border-color);
+  border-right: 1px solid var(--theme-color);
+  border-bottom: 1px solid var(--theme-color);
+  border-left: 1px solid var(--theme-color);
 }
 #article-container .tabs > .nav-tabs {
   display: -webkit-box;
@@ -6102,6 +6102,7 @@ blockquote.pullquote.right {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  border-top: 1px solid var(--theme-color);
   background: var(--tab-botton-bg);
 }
 #article-container .tabs > .nav-tabs > .tab {
