@@ -2520,22 +2520,6 @@ maxWidth1200()
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-.flexcard-flink-list > a:hover::before {
-  position: fixed;
-  width: inherit;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 10%;
-  border-radius: 10px;
-  text-align: center;
-  z-index: 100;
-  content: attr(data-title);
-  font-size: 20px;
-  color: #fff;
-  padding: 10px;
-  background-color: rgba(73,177,245,0.8);
-}
 .flexcard-flink-list > a .cover {
   width: 100%;
   -webkit-transition: -webkit-transform 0.5s ease-out;
