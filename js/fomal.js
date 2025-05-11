@@ -2973,7 +2973,7 @@ function toggleRightside() {
 
 // 透明度调节滑块
 if (localStorage.getItem("transNum") == undefined) {
-  localStorage.setItem("transNum", 60);
+  localStorage.setItem("transNum", 84);
 }
 var curTransNum = localStorage.getItem("transNum");
 var curTransMini = curTransNum * 0.95;
@@ -3014,7 +3014,7 @@ function setBlurNum() {
 
 // 模糊效果开关
 if (localStorage.getItem("blur") == undefined) {
-  localStorage.setItem("blur", 0);
+  localStorage.setItem("blur", 1);
 }
 if (localStorage.getItem("blur") == 0) {
   document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
@@ -3338,7 +3338,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/yuanshen1.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/yuanshen1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic1.imgdb.cn/item/6801b74488c538a9b5da3b00.jpg)" class="imgbox" onclick="changeBg('url(https://pic1.imgdb.cn/item/6801b74488c538a9b5da3b00.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s1.imagehub.cc/images/2025/04/29/c6f2755f902deaba05bd55a4260ebc33.webp)" class="imgbox" onclick="changeBg('url(https://s1.imagehub.cc/images/2025/04/29/c6f2755f902deaba05bd55a4260ebc33.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://source.fomal.cc/img/dm2.webp)" class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm2.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://source.fomal.cc/img/dm12.webp)" class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm12.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://source.fomal.cc/img/dm14.webp)" class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/dm14.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic1.imgdb.cn/item/68039ff558cb8da5c8b69585.png)" class="imgbox" onclick="changeBg('url(https://pic1.imgdb.cn/item/68039ff558cb8da5c8b69585.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://source.fomal.cc/img/default_cover_1.webp)" class="imgbox" onclick="changeBg('url(https://source.fomal.cc/img/default_cover_1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/yuanshen1.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/yuanshen1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic1.imgdb.cn/item/6801b74488c538a9b5da3b00.jpg)" class="imgbox" onclick="changeBg('url(https://pic1.imgdb.cn/item/6801b74488c538a9b5da3b00.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://s1.imagehub.cc/images/2025/04/29/c6f2755f902deaba05bd55a4260ebc33.webp)" class="imgbox" onclick="changeBg('url(https://s1.imagehub.cc/images/2025/04/29/c6f2755f902deaba05bd55a4260ebc33.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic1.imgdb.cn/item/68039ff558cb8da5c8b69585.png)" class="imgbox" onclick="changeBg('url(https://pic1.imgdb.cn/item/68039ff558cb8da5c8b69585.png)')"></a></div>
               </div>
             </details>
 
@@ -3406,9 +3406,9 @@ function createWinbox() {
     document.getElementById("universeSet").checked = false;
   }
   if (localStorage.getItem("fpson") == "1") {
-    document.getElementById("fpson").checked = true;
-  } else {
     document.getElementById("fpson").checked = false;
+  } else {
+    document.getElementById("fpson").checked = true;
   }
   if (localStorage.getItem("rs") == "block") {
     document.getElementById("rightSideSet").checked = true;

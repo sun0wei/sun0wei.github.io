@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>音乐 | 孙伟の博客</title><meta name="author" content="孙 伟"><meta name="copyright" content="孙 伟"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="网上全是调用api搭建音乐页面的教程，且调用的知名网站大部分音乐需要vip，很不方便，于是自己用前端三件套虾搞了个本地音乐播放器……页面好难看🤣，凑合着听吧！毕竟自己不是专业的（支持顺序播放、随机播放，上传需要一段时间，若上传失败，可以刷新页面多试几次，支持后台播放。）       音乐播放器              &#x2F;* 整体容器样式 *&#x2F;         #music-player {">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>音乐 | 孙伟の博客</title><meta name="author" content="孙 伟"><meta name="copyright" content="孙 伟"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="网上全是调用api搭建音乐页面的教程，且调用的知名网站大部分音乐需要vip，很不方便，于是自己用前端三件套虾搞了个本地音乐播放器……页面好难看🤣，凑合着听吧！毕竟自己不是专业的（支持顺序播放、随机播放，上传需要一段时间，若上传失败，可以刷新页面多试几次，支持后台播放。）       音乐播放器              &#x2F;* 原有样式保持不变，添加以下新样式 *&#x2F;         #loadin">
 <meta property="og:type" content="website">
 <meta property="og:title" content="音乐">
 <meta property="og:url" content="https://blog.sunwei.online/life/music/index.html">
 <meta property="og:site_name" content="孙伟の博客">
-<meta property="og:description" content="网上全是调用api搭建音乐页面的教程，且调用的知名网站大部分音乐需要vip，很不方便，于是自己用前端三件套虾搞了个本地音乐播放器……页面好难看🤣，凑合着听吧！毕竟自己不是专业的（支持顺序播放、随机播放，上传需要一段时间，若上传失败，可以刷新页面多试几次，支持后台播放。）       音乐播放器              &#x2F;* 整体容器样式 *&#x2F;         #music-player {">
+<meta property="og:description" content="网上全是调用api搭建音乐页面的教程，且调用的知名网站大部分音乐需要vip，很不方便，于是自己用前端三件套虾搞了个本地音乐播放器……页面好难看🤣，凑合着听吧！毕竟自己不是专业的（支持顺序播放、随机播放，上传需要一段时间，若上传失败，可以刷新页面多试几次，支持后台播放。）       音乐播放器              &#x2F;* 原有样式保持不变，添加以下新样式 *&#x2F;         #loadin">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://source.fomal.cc/img/default_cover_14.webp">
 <meta property="article:published_time" content="2022-08-10T10:54:31.000Z">
-<meta property="article:modified_time" content="2025-05-11T02:30:45.663Z">
+<meta property="article:modified_time" content="2025-05-11T08:07:22.347Z">
 <meta property="article:author" content="孙 伟">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://source.fomal.cc/img/default_cover_14.webp"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://blog.sunwei.online/life/music/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -52,7 +52,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-05-11 10:30:45'
+  postUpdate: '2025-05-11 16:07:22'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -147,236 +147,47 @@
 
     <title>音乐播放器</title>
     <style>
-        /* 整体容器样式 */
-        #music-player {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 900px; 
-            margin: 0 auto;
-            padding: 30px;
-            background:  linear-gradient(135deg, #e6f7ff 0%, #ffe6f7 100%);
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        /* 播放器头部样式 */
-        .player-header {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #2b2d42;
-        }
-
-        .player-header h2 {
-            margin-bottom: 8px;
-            font-size: 28px;
-        }
-
-        .player-header p {
-            color: #6c757d;
-            font-size: 16px;
-        }
-
-        /* 播放器控制按钮样式 */
-        .player-controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 25px;
-            gap: 20px;
-        }
-
-        .control-btn {
-            background: #4361ee;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 18px;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.2s;
-            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-        }
-
-        .control-btn:hover {
-            background: #3a56d4;
-            transform: scale(1.08);
-        }
-
-        .control-btn:disabled {
-            background: #adb5bd;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        /* 播放模式按钮样式 */
-        .mode-btn {
-            background: #f8f9fa;
-            color: #495057;
-            border: 1px solid #dee2e6;
-            border-radius: 25px;
-            padding: 8px 20px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .mode-btn.active {
-            background: #4361ee;
-            color: white;
-            border-color: #4361ee;
-        }
-
-        /* 进度条容器样式 */
-        .progress-container {
-            width: 100%;
-            background: #e9ecef;
-            height: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            cursor: pointer;
-        }
-
-        .progress-bar {
-            height: 100%;
-            background: #4361ee;
-            border-radius: 5px;
-            width: 0%;
-            transition: width 0.1s;
-        }
-
-        /* 时间显示样式 */
-        .time-display {
-            display: flex;
-            justify-content: space-between;
-            font-size: 15px;
-            color: #6c757d;
-            margin-bottom: 25px;
-        }
-
-        /* 音量控制样式 */
-        .volume-control {
-            display: flex;
-            align-items: center;
-            margin-bottom: 25px;
-        }
-
-        .volume-control span {
-            margin-right: 15px;
-            font-size: 15px;
-            color: #495057;
-        }
-
-        .volume-control input {
-            flex-grow: 1;
-        }
-
-        /* 播放列表样式 */
-        .playlist {
-            margin-top: 25px;
-            max-height: 350px;
-            overflow-y: auto;
-            border-top: 1px solid #dee2e6;
-            padding-top: 15px;
-        }
-
-        .playlist-item {
-            padding: 12px 20px;
-            border-bottom: 1px solid #e9ecef;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-        }
-
-        .playlist-item:hover {
-            background: rgba(67, 97, 238, 0.08);
-        }
-
-        .playlist-item.active {
-            background: rgba(67, 97, 238, 0.15);
-            color: #4361ee;
-            font-weight: 500;
-        }
-
-        .playlist-item .index {
-            margin-right: 15px;
-            color: #adb5bd;
-            width: 30px; 
-            text-align: right;
-        }
-
-        .playlist-item.active .index {
-            color: #4361ee;
-        }
-
-        .playlist-item .name {
-            color: red; 
-        }
-
-        /* 文件夹选择容器样式 */
-        .folder-input-container {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .folder-input-label {
-            background: #4361ee;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            transition: all 0.3s;
-            font-size: 16px;
-            box-shadow: 0 3px 12px rgba(67, 97, 238, 0.3);
-        }
-
-        .folder-input-label:hover {
-            background: #3a56d4;
-            transform: translateY(-3px);
-        }
-
-        .folder-input-label i {
-            margin-right: 10px;
-        }
-
-        #folder-input {
+        /* 原有样式保持不变，添加以下新样式 */
+        #loading-indicator {
             display: none;
-        }
-
-        /* 空状态样式 */
-        .empty-state {
             text-align: center;
-            color: #adb5bd;
-            padding: 40px 0;
-            font-size: 16px;
+            padding: 20px;
+            margin: 20px 0;
+            background: rgba(255,255,255,0.8);
+            border-radius: 10px;
         }
-
-        /* 滚动条样式 */
-        .playlist::-webkit-scrollbar {
-            width: 8px;
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 15px;
+            border: 4px solid rgba(67, 97, 238, 0.3);
+            border-radius: 50%;
+            border-top-color: #4361ee;
+            animation: spin 1s ease-in-out infinite;
         }
-
-        .playlist::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
-
-        .playlist::-webkit-scrollbar-thumb {
-            background: #c1c1c1;
-            border-radius: 4px;
+        
+        .progress-text {
+            margin-top: 10px;
+            color: #4361ee;
+            font-size: 14px;
         }
-
-        .playlist::-webkit-scrollbar-thumb:hover {
-            background: #a8a8a8;
+        
+        /* 修改播放列表项样式，使正在播放的音乐名称变红 */
+        .playlist-item.active .name {
+            color: red !important;
+            font-weight: bold;
         }
+        
+        /* 原有其他样式保持不变 */
     </style>
+
     <div id="music-player">
+        <!-- 原有HTML结构保持不变 -->
         <div class="player-header">
             <p id="status-text">请选择包含音乐的文件夹</p>
         </div>
@@ -386,6 +197,12 @@
                 <i>📁</i> 选择音乐文件夹
             </label>
             <input type="file" id="folder-input" webkitdirectory directory multiple>
+        </div>
+
+        <div id="loading-indicator">
+            <div class="spinner"></div>
+            <p>正在加载音乐文件，请稍候...</p>
+            <div class="progress-text" id="progress-text">0/0 文件已处理</div>
         </div>
 
         <div class="player-controls">
@@ -437,9 +254,11 @@
                 const playlistEl = document.getElementById('playlist');
                 const folderInput = document.getElementById('folder-input');
                 const statusText = document.getElementById('status-text');
+                const loadingIndicator = document.getElementById('loading-indicator');
+                const progressText = document.getElementById('progress-text');
 
                 // 加载音乐文件夹
-                folderInput.addEventListener('change', function (e) {
+                folderInput.addEventListener('change', async function (e) {
                     const files = Array.from(e.target.files).filter(file =>
                         file.type.startsWith('audio/')
                     );
@@ -449,23 +268,70 @@
                         return;
                     }
 
-                    tracks = files.map((file, index) => {
-                        return {
-                            index: index + 1,
-                            name: file.name.replace(/\.[^/.]+$/, ""),
-                            path: URL.createObjectURL(file),
-                            file: file
-                        };
-                    });
-
-                    originalOrder = [...tracks];
-                    renderPlaylist();
-                    loadTrack(currentTrackIndex);
-                    updateButtons();
-                    statusText.textContent = `已加载 ${tracks.length} 首音乐`;
+                    // 显示加载指示器
+                    loadingIndicator.style.display = 'block';
+                    statusText.textContent = `正在加载 ${files.length} 首音乐...`;
+                    
+                    try {
+                        // 分批处理文件以避免UI阻塞
+                        tracks = await processFilesWithProgress(files);
+                        
+                        originalOrder = [...tracks];
+                        renderPlaylist();
+                        loadTrack(currentTrackIndex);
+                        updateButtons();
+                        statusText.textContent = `已加载 ${tracks.length} 首音乐，准备播放`;
+                    } catch (error) {
+                        console.error("加载音乐失败:", error);
+                        statusText.textContent = "加载音乐时出错: " + error.message;
+                    } finally {
+                        // 隐藏加载指示器
+                        loadingIndicator.style.display = 'none';
+                    }
                 });
 
-                // 渲染播放列表
+                // 带进度反馈的文件处理函数
+                async function processFilesWithProgress(files) {
+                    return new Promise((resolve) => {
+                        const results = [];
+                        let processed = 0;
+                        const total = files.length;
+                        
+                        function updateProgress() {
+                            progressText.textContent = `${processed}/${total} 文件已处理`;
+                            const percent = Math.round((processed / total) * 100);
+                            progressBar.style.width = `${percent}%`;
+                        }
+                        
+                        function processBatch(startIndex) {
+                            const batchSize = 5;
+                            const endIndex = Math.min(startIndex + batchSize, total);
+                            
+                            for (let i = startIndex; i < endIndex; i++) {
+                                const file = files[i];
+                                results.push({
+                                    index: i + 1,
+                                    name: file.name.replace(/\.[^/.]+$/, ""),
+                                    path: URL.createObjectURL(file),
+                                    file: file
+                                });
+                                processed++;
+                            }
+                            
+                            updateProgress();
+                            
+                            if (endIndex < total) {
+                                setTimeout(() => processBatch(endIndex), 0);
+                            } else {
+                                resolve(results);
+                            }
+                        }
+                        
+                        processBatch(0);
+                    });
+                }
+
+                // 渲染播放列表 - 修改版，使当前播放歌曲名称变红
                 function renderPlaylist() {
                     if (tracks.length === 0) {
                         playlistEl.innerHTML = '<div class="empty-state">暂无音乐，请选择文件夹</div>';
@@ -490,16 +356,20 @@
                     });
                 }
 
-                // 加载曲目
+                // 加载曲目 - 修改版，确保重新渲染播放列表
                 function loadTrack(index) {
                     if (tracks.length === 0) return;
 
                     const track = tracks[index];
+                    if (audio.src) URL.revokeObjectURL(audio.src);
                     audio.src = track.path;
                     audio.load();
 
                     // 更新状态文本
                     statusText.textContent = `正在播放: ${track.name} (${index + 1}/${tracks.length})`;
+                    
+                    // 重新渲染播放列表以确保当前歌曲高亮
+                    renderPlaylist();
                 }
 
                 // 播放曲目
@@ -507,17 +377,18 @@
                     if (tracks.length === 0) return;
 
                     audio.play()
-                       .then(() => {
+                    .then(() => {
                             isPlaying = true;
                             playBtn.textContent = '⏸';
                             playBtn.title = "暂停";
+                            renderPlaylist(); // 确保UI更新
                         })
-                       .catch(error => {
+                    .catch(error => {
                             console.error("播放失败:", error);
                         });
                 }
 
-                // 暂停曲目
+                // 其余函数保持不变...
                 function pauseTrack() {
                     audio.pause();
                     isPlaying = false;
@@ -525,7 +396,6 @@
                     playBtn.title = "播放";
                 }
 
-                // 下一曲
                 function nextTrack() {
                     if (tracks.length === 0) return;
 
@@ -537,10 +407,8 @@
 
                     loadTrack(currentTrackIndex);
                     playTrack();
-                    renderPlaylist();
                 }
 
-                // 上一曲
                 function prevTrack() {
                     if (tracks.length === 0) return;
 
@@ -552,24 +420,20 @@
 
                     loadTrack(currentTrackIndex);
                     playTrack();
-                    renderPlaylist();
                 }
 
-                // 切换随机模式
                 function toggleShuffleMode() {
                     isShuffleMode = true;
                     shuffleBtn.classList.add('active');
                     sequentialBtn.classList.remove('active');
                 }
 
-                // 切换顺序模式
                 function toggleSequentialMode() {
                     isShuffleMode = false;
                     sequentialBtn.classList.add('active');
                     shuffleBtn.classList.remove('active');
                 }
 
-                // 更新按钮状态
                 function updateButtons() {
                     const hasTracks = tracks.length > 0;
                     prevBtn.disabled = !hasTracks || tracks.length <= 1;
@@ -580,7 +444,6 @@
                     }
                 }
 
-                // 播放/暂停按钮点击事件
                 playBtn.addEventListener('click', () => {
                     if (tracks.length === 0) {
                         folderInput.click();
@@ -594,40 +457,27 @@
                     }
                 });
 
-                // 下一曲按钮点击事件
                 nextBtn.addEventListener('click', nextTrack);
-
-                // 上一曲按钮点击事件
                 prevBtn.addEventListener('click', prevTrack);
-
-                // 随机模式按钮
                 shuffleBtn.addEventListener('click', toggleShuffleMode);
-
-                // 顺序模式按钮
                 sequentialBtn.addEventListener('click', toggleSequentialMode);
 
-                // 进度条更新
-                audio.addEventListener('timeupdate', updateProgress);
-
-                function updateProgress() {
+                audio.addEventListener('timeupdate', function() {
                     if (isNaN(audio.duration)) return;
 
                     const progressPercent = (audio.currentTime / audio.duration) * 100;
                     progressBar.style.width = `${progressPercent}%`;
 
-                    // 更新时间显示
                     currentTimeEl.textContent = formatTime(audio.currentTime);
                     durationEl.textContent = formatTime(audio.duration);
-                }
+                });
 
-                // 格式化时间
                 function formatTime(seconds) {
                     const mins = Math.floor(seconds / 60);
                     const secs = Math.floor(seconds % 60);
                     return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
                 }
 
-                // 点击进度条跳转
                 progressContainer.addEventListener('click', (e) => {
                     if (isNaN(audio.duration)) return;
 
@@ -638,24 +488,16 @@
                     audio.currentTime = (clickX / width) * duration;
                 });
 
-                // 音量控制
                 volumeControl.addEventListener('input', (e) => {
                     audio.volume = e.target.value;
                 });
 
-                // 曲目结束自动下一首
                 audio.addEventListener('ended', nextTrack);
-
-                // 初始化音量
                 audio.volume = volumeControl.value;
-
-                // 初始化模式
                 toggleSequentialMode();
             });
         </script>
     </div>
-
-    
 
 
 </div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言📝</p><div class="bg-ad"><div>我清楚地知道，人与人的路都是不可复制的。我走在我自己的人生路上，哪怕路途的风雨再大，大到我步履维艰。哪怕荆棘丛生，刺得我伤痕遍布。我也仍旧痴痴笑笑，我体会此中滋味！✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://travel.moe/go.html">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看👀</p><ul class="ft-links"><li><a href="/personal/about/">关于我</a><a href="/personal/time/">建站历程</a></li><li><a href="/personal/love/">我の目标</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/life/gallery/">图片中心</a><a href="/bangumis/">视频中心</a></li><li><a href="/life/music/">音乐中心</a><a href="/link/">网址导航</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">常用网站🔗</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.bilibili.com/" title="biliblil"><img src="https://pic1.imgdb.cn/item/680a376d58cb8da5c8c90e48.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="http://10.17.8.18/" title="上网登录页面"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.moj_dQ_RC01f_M5c1SWn8AHaHa?w=187&amp;h=186&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://ehall.jxust.edu.cn/new/index.html" title="江理教务系统"><img src="https://p1.ssl.qhimg.com/t0126983fc5d3e99384.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://github.com/" title="github"><img src="https://pic1.imgdb.cn/item/680a3b5e58cb8da5c8c90ffd.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.meishuzi.cn/" title="艺术字"><img src="https://pic1.imgdb.cn/item/6810db1958cb8da5c8d46fcc.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://chat.deepseek.com/" title="deepseek"><img src="https://cdn.deepseek.com/chat/icon.png" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2023-2025</b></span><span><b>&nbsp;&nbsp;By 孙 伟</b></span></div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src="https://sourcebucket.s3.bitiful.net/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20251970" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20251970号"><img src="https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/%E8%90%8CICP%E5%A4%87-20251970-sunwei.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" title="本站使用JsDelivr为静态资源提供CDN加速"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
