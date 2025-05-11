@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.sunwei.online/personal/time/index.html</loc>
+    
+    <lastmod>2025-05-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/life/music/index.html</loc>
+    
+    <lastmod>2025-05-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sunwei.online/life/gallery/girl2/index.html</loc>
     
     <lastmod>2025-05-11</lastmod>
@@ -12,15 +30,6 @@
   
   <url>
     <loc>https://blog.sunwei.online/personal/about/index.html</loc>
-    
-    <lastmod>2025-05-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/life/music/index.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -104,15 +113,6 @@
     <loc>https://blog.sunwei.online/posts/5d5f709f.html</loc>
     
     <lastmod>2025-05-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/personal/time/index.html</loc>
-    
-    <lastmod>2025-05-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
