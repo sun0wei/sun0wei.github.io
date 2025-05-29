@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>音乐 | 孙伟の博客</title><meta name="author" content="孙 伟"><meta name="copyright" content="孙 伟"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="自制本地音乐播放器，没用&#x2F;没显示刷新一下页面即可！                                     document.addEventListener(&#39;DOMContentLoaded&#39;, function () {             &#x2F;&#x2F; 创建 Shadow DOM 容器             const container &#x3D; document.ge">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>音乐 | 孙伟の博客</title><meta name="author" content="孙 伟"><meta name="copyright" content="孙 伟"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="自制本地音乐播放器，没用&#x2F;没显示刷新一下页面即可！           (function() {         &#x2F;&#x2F; 创建隔离的作用域         const container &#x3D; document.getElementById(&#39;music-player-container&#39;);                  &#x2F;&#x2F; 创建唯一的ID前缀，用于样式隔离         con">
 <meta property="og:type" content="website">
 <meta property="og:title" content="音乐">
 <meta property="og:url" content="https://blog.sunwei.online/life/music/index.html">
 <meta property="og:site_name" content="孙伟の博客">
-<meta property="og:description" content="自制本地音乐播放器，没用&#x2F;没显示刷新一下页面即可！                                     document.addEventListener(&#39;DOMContentLoaded&#39;, function () {             &#x2F;&#x2F; 创建 Shadow DOM 容器             const container &#x3D; document.ge">
+<meta property="og:description" content="自制本地音乐播放器，没用&#x2F;没显示刷新一下页面即可！           (function() {         &#x2F;&#x2F; 创建隔离的作用域         const container &#x3D; document.getElementById(&#39;music-player-container&#39;);                  &#x2F;&#x2F; 创建唯一的ID前缀，用于样式隔离         con">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://source.fomal.cc/img/default_cover_14.webp">
 <meta property="article:published_time" content="2022-08-10T10:54:31.000Z">
-<meta property="article:modified_time" content="2025-05-17T08:57:22.803Z">
+<meta property="article:modified_time" content="2025-05-29T09:14:44.906Z">
 <meta property="article:author" content="孙 伟">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://source.fomal.cc/img/default_cover_14.webp"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://blog.sunwei.online/life/music/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -52,7 +52,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-05-17 16:57:22'
+  postUpdate: '2025-05-29 17:14:44'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -141,266 +141,267 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><style id="defineBg"></style><style id="menu_shadow"></style><span id="fps"></span><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="孙伟の博客" type="application/atom+xml">
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><style id="defineBg"></style><style id="menu_shadow"></style><span id="fps"></span><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="孙伟の博客" type="application/atom+xml">
 </head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic1.imgdb.cn/item/6801b82988c538a9b5da3fe6.png" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie"></use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 我の名言</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 我の目标</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于我</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">孙伟の博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie"></use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 我の名言</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 我の目标</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于我</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="page-site-info"><h1 id="site-title">音乐</h1></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout hide-aside" id="content-inner"><div id="page"><div id="article-container"><div class="note info simple"><p>自制本地音乐播放器，没用&#x2F;没显示刷新一下页面即可！</p>
 </div>
 
+<!-- 这是我们的挂载点 -->
+<div id="music-player-container"></div>
 
-    <!-- 这是我们的挂载点 -->
-    <div id="music-player-container"></div>
-
-    <script>
+<script>
+    (function() {
+        // 创建隔离的作用域
+        const container = document.getElementById('music-player-container');
         
-        document.addEventListener('DOMContentLoaded', function () {
-            // 创建 Shadow DOM 容器
-            const container = document.getElementById('music-player-container');
-            const shadowRoot = container.attachShadow({ mode: 'open' });
-            
-            // 添加样式和HTML结构到Shadow DOM
-            shadowRoot.innerHTML = `
-                <style>
-                    :host {
-                        display: block;
-                        font-family: Arial, sans-serif;
-                        --primary-color: #4361ee;
-                        --primary-hover: #3a56d4;
-                        --active-color: #e63946;
-                        --text-color: #333;
-                        --light-gray: #f5f5f5;
-                        --medium-gray: #e0e0e0;
-                        --dark-gray: #777;
-                        --white: #fff;
+        // 创建唯一的ID前缀，用于样式隔离
+        const uniqueId = 'music-player-' + Math.random().toString(36).substr(2, 9);
+        
+        // 添加HTML结构和样式
+        container.innerHTML = `
+            <style id="${uniqueId}-styles">
+                #${uniqueId} {
+                    display: block;
+                    font-family: Arial, sans-serif;
+                    --primary-color: #4361ee;
+                    --primary-hover: #3a56d4;
+                    --active-color: #e63946;
+                    --text-color: #333;
+                    --light-gray: #f5f5f5;
+                    --medium-gray: #e0e0e0;
+                    --dark-gray: #777;
+                    --white: #fff;
+                }
+                
+                #${uniqueId} #music-player {
+                    background-color: var(--white);
+                    border-radius: 15px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                    padding: 30px;
+                    width: 100%;
+                    max-width: 1000px;
+                    margin: 20px auto;
+                    box-sizing: border-box;
+                }
+                
+                #${uniqueId} .player-header {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: var(--text-color);
+                }
+                
+                #${uniqueId} .folder-input-container {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                
+                #${uniqueId} .folder-input-label {
+                    display: inline-block;
+                    background-color: var(--primary-color);
+                    color: var(--white);
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+                
+                #${uniqueId} .folder-input-label:hover {
+                    background-color: var(--primary-hover);
+                }
+                
+                #${uniqueId} input[type="file"] {
+                    display: none;
+                }
+                
+                #${uniqueId} .player-controls {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    margin: 20px 0;
+                }
+                
+                #${uniqueId} .control-btn, #${uniqueId} .mode-btn {
+                    background-color: var(--primary-color);
+                    color: var(--white);
+                    border: none;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background-color 0.3s;
+                }
+                
+                #${uniqueId} .control-btn:hover, #${uniqueId} .mode-btn:hover {
+                    background-color: var(--primary-hover);
+                }
+                
+                #${uniqueId} .mode-btn {
+                    border-radius: 20px;
+                    width: auto;
+                    padding: 0 15px;
+                }
+                
+                #${uniqueId} .mode-btn.active {
+                    background-color: var(--active-color);
+                }
+                
+                #${uniqueId} .progress-container {
+                    height: 5px;
+                    background-color: var(--medium-gray);
+                    border-radius: 5px;
+                    margin: 20px 0;
+                    cursor: pointer;
+                }
+                
+                #${uniqueId} .progress-bar {
+                    height: 100%;
+                    background-color: var(--primary-color);
+                    border-radius: 5px;
+                    width: 0%;
+                    transition: width 0.1s linear;
+                }
+                
+                #${uniqueId} .time-display {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    color: var(--dark-gray);
+                    margin-bottom: 20px;
+                }
+                
+                #${uniqueId} .volume-control {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                    color: var(--text-color);
+                }
+                
+                #${uniqueId} input[type="range"] {
+                    width: 100%;
+                }
+                
+                #${uniqueId} .playlist {
+                    max-height: 300px;
+                    overflow-y: auto;
+                    border-top: 1px solid var(--medium-gray);
+                    padding-top: 15px;
+                }
+                
+                #${uniqueId} .playlist-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    border-bottom: 1px solid var(--medium-gray);
+                    cursor: pointer;
+                    transition: background-color 0.2s;
+                    color: var(--text-color);
+                    white-space: nowrap;
+                }
+                
+                #${uniqueId} .playlist-item:hover {
+                    background-color: var(--light-gray);
+                }
+                
+                #${uniqueId} .playlist-item.active {
+                    background-color: rgba(67, 97, 238, 0.1);
+                }
+                
+                #${uniqueId} .playlist-item.active .name {
+                    color: var(--primary-color) !important;
+                    font-weight: bold;
+                }
+                
+                #${uniqueId} .index {
+                    width: 25px;
+                    text-align: center;
+                    color: var(--dark-gray);
+                    margin-right: 10px;
+                    flex-shrink: 0;
+                }
+                
+                #${uniqueId} .name {
+                    flex: 1;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                
+                #${uniqueId} .empty-state {
+                    text-align: center;
+                    color: var(--dark-gray);
+                    padding: 20px;
+                }
+                
+                #${uniqueId} #loading-indicator {
+                    display: none;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 20px 0;
+                    background: rgba(240, 244, 255, 0.8);
+                    border-radius: 10px;
+                    border: 1px solid #d0d8e8;
+                }
+                
+                #${uniqueId} .spinner {
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto 15px;
+                    border: 4px solid rgba(67, 97, 238, 0.3);
+                    border-radius: 50%;
+                    border-top-color: var(--primary-color);
+                    animation: spin 1s ease-in-out infinite;
+                }
+                
+                @keyframes spin {
+                    to { transform: rotate(360deg); }
+                }
+                
+                #${uniqueId} .progress-text {
+                    margin-top: 10px;
+                    color: var(--primary-color);
+                    font-size: 14px;
+                }
+                
+                #${uniqueId} .upload-progress-container {
+                    height: 10px;
+                    background-color: var(--medium-gray);
+                    border-radius: 5px;
+                    margin-top: 15px;
+                    overflow: hidden;
+                }
+                
+                #${uniqueId} .upload-progress-bar {
+                    height: 100%;
+                    background-color: var(--primary-color);
+                    width: 0%;
+                    transition: width 0.3s ease;
+                }
+                
+                @media (max-width: 500px) {
+                    #${uniqueId} #music-player {
+                        padding: 20px;
                     }
                     
-                    #music-player {
-                        background-color: var(--white);
-                        border-radius: 15px;
-                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-                        padding: 30px;
-                        width: 100%;
-                        max-width: 1000px;
-                        margin: 20px auto;
-                        box-sizing: border-box;
-                    }
-                    
-                    .player-header {
-                        text-align: center;
-                        margin-bottom: 20px;
-                        color: var(--text-color);
-                    }
-                    
-                    .folder-input-container {
-                        text-align: center;
-                        margin-bottom: 20px;
-                    }
-                    
-                    .folder-input-label {
-                        display: inline-block;
-                        background-color: var(--primary-color);
-                        color: var(--white);
-                        padding: 10px 20px;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        transition: background-color 0.3s;
-                    }
-                    
-                    .folder-input-label:hover {
-                        background-color: var(--primary-hover);
-                    }
-                    
-                    input[type="file"] {
-                        display: none;
-                    }
-                    
-                    .player-controls {
-                        display: flex;
-                        justify-content: center;
-                        gap: 20px;
-                        margin: 20px 0;
-                    }
-                    
-                    .control-btn, .mode-btn {
-                        background-color: var(--primary-color);
-                        color: var(--white);
-                        border: none;
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 50%;
-                        cursor: pointer;
-                        font-size: 16px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        transition: background-color 0.3s;
-                    }
-                    
-                    .control-btn:hover, .mode-btn:hover {
-                        background-color: var(--primary-hover);
-                    }
-                    
-                    .mode-btn {
-                        border-radius: 20px;
-                        width: auto;
-                        padding: 0 15px;
-                    }
-                    
-                    .mode-btn.active {
-                        background-color: var(--active-color);
-                    }
-                    
-                    .progress-container {
-                        height: 5px;
-                        background-color: var(--medium-gray);
-                        border-radius: 5px;
-                        margin: 20px 0;
-                        cursor: pointer;
-                    }
-                    
-                    .progress-bar {
-                        height: 100%;
-                        background-color: var(--primary-color);
-                        border-radius: 5px;
-                        width: 0%;
-                        transition: width 0.1s linear;
-                    }
-                    
-                    .time-display {
-                        display: flex;
-                        justify-content: space-between;
-                        font-size: 14px;
-                        color: var(--dark-gray);
-                        margin-bottom: 20px;
-                    }
-                    
-                    .volume-control {
-                        display: flex;
-                        align-items: center;
+                    #${uniqueId} .player-controls {
                         gap: 10px;
-                        margin-bottom: 20px;
-                        color: var(--text-color);
                     }
                     
-                    input[type="range"] {
-                        width: 100%;
-                    }
-                    
-                    .playlist {
-                        max-height: 300px;
-                        overflow-y: auto;
-                        border-top: 1px solid var(--medium-gray);
-                        padding-top: 15px;
-                    }
-                    
-                    .playlist-item {
-                        display: flex;
-                        align-items: center;
-                        padding: 10px;
-                        border-bottom: 1px solid var(--medium-gray);
-                        cursor: pointer;
-                        transition: background-color 0.2s;
-                        color: var(--text-color);
-                        white-space: nowrap; /* 防止项目换行 */
-                    }
-                    
-                    .playlist-item:hover {
-                        background-color: var(--light-gray);
-                    }
-                    
-                    .playlist-item.active {
-                        background-color: rgba(67, 97, 238, 0.1);
-                    }
-                    
-                    .playlist-item.active .name {
-                        color: var(--primary-color) !important;
-                        font-weight: bold;
-                    }
-                    
-                    .index {
-                        width: 25px;
-                        text-align: center;
-                        color: var(--dark-gray);
-                        margin-right: 10px;
-                        flex-shrink: 0; /* 防止序号被压缩 */
-                    }
-                    
-                    .name {
-                        flex: 1;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                    
-                    .empty-state {
-                        text-align: center;
-                        color: var(--dark-gray);
-                        padding: 20px;
-                    }
-                    
-                    #loading-indicator {
-                        display: none;
-                        text-align: center;
-                        padding: 20px;
-                        margin: 20px 0;
-                        background: rgba(240, 244, 255, 0.8);
-                        border-radius: 10px;
-                        border: 1px solid #d0d8e8;
-                    }
-                    
-                    .spinner {
-                        width: 40px;
-                        height: 40px;
-                        margin: 0 auto 15px;
-                        border: 4px solid rgba(67, 97, 238, 0.3);
-                        border-radius: 50%;
-                        border-top-color: var(--primary-color);
-                        animation: spin 1s ease-in-out infinite;
-                    }
-                    
-                    @keyframes spin {
-                        to { transform: rotate(360deg); }
-                    }
-                    
-                    .progress-text {
-                        margin-top: 10px;
-                        color: var(--primary-color);
+                    #${uniqueId} .control-btn, #${uniqueId} .mode-btn {
+                        width: 35px;
+                        height: 35px;
                         font-size: 14px;
                     }
                     
-                    .upload-progress-container {
-                        height: 10px;
-                        background-color: var(--medium-gray);
-                        border-radius: 5px;
-                        margin-top: 15px;
-                        overflow: hidden;
+                    #${uniqueId} .mode-btn {
+                        padding: 0 10px;
                     }
-                    
-                    .upload-progress-bar {
-                        height: 100%;
-                        background-color: var(--primary-color);
-                        width: 0%;
-                        transition: width 0.3s ease;
-                    }
-                    
-                    @media (max-width: 500px) {
-                        #music-player {
-                            padding: 20px;
-                        }
-                        
-                        .player-controls {
-                            gap: 10px;
-                        }
-                        
-                        .control-btn, .mode-btn {
-                            width: 35px;
-                            height: 35px;
-                            font-size: 14px;
-                        }
-                        
-                        .mode-btn {
-                            padding: 0 10px;
-                        }
-                    }
-                </style>
+                }
+            </style>
+            <div id="${uniqueId}">
                 <div id="music-player">
                     <div class="player-header">
                         <p id="status-text">请选择包含音乐的文件夹</p>
@@ -442,360 +443,361 @@
                     <div class="volume-control">
                         <span>音量:</span>
                         <input type="range" id="volume" min="0" max="1" step="0.01" value="0.3">
-                        <span id="volume-percentage">30%</span> <!-- 新增音量百分比显示 -->
+                        <span id="volume-percentage">30%</span>
                     </div>
 
                     <div class="playlist" id="playlist">
                         <div class="empty-state">暂无音乐，请选择文件夹</div>
                     </div>
                 </div>
-            `;
+            </div>
+        `;
 
-            // 从 Shadow DOM 中获取元素
-            const getElement = (id) => shadowRoot.getElementById(id);
+        // 获取元素时加上唯一ID前缀
+        const getElement = (id) => document.querySelector(`#${uniqueId} #${id}`);
+        
+        const audio = new Audio();
+        let currentTrackIndex = 0;
+        let tracks = [];
+        let isPlaying = false;
+        let isShuffleMode = true;
+        let originalOrder = [];
+        let currentFileURLs = new Set();
+
+        // 获取元素
+        const playBtn = getElement('play-btn');
+        const prevBtn = getElement('prev-btn');
+        const nextBtn = getElement('next-btn');
+        const shuffleBtn = getElement('shuffle-btn');
+        const sequentialBtn = getElement('sequential-btn');
+        const progressContainer = getElement('progress-container');
+        const progressBar = getElement('progress-bar');
+        const currentTimeEl = getElement('current-time');
+        const durationEl = getElement('duration');
+        const volumeControl = getElement('volume');
+        const playlistEl = getElement('playlist');
+        const folderInput = getElement('folder-input');
+        const statusText = getElement('status-text');
+        const loadingIndicator = getElement('loading-indicator');
+        const progressText = getElement('progress-text');
+        const uploadProgressBar = getElement('upload-progress-bar');
+        const volumePercentage = getElement('volume-percentage');
+
+        // 加载音乐文件夹
+        folderInput.addEventListener('change', async function (e) {
+            cleanupFileURLs();
             
-            const audio = new Audio();
-            let currentTrackIndex = 0;
-            let tracks = [];
-            let isPlaying = false;
-            let isShuffleMode = true; // 默认随机播放
-            let originalOrder = [];
-            let currentFileURLs = new Set();
+            const files = Array.from(e.target.files).filter(file =>
+                file.type.startsWith('audio/')
+            );
 
-            // 获取 Shadow DOM 中的元素
-            const playBtn = getElement('play-btn');
-            const prevBtn = getElement('prev-btn');
-            const nextBtn = getElement('next-btn');
-            const shuffleBtn = getElement('shuffle-btn');
-            const sequentialBtn = getElement('sequential-btn');
-            const progressContainer = getElement('progress-container');
-            const progressBar = getElement('progress-bar');
-            const currentTimeEl = getElement('current-time');
-            const durationEl = getElement('duration');
-            const volumeControl = getElement('volume');
-            const playlistEl = getElement('playlist');
-            const folderInput = getElement('folder-input');
-            const statusText = getElement('status-text');
-            const loadingIndicator = getElement('loading-indicator');
-            const progressText = getElement('progress-text');
-            const uploadProgressBar = getElement('upload-progress-bar');
-            const volumePercentage = getElement('volume-percentage'); // 新增音量百分比元素
-
-            // 加载音乐文件夹
-            folderInput.addEventListener('change', async function (e) {
-                cleanupFileURLs();
-                
-                const files = Array.from(e.target.files).filter(file =>
-                    file.type.startsWith('audio/')
-                );
-
-                if (files.length === 0) {
-                    statusText.textContent = "文件夹中没有找到音乐文件";
-                    return;
-                }
-
-                loadingIndicator.style.display = 'block';
-                statusText.textContent = `正在加载 ${files.length} 首音乐...`;
-                uploadProgressBar.style.width = '0%';
-                progressText.textContent = '准备中...';
-                
-                try {
-                    tracks = await processFilesWithProgress(files);
-                    originalOrder = [...tracks];
-                    renderPlaylist();
-                    loadTrack(currentTrackIndex);
-                    updateButtons();
-                    statusText.textContent = `已加载 ${tracks.length} 首音乐，准备播放`;
-                } catch (error) {
-                    console.error("加载音乐失败:", error);
-                    statusText.textContent = "加载音乐时出错: " + error.message;
-                } finally {
-                    loadingIndicator.style.display = 'none';
-                }
-            });
-
-            // 带进度反馈的文件处理函数
-            async function processFilesWithProgress(files) {
-                return new Promise((resolve, reject) => {
-                    const results = [];
-                    const total = files.length;
-                    let processed = 0;
-                    let failed = 0;
-                    
-                    const processNextBatch = (index) => {
-                        if (index >= total) {
-                            if (processed === 0 && failed > 0) {
-                                reject(new Error("无法处理任何音乐文件"));
-                            } else {
-                                resolve(results);
-                            }
-                            return;
-                        }
-                        
-                        const batchSize = 5;
-                        const endIndex = Math.min(index + batchSize, total);
-                        
-                        for (let i = index; i < endIndex; i++) {
-                            const file = files[i];
-                            
-                            if (currentFileURLs.has(file.name)) {
-                                console.warn(`跳过重复文件: ${file.name}`);
-                                processed++;
-                                continue;
-                            }
-                            
-                            try {
-                                const fileURL = URL.createObjectURL(file);
-                                currentFileURLs.add(file.name);
-                                
-                                results.push({
-                                    index: results.length + 1,
-                                    name: file.name.replace(/\.[^/.]+$/, ""),
-                                    path: fileURL,
-                                    file: file
-                                });
-                                processed++;
-                            } catch (error) {
-                                console.error(`处理文件 ${file.name} 失败:`, error);
-                                failed++;
-                            }
-                        }
-                        
-                        const percent = Math.round((processed / total) * 100);
-                        uploadProgressBar.style.width = `${percent}%`;
-                        progressText.textContent = `${processed}/${total} 文件已处理${failed > 0 ? ` (${failed} 个失败)` : ''}`;
-                        
-                        setTimeout(() => processNextBatch(endIndex), 10);
-                    };
-                    
-                    processNextBatch(0);
-                });
+            if (files.length === 0) {
+                statusText.textContent = "文件夹中没有找到音乐文件";
+                return;
             }
 
-            // 清理所有已创建的文件URL
-            function cleanupFileURLs() {
-                if (audio.src && audio.src.startsWith('blob:')) {
-                    URL.revokeObjectURL(audio.src);
-                }
-                
-                currentFileURLs.forEach(url => {
-                    try {
-                        URL.revokeObjectURL(url);
-                    } catch (error) {
-                        console.error("释放URL失败:", error);
-                    }
-                });
-                
-                currentFileURLs.clear();
-            }
-
-            // 渲染播放列表
-            function renderPlaylist() {
-                if (tracks.length === 0) {
-                    playlistEl.innerHTML = '<div class="empty-state">暂无音乐，请选择文件夹</div>';
-                    return;
-                }
-
-                playlistEl.innerHTML = '';
-                tracks.forEach((track, index) => {
-                    const item = document.createElement('div');
-                    item.className = `playlist-item ${index === currentTrackIndex ? 'active' : ''}`;
-                    item.innerHTML = `
-                        <span class="index">${index + 1}</span>
-                        <span class="name">${track.name}</span>
-                    `;
-                    item.addEventListener('click', () => {
-                        currentTrackIndex = index;
-                        loadTrack(currentTrackIndex);
-                        playTrack();
-                    });
-                    playlistEl.appendChild(item);
-                });
-                
-                // 自动滚动到当前选中的音乐
-                scrollToActiveTrack();
-            }
-
-            // 自动滚动到当前选中的音乐
-            function scrollToActiveTrack() {
-                const activeItem = playlistEl.querySelector('.playlist-item.active');
-                if (activeItem) {
-                    activeItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-            }
-
-            // 加载曲目
-            function loadTrack(index) {
-                if (tracks.length === 0) return;
-
-                const track = tracks[index];
-                
-                if (audio.src && audio.src.startsWith('blob:')) {
-                    URL.revokeObjectURL(audio.src);
-                }
-                
-                audio.src = track.path;
-                audio.volume = 0.3; // 确保音频音量初始化为30%
-                audio.load();
-
-                statusText.textContent = `正在播放: ${track.name} (${index + 1}/${tracks.length})`;
+            loadingIndicator.style.display = 'block';
+            statusText.textContent = `正在加载 ${files.length} 首音乐...`;
+            uploadProgressBar.style.width = '0%';
+            progressText.textContent = '准备中...';
+            
+            try {
+                tracks = await processFilesWithProgress(files);
+                originalOrder = [...tracks];
                 renderPlaylist();
-                updateVolumePercentage(0.3); // 确保显示正确
-            }
-
-            // 播放曲目
-            function playTrack() {
-                if (tracks.length === 0) return;
-
-                audio.play()
-                    .then(() => {
-                        isPlaying = true;
-                        playBtn.textContent = '⏸';
-                        playBtn.title = "暂停";
-                    })
-                    .catch(error => {
-                        console.error("播放失败:", error);
-                        statusText.textContent = `播放失败: ${error.message}`;
-                    });
-            }
-
-            // 暂停曲目
-            function pauseTrack() {
-                audio.pause();
-                isPlaying = false;
-                playBtn.textContent = '▶';
-                playBtn.title = "播放";
-            }
-
-            // 下一首
-            function nextTrack() {
-                if (tracks.length === 0) return;
-
-                if (isShuffleMode) {
-                    currentTrackIndex = Math.floor(Math.random() * tracks.length);
-                } else {
-                    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-                }
-
                 loadTrack(currentTrackIndex);
-                playTrack();
+                updateButtons();
+                statusText.textContent = `已加载 ${tracks.length} 首音乐，准备播放`;
+            } catch (error) {
+                console.error("加载音乐失败:", error);
+                statusText.textContent = "加载音乐时出错: " + error.message;
+            } finally {
+                loadingIndicator.style.display = 'none';
             }
-
-            // 上一首
-            function prevTrack() {
-                if (tracks.length === 0) return;
-
-                if (isShuffleMode) {
-                    currentTrackIndex = Math.floor(Math.random() * tracks.length);
-                } else {
-                    currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
-                }
-
-                loadTrack(currentTrackIndex);
-                playTrack();
-            }
-
-            // 切换随机播放模式
-            function toggleShuffleMode() {
-                isShuffleMode = true;
-                shuffleBtn.classList.add('active');
-                sequentialBtn.classList.remove('active');
-            }
-
-            // 切换顺序播放模式
-            function toggleSequentialMode() {
-                isShuffleMode = false;
-                sequentialBtn.classList.add('active');
-                shuffleBtn.classList.remove('active');
-            }
-
-            // 更新按钮状态
-            function updateButtons() {
-                const hasTracks = tracks.length > 0;
-                prevBtn.disabled = !hasTracks || tracks.length <= 1;
-                nextBtn.disabled = !hasTracks || tracks.length <= 1;
-
-                if (hasTracks) {
-                    playBtn.disabled = false;
-                }
-            }
-
-            // 播放/暂停按钮点击事件
-            playBtn.addEventListener('click', () => {
-                if (tracks.length === 0) {
-                    folderInput.click();
-                    return;
-                }
-
-                if (isPlaying) {
-                    pauseTrack();
-                } else {
-                    playTrack();
-                }
-            });
-
-            // 注册其他按钮事件
-            nextBtn.addEventListener('click', nextTrack);
-            prevBtn.addEventListener('click', prevTrack);
-            shuffleBtn.addEventListener('click', toggleShuffleMode);
-            sequentialBtn.addEventListener('click', toggleSequentialMode);
-
-            // 音频时间更新事件
-            audio.addEventListener('timeupdate', function() {
-                if (isNaN(audio.duration)) return;
-
-                const progressPercent = (audio.currentTime / audio.duration) * 100;
-                progressBar.style.width = `${progressPercent}%`;
-
-                currentTimeEl.textContent = formatTime(audio.currentTime);
-                durationEl.textContent = formatTime(audio.duration);
-            });
-
-            // 格式化时间显示
-            function formatTime(seconds) {
-                const mins = Math.floor(seconds / 60);
-                const secs = Math.floor(seconds % 60);
-                return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-            }
-
-            // 进度条点击事件
-            progressContainer.addEventListener('click', (e) => {
-                if (isNaN(audio.duration)) return;
-
-                const width = progressContainer.clientWidth;
-                const clickX = e.offsetX;
-                const duration = audio.duration;
-
-                audio.currentTime = (clickX / width) * duration;
-            });
-
-            // 音量控制
-            volumeControl.addEventListener('input', (e) => {
-                const volume = parseFloat(e.target.value);
-                audio.volume = volume;
-                updateVolumePercentage(volume);
-            });
-
-            // 更新音量百分比显示
-            function updateVolumePercentage(volume) {
-                const percentage = Math.round(volume * 100);
-                volumePercentage.textContent = `${percentage}%`;
-            }
-
-            // 音频播放结束事件
-            audio.addEventListener('ended', nextTrack);
-            
-            // 初始化音量和显示
-            updateVolumePercentage(0.3);
-            audio.volume = 0.3; // 确保音频对象音量也设置为30%
-            
-            // 默认随机播放
-            toggleShuffleMode();
-            
-            // 页面卸载时清理资源
-            window.addEventListener('beforeunload', cleanupFileURLs);
         });
-    </script>
+
+        // 带进度反馈的文件处理函数
+        async function processFilesWithProgress(files) {
+            return new Promise((resolve, reject) => {
+                const results = [];
+                const total = files.length;
+                let processed = 0;
+                let failed = 0;
+                
+                const processNextBatch = (index) => {
+                    if (index >= total) {
+                        if (processed === 0 && failed > 0) {
+                            reject(new Error("无法处理任何音乐文件"));
+                        } else {
+                            resolve(results);
+                        }
+                        return;
+                    }
+                    
+                    const batchSize = 5;
+                    const endIndex = Math.min(index + batchSize, total);
+                    
+                    for (let i = index; i < endIndex; i++) {
+                        const file = files[i];
+                        
+                        if (currentFileURLs.has(file.name)) {
+                            console.warn(`跳过重复文件: ${file.name}`);
+                            processed++;
+                            continue;
+                        }
+                        
+                        try {
+                            const fileURL = URL.createObjectURL(file);
+                            currentFileURLs.add(file.name);
+                            
+                            results.push({
+                                index: results.length + 1,
+                                name: file.name.replace(/\.[^/.]+$/, ""),
+                                path: fileURL,
+                                file: file
+                            });
+                            processed++;
+                        } catch (error) {
+                            console.error(`处理文件 ${file.name} 失败:`, error);
+                            failed++;
+                        }
+                    }
+                    
+                    const percent = Math.round((processed / total) * 100);
+                    uploadProgressBar.style.width = `${percent}%`;
+                    progressText.textContent = `${processed}/${total} 文件已处理${failed > 0 ? ` (${failed} 个失败)` : ''}`;
+                    
+                    setTimeout(() => processNextBatch(endIndex), 10);
+                };
+                
+                processNextBatch(0);
+            });
+        }
+
+        // 清理所有已创建的文件URL
+        function cleanupFileURLs() {
+            if (audio.src && audio.src.startsWith('blob:')) {
+                URL.revokeObjectURL(audio.src);
+            }
+            
+            currentFileURLs.forEach(url => {
+                try {
+                    URL.revokeObjectURL(url);
+                } catch (error) {
+                    console.error("释放URL失败:", error);
+                }
+            });
+            
+            currentFileURLs.clear();
+        }
+
+        // 渲染播放列表
+        function renderPlaylist() {
+            if (tracks.length === 0) {
+                playlistEl.innerHTML = '<div class="empty-state">暂无音乐，请选择文件夹</div>';
+                return;
+            }
+
+            playlistEl.innerHTML = '';
+            tracks.forEach((track, index) => {
+                const item = document.createElement('div');
+                item.className = `playlist-item ${index === currentTrackIndex ? 'active' : ''}`;
+                item.innerHTML = `
+                    <span class="index">${index + 1}</span>
+                    <span class="name">${track.name}</span>
+                `;
+                item.addEventListener('click', () => {
+                    currentTrackIndex = index;
+                    loadTrack(currentTrackIndex);
+                    playTrack();
+                });
+                playlistEl.appendChild(item);
+            });
+            
+            // 自动滚动到当前选中的音乐
+            scrollToActiveTrack();
+        }
+
+        // 自动滚动到当前选中的音乐
+        function scrollToActiveTrack() {
+            const activeItem = playlistEl.querySelector('.playlist-item.active');
+            if (activeItem) {
+                activeItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        // 加载曲目
+        function loadTrack(index) {
+            if (tracks.length === 0) return;
+
+            const track = tracks[index];
+            
+            if (audio.src && audio.src.startsWith('blob:')) {
+                URL.revokeObjectURL(audio.src);
+            }
+            
+            audio.src = track.path;
+            audio.volume = 0.3;
+            audio.load();
+
+            statusText.textContent = `正在播放: ${track.name} (${index + 1}/${tracks.length})`;
+            renderPlaylist();
+            updateVolumePercentage(0.3);
+        }
+
+        // 播放曲目
+        function playTrack() {
+            if (tracks.length === 0) return;
+
+            audio.play()
+                .then(() => {
+                    isPlaying = true;
+                    playBtn.textContent = '⏸';
+                    playBtn.title = "暂停";
+                })
+                .catch(error => {
+                    console.error("播放失败:", error);
+                    statusText.textContent = `播放失败: ${error.message}`;
+                });
+        }
+
+        // 暂停曲目
+        function pauseTrack() {
+            audio.pause();
+            isPlaying = false;
+            playBtn.textContent = '▶';
+            playBtn.title = "播放";
+        }
+
+        // 下一首
+        function nextTrack() {
+            if (tracks.length === 0) return;
+
+            if (isShuffleMode) {
+                currentTrackIndex = Math.floor(Math.random() * tracks.length);
+            } else {
+                currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+            }
+
+            loadTrack(currentTrackIndex);
+            playTrack();
+        }
+
+        // 上一首
+        function prevTrack() {
+            if (tracks.length === 0) return;
+
+            if (isShuffleMode) {
+                currentTrackIndex = Math.floor(Math.random() * tracks.length);
+            } else {
+                currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+            }
+
+            loadTrack(currentTrackIndex);
+            playTrack();
+        }
+
+        // 切换随机播放模式
+        function toggleShuffleMode() {
+            isShuffleMode = true;
+            shuffleBtn.classList.add('active');
+            sequentialBtn.classList.remove('active');
+        }
+
+        // 切换顺序播放模式
+        function toggleSequentialMode() {
+            isShuffleMode = false;
+            sequentialBtn.classList.add('active');
+            shuffleBtn.classList.remove('active');
+        }
+
+        // 更新按钮状态
+        function updateButtons() {
+            const hasTracks = tracks.length > 0;
+            prevBtn.disabled = !hasTracks || tracks.length <= 1;
+            nextBtn.disabled = !hasTracks || tracks.length <= 1;
+
+            if (hasTracks) {
+                playBtn.disabled = false;
+            }
+        }
+
+        // 播放/暂停按钮点击事件
+        playBtn.addEventListener('click', () => {
+            if (tracks.length === 0) {
+                folderInput.click();
+                return;
+            }
+
+            if (isPlaying) {
+                pauseTrack();
+            } else {
+                playTrack();
+            }
+        });
+
+        // 注册其他按钮事件
+        nextBtn.addEventListener('click', nextTrack);
+        prevBtn.addEventListener('click', prevTrack);
+        shuffleBtn.addEventListener('click', toggleShuffleMode);
+        sequentialBtn.addEventListener('click', toggleSequentialMode);
+
+        // 音频时间更新事件
+        audio.addEventListener('timeupdate', function() {
+            if (isNaN(audio.duration)) return;
+
+            const progressPercent = (audio.currentTime / audio.duration) * 100;
+            progressBar.style.width = `${progressPercent}%`;
+
+            currentTimeEl.textContent = formatTime(audio.currentTime);
+            durationEl.textContent = formatTime(audio.duration);
+        });
+
+        // 格式化时间显示
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        // 进度条点击事件
+        progressContainer.addEventListener('click', (e) => {
+            if (isNaN(audio.duration)) return;
+
+            const width = progressContainer.clientWidth;
+            const clickX = e.offsetX;
+            const duration = audio.duration;
+
+            audio.currentTime = (clickX / width) * duration;
+        });
+
+        // 音量控制
+        volumeControl.addEventListener('input', (e) => {
+            const volume = parseFloat(e.target.value);
+            audio.volume = volume;
+            updateVolumePercentage(volume);
+        });
+
+        // 更新音量百分比显示
+        function updateVolumePercentage(volume) {
+            const percentage = Math.round(volume * 100);
+            volumePercentage.textContent = `${percentage}%`;
+        }
+
+        // 音频播放结束事件
+        audio.addEventListener('ended', nextTrack);
+        
+        // 初始化音量和显示
+        updateVolumePercentage(0.3);
+        audio.volume = 0.3;
+        
+        // 默认随机播放
+        toggleShuffleMode();
+        
+        // 页面卸载时清理资源
+        window.addEventListener('beforeunload', cleanupFileURLs);
+    })();
+</script>
 
 </div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言📝</p><div class="bg-ad"><div>我清楚地知道，人与人的路都是不可复制的。我走在我自己的人生路上，哪怕路途的风雨再大，大到我步履维艰。哪怕荆棘丛生，刺得我伤痕遍布。我也仍旧痴痴笑笑，我体会此中滋味！✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://travel.moe/go.html">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看👀</p><ul class="ft-links"><li><a href="/personal/about/">关于我</a><a href="/personal/time/">我の名言</a></li><li><a href="/personal/love/">我の目标</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/life/gallery/">图片中心</a><a href="/bangumis/">视频中心</a></li><li><a href="/life/music/">音乐中心</a><a href="/link/">网址导航</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">常用网站🔗</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.bilibili.com/" title="biliblil"><img src="https://pic1.imgdb.cn/item/680a376d58cb8da5c8c90e48.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="http://10.17.8.18/" title="上网登录页面"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.moj_dQ_RC01f_M5c1SWn8AHaHa?w=187&amp;h=186&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://ehall.jxust.edu.cn/new/index.html" title="江理教务系统"><img src="https://p1.ssl.qhimg.com/t0126983fc5d3e99384.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://github.com/" title="github"><img src="https://pic1.imgdb.cn/item/680a3b5e58cb8da5c8c90ffd.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.meishuzi.cn/" title="艺术字"><img src="https://pic1.imgdb.cn/item/6810db1958cb8da5c8d46fcc.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://chat.deepseek.com/" title="deepseek"><img src="https://cdn.deepseek.com/chat/icon.png" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2023-2025</b></span><span><b>&nbsp;&nbsp;By 孙 伟</b></span></div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src="https://sourcebucket.s3.bitiful.net/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20251970" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20251970号"><img src="https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/%E8%90%8CICP%E5%A4%87-20251970-sunwei.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" title="本站使用JsDelivr为静态资源提供CDN加速"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
   endLoading: () => {
@@ -935,37 +937,6 @@ document.addEventListener('pjax:error', (e) => {
     parent.insertAdjacentHTML("afterbegin",child)}
      </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
     <style></style><script data-pjax>
-  function butterfly_clock_anzhiyu_injector_config(){
-    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
-    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
-    console.log('已挂载butterfly_clock_anzhiyu')
-    if(parent_div_git) {
-      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
-    }
-  }
-  var elist = 'null'.split(',');
-  var cpage = location.pathname;
-  var epage = '/';
-  var qweather_key = '1d43e1b22f3c49819f8be4db2d32de4c';
-  var gaud_map_key = '173e5a64e3468ca57ff80790e6fbbb5b';
-  var baidu_ak_key = 'undefined';
-  var flag = 0;
-  var clock_rectangle = '113.34532,23.15624';
-  var clock_default_rectangle_enable = 'false';
-
-  for (var i=0;i<elist.length;i++){
-    if (cpage.includes(elist[i])){
-      flag++;
-    }
-  }
-
-  if ((epage ==='all')&&(flag == 0)){
-    butterfly_clock_anzhiyu_injector_config();
-  }
-  else if (epage === cpage){
-    butterfly_clock_anzhiyu_injector_config();
-  }
-  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
   function butterfly_swiper_injector_config(){
     var parent_div_git = document.getElementById('recent-posts');
     var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/36730b1.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://s1.imagehub.cc/images/2025/04/29/4bdb66b5d91b53a5eb209fc0b57ff89e.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-19</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/36730b1.html&quot;);" href="javascript:void(0);" alt="">Privacy_1【连载】</a><div class="blog-slider__text">私密文章，不准看！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/36730b1.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/40d5d886.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic1.imgdb.cn/item/6803a0aa58cb8da5c8b698a0.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/40d5d886.html&quot;);" href="javascript:void(0);" alt="">明日方舟戒抽卡【连载】</a><div class="blog-slider__text">忍住, 别抽!</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/40d5d886.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/34823162.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://s1.imagehub.cc/images/2025/04/29/96520ea34d9eb0dc0fb5331ad84a9e75.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-24</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/34823162.html&quot;);" href="javascript:void(0);" alt="">文件后缀汇总【连载】</a><div class="blog-slider__text">用于总结经常遇到的文件后缀，便于查阅。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/34823162.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/5d5f709f.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic1.imgdb.cn/item/6811e1d758cb8da5c8d54f46.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-05-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/5d5f709f.html&quot;);" href="javascript:void(0);" alt="">论文基础教程【连载】</a><div class="blog-slider__text">记录了写论文的一些基础操作，方便日后查询。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/5d5f709f.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/866f8dd.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://s1.imagehub.cc/images/2025/04/29/e4be4ac0f6f5295be804ea7adea51323.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-01-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/866f8dd.html&quot;);" href="javascript:void(0);" alt="">Markdown语法【✔】</a><div class="blog-slider__text">本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/866f8dd.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/b2c4a846.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic1.imgdb.cn/item/6801b74488c538a9b5da3b00.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-02-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/b2c4a846.html&quot;);" href="javascript:void(0);" alt="">后悔の事（大学）【连载】</a><div class="blog-slider__text">用来记录我大学中所后悔の事，以警醒自己！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/b2c4a846.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/e4f91ab7.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic1.imgdb.cn/item/6811e1e058cb8da5c8d54f4c.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-05-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/e4f91ab7.html&quot;);" href="javascript:void(0);" alt="">文章属性&amp;值【连载】</a><div class="blog-slider__text">记录了写博客文章时，可能用到的文章属性&amp;值，方便写文章的查询！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/e4f91ab7.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/96709c09.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://s1.imagehub.cc/images/2025/04/29/6542b68c20fdfe5b692bb1551eb062b2.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-28</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/96709c09.html&quot;);" href="javascript:void(0);" alt="">Butterfly外挂标签【连载】</a><div class="blog-slider__text">Butterfly外挂标签，写博客文章教程。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/96709c09.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/e3462f83.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic1.imgdb.cn/item/6811e1e058cb8da5c8d54f4b.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-05-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/e3462f83.html&quot;);" href="javascript:void(0);" alt="">分类&amp;标签等汇总【连载】</a><div class="blog-slider__text">记录了博客文章的“分类”、“标签”、番剧的“标签”、名人名言的“标签”等。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/e3462f83.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/7cb43f71.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic1.imgdb.cn/item/68039ff558cb8da5c8b69585.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-04-19</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/7cb43f71.html&quot;);" href="javascript:void(0);" alt="">蛊真人【连载】</a><div class="blog-slider__text">读蛊真人，有感，作此文！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/7cb43f71.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
@@ -1005,4 +976,35 @@ for(var i = 0;i<arr.length;i++){
     arr[i].setAttribute('data-wow-delay', '200ms');
     arr[i].setAttribute('data-wow-offset', '30');
     arr[i].setAttribute('data-wow-iteration', '1');
-  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --></body></html>
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = '1d43e1b22f3c49819f8be4db2d32de4c';
+  var gaud_map_key = '173e5a64e3468ca57ff80790e6fbbb5b';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '113.34532,23.15624';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
