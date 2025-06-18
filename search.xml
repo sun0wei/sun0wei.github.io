@@ -70,10 +70,6 @@
       
         <tags>
             
-            <tag> 隐私 </tag>
-            
-            <tag> 自我控制 </tag>
-            
             <tag> 资金 </tag>
             
         </tags>
@@ -99,7 +95,7 @@
       
         <tags>
             
-            <tag> 查阅中心 </tag>
+            <tag> 同步 </tag>
             
         </tags>
       
@@ -124,7 +120,7 @@
       
         <tags>
             
-            <tag> 查阅中心 </tag>
+            <tag> 类别规划 </tag>
             
         </tags>
       
@@ -149,7 +145,7 @@
       
         <tags>
             
-            <tag> 查阅中心 </tag>
+            <tag> 文章 </tag>
             
         </tags>
       
@@ -199,9 +195,7 @@
       
         <tags>
             
-            <tag> 查阅中心 </tag>
-            
-            <tag> Butterfly </tag>
+            <tag> Butterfly语法 </tag>
             
         </tags>
       
@@ -276,9 +270,7 @@
       
         <tags>
             
-            <tag> 隐私 </tag>
-            
-            <tag> 自我控制 </tag>
+            <tag> 戒隐 </tag>
             
         </tags>
       
@@ -302,8 +294,6 @@
       
       
         <tags>
-            
-            <tag> 自我控制 </tag>
             
             <tag> 明日方舟 </tag>
             
@@ -332,8 +322,6 @@
             
             <tag> 后悔 </tag>
             
-            <tag> 隐私 </tag>
-            
         </tags>
       
     </entry>
@@ -357,9 +345,7 @@
       
         <tags>
             
-            <tag> Markdown </tag>
-            
-            <tag> 查阅中心 </tag>
+            <tag> Markdown语法 </tag>
             
         </tags>
       

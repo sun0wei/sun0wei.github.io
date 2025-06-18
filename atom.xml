@@ -73,10 +73,6 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="隐私" scheme="https://blog.sunwei.online/tags/%E9%9A%90%E7%A7%81/"/>
-    
-    <category term="自我控制" scheme="https://blog.sunwei.online/tags/%E8%87%AA%E6%88%91%E6%8E%A7%E5%88%B6/"/>
-    
     <category term="资金" scheme="https://blog.sunwei.online/tags/%E8%B5%84%E9%87%91/"/>
     
   </entry>
@@ -98,7 +94,7 @@
     <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
     
     
-    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
+    <category term="同步" scheme="https://blog.sunwei.online/tags/%E5%90%8C%E6%AD%A5/"/>
     
   </entry>
   
@@ -119,7 +115,7 @@
     <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
     
     
-    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
+    <category term="类别规划" scheme="https://blog.sunwei.online/tags/%E7%B1%BB%E5%88%AB%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
@@ -140,7 +136,7 @@
     <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
     
     
-    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
+    <category term="文章" scheme="https://blog.sunwei.online/tags/%E6%96%87%E7%AB%A0/"/>
     
   </entry>
   
@@ -182,9 +178,7 @@
     <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
     
     
-    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
-    
-    <category term="Butterfly" scheme="https://blog.sunwei.online/tags/Butterfly/"/>
+    <category term="Butterfly语法" scheme="https://blog.sunwei.online/tags/Butterfly%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -247,9 +241,7 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="隐私" scheme="https://blog.sunwei.online/tags/%E9%9A%90%E7%A7%81/"/>
-    
-    <category term="自我控制" scheme="https://blog.sunwei.online/tags/%E8%87%AA%E6%88%91%E6%8E%A7%E5%88%B6/"/>
+    <category term="戒隐" scheme="https://blog.sunwei.online/tags/%E6%88%92%E9%9A%90/"/>
     
   </entry>
   
@@ -269,8 +261,6 @@
     
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
-    
-    <category term="自我控制" scheme="https://blog.sunwei.online/tags/%E8%87%AA%E6%88%91%E6%8E%A7%E5%88%B6/"/>
     
     <category term="明日方舟" scheme="https://blog.sunwei.online/tags/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/"/>
     
@@ -295,8 +285,6 @@
     
     <category term="后悔" scheme="https://blog.sunwei.online/tags/%E5%90%8E%E6%82%94/"/>
     
-    <category term="隐私" scheme="https://blog.sunwei.online/tags/%E9%9A%90%E7%A7%81/"/>
-    
   </entry>
   
   <entry>
@@ -316,9 +304,7 @@
     <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Markdown" scheme="https://blog.sunwei.online/tags/Markdown/"/>
-    
-    <category term="查阅中心" scheme="https://blog.sunwei.online/tags/%E6%9F%A5%E9%98%85%E4%B8%AD%E5%BF%83/"/>
+    <category term="Markdown语法" scheme="https://blog.sunwei.online/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
