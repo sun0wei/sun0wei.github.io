@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2025-05-09T02:49:00.000Z</updated>
+  <updated>2025-06-18T08:40:00.000Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修改文字</title>
+    <link href="https://blog.sunwei.online/posts/28917463.html"/>
+    <id>https://blog.sunwei.online/posts/28917463.html</id>
+    <published>2025-06-18T08:29:00.000Z</published>
+    <updated>2025-06-18T08:40:00.000Z</updated>
+    
+    
+    <summary type="html">教你如何用PS修改特定区域的文字！</summary>
+    
+    
+    
+    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="PS" scheme="https://blog.sunwei.online/tags/PS/"/>
+    
+  </entry>
   
   <entry>
     <title>论文基础教程【连载】</title>
