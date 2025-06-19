@@ -227,7 +227,7 @@ hr:before,
 .layout > div:first-child:not(.recent-posts),
 #aside-content .card-widget,
 .layout > .recent-posts .pagination > *:not(.space) {
-  border-radius: 20px;
+  border-radius: 12px;
   background: var(--card-bg);
   -webkit-box-shadow: var(--card-box-shadow);
   box-shadow: var(--card-box-shadow);
