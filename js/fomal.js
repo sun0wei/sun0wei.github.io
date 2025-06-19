@@ -2972,7 +2972,7 @@ function toggleRightside() {
 
 // 透明度调节滑块
 if (localStorage.getItem("transNum") == undefined) {
-  localStorage.setItem("transNum", 100);
+  localStorage.setItem("transNum", 84);
 }
 var curTransNum = localStorage.getItem("transNum");
 var curTransMini = curTransNum * 0.95;
@@ -2992,7 +2992,7 @@ function setTrans() {
 
 // 模糊度调节滑块
 if (localStorage.getItem("blurRad") == undefined) {
-  localStorage.setItem("blurRad", 100);
+  localStorage.setItem("blurRad", 92);
 }
 var curBlur = localStorage.getItem("blurRad"); // 当前模糊半径
 var miniBlur = curBlur * 0.95;

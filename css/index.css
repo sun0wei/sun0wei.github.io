@@ -227,7 +227,7 @@ hr:before,
 .layout > div:first-child:not(.recent-posts),
 #aside-content .card-widget,
 .layout > .recent-posts .pagination > *:not(.space) {
-  border-radius: 8px;
+  border-radius: 20px;
   background: var(--card-bg);
   -webkit-box-shadow: var(--card-box-shadow);
   box-shadow: var(--card-box-shadow);
@@ -7633,10 +7633,10 @@ h6::before {
   display: none;
 }
 
-/* 首页隐藏看板娘 */
+/* 首页隐藏看板娘
 .page.home #waifu {
   display: none !important;
-}
+} */
 
 /* 友链一行显示更多 */
 .site-card {
