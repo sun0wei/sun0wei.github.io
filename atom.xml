@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2025-06-18T08:40:00.000Z</updated>
+  <updated>2025-06-19T08:40:00.000Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见存储设备📝</title>
+    <link href="https://blog.sunwei.online/posts/c636e01f.html"/>
+    <id>https://blog.sunwei.online/posts/c636e01f.html</id>
+    <published>2025-06-19T08:29:00.000Z</published>
+    <updated>2025-06-19T08:40:00.000Z</updated>
+    
+    
+    <summary type="html">介绍一些常见的存储设备，以及设备维护技巧。</summary>
+    
+    
+    
+    <category term="计算机基础" scheme="https://blog.sunwei.online/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="硬盘" scheme="https://blog.sunwei.online/tags/%E7%A1%AC%E7%9B%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何提升专注力？📝</title>
+    <link href="https://blog.sunwei.online/posts/7be6154a.html"/>
+    <id>https://blog.sunwei.online/posts/7be6154a.html</id>
+    <published>2025-06-19T08:29:00.000Z</published>
+    <updated>2025-06-19T08:40:00.000Z</updated>
+    
+    
+    <summary type="html">记录了一些提升专注力的方法。</summary>
+    
+    
+    
+    <category term="其它" scheme="https://blog.sunwei.online/categories/%E5%85%B6%E5%AE%83/"/>
+    
+    
+    <category term="专注力" scheme="https://blog.sunwei.online/tags/%E4%B8%93%E6%B3%A8%E5%8A%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>硬盘分区📝</title>
+    <link href="https://blog.sunwei.online/posts/9da27548.html"/>
+    <id>https://blog.sunwei.online/posts/9da27548.html</id>
+    <published>2025-06-19T08:29:00.000Z</published>
+    <updated>2025-06-19T08:40:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试!" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="aaaf1b71ff877305263fb0d16f3a05558842a8e45e8ec779d18e9b2be3545748">7f06c9cfbfaa9d4cc48d66d992572e3a9ade67243a09dd05c317880641fd5510</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-xray">      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">这里是我の加密文章，需要密码才能进入!</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">私密文章，不准看！</summary>
+    
+    
+    
+    <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+    <category term="硬盘" scheme="https://blog.sunwei.online/tags/%E7%A1%AC%E7%9B%98/"/>
+    
+  </entry>
   
   <entry>
     <title>修改文字📝</title>
@@ -158,27 +217,6 @@
     
     
     <category term="Butterfly" scheme="https://blog.sunwei.online/tags/Butterfly/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>演示📝</title>
-    <link href="https://blog.sunwei.online/posts/dbb82f80.html"/>
-    <id>https://blog.sunwei.online/posts/dbb82f80.html</id>
-    <published>2025-04-28T14:56:00.000Z</published>
-    <updated>2025-04-28T14:56:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<div class="note info simple"><p>演示案例，无用。</p></div>]]></content>
-    
-    
-    <summary type="html">演示案例，无用。</summary>
-    
-    
-    
-    <category term="其它" scheme="https://blog.sunwei.online/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-    <category term="演示" scheme="https://blog.sunwei.online/tags/%E6%BC%94%E7%A4%BA/"/>
     
   </entry>
   

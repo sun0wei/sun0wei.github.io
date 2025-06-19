@@ -7633,6 +7633,11 @@ h6::before {
   display: none;
 }
 
+/* 首页隐藏看板娘 */
+.page.home #waifu {
+  display: none !important;
+}
+
 /* 友链一行显示更多 */
 .site-card {
   width: calc(100% / 4 - 16px) !important;
@@ -9998,6 +10003,7 @@ hr:before {
     filter: none;
   }
 }
+
 .search-dialog {
   position: fixed;
   top: 10%;
