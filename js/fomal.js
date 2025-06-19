@@ -2852,7 +2852,6 @@ function clearItem() {
   localStorage.removeItem('blogbg');
   localStorage.removeItem('universe');
   localStorage.removeItem('blur');
-  localStorage.removeItem('fpson');
   localStorage.removeItem('transNum');
   localStorage.removeItem('blurRad');
   localStorage.removeItem('font');
@@ -3403,11 +3402,6 @@ function createWinbox() {
     document.getElementById("universeSet").checked = true;
   } else if (localStorage.getItem("universe") == "none") {
     document.getElementById("universeSet").checked = false;
-  }
-  if (localStorage.getItem("fpson") == "1") {
-    document.getElementById("fpson").checked = false;
-  } else {
-    document.getElementById("fpson").checked = true;
   }
   if (localStorage.getItem("rs") == "block") {
     document.getElementById("rightSideSet").checked = true;
