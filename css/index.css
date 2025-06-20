@@ -6561,8 +6561,8 @@ blockquote.pullquote.right {
 }
 #bangumis .bangumi-tabs {
   display: block;
-  border-radius: 15px;
-  border: 2px solid var(--km-card-bg);
+  border-radius: 9px;
+  border: 1px solid #000;
   text-align: center;
 }
 #bangumis .bangumi-tabs > p {
@@ -6593,8 +6593,8 @@ blockquote.pullquote.right {
   color: #90a4ae;
 }
 #bangumis #bangumi-top .multi {
-  border: 2px solid var(--km-card-bg);
-  border-radius: 15px;
+  border: 1px solid #000;
+  border-radius: 8px;
   text-align: left;
   margin-bottom: 5px;
   display: -webkit-box;
@@ -6672,7 +6672,7 @@ blockquote.pullquote.right {
   -ms-transition: all 0.2s;
   transition: all 0.2s;
   border-radius: 8px;
-  border: 1px rgba(102,204,255,0.6) dashed;
+  border: 1px #000 dashed;
   text-align: center;
 }
 #bangumis .card[link *= '/']:hover {
