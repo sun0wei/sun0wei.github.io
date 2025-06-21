@@ -8552,13 +8552,13 @@ input[type="range"]::-webkit-slider-thumb {
 } */
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/side.png);
+  background-image: url(https://pic1.imgdb.cn/item/6856855858cb8da5c860937e.jpg);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/side.png);
+  background-image: url(https://pic1.imgdb.cn/item/6856855858cb8da5c860937e.jpg);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
