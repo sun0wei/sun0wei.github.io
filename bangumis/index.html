@@ -252,7 +252,7 @@
     const config = await (await fetch(`${root}config.json`)).json()
     const sizeList = config.size
     // 单页卡片数量限制
-    const maxCount = 6
+    const maxCount = 10
     const dataAmount = config.amount
     // JSON
     const jsonMap = {
