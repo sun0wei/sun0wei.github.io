@@ -4407,7 +4407,7 @@ h1.page-title + .tag-cloud-list {
 }
 #article-container img {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 0px;
   max-width: 100%;
   -webkit-transition: filter 375ms ease-in 0.2s;
   -moz-transition: filter 375ms ease-in 0.2s;
@@ -5336,7 +5336,7 @@ mjx-container[display],
   width: -moz-fit-content;
 }
 #article-container .btn-beautify.block.center {
-  margin: 0 auto 20px;
+  margin: 0 auto 0px;
 }
 #article-container .btn-beautify.block.right {
   margin: 0 0 20px auto;
