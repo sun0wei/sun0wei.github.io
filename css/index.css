@@ -1876,7 +1876,7 @@ figure.highlight pre .javascript .function {
 #article-container .code-expand-btn:not(.expand-done) ~ table,
 #article-container .code-expand-btn:not(.expand-done) ~ pre {
   overflow: hidden;
-  height: 120px;
+  height: 240px;
 }
 @-moz-keyframes code-expand-key {
   0% {
@@ -4545,7 +4545,7 @@ h1.page-title + .tag-cloud-list {
   color: var(--pseudo-hover);
 }
 #article-container ul > li {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 #article-container > :last-child {
   margin-bottom: 0 !important;
