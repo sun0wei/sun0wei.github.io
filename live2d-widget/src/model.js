@@ -44,14 +44,14 @@ class Model {
             if (!this.modelList) await this.loadModelList();
             const target = randomSelection(this.modelList.models[modelId]);
             loadlive2d("live2d", `${this.cdnPath}model/${target}/index.json`);
-            showMessage("我去换件衣服，别偷看！", 4000, 10);
+            showMessage("我去换件衣服，别偷看！！", 4000, 10);
         } else {
             // 可选 "rand"(随机), "switch"(顺序)
             fetch(`${this.apiPath}rand_textures/?id=${modelId}-${modelTexturesId}`)
                 .then(response => response.json())
                 .then(result => {
                     if (result.textures.id === 1 && (modelTexturesId === 1 || modelTexturesId === 0)) showMessage("我还没有其他衣服呢！", 4000, 10);
-                    else this.loadModel(modelId, result.textures.id, "我去换件衣服，别偷看！");
+                    else this.loadModel(modelId, result.textures.id, "我去换件衣服，别偷看！！");
                 });
         }
     }
