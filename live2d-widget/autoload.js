@@ -41,6 +41,7 @@ if (screen.width >= 768) {
 			apiPath: "https://live2d.fghrsh.net/api/",
 			// cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
 			tools: ["hitokoto", "switch-texture", "photo", "quit"]
+			// tools: ["hitokoto", "photo", "quit"]
 		});
 	});
 }
