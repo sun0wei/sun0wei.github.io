@@ -6859,37 +6859,37 @@ blockquote.pullquote.right {
 /* 字体引入 */
 @font-face {
   font-family: YSHST;
-  src: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/%E4%BC%98%E8%AE%BE%E5%A5%BD%E8%BA%AB%E4%BD%93.woff2);
+  src: url(/assets/woff111.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: MiSans;
-  src: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/MiSans.woff2);
+  src: url(/assets/woff222.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: HYTMR;
-  src: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/HYTangMeiRen55W.woff2);
+  src: url(/assets/woff333.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: LXGW;
-  src: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/%E9%9C%9E%E9%B9%9C%E6%96%87%E6%A5%B7.woff2);
+  src: url(/assets/woff444.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: TTQHB;
-  src: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/%E7%94%9C%E7%94%9C%E5%9C%88%E6%B5%B7%E6%8A%A5%E5%AD%97%E4%BD%93.woff2);
+  src: url(/assets/woff555.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: ZhuZiAWan;
-  src: url(https://cdn.jsdelivr.net/gh/sun0wei/PicGo@main/img/%E7%AD%91%E7%B4%ABA%E4%B8%B8by%E5%AE%81%E9%9D%99%E4%B9%8B%E9%9B%A8.woff2);
+  src: url(/assets/woff666.woff2);
   font-display: swap;
 }
 
