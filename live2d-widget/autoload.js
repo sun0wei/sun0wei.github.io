@@ -1,8 +1,8 @@
 // live2d_path 参数建议使用绝对路径
-// const live2d_path = "https://cdn.jsdelivr.net/gh/sun0wei/live2d-widget/";
+const live2d_path = "https://cdn.jsdelivr.net/gh/sun0wei/live2d-widget/";
 // const live2d_path = "https://blog.sunwei.online/live2d-widget/";
 // 
-const live2d_path = "/live2d-widget/";
+// const live2d_path = "/live2d-widget/";
 
 // /assets/woff111.woff2
 
