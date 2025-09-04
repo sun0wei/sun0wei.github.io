@@ -7172,195 +7172,6 @@ div#archive {
 
 
 
-/* twikoo评论美化 */
-/* 自定义twikoo评论输入框高度 */
-#twikoo .el-textarea textarea {
-  min-height: 120px !important;
-  background-size: 90px;
-}
-
-/* 自定义表情优化 */
-#twikoo .OwO-body {
-  max-width: 100% !important;
-}
-/* 选择某个框 #twikoo .OwO .OwO-body .OwO-items:nth-child(1) */
-#twikoo .OwO .OwO-body .OwO-items {
-  max-height: 250px !important;
-}
-
-.OwO .OwO-body .OwO-items-image .OwO-item {
-  max-width: calc(9% - 10px);
-  box-sizing: content-box;
-}
-.OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],
-.OwO .OwO-body .OwO-items-image .OwO-item[title|="Tieba"],
-.OwO .OwO-body .OwO-items-show .OwO-item[title*="bilibili"] {
-  max-width: calc(7% - 10px) !important;
-  box-sizing: content-box;
-}
-
-#twikoo .OwO-items li img {
-  width: 100% !important;
-}
-
-.tk-comment .vemoji[alt|="Menhera"],
-.tk-comment .tk-owo-emotion[alt*="Menhera"],
-.tk-comment .vemoji[alt|="Snow"],
-.tk-comment .tk-owo-emotion[alt*="Snow"],
-.tk-comment .vemoji[alt|="Sweetie"],
-.tk-comment .tk-owo-emotion[alt*="Sweetie"],
-.tk-comment .vemoji[alt|="Tsuri"],
-.tk-comment .tk-owo-emotion[alt*="Tsuri"],
-.tk-comment .vemoji[alt|="Yurui"],
-.tk-comment .tk-owo-emotion[alt*="Yurui"] {
-  max-width: 120px !important;
-  max-height: 120px !important;
-  width: 120px;
-  margin: 8px 1px;
-  display: block !important;
-}
-
-/* 手机端适配 */
-@media screen and (max-width: 768px) {
-  .tk-comment .vemoji[alt|="Menhera"],
-  .tk-comment .tk-owo-emotion[alt*="Menhera"],
-  .tk-comment .vemoji[alt|="Snow"],
-  .tk-comment .tk-owo-emotion[alt*="Snow"],
-  .tk-comment .vemoji[alt|="Sweetie"],
-  .tk-comment .tk-owo-emotion[alt*="Sweetie"],
-  .tk-comment .vemoji[alt|="Tsuri"],
-  .tk-comment .tk-owo-emotion[alt*="Tsuri"],
-  .tk-comment .vemoji[alt|="Yurui"],
-  .tk-comment .tk-owo-emotion[alt*="Yurui"] {
-    max-width: calc(100% - 30px) !important;
-    max-height: calc(100% - 30px) !important;
-  }
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Menhera"],
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Snow"],
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Sweetie"],
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tsuri"],
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Yurui"] {
-    max-width: calc(33% - 10px);
-    box-sizing: border-box;
-  }
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Heybox"],
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="bilibili"],
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tieba"],
-  .OwO .OwO-body .OwO-items-image .OwO-item[title*="QQ"] {
-    max-width: calc(18% - 10px) !important;
-    box-sizing: content-box;
-  }
-}
-
-/* 右下角闭眼 */
-.el-textarea__inner {
-  background-image: url(/assets/open.webp) !important;
-}
-.el-textarea__inner:focus {
-  background-image: url(/assets/close.webp) !important;
-}
-
-/* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
-.tk-replies {
-  left: -70px;
-  width: calc(100% + 70px);
-}
-/* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
-.tk-replies .tk-avatar {
-  width: 2.5rem !important;
-  height: 2.5rem !important;
-}
-.tk-replies .tk-avatar img {
-  width: 2.5rem !important;
-  height: 2.5rem !important;
-}
-/* 回复框左移，避免窄屏时出框 */
-.tk-comments-container .tk-submit {
-  position: relative;
-  left: -70px;
-}
-/* 评论块气泡化修改 */
-.tk-content {
-  /* linear-gradient(to bottom, #2193b0, #6dd5ed); */
-  background: linear-gradient(
-    to top,
-    #4568dc,
-    #b06ab3
-  ); /*默认模式访客气泡配色*/
-  padding: 10px;
-  color: #fff; /*默认模式访客气泡字体配色*/
-  border-radius: 10px;
-  font-size: 16px !important;
-  width: fit-content;
-  max-width: 100%;
-  position: relative !important;
-  overflow: visible !important;
-  max-height: none !important;
-}
-/* 修复图片出框 */
-.tk-content img {
-  max-width: 100% !important;
-}
-/* 修复过长文本出框 */
-.tk-content pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-.tk-content a {
-  color: #eeecaa; /*默认模式超链接配色*/
-}
-.tk-content::before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 15px;
-  left: -13px;
-  border-top: 2px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 15px solid transparent; /*默认模式访客气泡小三角配色*/
-  border-left: 0px solid transparent;
-}
-.tk-master .tk-content {
-  background: linear-gradient(
-    to top,
-    #43cea2,
-    #185a9d
-  ); /*默认模式博主气泡配色*/
-  color: #fff; /*默认模式博主气泡字体配色*/
-  width: fit-content;
-  max-width: 100%;
-}
-.tk-master .tk-content a {
-  color: #eeecaa;
-}
-.tk-master .tk-content::before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 15px;
-  left: -13px;
-  border-top: 2px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 15px solid transparent; /*默认模式博主气泡小三角配色*/
-  border-left: 0px solid transparent;
-}
-.tk-row[data-v-d82ce9a0] {
-  max-width: 100%;
-  width: fit-content;
-}
-.tk-avatar {
-  border-radius: 50%;
-  margin-top: 10px;
-}
-
-
-
-
-
-
-
 
 /* ======================================================================================================================================= */
 
@@ -9658,250 +9469,359 @@ hr:before {
 
 
 
+/* ======================================================= */
+/* Twikoo 评论样式 - 子框左缩进0px+博主粉/游客蓝+仅一级子框 */
+/* ======================================================= */
 
-
-
-
-
-
-
-/* 评论区圆角 */
-.tk-meta-input .el-input .el-input-group__prepend {
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
-}
-.el-input-group--prepend .el-input__inner {
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-}
-
-/* Twikoo底部小字样式 */
-.tk-footer {
-  font-size: 0.9em;
-}
-
-.tk-footer a {
-  font-weight: bold;
-  color: #a591e0;
-}
-
-/* Github徽标 */
-.github-badge img:hover {
-  scale: 1.05;
-  transition: all 0.3s ease-in-out;
-}
-
-
-
-
-
-/* 自定义twikoo评论输入框高度 */
+/* 1. 基础布局样式（核心调整子框左缩进为0px） */
 .tk-input[data-v-619b4c52] .el-textarea__inner {
   height: 80px !important;
+  background-image: url(/assets/open.webp) !important;
 }
-/* 输入评论时自动隐藏输入框背景图片 */
 .tk-input[data-v-619b4c52] .el-textarea__inner:focus {
   background-image: none !important;
 }
-/* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
+
+/* 一级回复容器（子框左缩进0px，与主评论完全左对齐） */
 .tk-replies {
-  left: -70px;
-  width: calc(100% + 70px);
+  margin-left: 0px; /* 核心调整：左缩进设为0px */
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%; /* 宽度设为100%（无需计算偏移） */
+  border-left: 2px solid rgba(0, 166, 255, 0.2); /* 保留左侧边框作为层级标识 */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
 }
-/* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
-.tk-replies .tk-avatar {
-  width: 2.5rem !important;
-  height: 2.5rem !important;
+
+/* 禁止二级及以上嵌套回复 */
+.tk-replies .tk-replies {
+  display: none !important;
 }
+.tk-replies .tk-submit {
+  display: none !important;
+}
+
+/* 回复头像尺寸 */
+.tk-replies .tk-avatar,
 .tk-replies .tk-avatar img {
-  width: 2.5rem !important;
-  height: 2.5rem !important;
+  width: 1.8rem !important;
+  height: 1.8rem !important;
 }
-/* 回复框左移，避免窄屏时出框 */
+
+/* 回复框定位 */
 .tk-comments-container .tk-submit {
   position: relative;
-  left: -70px;
+  left: 0;
+  margin-top: 10px;
+  width: 100%;
 }
 
-.tk-content {
-  background: #00a6ff; /* 默认模式访客气泡配色 */
-  background-image: linear-gradient(135deg, #00a6ff 0%, #0088cc 100%); /* 保留渐变增强立体感 */
-  padding: 6px 10px; /* 核心调整：上下内边距6px、左右10px（比之前缩小约50%），缩小文字与边框间隙 */
-  color: #fff; /* 默认模式访客气泡字体配色 */
-  border-radius: 12px; /* 圆角稍调小至12px，与紧凑内边距更协调 */
-  font-size: 16px !important; /* 保留原字体大小确保可读性 */
-  line-height: 0.5; /* 行高微调，紧凑但不拥挤 */
-  width: fit-content; /* 宽度自适应内容 */
-  max-width: 90%; /* 最大宽度保持90%，避免贴边 */
-  position: relative !important;
-  overflow: visible !important;
-  max-height: none !important;
-  box-shadow: 0 2px 6px rgba(0, 166, 255, 0.2); /* 阴影稍减淡，配合紧凑风格 */
-  transition: box-shadow 0.3s ease;
-}
-
-/* 鼠标悬浮效果 */
-.tk-content:hover {
-  box-shadow: 0 3px 8px rgba(0, 166, 255, 0.3); /* 悬浮时阴影略增强 */
-}
-
-/* 评论内图片样式 */
-.tk-content img {
-  border-radius: 8px; /* 图片圆角随气泡同步缩小 */
-  margin: 4px 0; /* 图片上下间距缩小，保持整体紧凑感 */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* 边框减细 */
-}
-
-/* 评论内链接样式 */
-.tk-content a {
-  color: #f0f9ff;
-  text-decoration: underline;
-  text-underline-offset: 2px; /* 下划线下移距离缩小 */
-  font-weight: 500;
-}
-
-.tk-content a:hover {
-  color: #fff;
-  text-decoration: underline wavy;
-}
-
-/* 代码块样式 */
-.tk-content pre {
-  background: rgba(0, 0, 0, 0.15);
-  padding: 6px 10px; /* 代码块内边距同步缩小 */
-  border-radius: 6px; /* 圆角缩小 */
-  font-size: 14px !important;
-  margin: 6px 0; /* 上下间距缩小 */
-}
-
-
-/* 修复图片出框 */
-.tk-content img {
-  max-width: 100% !important;
-}
-/* 修复过长文本出框 */
-.tk-content pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-.tk-content a {
-  color: #eeecaa; /*默认模式超链接配色*/
-}
-
-
-
-.tk-content::before {
-  content: '';
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 15px;
-  left: -13px;
-  border-top: 2px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 15px solid #00a6ff; /*默认模式访客气泡小三角配色*/
-  border-left: 0px solid transparent;
-}
-
-
-.tk-master .tk-content {
-  background: #ff8080; 
-  color: #fff; 
-  width: fit-content;
-  max-width: 100%;
-}
-
-
-.tk-master .tk-content a {
-  color: #eeecaa;
-}
-.tk-master .tk-content::before {
-  content: '';
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 15px;
-  left: -13px;
-  border-top: 2px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 15px solid #ff8080; 
-  border-left: 0px solid transparent;
-}
-
-.tk-row[data-v-d82ce9a0] {
-  max-width: 100%;
-  width: fit-content;
-}
+/* 通用头像与行容器 */
 .tk-avatar {
   border-radius: 50%;
   margin-top: 10px;
 }
+.tk-row[data-v-d82ce9a0] {
+  max-width: 100%;
+  width: fit-content;
+}
+
+/* 表情框样式 */
+#twikoo .el-textarea textarea {
+  min-height: 90px !important;
+  background-size: 90px;
+  background-image: url(/assets/open.webp) !important;
+}
+#twikoo .OwO-body {
+  max-width: 100% !important;
+}
+#twikoo .OwO .OwO-body .OwO-items {
+  max-height: 180px !important;
+}
+#twikoo .OwO-items li img {
+  width: 100% !important;
+}
+
+/* 表情尺寸差异化 */
+.OwO .OwO-body .OwO-items-image .OwO-item {
+  max-width: calc(9% - 10px);
+  box-sizing: content-box;
+}
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Tieba"],
+.OwO .OwO-body .OwO-items-show .OwO-item[title*="bilibili"] {
+  max-width: calc(7% - 10px) !important;
+  box-sizing: content-box;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* 夜间模式配色，具体比照上方默认模式class */
-[data-theme="dark"] .tk-content {
-  background: #000;
+/* 2. 气泡核心样式（严格区分博主粉、游客蓝） */
+/* 2.1 通用气泡基础样式 */
+.tk-content {
+  padding: 6px 10px;
   color: #fff;
+  font-size: 16px !important;
+  line-height: 1.4;
+  width: fit-content;
+  max-width: 90%;
+  position: relative !important;
+  overflow: visible !important;
+  max-height: none !important;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
 }
-[data-theme="dark"] .tk-content a {
-  color: #dfa036;
+
+/* 2.2 游客气泡（任何情况都是蓝色） */
+/* 游客主评论 */
+.tk-comment:not(.tk-master):not(.tk-reply) .tk-content {
+  background: #00a6ff;
+  background-image: linear-gradient(135deg, #00a6ff 0%, #0088cc 100%);
+  box-shadow: 0 2px 6px rgba(0, 166, 255, 0.2);
 }
-[data-theme="dark"] .tk-content::before {
-  border-right: 15px solid #000;
+/* 游客回复（子框中） */
+.tk-comment:not(.tk-master).tk-reply .tk-content {
+  background: #4da6ff;
+  box-shadow: 0 1px 3px rgba(0, 166, 255, 0.15);
 }
-[data-theme="dark"] .tk-master .tk-content {
-  background: #000;
-  color: #fff;
+/* 游客气泡悬浮效果 */
+.tk-comment:not(.tk-master) .tk-content:hover {
+  box-shadow: 0 3px 8px rgba(0, 166, 255, 0.3);
 }
-[data-theme="dark"] .tk-master .tk-content a {
-  color: #dfa036;
+
+/* 2.3 博主气泡（任何情况都是粉色） */
+/* 博主主评论 */
+.tk-master.tk-comment:not(.tk-reply) .tk-content {
+  background: #ff8080;
+  box-shadow: 0 2px 6px rgba(255, 128, 128, 0.2);
 }
-[data-theme="dark"] .tk-master .tk-content::before {
+/* 博主回复（子框中） */
+.tk-master.tk-comment.tk-reply .tk-content {
+  background: #ff9999;
+  box-shadow: 0 1px 3px rgba(255, 128, 128, 0.15);
+}
+/* 博主气泡悬浮效果 */
+.tk-master .tk-content:hover {
+  box-shadow: 0 3px 8px rgba(255, 128, 128, 0.3);
+}
+
+/* 2.4 气泡三角图标（严格对应身份） */
+/* 游客主评论三角 */
+.tk-comment:not(.tk-master):not(.tk-reply) .tk-content::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 15px;
+  left: -13px;
   border-top: 2px solid transparent;
   border-bottom: 20px solid transparent;
-  border-right: 15px solid #000;
+  border-right: 15px solid #00a6ff;
   border-left: 0px solid transparent;
 }
-/* 自适应内容 */
-@media screen and (min-width: 1024px) {
-  /* 设置宽度上限，避免挤压博主头像 */
-  .tk-content {
-    max-width: 75%;
-    width: fit-content;
+/* 游客回复三角 */
+.tk-comment:not(.tk-master).tk-reply .tk-content::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  border-top: 2px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 12px solid #4da6ff;
+  border-left: 0px solid transparent;
+}
+/* 博主主评论三角 */
+.tk-master.tk-comment:not(.tk-reply) .tk-content::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 15px;
+  left: -13px;
+  border-top: 2px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #ff8080;
+  border-left: 0px solid transparent;
+}
+/* 博主回复三角 */
+.tk-master.tk-comment.tk-reply .tk-content::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  border-top: 2px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 12px solid #ff9999;
+  border-left: 0px solid transparent;
+}
+
+
+/* 3. 气泡内部元素样式 */
+/* 3.1 评论内图片 */
+.tk-content img {
+  border-radius: 8px;
+  margin: 4px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 100% !important;
+}
+
+/* 3.2 评论内链接（按身份区分） */
+/* 游客链接 */
+.tk-comment:not(.tk-master) .tk-content a {
+  color: #f0f9ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+}
+.tk-comment:not(.tk-master) .tk-content a:hover {
+  color: #fff;
+  text-decoration: underline wavy;
+}
+/* 博主链接 */
+.tk-master .tk-content a {
+  color: #eeecaa;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+}
+.tk-master .tk-content a:hover {
+  color: #fff;
+  text-decoration: underline wavy;
+}
+
+/* 3.3 评论内代码块 */
+.tk-content pre {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px !important;
+  margin: 6px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* 4. 夜间模式样式 */
+[data-theme="dark"] {
+  /* 夜间子框背景 */
+  .tk-replies {
+    background-color: rgba(30, 30, 30, 0.5);
+    border-left: 2px solid rgba(0, 166, 255, 0.3);
   }
-  .tk-master .tk-content {
-    width: 80%;
+
+  /* 夜间游客气泡 */
+  .tk-comment:not(.tk-master):not(.tk-reply) .tk-content {
+    background: #1a365d;
+  }
+  .tk-comment:not(.tk-master).tk-reply .tk-content {
+    background: #2d4b73;
+  }
+  .tk-comment:not(.tk-master) .tk-content::before {
+    border-right-color: inherit;
+  }
+  .tk-comment:not(.tk-master) .tk-content a {
+    color: #8cc5ff;
+  }
+
+  /* 夜间博主气泡 */
+  .tk-master.tk-comment:not(.tk-reply) .tk-content {
+    background: #5d1a35;
+  }
+  .tk-master.tk-comment.tk-reply .tk-content {
+    background: #732d4b;
   }
   .tk-master .tk-content::before {
-    left: 100%;
-    border-left: 15px solid #ff8080;
-    border-right: 0px solid transparent;
+    border-right-color: inherit;
   }
-  .tk-master .tk-avatar {
-    position: relative;
-    left: calc(75% + 70px);
+  .tk-master .tk-content a {
+    color: #ffc8c8;
   }
-  .tk-master .tk-row[data-v-d82ce9a0] {
-    position: relative;
-    top: 0px;
-    left: calc(75% - 230px);
+}
+
+
+/* 5. 响应式适配（同步调整为0px缩进） */
+/* 大屏适配（≥1024px） */
+@media screen and (min-width: 1024px) {
+  .tk-comment:not(.tk-reply) .tk-content {
+    max-width: 75%;
   }
-  [data-theme="dark"] .tk-master .tk-content::before {
-    border-left: 15px solid #000;
-    border-right: 0px solid transparent;
+  .tk-replies {
+    margin-left: 0px; /* 大屏子框左缩进设为0px */
+    width: 100%;
   }
+}
+
+/* 手机端适配（≤768px） */
+@media screen and (max-width: 768px) {
+  .tk-replies {
+    margin-left: 0px; /* 手机端子框左缩进设为0px */
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .tk-content {
+    max-width: 95%;
+  }
+  .tk-reply .tk-content {
+    max-width: 90%;
+    font-size: 14px !important;
+    padding: 5px 9px;
+  }
+
+  /* 手机端特定表情尺寸 */
+  .tk-comment .vemoji[alt|="Menhera"],
+  .tk-comment .tk-owo-emotion[alt*="Menhera"],
+  .tk-comment .vemoji[alt|="Snow"],
+  .tk-comment .tk-owo-emotion[alt*="Snow"],
+  .tk-comment .vemoji[alt|="Sweetie"],
+  .tk-comment .tk-owo-emotion[alt*="Sweetie"],
+  .tk-comment .vemoji[alt|="Tsuri"],
+  .tk-comment .tk-owo-emotion[alt*="Tsuri"],
+  .tk-comment .vemoji[alt|="Yurui"],
+  .tk-comment .tk-owo-emotion[alt*="Yurui"] {
+    max-width: calc(100% - 30px) !important;
+    max-height: calc(100% - 30px) !important;
+  }
+
+  /* 手机端表情框适配 */
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Menhera"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Snow"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Sweetie"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tsuri"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Yurui"] {
+    max-width: calc(33% - 10px);
+    box-sizing: border-box;
+  }
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Heybox"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="bilibili"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tieba"],
+  .OwO .OwO-body .OwO-items-image .OwO-item[title*="QQ"] {
+    max-width: calc(18% - 10px) !important;
+    box-sizing: content-box;
+  }
+}
+
+
+/* 6. 补充样式 */
+.el-textarea__inner {
+  background-image: url(/assets/open.webp) !important;
+}
+.el-textarea__inner:focus {
+  background-image: url(/assets/close.webp) !important;
+}
+
+/* 回复提示文字样式 */
+.tk-reply .tk-at {
+  color: #666;
+  font-size: 13px;
+  margin-right: 5px;
+  font-style: italic;
+}
+[data-theme="dark"] .tk-reply .tk-at {
+  color: #aaa;
 }
 
 .search-dialog {
