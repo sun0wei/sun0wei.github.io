@@ -6699,7 +6699,7 @@ blockquote.pullquote.right {
   box-shadow: 1px 2px 4px var(--km-general-shadow);
 }
 #bangumis .card .info {
-  width: calc(100% - 310px); /* 调整宽度，考虑图片宽度和间距 */
+  width: calc(200% - 310px); /* 调整宽度，考虑图片宽度和间距 */
   margin-left: 10px;
 }
 #bangumis .card .info .title {
