@@ -1,0 +1,883 @@
+---
+title: 网址导航
+date: 2025-04-22 13:00:57
+type: "link"
+aside: false
+
+---
+{% raw %}
+<!-- 这是我们的挂载点 -->
+<div id="nav-container"></div>
+
+<script>
+    (function() {
+        // 创建 Shadow DOM 实现完全隔离
+        const container = document.getElementById('nav-container');
+        const shadowRoot = container.attachShadow({ mode: 'closed' });
+        
+        // 创建唯一的ID前缀，用于样式隔离
+        const uniqueId = 'frontend-nav-' + Math.random().toString(36).substr(2, 9);
+        
+        // 添加HTML结构和样式
+        shadowRoot.innerHTML = `
+            <style>
+                :host {
+                    --primary-color: #6366f1;
+                    --primary-hover: #4f46e5;
+                    --text-color: #2d3748;
+                    --text-secondary: #4a5568;
+                    --bg-color: #ffffff;
+                    --card-bg: #ffffff;
+                    --border-radius: 8px;
+                    --transition: all 0.2s ease;
+                    --shadow-sm: 0 1px 2px rgba(0,0,0,0.1);
+                    --shadow-md: 0 3px 4px rgba(0,0,0,0.1);
+                    --shadow-lg: 0 8px 20px rgba(0,0,0,0.1);
+                    display: block;
+                    margin: 0;
+                    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+                    all: initial; /* 重置所有继承样式 */
+                }
+                
+                #${uniqueId} {
+                    all: initial; /* 确保不继承外部样式 */
+                }
+                
+                #${uniqueId} .container {
+                    padding: 1.2rem;
+                    background: var(--bg-color);
+                    border-radius: var(--border-radius);
+                    box-shadow: var(--shadow-lg);
+                }
+                
+                #${uniqueId} header {
+                    text-align: center;
+                    margin-bottom: 1.2rem;
+                }
+                
+                #${uniqueId} h1 {
+                    font-size: 1.8rem;
+                    margin: 0 0 0.3rem;
+                    color: var(--text-color);
+                    font-weight: 700;
+                    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                
+                #${uniqueId} .subtitle {
+                    font-size: 0.9rem;
+                    color: var(--text-secondary);
+                    margin-bottom: 1rem;
+                    font-weight: 400;
+                }
+                
+                #${uniqueId} .search-box {
+                    max-width: 500px;
+                    margin: 0 auto 1.2rem;
+                    position: relative;
+                }
+                
+                #${uniqueId} .search-box input {
+                    width: 100%;
+                    padding: 0.6rem 1.2rem;
+                    border: 1px solid #e2e8f0;
+                    border-radius: 40px;
+                    font-size: 0.9rem;
+                    outline: none;
+                    box-shadow: var(--shadow-sm);
+                    transition: var(--transition);
+                    background-color: #f8fafc;
+                }
+                
+                #${uniqueId} .search-box input:focus {
+                    border-color: var(--primary-color);
+                    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+                }
+                
+                #${uniqueId} .search-box::after {
+                    content: "🔍";
+                    position: absolute;
+                    right: 1.2rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: 0.5;
+                }
+                
+                #${uniqueId} .category {
+                    margin-bottom: 1.5rem;
+                }
+                
+                #${uniqueId} .category-header {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 0.8rem;
+                    padding-bottom: 0.4rem;
+                    border-bottom: 1px solid #f1f5f9;
+                }
+                
+                #${uniqueId} .category-icon {
+                    font-size: 1.3rem;
+                    margin-right: 0.6rem;
+                    width: 1.5rem;
+                    text-align: center;
+                }
+                
+                #${uniqueId} .category-title {
+                    font-size: 1.1rem;
+                    margin: 0;
+                    color: var(--text-color);
+                    font-weight: 600;
+                    flex-grow: 1;
+                }
+                
+                #${uniqueId} .links-container {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 0.8rem;
+                }
+                
+                #${uniqueId} .link-card {
+                    background: var(--card-bg);
+                    border-radius: var(--border-radius);
+                    padding: 0.7rem;
+                    box-shadow: var(--shadow-sm);
+                    transition: var(--transition);
+                    border: 1px solid #e2e8f0;
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                #${uniqueId} .link-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 2px;
+                    height: 100%;
+                    background: linear-gradient(to bottom, var(--primary-color), #8b5cf6);
+                    opacity: 0;
+                    transition: var(--transition);
+                }
+                
+                #${uniqueId} .link-card::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 2px;
+                    height: 100%;
+                    background: linear-gradient(to bottom, var(--primary-color), #8b5cf6);
+                    opacity: 0;
+                    transition: var(--transition);
+                }
+                
+                #${uniqueId} .link-card:hover {
+                    transform: translateY(-2px);
+                    box-shadow: var(--shadow-md);
+                    border-color: #cbd5e0;
+                    background-color: #f8fafc;
+                }
+                
+                #${uniqueId} .link-card:hover::before,
+                #${uniqueId} .link-card:hover::after {
+                    opacity: 1;
+                }
+                
+                #${uniqueId} .link-card a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+                }
+                
+                #${uniqueId} .link-icon {
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 0.5rem;
+                    border-radius: 6px;
+                    object-fit: cover;
+                    background: #f1f5f9;
+                    padding: 0.2rem;
+                    box-shadow: var(--shadow-sm);
+                }
+                
+                #${uniqueId} .link-title {
+                    font-size: 0.9rem;
+                    margin: 0;
+                    color: var(--text-color);
+                    font-weight: 600;
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                }
+                
+                #${uniqueId} .link-description {
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    line-height: 1.2;
+                    margin-top: 0.3rem;
+                    text-align: center;
+                    max-height: 2.4em;
+                    overflow: hidden;
+                }
+                
+                #${uniqueId} footer {
+                    text-align: center;
+                    margin-top: 1.5rem;
+                    padding: 0.8rem;
+                    color: var(--text-secondary);
+                    font-size: 0.8rem;
+                    border-top: 1px solid #f1f5f9;
+                }
+                
+                #${uniqueId} .no-results {
+                    grid-column: 1 / -1;
+                    text-align: center;
+                    padding: 1rem;
+                    color: var(--text-secondary);
+                    font-size: 0.9rem;
+                }
+                
+                @media (max-width: 1200px) {
+                    #${uniqueId} .links-container {
+                        grid-template-columns: repeat(5, 1fr);
+                    }
+                }
+                
+                @media (max-width: 992px) {
+                    #${uniqueId} .links-container {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                }
+                
+                @media (max-width: 768px) {
+                    #${uniqueId} .links-container {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+                
+                @media (max-width: 576px) {
+                    #${uniqueId} .links-container {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    
+                    #${uniqueId} h1 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    #${uniqueId} .category-title {
+                        font-size: 1rem;
+                    }
+                    
+                    #${uniqueId} .search-box input {
+                        padding: 0.5rem 1rem;
+                        font-size: 0.85rem;
+                    }
+                }
+            </style>
+            <div id="${uniqueId}">
+                <div class="container">
+                    <header>
+                        <div class="search-box">
+                            <input type="text" placeholder="搜索框架、工具或资源..." id="search-input">
+                        </div>
+                    </header>
+                    <!-- 分类内容将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        `;
+
+        // 获取导航数据
+        function getNavData() {
+                return {
+                    categories: [
+                                                {
+                            title: "综合平台",
+                            icon: "🏆",
+                            links: [
+                                {
+                                    name: "bilibili",
+                                    url: "https://www.bilibili.com/?spm_id_from=333.337.0.0",
+                                    icon: "https://pic1.imgdb.cn/item/68233dc758cb8da5c8f09fc4.webp",
+                                    description: "来哔哩哔哩，学习也要干杯?"
+                                },
+                                {
+                                    name: "CSDN",
+                                    url: "https://www.csdn.net/",
+                                    icon: "https://g.csdnimg.cn/static/logo/favicon32.ico",
+                                    description: "开发者技术社区"
+                                },
+                                {
+                                    name: "gitee",
+                                    url: "https://gitee.com/",
+                                    icon: "https://gitee.com/favicon.ico",
+                                    description: "国内代码托管"
+                                },
+                                {
+                                    name: "github",
+                                    url: "https://github.com/",
+                                    icon: "https://github.githubassets.com/favicons/favicon.svg",
+                                    description: "巨多代码资源的仓库"
+                                },
+                                {
+                                    name: "博客园",
+                                    url: "https://www.cnblogs.com/",
+                                    icon: "https://pic1.imgdb.cn/item/6801b27f88c538a9b5da2169.webp",
+                                    description: "技术博客社区"
+                                },
+                            ]
+                        },
+                        {
+                            title: "论文助手",
+                            icon: "📚",
+                            links: [
+                                {
+                                    name: "ChatGPT",
+                                    url: "https://chat.openai.com/",
+                                    icon: "https://pic1.imgdb.cn/item/6801b1fd88c538a9b5da2014.png",
+                                    description: "AI，需要VPN才能登录"
+                                },
+                                {
+                                    name: "DeepSeek",
+                                    url: "https://chat.deepseek.com/",
+                                    icon: "https://cdn.deepseek.com/chat/icon.png",
+                                    description: "AI网站"
+                                },
+                                {
+                                    name: "豆包",
+                                    url: "https://www.doubao.com/chat/?channel=dkR31",
+                                    icon: "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png",
+                                    description: "AI网站"
+                                },
+                                {
+                                    name: "simpletex",
+                                    url: "https://simpletex.cn/",
+                                    icon: "https://simpletex.cn/simpletex.ico",
+                                    description: "数学公式编辑"
+                                },
+                                {
+                                    name: "知网",
+                                    url: "https://www.cnki.net/",
+                                    icon: "https://www.cnki.net/favicon.ico",
+                                    description: "论文文献库"
+                                },
+                                {
+                                    name: "万方数据",
+                                    url: "https://w.wanfangdata.com.cn/index.html?index=true",
+                                    icon: "https://cdn.w.wanfangdata.com.cn/favicon.ico",
+                                    description: "论文文献库"
+                                },
+                                {
+                                    name: "中文期刊服务平台",
+                                    url: "https://qikan.cqvip.com/index.html?from=Qikan_Search_Index",
+                                    icon: "https://qikan.cqvip.com/favicon.ico",
+                                    description: "论文文献库"
+                                },
+                                {
+                                    name: "latex公式",
+                                    url: "https://www.latexlive.com/home##",
+                                    icon: "https://pic1.imgdb.cn/item/6801b2d688c538a9b5da232f.png",
+                                    description: "LaTeX公式编辑器"
+                                },
+                                {
+                                    name: "overleaf",
+                                    url: "https://www.overleaf.com/",
+                                    icon: "https://www.overleaf.com/apple-touch-icon.png",
+                                    description: "论文在线编辑工具"
+                                },
+                            ]
+                        },
+                        {
+                            title: "其它工具",
+                            icon: "🛠️",
+                            links: [
+                                {
+                                    name: "MSDN",
+                                    url: "https://msdn.itellyou.cn/",
+                                    icon: "https://msdn.itellyou.cn/favicon.ico",
+                                    description: "微软资源下载站"
+                                },
+                                {
+                                    name: "echarts",
+                                    url: "https://echarts.apache.org/handbook/zh/get-started/",
+                                    icon: "https://echarts.apache.org/zh/images/favicon.png?_v_=20240226",
+                                    description: "数据可视化"
+                                },
+                                {
+                                    name: "软件设计绘图网站",
+                                    url: "https://app.diagrams.net/",
+                                    icon: "https://app.diagrams.net/favicon.ico",
+                                    description: "在线流程图工具"
+                                },
+                                {
+                                    name: "W3school",
+                                    url: "https://www.w3school.com.cn/index.html",
+                                    icon: "https://www.w3school.com.cn/ui2019/logo-96-red.png",
+                                    description: "Web开发教程"
+                                },
+                                {
+                                    name: "绘图网站",
+                                    url: "https://www.processon.com/diagraming/64f83a565521142d927d71e4",
+                                    icon: "https://www.processon.com/public_login/favicon.983368c6.ico",
+                                    description: "在线思维导图"
+                                },
+                                {
+                                    name: "数学公式绘图",
+                                    url: "https://www.desmos.com/calculator/dxkknajdqb?lang=zh-CN",
+                                    icon: "https://www.desmos.com/favicon.ico",
+                                    description: "图形计算器"
+                                },
+                                {
+                                    name: "数学计算",
+                                    url: "https://www.wolframalpha.com/",
+                                    icon: "https://www.wolframalpha.com/_next/static/images/favicon_1zbE9hjk.ico",
+                                    description: "智能计算引擎"
+                                },
+                                {
+                                    name: "学习通",
+                                    url: "http://i.chaoxing.com/base?t=1677936799318",
+                                    icon: "https://p1.ssl.qhimg.com/t018624fb93a319bbd3.jpg",
+                                    description: "在线学习平台"
+                                },
+                                {
+                                    name: "QQ邮箱",
+                                    url: "https://mail.qq.com/",
+                                    icon: "https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_96h.png",
+                                    description: "腾讯电子邮箱"
+                                },
+                                {
+                                    name: "学霸盘",
+                                    url: "https://www.xuebapan.com/",
+                                    icon: "https://www.xuebapan.com/static/img/logo.png",
+                                    description: "学习资料分享平台"
+                                },
+                                {
+                                    name: "江理教务系统",
+                                    url: "https://ehall.jxust.edu.cn/new/index.html",
+                                    icon: "https://p1.ssl.qhimg.com/t0126983fc5d3e99384.png",
+                                    description: "学校教务管理系统"
+                                },
+                                {
+                                    name: "上网登录页面",
+                                    url: "http://10.17.8.18/",
+                                    icon: "https://tse4-mm.cn.bing.net/th/id/OIP-C.moj_dQ_RC01f_M5c1SWn8AHaHa?w=187&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+                                    description: "校园网络认证"
+                                },
+                                {
+                                    name: "程序员自学网",
+                                    url: "https://www.51zxw.net/List.aspx?cid=451",
+                                    icon: "https://www.xue8nav.com/wp-content/uploads/51zxw-logo.png",
+                                    description: "IT技能学习平台"
+                                },
+                                {
+                                    name: "在线工具",
+                                    url: "https://tool.lu/",
+                                    icon: "https://tool.lu/favicon.ico",
+                                    description: "开发者工具箱"
+                                },
+                                {
+                                    name: "白嫖怪资源网站",
+                                    url: "https://www.iiice.cn/#/",
+                                    icon: "https://www.iiice.cn/favicon.ico",
+                                    description: "免费资源分享"
+                                },
+                                {
+                                    name: "万萌导航",
+                                    url: "https://hao.wanmoe.cn/",
+                                    icon: "https://hao.wanmoe.cn/favicon.ico",
+                                    description: "二次元资源导航"
+                                },
+                                {
+                                    name: "Proton",
+                                    url: "https://account.proton.me/signup",
+                                    icon: "https://pic1.imgdb.cn/item/6801b24288c538a9b5da20c7.jpg",
+                                    description: "加密VPN服务"
+                                },
+                                {
+                                    name: "百度网盘",
+                                    url: "https://pan.baidu.com/disk/main#/index?category=all",
+                                    icon: "https://nd-static.bdstatic.com/m-static/wp-brand/favicon.ico",
+                                    description: "云存储服务"
+                                },
+                                {
+                                    name: "nowcoder网站",
+                                    url: "https://www.nowcoder.com/",
+                                    icon: "https://static.nowcoder.com/fe/file/images/nowpick/web/www-favicon.ico",
+                                    description: "程序员刷题平台"
+                                },
+                                {
+                                    name: "计算机专业考证",
+                                    url: "https://bm.ruankao.org.cn/sign/welcome",
+                                    icon: "https://bm.ruankao.org.cn/asset/image/public/logo.png?1",
+                                    description: "软考报名官网"
+                                },
+                                {
+                                    name: "脚本之家",
+                                    url: "https://www.jb51.net/jiaoben/",
+                                    icon: "https://www.jb51.net/favicon.ico",
+                                    description: "代码脚本资源"
+                                },
+                                {
+                                    name: "ICO转换器",
+                                    url: "https://convertio.co/zh/ico-converter/",
+                                    icon: "https://static.convertio.co/img/apple-touch-icon-180x180-precomposed.png",
+                                    description: "图标格式转换"
+                                },
+                                {
+                                    name: "虚拟手机号",
+                                    url: "https://sms-activate.org/ru/info/freeprice",
+                                    icon: "https://sms-activate.ru/favicon.ico",
+                                    description: "临时号码服务"
+                                },
+                                {
+                                    name: "电子书网站",
+                                    url: "https://www.bookstack.cn/",
+                                    icon: "https://www.bookstack.cn/favicon.ico",
+                                    description: "IT电子书资源"
+                                },
+                                {
+                                    name: "中国教育考试网",
+                                    url: "https://www.neea.edu.cn/",
+                                    icon: "https://pic1.imgdb.cn/item/6801c0c988c538a9b5da60bd.png",
+                                    description: "官方考试信息网"
+                                },
+                            ]
+                        },
+                        {
+                            title: "建站工具",
+                            icon: "🧱",
+                            links: [
+                                {
+                                    name: "爱给",
+                                    url: "https://www.aigei.com/icon/class/",
+                                    icon: "https://cdn-sqn.aigei.com/assets/site/img/logo/aigei_114-114.png",
+                                    description: "前端图标icon库"
+                                },
+                                {
+                                    name: "聚合图床",
+                                    url: "https://www.superbed.cn/timeline",
+                                    icon: "https://www.superbed.cn/favicon.ico",
+                                    description: "存图片的数据库"
+                                },
+                                {
+                                    name: "ImageHub",
+                                    url: "https://www.imagehub.cc/sunwei/?list=images&sort=title_asc&page=1",
+                                    icon: "https://www.imagehub.cc/content/images/system/favicon_1745308376307_d92117.png",
+                                    description: "存图片的数据库"
+                                },
+                                {
+                                    name: "imgurl",
+                                    url: "https://www.imgurl.org/vip/manage/upload",
+                                    icon: "https://s3.bmp.ovh/imgs/2025/06/24/7033c76378e004e3.png",
+                                    description: "存图片的数据库"
+                                },
+                                {
+                                    name: "squoosh",
+                                    url: "https://squoosh.app/",
+                                    icon: "https://pic1.imgdb.cn/item/685a640758cb8da5c86b5186.png",
+                                    description: "图片压缩网站"
+                                },
+                                {
+                                    name: "MongoDB",
+                                    url: "https://cloud.mongodb.com/v2/680b567357ae3a2fdf2978d4#/security/network/accessList",
+                                    icon: "https://pic1.imgdb.cn/item/6823380858cb8da5c8f09e2f.png",
+                                    description: "数据库存储网站"
+                                },
+                                {
+                                    name: "阿里云域名",
+                                    url: "https://account.console.aliyun.com/v2/?accounttraceid=e54cceb8f1b04da0a14de21201eeb992vovd#/home/person",
+                                    icon: "https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico",
+                                    description: "域名解析、重命名、管理中心"
+                                },
+                                {
+                                    name: "vercel",
+                                    url: "https://vercel.com/sun0weis-projects",
+                                    icon: "https://assets.vercel.com/image/upload/front/favicon/vercel/favicon.ico",
+                                    description: "域名解析、重命名、管理中心"
+                                },
+                                {
+                                    name: "萌国萌站",
+                                    url: "https://icp.gov.moe/aboutus.php",
+                                    icon: "https://icp.gov.moe/favicon.ico",
+                                    description: "萌站ip备案网站"
+                                },
+                                {
+                                    name: "shields",
+                                    url: "https://shields.io/badges",
+                                    icon: "https://shields.io/img/favicon.ico",
+                                    description: "徽标制作网站"
+                                },
+                                {
+                                    name: "51网站统计",
+                                    url: "https://v6.51.la/",
+                                    icon: "https://v6.51.la/favicon.ico",
+                                    description: "数据统计分析网站"
+                                },
+                                {
+                                    name: "文心一言后台",
+                                    url: "https://hitokoto.cn/dashboard#/",
+                                    icon: "https://hitokoto.cn/favicon.ico?t=1527937218382",
+                                    description: "AI后台管理中心"
+                                },
+                                {
+                                    name: "在线Markdown",
+                                    url: "https://md.openwrite.cn/#/diffusion/channel",
+                                    icon: "https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/favicon.png",
+                                    description: "微信Markdown语法写文章网站"
+                                },
+                                {
+                                    name: "ChatGPT后台",
+                                    url: "https://platform.openai.com/",
+                                    icon: "https://pic1.imgdb.cn/item/6801b1fd88c538a9b5da2014.png",
+                                    description: "AI后台管理中心，需要VPN"
+                                },
+                                {
+                                    name: "butterpig",
+                                    url: "https://www.butterpig.top/radius",
+                                    icon: "https://s1.ax1x.com/2022/08/01/vAiw8O.png",
+                                    description: "图片边角radius工具"
+                                },
+                                {
+                                    name: "squoosh",
+                                    url: "https://squoosh.app/",
+                                    icon: "https://squoosh.app/c/favicon-c9cf50ef.ico",
+                                    description: "图片调整清晰度调整"
+                                },
+                                {
+                                    name: "CDN站",
+                                    url: "Bhttps://www.bootcdn.cn/",
+                                    icon: "https://www.bootcdn.cn/assets/ico/apple-touch-icon-144-precomposed.png?1753576699710",
+                                    description: "博客js、css文件在线存储"
+                                },
+                                {
+                                    name: "阿里图标中心",
+                                    url: "https://www.iconfont.cn/?spm=a313x.search_index.i3.2.1f863a816lFjnT",
+                                    icon: "https://img.alicdn.com/imgextra/i4/O1CN01XZe8pH1USpiUNT1QN_!!6000000002517-2-tps-114-114.png",
+                                    description: "矢量图标库中心"
+                                },
+                            ]
+                        },
+                        {
+                            title: "娱乐网站",
+                            icon: "🎮",
+                            links: [
+                                {
+                                    name: "PRTS",
+                                    url: "https://prts.wiki/w/%E9%A6%96%E9%A1%B5",
+                                    icon: "https://prts.wiki/ioslogo.png",
+                                    description: "明日方舟辅助网站"
+                                },
+                                {
+                                    name: "星尘幻梦",
+                                    url: "https://re.xcdream.com/",
+                                    icon: "https://dl.xcdream.com/2025/01/20250106043320606.png",
+                                    description: "Window文件夹、桌面、指针美化"
+                                },
+                                {
+                                    name: "明日方舟MAA",
+                                    url: "https://prts.plus/",
+                                    icon: "https://prts.plus/favicon.ico?v=1",
+                                    description: "明日方舟工具箱"
+                                },
+                                {
+                                    name: "SnapAny",
+                                    url: "https://bili.iiilab.com/",
+                                    icon: "https://snapany.com/favicon.ico",
+                                    description: "网络视频解析下载网站"
+                                },
+                                {
+                                    name: "Pixiv",
+                                    url: "https://www.pixiv.net/",
+                                    icon: "https://ts1.tc.mm.bing.net/th/id/R-C.8cb04c8f679b4ecfe07befda7b3e3947?rik=zUfGio9JXfjVrg&riu=http%3a%2f%2fi-1.pc0359.cn%2f2021%2f4%2f6%2fb2770c6b-853a-4387-9e56-f8ec97c624a3.png&ehk=jSGX11IFYT8Lk2f6NAx6c1LuQ8%2f6U%2bobHw5e8MN6X8w%3d&risl=&pid=ImgRaw&r=0",
+                                    description: "插画网站，需要vip才能进入"
+                                },
+                                {
+                                    name: "枫の主题社",
+                                    url: "https://winmoes.com/tools/12948.html",
+                                    icon: "https://dl.winmoes.com/wp-content/uploads/2022/01/cropped-%E6%8F%92%E5%9C%961-32x32.png",
+                                    description: "Window文件夹、桌面、指针美化"
+                                },
+                            ]
+                        },
+                        {
+                            title: "朋友图",
+                            icon: "👤",
+                            links: [
+                               {
+                                    name: "安知鱼`Blog",
+                                    url: "https://blog.anheyu.com/",
+                                    icon: "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg",
+                                    description: "生活明朗，万物可爱"
+                                },
+                                {
+                                    name: "Fomalhaut🥝",
+                                    url: "https://fomal.cc/",
+                                    icon: "https://sourcebucket.s3.bitiful.net/img/avatar.webp",
+                                    description: "Future is now 🍭🍭🍭"
+                                },
+                                {
+                                    name: "山岳库博",
+                                    url: "https://kmar.top/",
+                                    icon: "https://pic1.imgdb.cn/item/681325f258cb8da5c8d601be.png",
+                                    description: "有编程的烦恼？来这里说不定可以找到答案~"
+                                },
+                                {
+                                    name: "『轻笑』",
+                                    url: "https://www.qcqx.cn/",
+                                    icon: "https://pic1.imgdb.cn/item/6803507d58cb8da5c8b52120.png",
+                                    description: "漫天倾尘 风中轻笑"
+                                },
+                                {
+                                    name: "Akilarの糖果屋",
+                                    url: "https://akilar.top/",
+                                    icon: "https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg",
+                                    description: "期待您的光临！"
+                                },
+                                {
+                                    name: "Butterfly",
+                                    url: "https://butterfly.js.org/",
+                                    icon: "https://butterfly.js.org/img/avatar.png",
+                                    description: "Butterfly主题之父！"
+                                },
+                                {
+                                    name: "唐志远",
+                                    url: "https://fe32.top/categories/Butterfly/",
+                                    icon: "https://fe32.top/img/logo/apple-touch-icon.png",
+                                    description: "2025年的理想开始实现了吗？"
+                                },
+                                {
+                                    name: "玄夜の资源小站",
+                                    url: "https://www.sakuraxy.top/",
+                                    icon: "https://pic1.imgdb.cn/item/68d0b3a7c5157e1a8823020d.png",
+                                    description: "一堆免费的资源，包含游戏、办公程序、动态漫……"
+                                },
+                            ]
+                        }
+                    ]
+                };
+        }
+
+        // 渲染导航内容
+        function renderNav() {
+            const navData = getNavData();
+            const navElement = shadowRoot.querySelector(`#${uniqueId} .container`);
+            
+            let html = '';
+            navData.categories.forEach(category => {
+                html += `
+                    <div class="category" data-category="${category.title.toLowerCase().replace(/\s+/g, '-')}">
+                        <div class="category-header">
+                            <span class="category-icon">${category.icon}</span>
+                            <h2 class="category-title">${category.title}</h2>
+                        </div>
+                        <div class="links-container">
+                `;
+                
+                category.links.forEach(link => {
+                    html += `
+                        <div class="link-card" data-name="${link.name.toLowerCase()}">
+                            <a href="${link.url}" target="_blank" rel="noopener noreferrer">
+                                ${link.icon ? `<img src="${link.icon}" alt="${link.name}" class="link-icon">` : ''}
+                                <h3 class="link-title">${link.name}</h3>
+                                ${link.description ? `<p class="link-description">${link.description}</p>` : ''}
+                            </a>
+                        </div>
+                    `;
+                });
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += `
+                    <footer>
+                        <p>© ${new Date().getFullYear()} 前端开发者导航 | 持续更新优质前端资源</p>
+                    </footer>
+            `;
+            
+            navElement.innerHTML += html;
+        }
+
+        // 设置搜索功能
+        function setupSearch() {
+            const searchInput = shadowRoot.querySelector(`#${uniqueId} #search-input`);
+            const linkCards = shadowRoot.querySelectorAll(`#${uniqueId} .link-card`);
+            const categories = shadowRoot.querySelectorAll(`#${uniqueId} .category`);
+            
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase().trim();
+                
+                if (!searchTerm) {
+                    // 恢复所有显示
+                    linkCards.forEach(card => card.style.display = 'block');
+                    categories.forEach(cat => {
+                        cat.style.display = 'block';
+                        cat.querySelector('.category-header').style.display = 'flex';
+                    });
+                    updateNoResultsMessage(true);
+                    return;
+                }
+                
+                let hasResults = false;
+                
+                categories.forEach(category => {
+                    const cards = category.querySelectorAll('.link-card');
+                    let categoryHasResults = false;
+                    
+                    cards.forEach(card => {
+                        const name = card.dataset.name;
+                        const description = card.querySelector('.link-description')?.textContent.toLowerCase() || '';
+                        
+                        // 搜索名称或描述
+                        if (name.includes(searchTerm) || 
+                            description.includes(searchTerm)) {
+                            card.style.display = 'block';
+                            categoryHasResults = true;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    if (categoryHasResults) {
+                        // 显示分类标题
+                        category.querySelector('.category-header').style.display = 'flex';
+                        category.style.display = 'block';
+                        hasResults = true;
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+                
+                updateNoResultsMessage(hasResults);
+            });
+        }
+
+        // 更新无结果消息
+        function updateNoResultsMessage(hasResults) {
+            let noResults = shadowRoot.querySelector(`#${uniqueId} .no-results`);
+            
+            if (!hasResults) {
+                if (!noResults) {
+                    noResults = document.createElement('div');
+                    noResults.className = 'no-results';
+                    noResults.textContent = '没有找到匹配的资源，请尝试其他关键词';
+                    shadowRoot.querySelector(`#${uniqueId} .container`).appendChild(noResults);
+                }
+            } else if (noResults) {
+                noResults.remove();
+            }
+        }
+
+        // 初始化导航
+        renderNav();
+        setupSearch();
+    })();
+</script>
+{% endraw %}
