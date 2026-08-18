@@ -225,4 +225,9 @@ opacity: .92;
   display: inline-block;
 }
 
+/* 最新文章缩略图圆角 */
+#aside-content .card-recent-post .aside-list-item .thumbnail > img {
+  border-radius: 8px;
+}
+
 

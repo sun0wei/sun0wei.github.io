@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.sunwei.online/link/index.html</loc>
+    
+    <lastmod>2026-08-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sunwei.online/bilibili/config.json</loc>
     
     <lastmod>2026-08-17</lastmod>
@@ -57,15 +66,6 @@
   
   <url>
     <loc>https://blog.sunwei.online/personal/about/index.html</loc>
-    
-    <lastmod>2026-08-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/link/index.html</loc>
     
     <lastmod>2026-08-17</lastmod>
     

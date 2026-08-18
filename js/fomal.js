@@ -1282,7 +1282,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| 孙伟の博客") ? title.substring(0, title.length - 14) : title;
+    var siteTitleSuffix = "| 孙伟の博客";
+    var subTitle = title.endsWith(siteTitleSuffix) ? title.slice(0, -siteTitleSuffix.length).trim() : title;
     navigator.clipboard.writeText('孙伟の站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！♪(´▽｀)');
     new Vue({
       data: function () {
@@ -2950,7 +2951,10 @@ function toggleRightside() {
 
 // 透明度调节滑块
 if (localStorage.getItem("transNum") == undefined) {
-  localStorage.setItem("transNum", 84);
+  localStorage.setItem("transNum", 78);
+} else if ((localStorage.getItem("transNum") == 84 || localStorage.getItem("transNum") == 72) && localStorage.getItem("transNumMigrated78") != "true") {
+  localStorage.setItem("transNum", 78);
+  localStorage.setItem("transNumMigrated78", "true");
 }
 var curTransNum = localStorage.getItem("transNum");
 var curTransMini = curTransNum * 0.95;
@@ -3055,24 +3059,6 @@ var defineColor = localStorage.getItem("blogbg") && localStorage.getItem("blogbg
 function changeBgColor() {
   changeBg(document.querySelector("#define_colors").value);
 }
-
-// 必应历史壁纸API
-// let bingHistoryBg = screen.width <= 768 ? "url(https://bing.img.run/rand_m.php)" : "url(https://bing.img.run/rand.php)";
-// EEE.DOG
-// let EEEDog = "url(https://api.yimian.xyz/img?type=moe&size=1920x1080)";
-// picsum随机
-let picsum = "url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/picsum_bg.webp)";
-// 小歪二次元
-// let waiDongman = "url(https://api.ixiaowai.cn/api/api.php)";
-//  小歪高清壁纸
-// let waiBizhi = "url(https://api.ixiaowai.cn/gqapi/gqapi.php)";
-// 樱花随机
-let btstu = "url(https://www.dmoe.cc/random.php)";
-// tuapi 动漫
-// let tuapi = "url(https://tuapi.eees.cc/api.php?category=dongman)";
-// unsplash随机 https://source.unsplash.com/random/1920x1080/daily (weekly)
-// let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
-
 
 // 更换背景(自己的代码)
 if (localStorage.getItem("blogbg") != undefined) {
@@ -3310,7 +3296,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6801b74488c538a9b5da3b00.jpg)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6801b74488c538a9b5da3b00.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c6f2755f902deaba.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c6f2755f902deaba.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68039ff558cb8da5c8b69585.png)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68039ff558cb8da5c8b69585.png)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6801b74488c538a9b5da3b00.jpg)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6801b74488c538a9b5da3b00.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c6f2755f902deaba.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c6f2755f902deaba.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68039ff558cb8da5c8b69585.png)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68039ff558cb8da5c8b69585.png)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68552b1658cb8da5c85e8bd6.png)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68552b1658cb8da5c85e8bd6.png)')"></a></div>
               </div>
             </details>
 
@@ -3327,23 +3313,23 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看萌宠背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f98f58cb8da5c8d55be7.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f98f58cb8da5c8d55be7.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9d358cb8da5c8d55bf1.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9d358cb8da5c8d55bf1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9e358cb8da5c8d55bf2.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9e358cb8da5c8d55bf2.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f98f58cb8da5c8d55be7.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f98f58cb8da5c8d55be7.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9d358cb8da5c8d55bf1.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9d358cb8da5c8d55bf1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9e358cb8da5c8d55bf2.webp)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6811f9e358cb8da5c8d55bf2.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/20171228231109_Qy3PJ.jpeg)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/20171228231109_Qy3PJ.jpeg)')"></a></div>
               </div>
             </details>
 
 
-<h3>4. 适配手机</h3>
+<h3>4. 美女</h3>
+<details class="folding-tag" cyan><summary> 查看美女背景 </summary>
+              <div class='content'>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803558cb8da5c8608f0c.jpg)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803558cb8da5c8608f0c.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803e58cb8da5c8608f14.jpg)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803e58cb8da5c8608f14.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803658cb8da5c8608f10.jpg)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803658cb8da5c8608f10.jpg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803658cb8da5c8608f0f.jpg)" class="imgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6856803658cb8da5c8608f0f.jpg)')"></a></div>
+              </div>
+            </details>
+
+
+<h3>5. 适配手机</h3>
 <details class="folding-tag" cyan><summary> 查看适配手机的背景 </summary>
               <div class='content'>
               <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120cd658cb8da5c8d5632b.webp)" class="pimgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120cd658cb8da5c8d5632b.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120cc758cb8da5c8d56328.webp)" class="pimgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120cc758cb8da5c8d56328.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120c1758cb8da5c8d56219.webp)" class="pimgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120c1758cb8da5c8d56219.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120c8158cb8da5c8d562ae.webp)" class="pimgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120c8158cb8da5c8d562ae.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120c5658cb8da5c8d56289.webp)" class="pimgbox" onclick="changeBg('url(https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68120c5658cb8da5c8d56289.webp)')"></a></div>
-              </div>
-            </details>
-
-
-<h3>5. 壁纸API</h3>
-<details class="folding-tag" cyan><summary> 查看壁纸API系列背景 </summary>
-              <div class='content'>
-              <div class="bgbox"><a id="picsumBox" rel="noopener external nofollow" style="background-image: ${picsum}" class="box apiBox" onclick="changeBg('${picsum}')"></a><a id="btstuBox" rel="noopener external nofollow" style="background-image: ${btstu}" class="box apiBox" onclick="changeBg('${btstu}')"></a></div>
               </div>
             </details>
 
