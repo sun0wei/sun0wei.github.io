@@ -2,7 +2,7 @@
 // const live2d_path = "https://cdn.jsdelivr.net/gh/sun0wei/live2d-widget/";
 // const live2d_path = "https://blog.sunwei.online/live2d-widget/";
 // 
-const live2d_path = "/live2d-widget/";
+const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live2d-widget/";
 
 // /assets/woff111.woff2
 
@@ -38,11 +38,9 @@ if (screen.width >= 768) {
 		// 配置选项的具体用法见 README.md
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
-			apiPath: "https://live2d.fghrsh.net/api/",
-			// cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
-			// cdnPath: "/assets/firstlive2d.json",
+			cdnPath: live2d_path,
 			// tools: ["hitokoto", "switch-texture", "photo", "quit"]
-			tools: ["hitokoto", "photo", "quit"]
+			tools: ["hitokoto", "switch-texture", "photo", "quit"]
 		});
 	});
 }
