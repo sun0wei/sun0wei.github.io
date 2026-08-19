@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/default_cover_14.webp">
 <meta property="article:published_time" content="2025-04-22T05:00:57.000Z">
-<meta property="article:modified_time" content="2026-08-18T11:57:49.092Z">
+<meta property="article:modified_time" content="2026-08-19T07:39:33.479Z">
 <meta property="article:author" content="孙 伟">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/default_cover_14.webp"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://blog.sunwei.online/link/"><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/font-awesome-all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -52,7 +52,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2026-08-18 19:57:49'
+  postUpdate: '2026-08-19 15:39:33'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -158,21 +158,29 @@
         shadowRoot.innerHTML = `
             <style>
                 :host {
-                    --primary-color: #6366f1;
-                    --primary-hover: #4f46e5;
-                    --text-color: #2d3748;
-                    --text-secondary: #4a5568;
-                    --bg-color: #ffffff;
-                    --card-bg: #ffffff;
-                    --border-radius: 8px;
-                    --transition: all 0.2s ease;
-                    --shadow-sm: 0 1px 2px rgba(0,0,0,0.1);
-                    --shadow-md: 0 3px 4px rgba(0,0,0,0.1);
-                    --shadow-lg: 0 8px 20px rgba(0,0,0,0.1);
+                    --primary-color: #49b1f5;
+                    --primary-hover: #287ca6;
+                    --text-color: #3f4a59;
+                    --text-secondary: #687589;
+                    --bg-color: transparent;
+                    --card-bg: rgba(255, 255, 255, 0.86);
+                    --card-hover-bg: rgba(73, 177, 245, 0.12);
+                    --border-color: rgba(73, 177, 245, 0.26);
+                    --border-radius: 9px;
+                    --transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+                    --shadow-sm: none;
                     display: block;
                     margin: 0;
                     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
                     all: initial; /* 重置所有继承样式 */
+                }
+
+                :host-context([data-theme="dark"]) {
+                    --text-color: #e2edf5;
+                    --text-secondary: #b8c8d4;
+                    --card-bg: rgba(32, 37, 43, 0.84);
+                    --card-hover-bg: rgba(73, 177, 245, 0.2);
+                    --border-color: rgba(142, 208, 244, 0.3);
                 }
                 
                 #${uniqueId} {
@@ -181,10 +189,10 @@
                 
                 /* --- 核心修改区域 --- */
                 #${uniqueId} .container {
-                    padding: 1.2rem;
+                    padding: 0.4rem 0;
                     /* 原本是 background: var(--bg-color); 改为透明 */
                     background: transparent; 
-                    border-radius: var(--border-radius);
+                    border-radius: 0;
                     /* 原本是 box-shadow: var(--shadow-lg); 去掉阴影以实现完全透明 */
                     box-shadow: none;
                 }
@@ -192,7 +200,7 @@
                 
                 #${uniqueId} header {
                     text-align: center;
-                    margin-bottom: 1.2rem;
+                    margin-bottom: 1.5rem;
                 }
                 
                 #${uniqueId} h1 {
@@ -200,9 +208,6 @@
                     margin: 0 0 0.3rem;
                     color: var(--text-color);
                     font-weight: 700;
-                    background: linear-gradient(90deg, #6366f1, #8b5cf6);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
                 }
                 
                 #${uniqueId} .subtitle {
@@ -213,58 +218,63 @@
                 }
                 
                 #${uniqueId} .search-box {
-                    max-width: 500px;
+                    max-width: 560px;
                     margin: 0 auto 1.2rem;
                     position: relative;
                 }
                 
                 #${uniqueId} .search-box input {
+                    box-sizing: border-box;
                     width: 100%;
-                    padding: 0.6rem 1.2rem;
-                    border: 1px solid #e2e8f0;
-                    border-radius: 40px;
+                    padding: 0.65rem 2.7rem 0.65rem 1rem;
+                    border: 1px solid var(--border-color);
+                    border-radius: 9px;
                     font-size: 0.9rem;
                     outline: none;
-                    box-shadow: var(--shadow-sm);
+                    box-shadow: none;
                     transition: var(--transition);
-                    background-color: #f8fafc;
+                    background-color: var(--card-bg);
+                    color: var(--text-color);
                 }
                 
                 #${uniqueId} .search-box input:focus {
                     border-color: var(--primary-color);
-                    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+                    box-shadow: 0 0 0 2px rgba(73, 177, 245, 0.18);
                 }
                 
                 #${uniqueId} .search-box::after {
                     content: "🔍";
                     position: absolute;
-                    right: 1.2rem;
+                    right: 0.95rem;
                     top: 50%;
                     transform: translateY(-50%);
-                    opacity: 0.5;
+                    color: var(--primary-color);
+                    opacity: 0.8;
+                    pointer-events: none;
                 }
                 
                 #${uniqueId} .category {
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 2rem;
                 }
                 
                 #${uniqueId} .category-header {
                     display: flex;
                     align-items: center;
-                    margin: 0 0 0.8rem;
-                    padding-bottom: 0.4rem;
-                    border-bottom: 1px solid #f1f5f9;
+                    margin: 0 0 0.9rem;
+                    padding: 0 0 0.6rem 0.7rem;
+                    border-bottom: 1px solid var(--border-color);
+                    border-left: 3px solid var(--primary-color);
                 }
                 
                 #${uniqueId} .category-icon {
-                    font-size: 1.3rem;
-                    margin-right: 0.6rem;
+                    font-size: 1.08rem;
+                    margin-right: 0.45rem;
                     width: 1.5rem;
                     text-align: center;
                 }
                 
                 #${uniqueId} .category-title {
-                    font-size: 1.1rem;
+                    font-size: 1.02rem;
                     margin: 0;
                     color: var(--text-color);
                     font-weight: 600;
@@ -273,55 +283,24 @@
                 
                 #${uniqueId} .links-container {
                     display: grid;
-                    grid-template-columns: repeat(6, 1fr);
-                    gap: 0.8rem;
+                    grid-template-columns: repeat(5, minmax(0, 1fr));
+                    gap: 0.75rem;
                 }
                 
                 #${uniqueId} .link-card {
                     background: var(--card-bg);
                     border-radius: var(--border-radius);
-                    padding: 0.7rem;
-                    box-shadow: var(--shadow-sm);
+                    padding: 0.85rem 0.7rem;
+                    box-shadow: none;
                     transition: var(--transition);
-                    border: 1px solid #e2e8f0;
+                    border: 1px solid var(--border-color);
                     position: relative;
                     overflow: hidden;
                 }
                 
-                #${uniqueId} .link-card::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 2px;
-                    height: 100%;
-                    background: linear-gradient(to bottom, var(--primary-color), #8b5cf6);
-                    opacity: 0;
-                    transition: var(--transition);
-                }
-                
-                #${uniqueId} .link-card::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 2px;
-                    height: 100%;
-                    background: linear-gradient(to bottom, var(--primary-color), #8b5cf6);
-                    opacity: 0;
-                    transition: var(--transition);
-                }
-                
                 #${uniqueId} .link-card:hover {
-                    transform: translateY(-2px);
-                    box-shadow: var(--shadow-md);
-                    border-color: #cbd5e0;
-                    background-color: #f8fafc;
-                }
-                
-                #${uniqueId} .link-card:hover::before,
-                #${uniqueId} .link-card:hover::after {
-                    opacity: 1;
+                    border-color: var(--primary-color);
+                    background-color: var(--card-hover-bg);
                 }
                 
                 #${uniqueId} .link-card a {
@@ -334,18 +313,19 @@
                 }
                 
                 #${uniqueId} .link-icon {
-                    width: 32px;
-                    height: 32px;
-                    margin-bottom: 0.5rem;
-                    border-radius: 6px;
+                    width: 36px;
+                    height: 36px;
+                    margin-bottom: 0.55rem;
+                    border: 1px solid rgba(73, 177, 245, 0.2);
+                    border-radius: 8px;
                     object-fit: cover;
-                    background: #f1f5f9;
-                    padding: 0.2rem;
-                    box-shadow: var(--shadow-sm);
+                    background: rgba(73, 177, 245, 0.08);
+                    padding: 0.18rem;
+                    box-shadow: none;
                 }
                 
                 #${uniqueId} .link-title {
-                    font-size: 0.9rem;
+                    font-size: 0.88rem;
                     margin: 0;
                     color: var(--text-color);
                     font-weight: 600;
@@ -357,7 +337,7 @@
                 }
                 
                 #${uniqueId} .link-description {
-                    font-size: 0.75rem;
+                    font-size: 0.74rem;
                     color: var(--text-secondary);
                     line-height: 1.2;
                     margin-top: 0.3rem;
@@ -368,11 +348,11 @@
                 
                 #${uniqueId} footer {
                     text-align: center;
-                    margin-top: 1.5rem;
-                    padding: 0.8rem;
+                    margin-top: 0.5rem;
+                    padding: 0.9rem 0 0;
                     color: var(--text-secondary);
                     font-size: 0.8rem;
-                    border-top: 1px solid #f1f5f9;
+                    border-top: 1px solid var(--border-color);
                 }
                 
                 #${uniqueId} .no-results {
@@ -385,25 +365,25 @@
                 
                 @media (max-width: 1200px) {
                     #${uniqueId} .links-container {
-                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-columns: repeat(4, minmax(0, 1fr));
                     }
                 }
                 
                 @media (max-width: 992px) {
                     #${uniqueId} .links-container {
-                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-columns: repeat(3, minmax(0, 1fr));
                     }
                 }
                 
                 @media (max-width: 768px) {
                     #${uniqueId} .links-container {
-                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
                     }
                 }
                 
                 @media (max-width: 576px) {
                     #${uniqueId} .links-container {
-                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
                     }
                     
                     #${uniqueId} h1 {
@@ -424,7 +404,7 @@
                 <div class="container">
                     <header>
                         <div class="search-box">
-                            <input type="text" placeholder="搜索框架、工具或资源..." id="search-input">
+                            <input type="text" placeholder="搜索常用网站、工具或资源..." id="search-input">
                         </div>
                     </header>
                     </div>
@@ -943,7 +923,7 @@
             
             html += `
                     <footer>
-                        <p>© ${new Date().getFullYear()} 前端开发者导航 | 持续更新优质前端资源</p>
+                        <p>收录我常用的网站与工具</p>
                     </footer>
             `;
             
@@ -1025,9 +1005,6 @@
         setupSearch();
     })();
 </script>
-
-
-
 
 </div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言📝</p><div class="bg-ad"><div>我清楚地知道，人与人的路都是不可复制的。我走在我自己的人生路上，哪怕路途的风雨再大，大到我步履维艰。哪怕荆棘丛生，刺得我伤痕遍布。我也仍旧痴痴笑笑，我体会此中滋味！✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://travel.moe/go.html">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看👀</p><ul class="ft-links"><li><a href="/link/">网址导航</a><a href="/archives/">文章归档</a></li><li><a href="/tags/">文章标签</a><a href="/categories/">文章分类</a></li><li><a href="/life/gallery/">图片中心</a><a href="/life/music/">音乐中心</a></li><li><a href="/bangumis/">视频中心</a><a href="/personal/time/">我の名言</a></li><li><a href="/personal/love/">我の目标</a><a href="/personal/about/">关于我</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">常用网站🔗</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.bilibili.com/" title="biliblil"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/680a376d58cb8da5c8c90e48.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="http://10.17.8.18/" title="上网登录页面"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/link_icons/OIP-C.moj_dQ_RC01f_M5c1SWn8AHaHa" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://ehall.jxust.edu.cn/new/index.html" title="江理教务系统"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/link_icons/t0126983fc5d3e99384.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://github.com/" title="github"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/680a3b5e58cb8da5c8c90ffd.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.meishuzi.cn/" title="艺术字"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6810db1958cb8da5c8d46fcc.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://chat.deepseek.com/" title="deepseek"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/link_icons/icon.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.overleaf.com/" title="overleaf"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/link_icons/apple-touch-icon.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.douyin.com/user/self?rom_tab_name=main&amp;showTab=favorite_collection" title="抖音"><img src="https://lf1-cdn-tos.bytegoofy.com/goofy/ies/douyin_web/public/favicon.ico" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2023-2026</b></span><span><b>&nbsp;&nbsp;By 孙 伟</b></span></div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/badge_hexo.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/badge_butterfly.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/badge_vercel.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20251970" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20251970号"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/68b6bb0c58cb8da5c872d1bd.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" title="本站使用JsDelivr为静态资源提供CDN加速"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/badge_jsdelivr.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/badge_github.svg" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/badge_copyright.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于我</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/fancybox.umd.min.js"></script><script src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/instantpage.min.js" type="module"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
   const init = () => {

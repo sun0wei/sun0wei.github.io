@@ -9455,6 +9455,41 @@ hr:before {
   color: #aaa;
 }
 
+/* Twikoo 长回复展开/收起按钮 */
+.twikoo .tk-expand {
+  display: table;
+  margin: 0 auto 4px;
+  padding: 6px 18px;
+  border: 1px solid #c7cbd1;
+  border-top: 0;
+  border-radius: 0 0 7px 7px;
+  background: #e5e7eb;
+  color: #4b5563;
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.35;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.twikoo .tk-expand:hover {
+  border-color: #aeb4bd;
+  background: #c7cbd1;
+  color: #1f2937;
+}
+
+[data-theme="dark"] .twikoo .tk-expand {
+  border-color: #555b64;
+  background: #3f454d;
+  color: #d5d9df;
+}
+
+[data-theme="dark"] .twikoo .tk-expand:hover {
+  border-color: #6b737e;
+  background: #555b64;
+  color: #fff;
+}
+
 .search-dialog {
   position: fixed;
   top: 10%;
