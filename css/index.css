@@ -8791,6 +8791,15 @@ i.fas.fa-cog.right_side {
   margin: 0 -16px 0 -25px;
 }
 
+/* 文章页目录保持原样式，仅在桌面端移至左侧 */
+@media screen and (min-width: 901px) {
+  #body-wrap.post #content-inner > #aside-content.post-toc-aside {
+    order: -1;
+    padding-right: 15px;
+    padding-left: 0;
+  }
+}
+
 /* diff块颜色 */
 figure.highlight pre .addition {
   color: #13dfa8;
