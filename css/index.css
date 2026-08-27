@@ -6679,6 +6679,16 @@ div#archive {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+/* 目录跳转时，为固定导航栏预留标题显示空间。 */
+#article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4,
+#article-container h5,
+#article-container h6 {
+  scroll-margin-top: 80px;
+}
+
 /* 夜间模式遮罩 */
 [data-theme="dark"] #recent-posts > .recent-post-item,
 [data-theme="dark"] #aside-content .card-widget,
@@ -7404,6 +7414,12 @@ input#pic-link {
   --loading-color: rgba(25, 25, 25, 0.92) !important;
 }
 
+@media screen and (mai-width: 768px) {
+  #nav {
+    padding: 0 28px;
+  }
+}
+
 /* 顶栏常驻 */
 .nav-fixed #nav {
   transform: translateY(58px) !important;
@@ -7418,12 +7434,6 @@ input#pic-link {
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
-}
-
-@media screen and (mai-width: 768px) {
-  #nav {
-    padding: 0 28px;
-  }
 }
 
 /* 导航栏显示标题 */

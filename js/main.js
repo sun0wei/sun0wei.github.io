@@ -367,7 +367,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const $target = target.contains('toc-link')
           ? e.target
           : e.target.parentElement
-        btf.scrollToDest(btf.getEleTop(document.getElementById(decodeURI($target.getAttribute('href')).replace('#', ''))), 300)
+        const tocTargetTop = Math.max(0, btf.getEleTop(document.getElementById(decodeURI($target.getAttribute('href')).replace('#', ''))) - 80)
+        btf.scrollToDest(window.pageYOffset > tocTargetTop ? tocTargetTop + 70 : tocTargetTop, 300)
         if (window.innerWidth < 900) {
           window.mobileToc.close()
         }
@@ -397,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let currentIndex = ''
 
       list.forEach(function (ele, index) {
-        if (top > btf.getEleTop(ele) - 80) {
+        if (top >= btf.getEleTop(ele) - 80) {
           const id = ele.id
           currentId = id ? '#' + encodeURI(id) : ''
           currentIndex = index
