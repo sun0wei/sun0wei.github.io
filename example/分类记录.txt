@@ -12,3 +12,4 @@
 ………………
 
 ③常用代码：
+{% inlineimage 图片链接, height=210px %}
