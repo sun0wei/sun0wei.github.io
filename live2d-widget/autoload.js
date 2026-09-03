@@ -1,66 +1,96 @@
-// live2d_path 参数建议使用绝对路径
-// const live2d_path = "https://cdn.jsdelivr.net/gh/sun0wei/live2d-widget/";
-// const live2d_path = "https://blog.sunwei.online/live2d-widget/";
-// 
+// Live2D is available on desktop pages and starts after the main page is ready.
 const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live2d-widget/";
 
-// /assets/woff111.woff2
+(() => {
+  if (window.__live2dAutoloadStarted) return;
+  window.__live2dAutoloadStarted = true;
 
-// 封装异步加载资源的方法
-function loadExternalResource(url, type) {
-	return new Promise((resolve, reject) => {
-		let tag;
+  // Articles with a generated table of contents hide the widget while keeping
+  // it available on pages without a TOC. The content container is replaced by
+  // PJAX, so this check is intentionally performed whenever navigation ends.
+  const shouldAutoHide = () => Boolean(
+    document.querySelector('#body-wrap.post #card-toc')
+  );
+  let autoHidden = false;
 
-		if (type === "css") {
-			tag = document.createElement("link");
-			tag.rel = "stylesheet";
-			tag.href = url;
-		}
-		else if (type === "js") {
-			tag = document.createElement("script");
-			tag.src = url;
-		}
-		if (tag) {
-			tag.onload = () => resolve(url);
-			tag.onerror = () => reject(url);
-			document.head.appendChild(tag);
-		}
-	});
-}
+  const syncVisibility = () => {
+    const waifu = document.getElementById('waifu');
+    const toggle = document.getElementById('waifu-toggle');
+    if (!waifu || !toggle) return;
 
-// 加载 waifu.css live2d.min.js waifu-tips.js
-if (screen.width >= 768) {
-	Promise.all([
-		loadExternalResource(live2d_path + "waifu.css", "css"),
-		loadExternalResource(live2d_path + "live2d.min.js", "js"),
-		loadExternalResource(live2d_path + "waifu-tips.js", "js")
-	]).then(() => {
-		// 配置选项的具体用法见 README.md
-		initWidget({
-			waifuPath: live2d_path + "waifu-tips.json",
-			cdnPath: live2d_path,
-			// tools: ["hitokoto", "switch-texture", "photo", "quit"]
-			tools: ["hitokoto", "switch-texture", "photo", "quit"]
-		});
-	});
-}
+    if (shouldAutoHide()) {
+      if (autoHidden) return;
+      autoHidden = true;
+      waifu.style.display = 'none';
+      toggle.classList.add('waifu-toggle-active');
+      return;
+    }
 
-console.log(`
-  く__,.ヘヽ.        /  ,ー､ 〉
-           ＼ ', !-─‐-i  /  /´
-           ／｀ｰ'       L/／｀ヽ､
-         /   ／,   /|   ,   ,       ',
-       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
-        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
-          !,/7 '0'     ´0iソ|    |
-          |.从"    _     ,,,, / |./    |
-          ﾚ'| i＞.､,,__  _,.イ /   .i   |
-            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
-              | |/i 〈|/   i  ,.ﾍ |  i  |
-             .|/ /  ｉ：    ﾍ!    ＼  |
-              kヽ>､ﾊ    _,.ﾍ､    /､!
-              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
-              ﾚ'ヽL__|___i,___,ンﾚ|ノ
-                  ﾄ-,/  |___./
-                  'ｰ'    !_,.:
-`);
+    if (!autoHidden) return;
+    autoHidden = false;
+    waifu.style.display = '';
+    waifu.style.bottom = 0;
+    toggle.classList.remove('waifu-toggle-active');
+  };
+
+  document.addEventListener('pjax:complete', () => {
+    window.setTimeout(syncVisibility, 0);
+  });
+
+  // Keep the mobile experience light. The toggle remains available on desktop.
+  if (window.innerWidth < 768) return;
+
+  const loadExternalResource = (url, type) => new Promise((resolve, reject) => {
+    const selector = type === 'css' ? `link[href="${url}"]` : `script[src="${url}"]`;
+    const existing = document.querySelector(selector);
+    if (existing) {
+      resolve(url);
+      return;
+    }
+
+    const tag = document.createElement(type === 'css' ? 'link' : 'script');
+    if (type === 'css') {
+      tag.rel = 'stylesheet';
+      tag.href = url;
+    } else {
+      tag.src = url;
+      tag.async = true;
+    }
+    tag.onload = () => resolve(url);
+    tag.onerror = () => reject(new Error(`Failed to load ${url}`));
+    document.head.appendChild(tag);
+  });
+
+  const init = () => {
+    if (window.__live2dWidgetInitialized || document.getElementById('waifu')) return;
+    window.__live2dWidgetInitialized = true;
+
+    Promise.all([
+      loadExternalResource(live2d_path + 'waifu.css', 'css'),
+      loadExternalResource(live2d_path + 'live2d.min.js', 'js'),
+      loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
+    ]).then(() => {
+      if (typeof window.initWidget !== 'function') throw new Error('Live2D initializer is unavailable');
+      window.initWidget({
+        waifuPath: live2d_path + 'waifu-tips.json',
+        cdnPath: live2d_path,
+        tools: ['hitokoto', 'switch-texture', 'photo', 'quit']
+      });
+      syncVisibility();
+    }).catch(error => {
+      window.__live2dWidgetInitialized = false;
+      console.warn('[Live2D] skipped:', error.message || error);
+    });
+  };
+
+  const scheduleInit = () => {
+    if (typeof window.requestIdleCallback === 'function') {
+      window.requestIdleCallback(init, { timeout: 2500 });
+    } else {
+      window.setTimeout(init, 1200);
+    }
+  };
+
+  if (document.readyState === 'complete') scheduleInit();
+  else window.addEventListener('load', scheduleInit, { once: true });
+})();

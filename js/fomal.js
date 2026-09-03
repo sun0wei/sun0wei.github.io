@@ -1,3 +1,45 @@
+// Vue/Element UI are only needed for notification popups. Load them on demand
+// so normal page visits do not download the large libraries up front.
+let notificationAssetsPromise;
+function loadNotificationAssets() {
+  if (window.Vue && window.Vue.prototype && window.Vue.prototype.$notify) return Promise.resolve();
+  if (notificationAssetsPromise) return notificationAssetsPromise;
+
+  const load = (url, attributes = {}) => new Promise((resolve, reject) => {
+    const existing = document.querySelector(`[src="${url}"], [href="${url}"]`);
+    if (existing) {
+      existing.addEventListener('load', resolve, { once: true });
+      if (window.Vue && window.Vue.prototype && window.Vue.prototype.$notify) resolve();
+      return;
+    }
+    const tag = document.createElement(attributes.rel ? 'link' : 'script');
+    Object.assign(tag, attributes);
+    if (tag.tagName === 'SCRIPT') tag.async = true;
+    tag.onload = resolve;
+    tag.onerror = reject;
+    document.head.appendChild(tag);
+  });
+
+  notificationAssetsPromise = load('https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/element-ui.css', { rel: 'stylesheet', href: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/element-ui.css' })
+    .then(() => load('https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/vue.min.js', { src: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/vue.min.js' }))
+    .then(() => load('https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/element-ui.js', { src: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/element-ui.js' }));
+  return notificationAssetsPromise;
+}
+
+function notify(options) {
+  loadNotificationAssets().then(() => {
+    if (window.Vue && window.Vue.prototype && window.Vue.prototype.$notify) {
+      new window.Vue({ data() { this.$notify(options); } });
+    } else if (window.btf && typeof window.btf.snackbarShow === 'function') {
+      window.btf.snackbarShow(options.message || options.title || '');
+    }
+  }).catch(() => {
+    if (window.btf && typeof window.btf.snackbarShow === 'function') {
+      window.btf.snackbarShow(options.message || options.title || '');
+    }
+  });
+}
+
 /* 阅读进度 start */
 document.addEventListener('pjax:complete', function () {
   window.onscroll = percent;
@@ -345,19 +387,15 @@ function debounce(fn, time) {
 // 复制提醒
 document.addEventListener("copy", function () {
   debounce(function () {
-    new Vue({
-      data: function () {
-        this.$notify({
-          title: "哎嘿！复制成功🍬",
-          message: "若要转载最好保留原文链接哦，给你一个大大的赞！",
-          position: 'top-left',
-          offset: 50,
-          showClose: true,
-          type: "success",
-          duration: 5000
-        });
-      }
-    })
+    notify({
+      title: "哎嘿！复制成功🍬",
+      message: "若要转载最好保留原文链接哦，给你一个大大的赞！",
+      position: 'top-left',
+      offset: 50,
+      showClose: true,
+      type: "success",
+      duration: 5000
+    });
   }, 300);
 })
 
@@ -366,19 +404,15 @@ document.addEventListener("copy", function () {
 document.onkeydown = function (e) {
   if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) {
     debounce(function () {
-      new Vue({
-        data: function () {
-          this.$notify({
-            title: "你已被发现😜",
-            message: "小伙子，扒源记住要遵循GPL协议！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "warning",
-            duration: 5000
-          });
-        }
-      })
+      notify({
+        title: "你已被发现😜",
+        message: "小伙子，扒源记住要遵循GPL协议！",
+        position: 'top-left',
+        offset: 50,
+        showClose: true,
+        type: "warning",
+        duration: 5000
+      });
     }, 300);
   }
 };
@@ -1071,37 +1105,13 @@ function changeMouseMode() {
     mouseMode = "off";
     localStorage.setItem("mouse", "off");
     debounce(function () {
-      new Vue({
-        data: function () {
-          this.$notify({
-            title: "切换右键模式成功🍔",
-            message: "当前鼠标右键已恢复为系统默认！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "success",
-            duration: 5000
-          });
-        }
-      })
+      notify({ title: "切换右键模式成功🍔", message: "当前鼠标右键已恢复为系统默认！", position: 'top-left', offset: 50, showClose: true, type: "success", duration: 5000 });
     }, 300);
   } else {
     mouseMode = "on";
     localStorage.setItem("mouse", "on");
     debounce(function () {
-      new Vue({
-        data: function () {
-          this.$notify({
-            title: "切换右键模式成功🍔",
-            message: "当前鼠标右键已更换为网站指定样式！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "success",
-            duration: 5000
-          });
-        }
-      })
+      notify({ title: "切换右键模式成功🍔", message: "当前鼠标右键已更换为网站指定样式！", position: 'top-left', offset: 50, showClose: true, type: "success", duration: 5000 });
     }, 300);
   }
 }
@@ -1223,19 +1233,7 @@ function switchNightMode() {
     document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')
     // 延时弹窗提醒
     setTimeout(() => {
-      new Vue({
-        data: function () {
-          this.$notify({
-            title: "关灯啦🌙",
-            message: "当前已成功切换至夜间模式！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "success",
-            duration: 5000
-          });
-        }
-      })
+      notify({ title: "关灯啦🌙", message: "当前已成功切换至夜间模式！", position: 'top-left', offset: 50, showClose: true, type: "success", duration: 5000 });
     }, 2000)
   } else {
     // 先设置太阳月亮透明度
@@ -1250,19 +1248,7 @@ function switchNightMode() {
     saveToLocal.set('theme', 'light', 2)
     document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')
     setTimeout(() => {
-      new Vue({
-        data: function () {
-          this.$notify({
-            title: "开灯啦🌞",
-            message: "当前已成功切换至白天模式！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "success",
-            duration: 5000
-          });
-        }
-      })
+      notify({ title: "开灯啦🌞", message: "当前已成功切换至白天模式！", position: 'top-left', offset: 50, showClose: true, type: "success", duration: 5000 });
     }, 2000)
   }
   // handle some cases
@@ -1285,20 +1271,7 @@ function share_() {
     var siteTitleSuffix = "| 孙伟の博客";
     var subTitle = title.endsWith(siteTitleSuffix) ? title.slice(0, -siteTitleSuffix.length).trim() : title;
     navigator.clipboard.writeText('孙伟の站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！♪(´▽｀)');
-    new Vue({
-      data: function () {
-        this.$notify({
-          title: "成功复制分享信息🎉",
-          message: "您现在可以通过粘贴直接跟小伙伴分享了！",
-          position: 'top-left',
-          offset: 50,
-          showClose: true,
-          type: "success",
-          duration: 5000
-        });
-        // return { visible: false }
-      }
-    })
+    notify({ title: "成功复制分享信息🎉", message: "您现在可以通过粘贴直接跟小伙伴分享了！", position: 'top-left', offset: 50, showClose: true, type: "success", duration: 5000 });
   } catch (err) {
     console.error('复制失败！', err);
   }
@@ -2810,19 +2783,7 @@ if (localStorage.getItem("reset_4") == undefined) {
   }
   clearItem();
   setTimeout(function () {
-    new Vue({
-      data: function () {
-        this.$notify({
-          title: "提示🍒",
-          message: " (｡･∀･)ﾉﾞ由于网站部分设置项更新，当前已为您重置所有设置，祝您愉快！",
-          position: 'top-left',
-          offset: 50,
-          showClose: true,
-          type: "success",
-          duration: 8000
-        });
-      }
-    })
+    notify({ title: "提示🍒", message: " (｡･∀･)ﾉﾞ由于网站部分设置项更新，当前已为您重置所有设置，祝您愉快！", position: 'top-left', offset: 50, showClose: true, type: "success", duration: 8000 });
   }, 1500);
 }
 
@@ -3099,34 +3060,10 @@ function getPicture_() {
     var link = "url(" + document.getElementById("pic-link").value + ")";
     changeBg(link);
     // 提示切换成功
-    new Vue({
-      data: function () {
-        this.$notify({
-          title: "可以啦🍨",
-          message: "切换自定义背景成功！",
-          position: 'top-left',
-          offset: 50,
-          showClose: true,
-          type: "success",
-          duration: 5000
-        });
-      }
-    })
+    notify({ title: "可以啦🍨", message: "切换自定义背景成功！", position: 'top-left', offset: 50, showClose: true, type: "success", duration: 5000 });
   }).catch(() => {
     // 无效的图片链接，提示无效
-    new Vue({
-      data: function () {
-        this.$notify({
-          title: "链接不对🤣",
-          message: "请输入有效的图片链接！",
-          position: 'top-left',
-          offset: 50,
-          showClose: true,
-          type: "warning",
-          duration: 5000
-        });
-      }
-    })
+    notify({ title: "链接不对🤣", message: "请输入有效的图片链接！", position: 'top-left', offset: 50, showClose: true, type: "warning", duration: 5000 });
   })
 }
 // 判断图片链接是否可用
