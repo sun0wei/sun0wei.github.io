@@ -5,3 +5,209 @@
 ②明确文章的：标题、作者、AI总述、正文、我的读后感【五大要素】
 然后替换下面代码中对应变量。
 
+{% raw %}
+<div id="short-story-container">
+  <script>
+    (function () {
+      const container = document.getElementById('short-story-container');
+      const shadowRoot = container.attachShadow({ mode: 'open' });
+
+
+
+
+
+      const storyTitle = '';
+      const storyAuthor = '';
+      const storyAiSummary = '';
+      const storyParagraphs = [
+        '',
+        '',
+        '',
+        '',
+        '',
+        ''
+      ];
+      const storyReflection = '';
+
+
+
+
+
+
+      const style = document.createElement('style');
+      style.textContent = `
+        :host {
+          display: block;
+          max-width: 900px;
+          margin: 18px auto;
+          padding: 0;
+          position: relative;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.82);
+          border: 1px solid rgba(73, 177, 245, 0.2);
+          border-radius: 12px;
+          box-shadow: 0 8px 24px rgba(52, 73, 94, 0.08);
+        }
+
+        .title-wrap {
+          border-bottom: 1px solid rgba(73, 177, 245, 0.18);
+          padding: 24px 28px 18px;
+          margin: 0;
+          background: linear-gradient(135deg, rgba(73, 177, 245, 0.1), rgba(255, 255, 255, 0.78));
+          position: relative;
+        }
+
+        .title-wrap::before,
+        .title-wrap::after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          width: 72px;
+          height: 3px;
+          background: #49b1f5;
+          border-radius: 3px;
+        }
+
+        .title-wrap::before {
+          left: 28px;
+        }
+
+        .title-wrap::after {
+          right: 28px;
+        }
+
+        .story-title {
+          text-align: center;
+          color: #34495e;
+          font-size: 28px;
+          line-height: 1.4;
+          margin: 0 0 8px;
+          font-weight: 700;
+          letter-spacing: 0;
+          font-family: inherit;
+        }
+
+        .author {
+          text-align: center;
+          color: #7f8c8d;
+          margin: 0;
+          font-size: 14px;
+          letter-spacing: 0;
+        }
+
+        .story-intro {
+          margin: 22px 28px 0;
+          padding: 14px 18px;
+          color: #5f6f7a;
+          background: rgba(73, 177, 245, 0.08);
+          border-left: 3px solid #49b1f5;
+          border-radius: 6px;
+          line-height: 1.8;
+          font-size: 15px;
+        }
+
+        .story-content {
+          line-height: 2;
+          color: #4f5f6d;
+          text-indent: 2em;
+          background: transparent;
+          padding: 22px 28px 8px;
+          margin: 0;
+          position: relative;
+        }
+
+        .story-content p {
+          margin: 0 0 1.15em;
+          font-size: 16px;
+        }
+
+        .reflection {
+          background: rgba(73, 177, 245, 0.06);
+          padding: 20px 28px 24px;
+          border-top: 1px solid rgba(73, 177, 245, 0.16);
+          margin: 0;
+          position: relative;
+          color: #5f6f7a;
+          line-height: 1.9;
+        }
+
+        .reflection-title {
+          color: #34495e;
+          margin-top: 0;
+          font-family: inherit;
+          text-align: left;
+          font-size: 20px;
+          border-bottom: 1px solid rgba(73, 177, 245, 0.18);
+          padding-bottom: 9px;
+          margin-bottom: 12px;
+        }
+
+        .reflection p {
+          margin: 0 0 8px;
+          font-size: 15px;
+        }
+
+        @media (max-width: 600px) {
+          :host {
+            margin: 12px 0;
+            border-radius: 10px;
+          }
+
+          .title-wrap {
+            padding: 20px 18px 16px;
+          }
+
+          .story-title {
+            font-size: 23px;
+          }
+
+          .title-wrap::before {
+            left: 18px;
+          }
+
+          .title-wrap::after {
+            right: 18px;
+          }
+
+          .story-intro {
+            margin-left: 18px;
+            margin-right: 18px;
+          }
+
+          .story-content {
+            padding: 18px 18px 4px;
+          }
+
+          .story-content p {
+            font-size: 15px;
+            line-height: 1.9;
+          }
+
+          .reflection {
+            padding-left: 18px;
+            padding-right: 18px;
+          }
+        }
+      `;
+      shadowRoot.appendChild(style);
+
+      const content = document.createElement('div');
+      content.innerHTML = `
+        <div class="title-wrap">
+          <p class="story-title">${storyTitle}</p>
+          <p class="author">作者：${storyAuthor}</p>
+        </div>
+        <div class="story-intro">AI 总述：${storyAiSummary}</div>
+        <div class="story-content">
+          ${storyParagraphs.map(paragraph => `<p>${paragraph}</p>`).join('')}
+        </div>
+        <div class="reflection">
+          <h3 class="reflection-title">我的读后感</h3>
+          <p>${storyReflection}</p>
+        </div>
+      `;
+      shadowRoot.appendChild(content);
+    })();
+  </script>
+</div>
+{% endraw %}
