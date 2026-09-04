@@ -1,0 +1,108 @@
+①先填写好文件配置基本信息。
+
+
+===========================================================================================================================================
+②明确文章的：英文标、标题、总述、图片链接、日记卡片【五大要素】
+
+{% raw %}
+<div id="graduate-diary-board-202608"></div>
+<script>
+
+
+
+
+
+
+
+(function () {
+  const diaryEyebrow = 'GRADUATE DIARY · 2026';
+  const diaryTitle = '202608日记';
+  const diaryIntro = '记录研究生阶段的焦虑、选择与日常片段。';
+  const diaryImageUrls = [
+    'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/dfe8457843574389frtfrf.png',
+    'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/fdjkfljeroigyfhwruoeflf.png',
+    'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/4347827540895tu4iff.png'
+  ];
+  const diaryCards = [
+    {
+      month: '2026 年 08 月',
+      date: '2026.08.28',
+      title: '研究生阶段一',
+      status: '已完成',
+      blocks: [
+        { type: 'text', value: '①内容一' },
+        { type: 'text', value: '②内容二 ' },
+        { type: 'images', indexes: [0, 1] },
+        { type: 'text', value: '③内容三' },
+        { type: 'images', indexes: [2] }
+      ]
+    },
+    {
+      month: '2026 年 08 月',
+      date: '2026.08.29',
+      title: '研究生阶段二',
+      status: '已完成',
+      blocks: [
+        { type: 'text', value: '③内容一' },
+        { type: 'images', indexes: [2] }
+      ]
+    }
+  ];
+
+
+
+
+
+
+
+  const host = document.getElementById('graduate-diary-board-202608');
+  if (!host || host.shadowRoot) return;
+  const root = host.attachShadow({ mode: 'open' });
+  const css = document.createElement('style');
+  css.textContent = `
+    :host{display:block;max-width:980px;margin:18px auto;color:#52616b;font-family:inherit}
+    *{box-sizing:border-box}.board{overflow:hidden;border:1px solid rgba(73,177,245,.2);border-radius:12px;background:rgba(255,255,255,.9);box-shadow:0 8px 24px rgba(52,73,94,.08)}
+    .hero{padding:28px 30px 24px;border-bottom:1px solid rgba(73,177,245,.16);background:linear-gradient(135deg,rgba(73,177,245,.12),rgba(255,255,255,.78))}.eyebrow{margin:0 0 8px;color:#49b1f5;font-size:.78rem;font-weight:700;letter-spacing:.14em}h1{margin:0;color:#34495e;font-size:clamp(1.65rem,4vw,2.25rem);line-height:1.3}.intro{margin:10px 0 0;color:#7f8c8d;font-size:.94rem;line-height:1.8}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}.stat{padding:12px 14px;border:1px solid rgba(73,177,245,.14);border-radius:8px;background:rgba(255,255,255,.7)}.stat strong{display:block;color:#34495e;font-size:1.25rem;line-height:1.2}.stat span{display:block;margin-top:4px;color:#9aa8b3;font-size:.76rem}
+    .timeline{position:relative;padding:24px 28px 30px 52px}.timeline:before{position:absolute;top:30px;bottom:30px;left:31px;width:2px;background:rgba(73,177,245,.22);content:''}.month{position:relative}.month-title{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:28px;margin:0 0 12px -34px;padding:0 10px;border:1px solid rgba(73,177,245,.24);border-radius:14px;background:#fff;color:#49b1f5;font-size:.82rem;font-weight:700}.record{position:relative;margin:0 0 24px;padding:20px 18px;border:1px solid #a9d8f4;border-radius:9px;background:#f8fcff;box-shadow:0 6px 16px rgba(42,111,157,.16)}.record:before{position:absolute;top:22px;left:-27px;width:10px;height:10px;border:3px solid #fff;border-radius:50%;background:#49b1f5;box-shadow:0 0 0 1px rgba(73,177,245,.3);content:''}.record-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.record-date{display:inline-flex;align-items:center;padding:5px 10px;border:1px solid rgba(73,177,245,.34);border-radius:7px;background:#eaf6ff;color:#28648d;font-size:.82rem;font-weight:700;line-height:1.2}.status{padding:3px 8px;border-radius:10px;background:rgba(230,162,60,.14);color:#bb8128;font-size:.72rem}.record-title{margin:12px 0 8px;color:#52616b;font-size:1rem;font-weight:600}.record-note{margin:0;color:#687780;font-size:.9rem;line-height:1.8}.record-note p{margin:0 0 14px}.record-note p:last-child{margin-bottom:0}.record-note img{display:block;width:auto;max-width:100%;height:210px;margin:10px auto 16px;object-fit:contain;border:1px solid #d7eaf7;border-radius:6px;background:#fff;box-shadow:0 3px 10px rgba(42,111,157,.1)}
+    @media(max-width:680px){.hero{padding:22px 18px 20px}.stats{grid-template-columns:repeat(2,1fr)}.timeline{padding:22px 18px 26px 42px}.timeline:before{left:23px}.month-title{margin-left:-28px}.record:before{left:-25px}.record-note img{height:auto;max-height:210px}}
+  `;
+  root.appendChild(css);
+  const alignment = document.createElement('style');
+  alignment.textContent = '.record-note img{margin-left:0;margin-right:0}';
+  root.appendChild(alignment);
+  root.innerHTML += `
+    <section class="board">
+      <header class="hero"><p class="eyebrow">${diaryEyebrow}</p><h1>${diaryTitle}</h1><p class="intro">${diaryIntro}</p><div class="stats"><div class="stat"><strong data-stat="total">0</strong><span>累计记录</span></div><div class="stat"><strong data-stat="done">0</strong><span>已完成</span></div><div class="stat"><strong data-stat="streak">—</strong><span>连续记录</span></div><div class="stat"><strong data-stat="rate">—</strong><span>记录状态</span></div></div></header>
+      <div class="timeline" data-timeline></div>
+    </section>`;
+
+  const imageHtml = diaryImageUrls.map(url => '<img src="' + url + '" alt="" loading="lazy">');
+  const records = diaryCards.map(card => ({
+    month: card.month,
+    date: card.date,
+    title: card.title,
+    status: card.status,
+    note: card.blocks.map(block => block.type === 'images'
+      ? block.indexes.map(index => imageHtml[index] || '').join('')
+      : '<p>' + block.value + '</p>'
+    ).join('')
+  }));
+  const timeline = root.querySelector('[data-timeline]');
+  function updateStats() {
+    root.querySelector('[data-stat="total"]').textContent = records.length;
+    root.querySelector('[data-stat="done"]').textContent = records.filter(record => record.status === '已完成').length;
+    root.querySelector('[data-stat="rate"]').textContent = records.length && records.every(record => record.status === '已完成') ? '已完成' : '记录中';
+  }
+  function render() {
+    const months = {};
+    records.forEach(record => {
+      if (!months[record.month]) months[record.month] = [];
+      months[record.month].push(record);
+    });
+    timeline.innerHTML = Object.keys(months).map(month => '<section class="month"><h2 class="month-title">' + month + '</h2>' + months[month].map(item => '<article class="record"><div class="record-head"><time class="record-date">' + item.date + '</time><span class="status">' + item.status + '</span></div><h3 class="record-title">' + item.title + '</h3><div class="record-note">' + item.note + '</div></article>').join('') + '</section>').join('');
+  }
+  updateStats(); render();
+}());
+</script>
+{% endraw %}
