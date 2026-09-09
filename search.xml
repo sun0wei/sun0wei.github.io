@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>📌C盘扩容</title>
+      <link href="/posts/98fb0a6.html"/>
+      <url>/posts/98fb0a6.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>C盘红了如何办？C盘与D盘之间无空闲磁盘！没法直接扩展！！！如何办？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/cfc4628f7cd105607b4d5f89b76dde3b.png" style="height:210px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①如果C盘后面有空闲空间的话，可以直接在C盘那右键进行扩展</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/68178fc5c8c672486b7f1b78e749f619.png" style="height:210px;"/><p>②但正常情况下，你的D盘中有数据时，也不想直接清空D盘，些时，你对D盘压缩后的可分配空间日后也只能用于“新建盘”或“再分配给D盘”，无法分配给C盘！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/0387ff64630db357276822c53908c726.png" style="height:210px;"/><p>③此时可以用下面的方法，下载DiskGenius磁盘管理工具！这工具别放D盘中，因为D盘是要进行拆分的盘！我这是放S盘中了！（也不要放移动硬盘中）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/fa73a34d2216aaeeb7d47c4e7f3062c3.png" style="height:210px;"/><p>④最好先去控制面板中把D盘（要拆分的盘）与S盘（程序盘）全部都解锁！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/a7c072f83ae3ce6a362e1588a8334c73.png" style="height:210px;"/><p>⑤然后进行一下坏道检测与修复，直接右键选择坏道检测。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/96b804cc01182cb490d4824857465bcb.png" style="height:210px;"/><p>然后就会出现下面显示，没有损坏的就行，最好点击下尝试修复！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/d8e72790f0d33e6c87f54d55b45734cb.png" style="height:210px;"/><p>⑥选择要拆分的D盘！想给C盘空间，必须用D盘，因为D盘与C盘是边着的！</p><p>拉中间的那东西，左边是让D盘左边有空闲空闲！（也可以直接在下面填分配前90G）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/85d33cf1b3459bc4f198e5a359f90179.png" style="height:210px;"/><p>⑦一路确定就行！然后就会显示下面的东西。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/c882eeab21be4d224c36f259a5854d5a.png" style="height:210px;"/><p>最后就完美了，可以直接右键C盘进行扩容了，在C盘那右键进行扩展卷就行。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/354396bb9b6cdff0ef9517e46fc393e1.png" style="height:210px;"/><p>真是太棒了！！！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/09/1ba8b733fb52aa57599dbbfb4ee44b8d.png" style="height:210px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑美化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>📌GitHubDesktop教程</title>
       <link href="/posts/97647119.html"/>
       <url>/posts/97647119.html</url>
@@ -783,31 +808,6 @@
     
     
     <entry>
-      <title>📌Ps特定区域换色</title>
-      <link href="/posts/59d90331.html"/>
-      <url>/posts/59d90331.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Ps </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>🏴‍☠️获取境外手机验证码</title>
       <link href="/posts/542dde82.html"/>
       <url>/posts/542dde82.html</url>
@@ -825,6 +825,31 @@
         <tags>
             
             <tag> 网站推荐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📌Ps特定区域换色</title>
+      <link href="/posts/59d90331.html"/>
+      <url>/posts/59d90331.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ps </tag>
             
         </tags>
       
