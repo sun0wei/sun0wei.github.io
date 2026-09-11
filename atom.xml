@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-09-11T08:43:00.755Z</updated>
+  <updated>2026-09-11T08:46:28.442Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://blog.sunwei.online/posts/6c7cb46d.html"/>
     <id>https://blog.sunwei.online/posts/6c7cb46d.html</id>
     <published>2026-09-11T08:42:56.971Z</published>
-    <updated>2026-09-11T08:43:00.755Z</updated>
+    <updated>2026-09-11T08:46:28.442Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>有没有什么办法，让手机没法下载应用，比如下面这张图片这样，点击应用安装包后不会直接弹到应用下载页面！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/11/8b34ad12e095ddcec62b05efc57e270b.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①先下载一个搞机工具箱，学会如何使用adb命令。</p><p>自己看下面链接的视频进行学习：<a href="https://www.bilibili.com/video/BV1fiCWYmEUD/?spm_id_from=333.337.search-card.all.click&vd_source=56702900e9e0d9b8847ef4077f6bac26">视频</a></p><p>然后在左边那adb终端那输入后续命令就行。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/11/810eb0bbba4a01bd6f77ff9db2140f41.png" style="height:210px;"/><p>②运行下面代码可以让应用无法从应用商店外的地方进行安装！</p><p>（有bug，最好不要用，用了之后手机只要一关机，就再也打不开了，可能开机时要用到“应用安装器”吧！）</p><p>删除应用安装器</p><p>```shell</p><p>adb shell pm disable-user –user 0 com.android.packageinstaller</p><p>```</p><p>如果你想要回复，就进行下面操作：</p><p>下载应用安装器</p><p>```shell</p><p>adb shell pm enable –user 0 com.android.packageinstaller<br>```</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>有没有什么办法，让手机没法下载应用，比如下面这张图片这样，点击应用安装包后不会直接弹到应用下载页面！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/11/8b34ad12e095ddcec62b05efc57e270b.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①先下载一个搞机工具箱，学会如何使用adb命令。</p><p>自己看下面链接的视频进行学习：<a href="https://www.bilibili.com/video/BV1fiCWYmEUD/?spm_id_from=333.337.search-card.all.click&vd_source=56702900e9e0d9b8847ef4077f6bac26">视频</a></p><p>然后在左边那adb终端那输入后续命令就行。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/11/810eb0bbba4a01bd6f77ff9db2140f41.png" style="height:210px;"/><p>②运行下面代码可以让应用无法从应用商店外的地方进行安装！</p><p>（有bug，最好不要用，用了之后手机只要一关机，就再也打不开了，可能开机时要用到“应用安装器”吧！）</p><p>删除应用安装器</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">adb shell pm disable-user --user 0 com.android.packageinstaller</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>如果你想要恢复，就进行下面操作：</p><p>下载应用安装器</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">adb shell pm enable --user 0 com.android.packageinstaller</span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">记录了手机打开adb后常用的一些操作，博主是OPPO手机，其它手机命令可能不同！</summary>
