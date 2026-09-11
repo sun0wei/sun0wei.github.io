@@ -70,7 +70,25 @@
   }
 
   function init () { initArchiveChart(); initTagsChart(); initCategoriesChart() }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init)
-  else init()
-  document.addEventListener('pjax:complete', init)
+  function loadEcharts (callback) {
+    if (window.echarts) {
+      callback()
+      return
+    }
+    const existing = document.querySelector('script[data-statistics-echarts]')
+    if (existing) {
+      existing.addEventListener('load', callback, { once: true })
+      return
+    }
+    const script = document.createElement('script')
+    script.src = '/lib/echarts/echarts.min.js'
+    script.dataset.statisticsEcharts = 'true'
+    script.onload = callback
+    script.onerror = () => console.error('Failed to load ECharts for statistics charts.')
+    document.head.appendChild(script)
+  }
+  function initWhenReady () { loadEcharts(init) }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initWhenReady)
+  else initWhenReady()
+  document.addEventListener('pjax:complete', initWhenReady)
 })()
