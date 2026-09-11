@@ -282,7 +282,8 @@ document.addEventListener('pjax:send', function () {
 document.addEventListener('pjax:complete', function () {
   window.refreshFn()
 
-  document.querySelectorAll('script[data-pjax]').forEach(item => {
+  // 图表脚本由 rerunPjaxChartScripts 单独负责，避免被通用 PJAX 逻辑执行两次。
+  document.querySelectorAll('script[data-pjax]:not([data-pjax-chart])').forEach(item => {
     const newScript = document.createElement('script')
     const content = item.text || item.textContent || item.innerHTML || ""
     Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))

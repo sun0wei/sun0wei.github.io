@@ -833,31 +833,6 @@
     
     
     <entry>
-      <title>📌Ps特定区域换色</title>
-      <link href="/posts/59d90331.html"/>
-      <url>/posts/59d90331.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Ps </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>🏴‍☠️获取境外手机验证码</title>
       <link href="/posts/542dde82.html"/>
       <url>/posts/542dde82.html</url>
@@ -875,6 +850,31 @@
         <tags>
             
             <tag> 网站推荐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📌Ps特定区域换色</title>
+      <link href="/posts/59d90331.html"/>
+      <url>/posts/59d90331.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ps </tag>
             
         </tags>
       
