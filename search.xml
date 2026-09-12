@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>📌手机应用或服务冻结与删除</title>
+      <link href="/posts/e1087fd0.html"/>
+      <url>/posts/e1087fd0.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>删除手机应用、冻结手机应用、手机冻结服务的方法，要求效果如下图所示！（过程基本一样，我把它归为同一类需求吧）</p><p>点击图片1中的“系统分身”后，无法使用！</p><img no-lazy class="inline" src="[https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/822a9b336b833ca746d8611b85f80a8e.png](https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/822a9b336b833ca746d8611b85f80a8e.png)" style="height:250px;"/><p>再如下图2所示，删除一些手机系统应用，这些应用无法通过桌面长按删除！</p><img no-lazy class="inline" src="[https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/5bc52d84226ae25e1c0fbe9dacc6fff2.png](https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/5bc52d84226ae25e1c0fbe9dacc6fff2.png)" style="height:250px;"/><p>上面图片只能删除部分系统应用，剩下的要依靠“冻结应用”，所有应用都能冻结！！！冻结完应用后点击应用会显示如下图！</p><img no-lazy class="inline" src="[https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/ad11284a9a98a9d9a37f72da0af845b4.png](https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/ad11284a9a98a9d9a37f72da0af845b4.png)" style="height:210px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>问题1与问题3步骤基本相同，基本操作可以参考另一篇文章“手机换主题”（技术——手机美化），仅需要多下载一个scene应用，直接去浏览器下载就行，我这里就简单写一下操作步骤！</p><p>①打开“开发者选项”…………。</p><img no-lazy class="inline" src="[https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/3d3f643a11e5704e7a80e57c00dd5e94.png](https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/3d3f643a11e5704e7a80e57c00dd5e94.png)" style="height:210px;"/><p>②启动shizuku…………。</p><p>③打scene应用，点击那个ADB模式。（有时会进不了，输出一堆代码，你把这代码放在shizukurunner上跑一下就能进入了！）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/3d3f643a11e5704e7a80e57c00dd5e94.png" style="height:210px;"/><p>④点击左上角那“功能”，再点击“应用管理”！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/425e4f9d5a342cc8eff351b81a65ee75.png" style="height:210px;"/><p>⑤然后就会显示上面的页面，红框那地方可以切换“普通应用”与“系统应用”！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/b760ea92b7a988b1b643d4c74d647246.png" style="height:210px;"/><p>⑥针对问题2，如果你想删除系统应用&#x2F;普通应用，就点击进对应的应用中去，然后点击图片中的红框处（直接点击图片下面卸载没用），再点击卸载就行了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/8fbe932d936a4bcc2265854bf515e7e4.png" style="height:210px;"/><p>针对问题1与问题3，如果你想要“冻结手机应用”或“冻结手机服务”，就点击对应“应用&#x2F;服务”后，复制应用&#x2F;服务的“包名”，具体如下图。然后在ShizukuRunner中写相应的冻结命令：pm suspend 包名，然后再运行；如果要解冻，就写pm unsuspend 包名，再运行！（有些版本的scene它那服务点击进行后下面就有“冻结”选择，直接选择就行，没有的就用ShizukuRunner进行冻结）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/12/32a92b73c0bbd6a66703529b649b99a8.png" style="height:210px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 手机美化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>📌手机应用限制下载</title>
       <link href="/posts/6c7cb46d.html"/>
       <url>/posts/6c7cb46d.html</url>
