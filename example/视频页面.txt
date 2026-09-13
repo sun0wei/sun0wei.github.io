@@ -1,0 +1,6 @@
+①先删除掉与_posts同级的bilibili文件夹以及其中所有内容
+
+②然后修改E:\Blog\blog-sunwei-online\source_data\extra_bangumis.json文件夹中的内容
+
+③最后运行下面命令就行了，就能生成最新的bilibili文件夹了。
+hexo bangumi -u
