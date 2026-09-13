@@ -69,13 +69,29 @@
     chart.on('click', 'series', event => { if (event.data && event.data.path) window.location.href = '/' + event.data.path })
   }
 
-  function init () { initArchiveChart(); initTagsChart(); initCategoriesChart() }
+  function init () {
+    initArchiveChart()
+    initTagsChart()
+    initCategoriesChart()
+  }
+
+  function scheduleInit () {
+    // PJAX replaces the body asynchronously. Two animation frames allow the
+    // new container to receive its final width before ECharts measures it.
+    window.requestAnimationFrame(() => window.requestAnimationFrame(init))
+    window.setTimeout(init, 150)
+  }
+
+  function hasChartElements () {
+    return ['posts-chart', 'tags-chart', 'categories-chart'].some(id => document.getElementById(id))
+  }
+
   function loadEcharts (callback) {
     if (window.echarts) {
       callback()
       return
     }
-    const existing = document.querySelector('script[data-statistics-echarts]')
+    const existing = document.querySelector('script[data-statistics-echarts], script[src*="/lib/echarts/echarts.min.js"]')
     if (existing) {
       existing.addEventListener('load', callback, { once: true })
       return
@@ -87,7 +103,10 @@
     script.onerror = () => console.error('Failed to load ECharts for statistics charts.')
     document.head.appendChild(script)
   }
-  function initWhenReady () { loadEcharts(init) }
+  function initWhenReady () {
+    if (hasChartElements()) loadEcharts(scheduleInit)
+  }
+  window.initStatisticsCharts = initWhenReady
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initWhenReady)
   else initWhenReady()
   document.addEventListener('pjax:complete', initWhenReady)
