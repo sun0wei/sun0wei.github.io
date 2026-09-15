@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>📌VisiPics程序教程</title>
+      <link href="/posts/b8e8b5e3.html"/>
+      <url>/posts/b8e8b5e3.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>我有一个文件夹，其中有很多重复图片，一个一个找太麻烦了，有没有什么一键去重的方法？</p><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①通过网盘分享的文件：<a href="https://pan.baidu.com/s/1ZnY8N0CBGmIcgxIJ5n1DCA?pwd=2233">Blog软件链接</a>，提取码: 2233，先下载一下上面这个程序吧，找到“VisiPics图片去重.zip”这个进行下载！</p><p>②解压进行安装，然后打开应用，按下面图片中步骤选择要筛选的文件夹，然后点击运行</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/15/1bae7cb977f9d71fcd1811c2a14d1b46.png" style="height:210px;"/><p>③然后程序就会处理此文件夹中重复文件</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/15/0921b6d0814abee7bf76d802b79cb36a.png" style="height:210px;"/><p>左窗口会显示处理结果</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/15/f7a48c243df5f4d4aca03236788c8f30.png" style="height:250px;"/><p>④选择右边那个“Auto-select”，它会选中重复图片中占用空间更小的（图片质量更差的）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/15/5faa0c3778be86c22ed56e6814aab9ff.png" style="height:150px;"/><p>然后左右有些图片就会处理选中状态</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/15/a9961a3384bbaf5079aa16c73c1f20fd.png" style="height:250px;"/><p>⑤点击右边的那删除delete按钮就行了，去重完毕了</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/15/5faa0c3778be86c22ed56e6814aab9ff.png" style="height:150px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>📌教育邮箱设置别名</title>
       <link href="/posts/fd31494b.html"/>
       <url>/posts/fd31494b.html</url>
@@ -897,31 +922,6 @@
     
     
     <entry>
-      <title>📌Ps特定区域换色</title>
-      <link href="/posts/59d90331.html"/>
-      <url>/posts/59d90331.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Ps </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>🏴‍☠️获取境外手机验证码</title>
       <link href="/posts/542dde82.html"/>
       <url>/posts/542dde82.html</url>
@@ -939,6 +939,31 @@
         <tags>
             
             <tag> 网站推荐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📌Ps特定区域换色</title>
+      <link href="/posts/59d90331.html"/>
+      <url>/posts/59d90331.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ps </tag>
             
         </tags>
       
