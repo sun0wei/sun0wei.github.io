@@ -8,7 +8,7 @@
       <link href="/posts/71122239.html"/>
       <url>/posts/71122239.html</url>
       
-        <content type="html"><![CDATA[<h1 id="1-Java概述⭐"><a href="#1-Java概述⭐" class="headerlink" title="1. Java概述⭐"></a>1. Java概述⭐</h1><blockquote><p>通过这一节，你要明白：&gt; &gt; ①Java的发展史？</p><blockquote><p>②有这么多语言，为什么偏偏学Java？<br>③Java三大平台介绍（SE&#x2F;EE&#x2F;ME）？</p></blockquote></blockquote><p>Java语言是美国Sun公司（Stanford University Network）在1995年推出的计算机语言， 2009年Oracle甲骨文公司收购Sun公司。Java之父：詹姆斯·高斯林（James Gosling）。</p><p>针对Java的作用，下图中Java基本都能做，但主要做红框处的（企业服务端开发），其它都有更好的适配语言做。Java的优势：最流行语言；社区资源丰富；可移植性强，开发的东西很多平台能用；安全可靠。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/21da45f71cdecbd58d213cd9d95d583b.png" style="height:210px;"/><p>Java的三大平台如下，第1个是java原始版（学习），第2个针对网页&#x2F;软件（学习），第3个针对移动设备（不学）。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/225d2d0b84dbc659c627a9e48be4f8e2.png" style="height:210px;"/><h1 id="2-JDK、JRE、JVM⭐"><a href="#2-JDK、JRE、JVM⭐" class="headerlink" title="2. JDK、JRE、JVM⭐"></a>2. JDK、JRE、JVM⭐</h1><blockquote><p>通过这一节，你要明白：</p></blockquote><blockquote><blockquote><p>①JDK、JRE、JVM这三者含义与之间关系？</p></blockquote></blockquote><p>Java的产品名叫JDK（就如wechat的产品名叫微信一样），下面简单介绍下JDK版本，LTS表示此版本开发商会长期维护，公司中也是常用“JDK8”与“JDK11“！教学推荐用JDK21，可以随时切换低级版本。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/84efd2b5df9d4497f47834b7ab259146.png" style="height:180px;"/><p>介绍下JDK的开发工具中两个重要程序</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/6eed78640a79b974901df431e4c1246b.png" style="height:210px;"/><p>JDK文件组成如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/03f8139decf0dce0e8c3a1703a8819c3.png" style="height:210px;"/><h1 id="3-JDK环境变量配置"><a href="#3-JDK环境变量配置" class="headerlink" title="3. JDK环境变量配置"></a>3. JDK环境变量配置</h1><blockquote><p>通过这一节，你要明白：</p></blockquote><blockquote><blockquote><p>①如何配置环境变量让全局可用？</p></blockquote></blockquote><p>配置Path环境变量，让java.javac这两个程序在cmd任意目录下都能够进行启动，大致就是把这两个程序所在的目录（图片中最上面那目录）放到系统环境变量中。</p><p>不过，版本较新的会自动配置，但还是得学一下，因为公司常用JDK11与JDK8这些老版本。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/30c97b6ca6f6c1133e57e6f1da6847ac.png" style="height:210px;"/><p>补充一 点，上面那图片是官方TM在你C盘又复制了exe文件，你自己最好用jdk文件夹bin的路径，后期还要配置java_home，推荐用下图的配置方法！（以后改JDK版本时只用改JAVA_HOME环境变量）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/b99e0d1a653248919b547940aaf8294d.png" style="height:80px;"/><p>这部分不详细讲，因为配置环境变量是程序员的基本操作，自己网络上搜索一下就一大堆教程。</p><h1 id="4-java-exe与javac-exe程序⭐"><a href="#4-java-exe与javac-exe程序⭐" class="headerlink" title="4. java.exe与javac.exe程序⭐"></a>4. java.exe与javac.exe程序⭐</h1><blockquote><p>通过这一节，你要明白：</p></blockquote><blockquote><blockquote><p>①javac.exe程序是做什么的？</p></blockquote></blockquote><blockquote><blockquote><p>②java.exe程序是做什么的？</p></blockquote></blockquote><p>txt写代码——&gt;改文件后缀——&gt;cmd切换到文件目录（可以在目录上输入cmd）——&gt;运行”编译代码“（编译代码文件后要加java，任性规定）——&gt;运行“运行代码“（运行代码文件后不用加class，任性规定）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/2acf492b8e5d396becfaf4b243ac1331.png" style="height:210px;"/><p>总结一下，javac程序就是将我们写的代码转成class后缀的“字节码”文件（能够被JVM识别的），然后java程序就会启动JVM进行运行。</p><h1 id="5-Java项目结构⭐"><a href="#5-Java项目结构⭐" class="headerlink" title="5. Java项目结构⭐"></a>5. Java项目结构⭐</h1><blockquote><p>通过这一节，你要明白：</p></blockquote><blockquote><blockquote><p>①普通的Java项目组成结构？</p></blockquote></blockquote><p>Java项目结构如下图所示，包含4层！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/2ab7f8939d3ca3f2f0de88d15b11fe69.png" style="height:210px;"/><p>目录结构（那个class1虽然是类，但它是.java文件；包名建议用网站名倒着写）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/62074b4715a75fa98d07c235c6ed03bd.png" style="height:210px;"/><p>以淘宝系统为例：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/1754741e098df5df6f4246fc8c42ca9c.png" style="height:410px;"/><h1 id="6-IDEA基础用法"><a href="#6-IDEA基础用法" class="headerlink" title="6. IDEA基础用法"></a>6. IDEA基础用法</h1><blockquote><p>通过这一节，你要明白：</p></blockquote><blockquote><blockquote><p>①如何导入&#x2F;修改模块？</p></blockquote></blockquote><p>导入模块要注意一下，直接拖进去是没用的，如下图，不会显示模块专有的点</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/075da17e2d1bb313997a09a125b143b3.png" style="height:210px;"/><p>导入模块应该用下图中步骤（file-new-module from existion……）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/02133de2a966d62713d4e61760be7214.png" style="height:180px;"/>]]></content>
+        <content type="html"><![CDATA[<h1 id="1-Java概述⭐"><a href="#1-Java概述⭐" class="headerlink" title="1. Java概述⭐"></a>1. Java概述⭐</h1><blockquote><p>①Java的发展史？<br>②有这么多语言，为什么偏偏学Java？<br>③Java三大平台介绍（SE&#x2F;EE&#x2F;ME）？</p></blockquote><p>Java语言是美国Sun公司（Stanford University Network）在1995年推出的计算机语言， 2009年Oracle甲骨文公司收购Sun公司。Java之父：詹姆斯·高斯林（James Gosling）。</p><p>针对Java的作用，下图中Java基本都能做，但主要做红框处的（企业服务端开发），其它都有更好的适配语言做。Java的优势：最流行语言；社区资源丰富；可移植性强，开发的东西很多平台能用；安全可靠。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/21da45f71cdecbd58d213cd9d95d583b.png" style="height:210px;"/><p>Java的三大平台如下，第1个是java原始版（学习），第2个针对网页&#x2F;软件（学习），第3个针对移动设备（不学）。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/225d2d0b84dbc659c627a9e48be4f8e2.png" style="height:210px;"/><h1 id="2-JDK、JRE、JVM⭐"><a href="#2-JDK、JRE、JVM⭐" class="headerlink" title="2. JDK、JRE、JVM⭐"></a>2. JDK、JRE、JVM⭐</h1><blockquote><p>①JDK、JRE、JVM这三者含义与之间关系？</p></blockquote><p>Java的产品名叫JDK（就如wechat的产品名叫微信一样），下面简单介绍下JDK版本，LTS表示此版本开发商会长期维护，公司中也是常用“JDK8”与“JDK11“！教学推荐用JDK21，可以随时切换低级版本。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/84efd2b5df9d4497f47834b7ab259146.png" style="height:180px;"/><p>介绍下JDK的开发工具中两个重要程序</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/6eed78640a79b974901df431e4c1246b.png" style="height:210px;"/><p>JDK文件组成如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/03f8139decf0dce0e8c3a1703a8819c3.png" style="height:210px;"/><h1 id="3-JDK环境变量配置"><a href="#3-JDK环境变量配置" class="headerlink" title="3. JDK环境变量配置"></a>3. JDK环境变量配置</h1><blockquote><p>①如何配置环境变量让全局可用？</p></blockquote><p>配置Path环境变量，让java.javac这两个程序在cmd任意目录下都能够进行启动，大致就是把这两个程序所在的目录（图片中最上面那目录）放到系统环境变量中。</p><p>不过，版本较新的会自动配置，但还是得学一下，因为公司常用JDK11与JDK8这些老版本。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/30c97b6ca6f6c1133e57e6f1da6847ac.png" style="height:210px;"/><p>补充一 点，上面那图片是官方TM在你C盘又复制了exe文件，你自己最好用jdk文件夹bin的路径，后期还要配置java_home，推荐用下图的配置方法！（以后改JDK版本时只用改JAVA_HOME环境变量）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/b99e0d1a653248919b547940aaf8294d.png" style="height:80px;"/><p>这部分不详细讲，因为配置环境变量是程序员的基本操作，自己网络上搜索一下就一大堆教程。</p><h1 id="4-java-exe与javac-exe程序⭐"><a href="#4-java-exe与javac-exe程序⭐" class="headerlink" title="4. java.exe与javac.exe程序⭐"></a>4. java.exe与javac.exe程序⭐</h1><blockquote><p>①javac.exe程序是做什么的？</p><p>②java.exe程序是做什么的？</p></blockquote><p>txt写代码——&gt;改文件后缀——&gt;cmd切换到文件目录（可以在目录上输入cmd）——&gt;运行”编译代码“（编译代码文件后要加java，任性规定）——&gt;运行“运行代码“（运行代码文件后不用加class，任性规定）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/2acf492b8e5d396becfaf4b243ac1331.png" style="height:210px;"/><p>总结一下，javac程序就是将我们写的代码转成class后缀的“字节码”文件（能够被JVM识别的），然后java程序就会启动JVM进行运行。</p><h1 id="5-Java项目结构⭐"><a href="#5-Java项目结构⭐" class="headerlink" title="5. Java项目结构⭐"></a>5. Java项目结构⭐</h1><blockquote><p>①普通的Java项目组成结构？</p></blockquote><p>Java项目结构如下图所示，包含4层！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/2ab7f8939d3ca3f2f0de88d15b11fe69.png" style="height:210px;"/><p>目录结构（那个class1虽然是类，但它是.java文件；包名建议用网站名倒着写）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/62074b4715a75fa98d07c235c6ed03bd.png" style="height:210px;"/><p>以淘宝系统为例：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/1754741e098df5df6f4246fc8c42ca9c.png" style="height:410px;"/><h1 id="6-IDEA基础用法"><a href="#6-IDEA基础用法" class="headerlink" title="6. IDEA基础用法"></a>6. IDEA基础用法</h1><blockquote><p>①如何导入&#x2F;修改模块？</p></blockquote><p>导入模块要注意一下，直接拖进去是没用的，如下图，不会显示模块专有的点</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/075da17e2d1bb313997a09a125b143b3.png" style="height:210px;"/><p>导入模块应该用下图中步骤（file-new-module from existion……）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/16/02133de2a966d62713d4e61760be7214.png" style="height:180px;"/>]]></content>
       
       
       <categories>
@@ -947,31 +947,6 @@
     
     
     <entry>
-      <title>📌Ps特定区域换色</title>
-      <link href="/posts/59d90331.html"/>
-      <url>/posts/59d90331.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Ps </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>🏴‍☠️获取境外手机验证码</title>
       <link href="/posts/542dde82.html"/>
       <url>/posts/542dde82.html</url>
@@ -989,6 +964,31 @@
         <tags>
             
             <tag> 网站推荐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📌Ps特定区域换色</title>
+      <link href="/posts/59d90331.html"/>
+      <url>/posts/59d90331.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ps </tag>
             
         </tags>
       
