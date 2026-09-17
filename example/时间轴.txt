@@ -9,11 +9,6 @@
 <script>
 
 
-
-
-
-
-
 (function () {
   const diaryEyebrow = 'GRADUATE DIARY · 2026';
   const diaryTitle = '202608日记';
