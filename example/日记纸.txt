@@ -1,0 +1,638 @@
+{% raw %}
+
+<div id="rhodes-diary-book"></div>
+<script>
+  (function () {
+    const diaryEyebrow = 'PERSONAL DIARY';
+    const diaryTitle = '罗德岛日记本';
+    const diaryIntro = '把纸上的记录，整理成可以慢慢翻阅的电子版本。';
+    // 每一页直接填写自己的图片地址，不再需要维护图片编号。
+    // 新增页面：复制一行并修改 image；删除页面：删除对应一行。
+    // 可选字段：thumb（缩略图地址）、title（页标题）、date（日期）、note（备注）。
+    const diaryCards = [
+      { title: '信息', pages: [
+        { image: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/001.jpg' },
+        { image: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/001.jpg' }
+      ] },
+      { title: '准则', pages: [] },
+      { title: '目标', pages: [] },
+      { title: '金钱', pages: [] },
+      { title: '爱好', pages: [] },
+      { title: '回忆', pages: [] },
+      { title: '其它', pages: [] },
+      { title: '附录', pages: [] }
+    ];
+    const host = document.getElementById('rhodes-diary-book');
+    if (!host || host.shadowRoot) return;
+const chapters = diaryCards.map(function (card) {
+return {
+title: card.title,
+pages: card.pages.map(function (page) {
+page = typeof page === 'string' ? { image: page } : page;
+return {
+image: page.image || '',
+title: page.title || '',
+date: page.date || '',
+note: page.note || '',
+thumb: page.thumb || page.image || ''
+};
+})
+};
+});
+let currentChapterIndex = 0;
+let currentIndex = 0;
+const shadowRoot = host.attachShadow({ mode: 'open' });
+const style = document.createElement('style');
+style.textContent = `
+:host {
+--diary-accent: var(--theme-color, #49b1f5);
+--diary-text: var(--font-color, #4f5f6d);
+--diary-muted: var(--card-meta, #8a98a5);
+--diary-line: rgba(73, 177, 245, 0.22);
+display: block;
+color: var(--diary-text);
+font-family: inherit;
+}
+
+.diary-book {
+overflow: hidden;
+max-width: 1040px;
+margin: 0 auto;
+border: 1px solid var(--diary-line);
+border-radius: 14px;
+background: #f7f3eb;
+box-shadow: 0 12px 30px rgba(52, 73, 94, 0.12);
+}
+
+.diary-header {
+display: flex;
+align-items: end;
+justify-content: space-between;
+gap: 18px;
+padding: 24px 28px 20px;
+border-bottom: 1px solid rgba(73, 177, 245, 0.16);
+background: rgba(255, 255, 255, 0.55);
+}
+
+.diary-kicker {
+margin: 0 0 6px;
+color: var(--diary-accent);
+font-size: 0.82rem;
+font-weight: 700;
+letter-spacing: 0.12em;
+}
+
+.diary-title {
+margin: 0;
+color: var(--diary-text);
+font-size: clamp(1.45rem, 3vw, 2rem);
+line-height: 1.25;
+}
+
+.diary-subtitle {
+margin: 8px 0 0;
+color: var(--diary-muted);
+font-size: 0.9rem;
+}
+
+.diary-count {
+flex: 0 0 auto;
+color: var(--diary-muted);
+font-size: 0.9rem;
+white-space: nowrap;
+}
+
+.diary-tools {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: flex-end;
+gap: 8px;
+}
+
+.diary-select,
+.diary-jump {
+min-height: 34px;
+border: 1px solid var(--diary-line);
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.78);
+color: var(--diary-text);
+font: inherit;
+}
+
+.diary-select {
+max-width: 190px;
+padding: 0 28px 0 10px;
+}
+
+.diary-jump {
+width: 72px;
+padding: 0 8px;
+text-align: center;
+}
+
+.diary-jump::placeholder {
+color: var(--diary-muted);
+}
+
+.diary-stage {
+padding: 28px;
+background:
+linear-gradient(rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.32)),
+repeating-linear-gradient(0deg, transparent 0, transparent 31px, rgba(73, 177, 245, 0.08) 32px);
+}
+
+.diary-spread {
+display: grid;
+grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+min-height: 520px;
+border: 1px solid rgba(132, 111, 76, 0.18);
+border-radius: 10px;
+background: #fffdf8;
+box-shadow: 0 8px 20px rgba(91, 73, 44, 0.1);
+}
+
+.diary-sheet {
+position: relative;
+min-width: 0;
+padding: 16px;
+background: #fffdf8;
+}
+
+.diary-sheet:first-child {
+border-right: 1px solid rgba(132, 111, 76, 0.16);
+}
+
+.diary-sheet::before {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 1px;
+background: rgba(210, 93, 93, 0.22);
+content: '';
+}
+
+.diary-sheet::before {
+left: 18px;
+}
+
+.diary-sheet-content {
+position: relative;
+z-index: 1;
+display: flex;
+box-sizing: border-box;
+height: 100%;
+min-height: 470px;
+flex-direction: column;
+padding-left: 18px;
+}
+
+.diary-page-label {
+display: flex;
+justify-content: space-between;
+gap: 12px;
+margin-bottom: 14px;
+color: var(--diary-muted);
+font-size: 0.82rem;
+}
+
+.diary-page-title {
+margin: 0 0 10px;
+color: var(--diary-text);
+font-size: 1.1rem;
+}
+
+.diary-page-note {
+margin: 12px 0 0;
+color: var(--diary-muted);
+font-size: 0.9rem;
+line-height: 1.7;
+}
+
+.diary-photo-wrap {
+display: flex;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+width: 100%;
+aspect-ratio: 1865 / 2826;
+min-height: 0;
+flex: 0 0 auto;
+overflow: hidden;
+border: 1px dashed rgba(73, 177, 245, 0.28);
+border-radius: 8px;
+background: rgba(73, 177, 245, 0.045);
+}
+
+.diary-photo {
+display: block;
+width: 100%;
+max-width: 100%;
+height: 100%;
+max-height: 100%;
+margin: 0 auto;
+cursor: default;
+border-radius: 4px;
+object-fit: contain;
+box-shadow: 0 5px 14px rgba(52, 73, 94, 0.14);
+}
+
+.diary-placeholder {
+display: flex;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+min-height: 260px;
+flex-direction: column;
+gap: 12px;
+padding: 24px;
+color: var(--diary-muted);
+text-align: center;
+}
+
+.diary-placeholder-mark {
+display: grid;
+width: 54px;
+height: 66px;
+place-items: center;
+border: 2px solid rgba(73, 177, 245, 0.42);
+border-radius: 8px;
+color: var(--diary-accent);
+font-size: 1.45rem;
+}
+
+.diary-placeholder-text {
+font-size: 0.92rem;
+line-height: 1.6;
+}
+
+.diary-empty {
+padding: 24px;
+color: var(--diary-muted);
+font-size: 0.9rem;
+line-height: 1.8;
+text-align: center;
+}
+
+.diary-controls,
+.diary-thumbnails {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+.diary-controls {
+padding: 18px 0 2px;
+}
+
+.diary-button {
+width: 38px;
+height: 34px;
+border: 1px solid var(--diary-line);
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.7);
+color: var(--diary-accent);
+cursor: pointer;
+font: inherit;
+font-size: 1.1rem;
+line-height: 1;
+transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.diary-button:hover:not(:disabled) {
+background: var(--diary-accent);
+color: #fff;
+}
+
+.diary-button:disabled {
+cursor: not-allowed;
+opacity: 0.4;
+}
+
+.diary-thumbnails {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+width: 100%;
+max-width: none;
+margin: 18px 0 4px;
+overflow: visible;
+padding: 0 4.5%;
+scrollbar-width: thin;
+}
+
+.diary-thumb-range {
+display: block;
+margin: 0 4.5%;
+color: var(--diary-muted);
+font-size: 0.82rem;
+white-space: nowrap;
+}
+
+.diary-thumb {
+flex: 0 0 86px;
+height: 72px;
+padding: 3px;
+border: 1px solid var(--diary-line);
+border-radius: 6px;
+background: #fffdf8;
+cursor: pointer;
+opacity: 0.72;
+}
+
+.diary-thumb.is-active {
+border-color: var(--diary-accent);
+box-shadow: 0 0 0 2px rgba(73, 177, 245, 0.16);
+opacity: 1;
+}
+
+.diary-thumb img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+background: #f7f3eb;
+}
+
+.diary-thumb-pages {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2px;
+width: 100%;
+height: 100%;
+}
+
+.diary-thumb-page {
+position: relative;
+min-width: 0;
+overflow: hidden;
+background: #e9e3d7;
+}
+
+.diary-thumb-page::after {
+position: absolute;
+z-index: 1;
+inset: 0;
+background: rgba(35, 52, 65, 0.2);
+content: '';
+pointer-events: none;
+}
+
+.diary-thumb-page-label {
+position: absolute;
+z-index: 2;
+left: 50%;
+bottom: 3px;
+transform: translateX(-50%);
+padding: 2px 4px;
+border-radius: 3px;
+background: rgba(25, 38, 48, 0.72);
+color: #fff;
+font-size: 0.62rem;
+line-height: 1.2;
+white-space: nowrap;
+}
+
+.diary-thumb-placeholder {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 3px;
+background:
+repeating-linear-gradient(0deg, transparent 0, transparent 12px, rgba(73, 177, 245, 0.08) 13px),
+#fffdf8;
+color: var(--diary-muted);
+font-size: 0.56rem;
+text-align: center;
+}
+
+.diary-thumb-placeholder::before {
+position: relative;
+z-index: 2;
+width: 16px;
+height: 20px;
+border: 1px solid rgba(73, 177, 245, 0.48);
+border-radius: 3px;
+background: linear-gradient(135deg, transparent 0 68%, rgba(73, 177, 245, 0.18) 69% 100%);
+content: '';
+}
+
+.diary-thumb-placeholder::after {
+background: rgba(255, 255, 255, 0.08);
+}
+
+.diary-thumb-placeholder-caption {
+position: relative;
+z-index: 2;
+color: var(--diary-muted);
+font-size: 0.56rem;
+}
+
+.diary-thumb-placeholder .diary-thumb-page-label {
+right: auto;
+left: 50%;
+bottom: 3px;
+transform: translateX(-50%);
+padding: 2px 4px;
+font-size: 0.62rem;
+text-align: left;
+}
+
+@media (max-width: 680px) {
+.diary-header,
+.diary-stage {
+padding: 18px;
+}
+
+.diary-header {
+align-items: flex-start;
+flex-direction: column;
+}
+
+.diary-tools {
+justify-content: flex-start;
+width: 100%;
+}
+
+.diary-spread {
+display: block;
+min-height: 460px;
+}
+
+.diary-sheet {
+display: none;
+min-height: 460px;
+padding: 14px;
+}
+
+.diary-sheet.is-current {
+display: block;
+}
+
+.diary-sheet:first-child {
+border-right: 0;
+}
+
+.diary-sheet-content {
+min-height: 410px;
+padding-left: 14px;
+}
+
+.diary-sheet::before {
+left: 14px;
+}
+
+}
+`;
+shadowRoot.appendChild(style);
+
+const app = document.createElement('div');
+app.innerHTML = `
+
+<section class="diary-book">
+    <header class="diary-header">
+      <div>
+        <p class="diary-kicker">${diaryEyebrow}</p>
+        <h2 class="diary-title">${diaryTitle}</h2>
+        <p class="diary-subtitle">${diaryIntro}</p>
+      </div>
+      <div class="diary-tools">
+        <select class="diary-select" aria-label="选择日记章节"></select>
+        <input class="diary-jump" type="number" min="1" placeholder="页码" aria-label="跳转到页码">
+        <span class="diary-count" aria-live="polite"></span>
+      </div>
+    </header>
+    <div class="diary-stage">
+      <div class="diary-spread">
+        <article class="diary-sheet"></article>
+        <article class="diary-sheet"></article>
+      </div>
+      <div class="diary-controls">
+        <button class="diary-button diary-prev" type="button" title="上一页" aria-label="上一页">←</button>
+        <button class="diary-button diary-next" type="button" title="下一页" aria-label="下一页">→</button>
+      </div>
+      <div class="diary-thumbnails" aria-label="日记缩略图导航"></div>
+      <span class="diary-thumb-range"></span>
+    </div>
+  </section>
+`;
+shadowRoot.appendChild(app);
+
+const sheets = [...shadowRoot.querySelectorAll('.diary-sheet')];
+const count = shadowRoot.querySelector('.diary-count');
+const chapterSelect = shadowRoot.querySelector('.diary-select');
+const pageJump = shadowRoot.querySelector('.diary-jump');
+const thumbnails = shadowRoot.querySelector('.diary-thumbnails');
+const thumbnailRange = shadowRoot.querySelector('.diary-thumb-range');
+const previous = shadowRoot.querySelector('.diary-prev');
+const next = shadowRoot.querySelector('.diary-next');
+
+function isMobile() {
+return window.matchMedia('(max-width: 680px)').matches;
+}
+
+function pageMarkup(page, index) {
+if (!page) {
+return '<div class="diary-sheet-content"><div class="diary-photo-wrap"><p class="diary-empty">这一章还没有日记照片。</p></div></div>';
+}
+
+const title = page.title ? '<h3 class="diary-page-title">' + page.title + '</h3>' : '';
+const date = page.date ? '<span>' + page.date + '</span>' : '';
+const note = page.note ? '<p class="diary-page-note">' + page.note + '</p>' : '';
+return '<div class="diary-sheet-content"><div class="diary-page-label"><span>第 ' + (index + 1) + ' 页</span>' + date + '</div>' + title + '<div class="diary-photo-wrap"><img class="diary-photo" src="' + page.image + '" alt="罗德岛日记第 ' + (index + 1) + ' 页" fetchpriority="high"></div>' + note + '</div>';
+}
+
+function renderSheet(sheet, page, index, visible) {
+sheet.classList.toggle('is-current', visible);
+sheet.innerHTML = pageMarkup(page, index);
+}
+
+function thumbnailPageMarkup(page, index) {
+const image = page ? (page.thumb || page.image) : '';
+return '<span class="diary-thumb-page"><img src="' + image + '" alt="第 ' + (index + 1) + ' 页"><span class="diary-thumb-page-label">第 ' + (index + 1) + ' 页</span></span>';
+}
+
+function render() {
+const diaryPages = chapters[currentChapterIndex] ? chapters[currentChapterIndex].pages : [];
+const step = isMobile() ? 1 : 2;
+const firstPage = diaryPages[currentIndex];
+const secondPage = isMobile() ? null : diaryPages[currentIndex + 1];
+renderSheet(sheets[0], firstPage, currentIndex, true);
+renderSheet(sheets[1], secondPage, currentIndex + 1, !isMobile() && Boolean(secondPage));
+count.textContent = diaryPages.length ? '第 ' + (currentIndex + 1) + (secondPage ? ' - ' + (currentIndex + 2) : '') + ' / ' + diaryPages.length + ' 页' : '等待上传日记照片';
+previous.disabled = currentIndex === 0;
+next.disabled = !diaryPages.length || currentIndex + step >= diaryPages.length;
+const totalSpreads = Math.ceil(diaryPages.length / 2);
+const currentSpread = Math.floor(currentIndex / 2);
+thumbnailRange.textContent = diaryPages.length ? '每张缩略图代表 2 页 · 共显示 ' + diaryPages.length + ' 页' : '';
+thumbnails.innerHTML = Array.from({ length: totalSpreads }, function (_, spread) {
+const firstPage = diaryPages[spread * 2];
+const secondPage = diaryPages[spread * 2 + 1];
+const images = thumbnailPageMarkup(firstPage, spread * 2) + (secondPage ? thumbnailPageMarkup(secondPage, spread * 2 + 1) : '');
+return '<button class="diary-thumb' + (spread === currentSpread ? ' is-active' : '') + '" type="button" title="第 ' + (spread * 2 + 1) + (secondPage ? ' - ' + (spread * 2 + 2) : '') + ' 页" aria-label="第 ' + (spread * 2 + 1) + (secondPage ? ' 到第 ' + (spread * 2 + 2) : '') + ' 页"><span class="diary-thumb-pages">' + images + '</span></button>';
+}).join('');
+thumbnails.querySelectorAll('.diary-thumb').forEach(function (button, offset) {
+button.addEventListener('click', function () {
+currentIndex = offset * 2;
+render();
+});
+});
+}
+
+function setChapter(index) {
+currentChapterIndex = index;
+currentIndex = 0;
+render();
+}
+
+function populateChapters() {
+chapterSelect.innerHTML = chapters.map(function (chapter, index) {
+return '<option value="' + index + '">' + chapter.title + '（' + chapter.pages.length + '页）</option>';
+}).join('');
+chapterSelect.value = String(currentChapterIndex);
+}
+
+previous.addEventListener('click', function () {
+currentIndex = Math.max(0, currentIndex - (isMobile() ? 1 : 2));
+render();
+});
+
+next.addEventListener('click', function () {
+const diaryPages = chapters[currentChapterIndex] ? chapters[currentChapterIndex].pages : [];
+currentIndex = Math.min(diaryPages.length - 1, currentIndex + (isMobile() ? 1 : 2));
+render();
+});
+
+chapterSelect.addEventListener('change', function () {
+setChapter(Number(chapterSelect.value));
+});
+
+pageJump.addEventListener('change', function () {
+const diaryPages = chapters[currentChapterIndex] ? chapters[currentChapterIndex].pages : [];
+const requested = Number(pageJump.value) - 1;
+if (Number.isInteger(requested) && requested >= 0 && requested < diaryPages.length) {
+currentIndex = isMobile() ? requested : requested - (requested % 2);
+render();
+}
+pageJump.value = '';
+});
+
+document.addEventListener('keydown', function (event) {
+if (!host.isConnected) return;
+if (event.key === 'ArrowLeft') previous.click();
+if (event.key === 'ArrowRight') next.click();
+});
+
+window.addEventListener('resize', render);
+
+populateChapters();
+render();
+
+})();
+</script>
+{% endraw %}
+
