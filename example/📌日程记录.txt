@@ -1,3 +1,21 @@
+想加入图片时，只用在那下面第27行那加入图片就行了，比如
+const diaryImageUrls = [
+'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/dfe8457843574389frtfrf.png',
+'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/fdjkfljeroigyfhwruoeflf.png',
+'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/4347827540895tu4iff.png'
+];
+然后正文中直接引用就行
+比如你想在①内容一下面引用第1张图片
+{ type: 'text', value: '①内容一' },
+{ type: 'images', indexes: [0] },
+再比如你想在②内容二下面引用第2与第3张图片
+{ type: 'text', value: '②内容二 ' },
+{ type: 'images', indexes: [1, 2] },
+
+
+============================================================================
+
+
 {% raw %}
 
 <div id="graduate-diary-board-202608"></div>
