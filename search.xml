@@ -976,11 +976,11 @@
     
     
     <entry>
-      <title>📌修改硬盘图标</title>
-      <link href="/posts/dbbcead0.html"/>
-      <url>/posts/dbbcead0.html</url>
+      <title>📌更换鼠标指针</title>
+      <link href="/posts/696741a9.html"/>
+      <url>/posts/696741a9.html</url>
       
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何修改硬盘的图标？比如说下面这个：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/688f6bb758cb8da5c800d77a.png" style="height:100px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①新建一个autorun.txt文件，输入图片中文字后保存，再把想设置的图标放在同一目录下！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/45b625914fae9d73.png" style="height:200px;"/><p>②修改autorun.txt的后缀为inf。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/bd5ba796ef0bc9ca.png" style="height:200px;"/><p>③选中这两个文件，右键——属性——勾选“只读&amp;隐藏”——应用</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/8f8dddc7406218f7.png" style="height:250px;"/><p>④再重启动下电脑就行了，如下图所示（如果你改的是移动磁盘，取出后再插入就行了，不用重启）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/688f6bb758cb8da5c800d77a.png" style="height:100px;"/><p>⑤这样生成的图片太难看了，4个尖尖的角，你可以用“<a href="https://www.butterpig.top/radius" title="跳转到参考文章">图片radius工具</a>”将图片这成圆角，然后再用“<a href="https://convertio.co" title="跳转到参考文章">图片ico转换器</a>”将图片变成ico格式的！</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何修改系统默认鼠标指针样式？</p><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①自己先去网上下载“指针资源”，下载后一般都是如下内容：一堆指针样式和其它cur、ani、inf文件。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/3a09f70c05bcf7f9.png" style="height:250px;"/><p>②右键inf文件，点击安装</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6c2c76aa8eec4c51.png" style="height:250px;"/><p>③点击鼠标后就可以换上自己喜欢的指针了！在方案中选择就行，inf点击后会自动安装，不用再点击浏览选择文件！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/2bbcb165dfe55334.png" style="height:250px;"/><p>④如果你仅想替换下面一个cur文件，具体操作如下所示</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6a9febb13a8b93eb.png" style="height:200px;"/><p>⑤在电脑桌面右键后选择“个性化”</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/ac782540e35f1d4b.png" style="height:200px;"/><p>⑥选择“主题——鼠标光标”。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/8e40242277c7d667.png" style="height:250px;"/><p>⑦先点击你想要替换的“正常选择”，再按图片中步骤传入那个cur文件后应用就行了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/699deb1a77ee2b11.png" style="height:250px;"/>]]></content>
       
       
       <categories>
@@ -1001,11 +1001,11 @@
     
     
     <entry>
-      <title>📌更换鼠标指针</title>
-      <link href="/posts/696741a9.html"/>
-      <url>/posts/696741a9.html</url>
+      <title>📌修改硬盘图标</title>
+      <link href="/posts/dbbcead0.html"/>
+      <url>/posts/dbbcead0.html</url>
       
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何修改系统默认鼠标指针样式？</p><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①自己先去网上下载“指针资源”，下载后一般都是如下内容：一堆指针样式和其它cur、ani、inf文件。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/3a09f70c05bcf7f9.png" style="height:250px;"/><p>②右键inf文件，点击安装</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6c2c76aa8eec4c51.png" style="height:250px;"/><p>③点击鼠标后就可以换上自己喜欢的指针了！在方案中选择就行，inf点击后会自动安装，不用再点击浏览选择文件！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/2bbcb165dfe55334.png" style="height:250px;"/><p>④如果你仅想替换下面一个cur文件，具体操作如下所示</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6a9febb13a8b93eb.png" style="height:200px;"/><p>⑤在电脑桌面右键后选择“个性化”</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/ac782540e35f1d4b.png" style="height:200px;"/><p>⑥选择“主题——鼠标光标”。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/8e40242277c7d667.png" style="height:250px;"/><p>⑦先点击你想要替换的“正常选择”，再按图片中步骤传入那个cur文件后应用就行了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/699deb1a77ee2b11.png" style="height:250px;"/>]]></content>
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何修改硬盘的图标？比如说下面这个：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/688f6bb758cb8da5c800d77a.png" style="height:100px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①新建一个autorun.txt文件，输入图片中文字后保存，再把想设置的图标放在同一目录下！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/45b625914fae9d73.png" style="height:200px;"/><p>②修改autorun.txt的后缀为inf。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/bd5ba796ef0bc9ca.png" style="height:200px;"/><p>③选中这两个文件，右键——属性——勾选“只读&amp;隐藏”——应用</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/8f8dddc7406218f7.png" style="height:250px;"/><p>④再重启动下电脑就行了，如下图所示（如果你改的是移动磁盘，取出后再插入就行了，不用重启）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/688f6bb758cb8da5c800d77a.png" style="height:100px;"/><p>⑤这样生成的图片太难看了，4个尖尖的角，你可以用“<a href="https://www.butterpig.top/radius" title="跳转到参考文章">图片radius工具</a>”将图片这成圆角，然后再用“<a href="https://convertio.co" title="跳转到参考文章">图片ico转换器</a>”将图片变成ico格式的！</p>]]></content>
       
       
       <categories>
