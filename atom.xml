@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-09-20T07:19:20.602Z</updated>
+  <updated>2026-09-20T08:14:11.957Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.sunwei.online/posts/627eec32.html"/>
     <id>https://blog.sunwei.online/posts/627eec32.html</id>
     <published>2026-09-20T07:19:18.465Z</published>
-    <updated>2026-09-20T07:19:20.602Z</updated>
+    <updated>2026-09-20T08:14:11.957Z</updated>
     
     <content type="html"><![CDATA[<h1>问题描述</h1><p>DSH只有下面只个模型，我想在期中加点中转站模型，应该如何操作？比如加个claude的。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/fd28017e4bd0c30085ee4c979124c988.png" style="height:210px;"/><h1>解决步骤</h1><p>①打开&quot;设置&quot;，然后按下面图片中的步骤选择</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/28a6e6ea44074af07e1b741119e13e08.png" style="height:210px;"/><p>②需要填写的信息如下</p><p>Provider id：随便起个符合规则的名字就行</p><p>显示名称：随便起个符合规则的名字就行</p><p>API协议使用默认的</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/2f26c3d967c8e85b386d58947e688f16.png" style="height:180px;"/><p>③一般”中转站“都提供一键导入ccswitch的功能，剩余的2个空你可以打开ccswitch进行查看</p><p>API地址对应下面的”API请求地址“；API密钥对应下面的”API Key“。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/7b00c59c3be2ce1cc475615beb15e7af.png" style="height:120px;"/><p>如何中转站没用一键导入功能，可以试试下面这个：API地址一般是中转站网址后面加个/v1</p><p>④然后点击“添加模型”——&gt;“获取可用模型”，点击添加（添加你常用的几个就行，尽量别全部加，因为模型太多选择时要一直滑动……）。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/abbbc2917c4d3dd4dda83d284a379f08.png" style="height:280px;"/><p>⑤最后点击”创建提供方“，回到对话页面，刷新一下就行了，没用的话重新启动下3080端口就行</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/5d4e204bffa7a11ceca33630e2bac7b3.png" style="height:150px;"/><p>然后效果如下所示</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/e8f6d60e1702374115f076e2a1d93ff5.png" style="height:210px;"/><p>（不仅能换中转哦，第一步哪点击“增加提供方”，能直接使用官方的比如gmini、chatgpt……）</p>]]></content>
     
