@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>📌DSH连接集群</title>
+      <link href="/posts/a8e2684c.html"/>
+      <url>/posts/a8e2684c.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何使用DSH连接学校的集群，以及使用vscode连接学校的集群？</p><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①先在下图目录下新建立一个config文件，内容如图所示（我使用的是校园网，所以写内网ip10.16.17.95，使用外网时要用学校的vpn转内网）：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/c0b5085a0e86fe41db737dc4fe24c7e5.png" style="height:210px;"/><p>②下载下面这个插件，点击SSH——主机</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/681482ae94e41067d18f31989f119b9f.png" style="height:210px;"/><p>点击下面图片中右边那个导入</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/37afa2c9a811dabd87a73317c78b3b19.png" style="height:150px;"/><p>③选中对应的集群，点击连接</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/3296f02fcecb730b3f1e79cb616f7ad4.png" style="height:150px;"/><p>④输入密码</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/ea59deea1eed551e3dcab8a60d1d8b8e.png" style="height:210px;"/><p>⑤点击终端——选择集群号——连接，然后就会有那集群shell命令窗口显示</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/d64a2d64888a7819ee02b30f5d257202.png" style="height:210px;"/><p>⑥去传输页面——选择集群号——选择工作目录——连接，就会显示当前工作目录下所有文件</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/f542c2b9c599c367ed13343118a27f15.png" style="height:210px;"/><p>⑦然后，我是建议伤使用vscode进行文件浏览，使用dsh的ai网站进行对话</p><p>你先到vscode下载下图中的插件，然后左边就会显示一个相似的图标，点击进去</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/74236ccf02c4ca78ad6de52e7a6288b5.png" style="height:210px;"/><p>这个东西的连接也是差不多的，写了那config文件后直接导入就行，然后点击那个对应集群的”在当前窗口中连接“，然后输入密码</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/a2b71ff11ec2f838fad0a159baf6cf1a.png" style="height:210px;"/><p>⑧点击搜索按钮——打开文件夹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/e87eb23d0ab0a7b6f9c69cc18e3af0a5.png" style="height:210px;"/><p>选择工作目录并信任文件</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/55ce60fc335282f874f69ac7793efdce.png" style="height:210px;"/><p>然后显示如下所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/cfbc8184765fc56e8c828420270da2e9.png" style="height:210px;"/><p>⑨其实vscode插件中也有远程ai，可以直接在vscode中让ai进行修改文件，但因为博主用的是中转站（没钱😭），同时使用dsh的可以随时变换模型（5.6sol、claude……），还能用一堆插件……</p><p>还是写下下面两个插件名吧，如图所示，注意不要下载到本地，要下载到“集群”（选择能下载到集群的插件进行下载）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/22/fa782407753132074de8201502fb2e11.png" style="height:210px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> 论文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>📌Java基础_Day02</title>
       <link href="/posts/e81b7383.html"/>
       <url>/posts/e81b7383.html</url>
