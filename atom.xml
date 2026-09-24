@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-09-24T02:06:12.264Z</updated>
+  <updated>2026-09-24T02:24:11.371Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://blog.sunwei.online/posts/377093ae.html"/>
     <id>https://blog.sunwei.online/posts/377093ae.html</id>
     <published>2026-09-24T02:01:16.578Z</published>
-    <updated>2026-09-24T02:06:12.264Z</updated>
+    <updated>2026-09-24T02:24:11.371Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="1-排版问题"><a href="#1-排版问题" class="headerlink" title="1. 排版问题"></a>1. 排版问题</h1><h2 id="1-1-经验一"><a href="#1-1-经验一" class="headerlink" title="1.1 经验一"></a>1.1 经验一</h2><p>单个单词不要独自占用一行，如下错误所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/398fefe7fcd0bdb044403700f2d2eaf7.png" style="height:210px;"/><h2 id="1-2-经验二"><a href="#1-2-经验二" class="headerlink" title="1.2 经验二"></a>1.2 经验二</h2><p>每页下面内容要对齐，如下错误所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a936e588235b22a3d0840478c5739109.png" style="height:210px;"/><h1 id="2-内容问题"><a href="#2-内容问题" class="headerlink" title="2. 内容问题"></a>2. 内容问题</h1><h1 id="2-1-经验一"><a href="#2-1-经验一" class="headerlink" title="2.1 经验一"></a>2.1 经验一</h1><p>引用要统一，推荐全部用“仅数字加蓝”方案，同时，表格、算法与公式尽量不要用缩写Eq、T等，如下错误所示：【要学习师兄们的，如下右所示】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/ae6dcc2901109e2cb87e7bda7e04f7bf.png" style="height:210px;"/><h1 id="2-2-经验二"><a href="#2-2-经验二" class="headerlink" title="2.2 经验二"></a>2.2 经验二</h1><p>引出后面不要写，这种一般是写在每个章节引入段落中，其它地方一定不要写这东西。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/5bfd81b278393f6a46d2bb069157b5db.png" style="height:210px;"/>]]></content>
+    <content type="html"><![CDATA[<h1 id="1-排版问题"><a href="#1-排版问题" class="headerlink" title="1. 排版问题"></a>1. 排版问题</h1><h2 id="1-1-经验一"><a href="#1-1-经验一" class="headerlink" title="1.1 经验一"></a>1.1 经验一</h2><p>单个单词不要独自占用一行，如下错误所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/398fefe7fcd0bdb044403700f2d2eaf7.png" style="height:210px;"/><h2 id="1-2-经验二"><a href="#1-2-经验二" class="headerlink" title="1.2 经验二"></a>1.2 经验二</h2><p>每页下面内容要对齐，如下错误所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a936e588235b22a3d0840478c5739109.png" style="height:210px;"/><h1 id="2-内容问题"><a href="#2-内容问题" class="headerlink" title="2. 内容问题"></a>2. 内容问题</h1><h2 id="2-1-经验一"><a href="#2-1-经验一" class="headerlink" title="2.1 经验一"></a>2.1 经验一</h2><p>引用要统一，推荐全部用“仅数字加蓝”方案，同时，表格、算法与公式尽量不要用缩写Eq、T等，如下错误所示：【要学习师兄们的，如下右所示】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/ae6dcc2901109e2cb87e7bda7e04f7bf.png" style="height:210px;"/><h2 id="2-2-经验二"><a href="#2-2-经验二" class="headerlink" title="2.2 经验二"></a>2.2 经验二</h2><p>引出后面不要写，这种一般是写在每个章节引入段落中，其它地方一定不要写这东西。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/5bfd81b278393f6a46d2bb069157b5db.png" style="height:210px;"/>]]></content>
     
     
     <summary type="html">写论文的一些常见的排版问题。</summary>
