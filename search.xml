@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>📌Word定章节起始页</title>
+      <link href="/posts/a05fb7b9.html"/>
+      <url>/posts/a05fb7b9.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何设置能让word在编辑前一页内容时，后页内容不上下移动？</p><p>就比如下面这个，你删除了指针处后，下一页的”标题二“会移到上一页末尾！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/3246db17c7aff248cb46c26d594f8518.png" style="height:210px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①光标点向下页第一个字处（字前）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/ed27372127fba54e9e44edec0a9f658a.png" style="height:210px;"/><p>②点击”布局—-分隔符—-下一页“就行了。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/67aa3c3e30f6170319e17df5ccb9c5c7.png" style="height:380px;"/><p>③结果如下：一直删，标题也不会上移；一直回车，标题总会在新页开头！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/155a0004922bd1e03107ba5f536c06e2.png" style="height:380px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Office </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>📌Excel单元格分裂</title>
       <link href="/posts/67eef4e8.html"/>
       <url>/posts/67eef4e8.html</url>
