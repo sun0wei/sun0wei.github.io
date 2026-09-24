@@ -8,7 +8,7 @@
       <link href="/posts/893f51da.html"/>
       <url>/posts/893f51da.html</url>
       
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何搞一个“三线表”模板，让每次使用时点击一下就行？如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a550bec88efdfdaa3cbdb735d2f46fbb.png" style="height:150px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①点击表设计——新建表格样式</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/4300642e918d72664671e1d4d52c72bc.png" style="height:210px;"/><p>②进行配置如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/bdcbba62e33d3ae297488cb277859dc0.png" style="height:210px;"/><p>③点击左下角的：格式——边框与底纹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/c3cd23610183e716345f5d94e1aa6cb8.png" style="height:210px;"/><p>④选择自定义——点击那两个红圈设置上下线，然后确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/788384af9a791a03b43f7ec19c0b901f.png" style="height:210px;"/><p>⑤修改一下标题行的，之前修改的是“整个表格”，改成将格式用于标题行，</p><p>然后再点击边框与底纹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/8087f7a0cfc680e7bf2ba1d3016a3c45.png" style="height:210px;"/><p>⑥点击0.75磅——下框线，点击1.5磅——上框线，最后确定。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/2b83508fd04a817e7f974e0851cefcbd.png" style="height:250px;"/><p>⑦设置字体：格式——字体，具体配置如图。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/51b4d86f5d8626ec55e4b5c0aa8b0832.png" style="height:250px;"/><p>⑧调整段落，配置如图所示，</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/69611126d7cd7ddb7a404dae53c70969.png" style="height:210px;"/><p>⑨配置完成！以后使用时直接点击这个就行了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a550bec88efdfdaa3cbdb735d2f46fbb.png" style="height:150px;"/>]]></content>
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何搞一个“三线表”模板，让每次使用时点击一下就行？如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a550bec88efdfdaa3cbdb735d2f46fbb.png" style="height:150px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①点击表设计——新建表格样式</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/4300642e918d72664671e1d4d52c72bc.png" style="height:210px;"/><p>②进行配置如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/bdcbba62e33d3ae297488cb277859dc0.png" style="height:210px;"/><p>③点击左下角的：格式——边框与底纹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/c3cd23610183e716345f5d94e1aa6cb8.png" style="height:210px;"/><p>④选择自定义——点击那两个红圈设置上下线，然后确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/788384af9a791a03b43f7ec19c0b901f.png" style="height:280px;"/><p>⑤修改一下标题行的，之前修改的是“整个表格”，改成将格式用于标题行，</p><p>然后再点击边框与底纹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/8087f7a0cfc680e7bf2ba1d3016a3c45.png" style="height:210px;"/><p>⑥点击0.75磅——下框线，点击1.5磅——上框线，最后确定。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/2b83508fd04a817e7f974e0851cefcbd.png" style="height:250px;"/><p>⑦设置字体：格式——字体，具体配置如图。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/51b4d86f5d8626ec55e4b5c0aa8b0832.png" style="height:280px;"/><p>⑧调整段落，配置如图所示，</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/69611126d7cd7ddb7a404dae53c70969.png" style="height:280px;"/><p>⑨配置完成！以后使用时直接点击这个就行了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a550bec88efdfdaa3cbdb735d2f46fbb.png" style="height:150px;"/><h1 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h1><p>如何搞一个“三线表”模板，让每次使用时点击一下就行？如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a550bec88efdfdaa3cbdb735d2f46fbb.png" style="height:150px;"/><h1 id="解决步骤-1"><a href="#解决步骤-1" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①点击表设计——新建表格样式</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/4300642e918d72664671e1d4d52c72bc.png" style="height:210px;"/><p>②进行配置如下图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/bdcbba62e33d3ae297488cb277859dc0.png" style="height:210px;"/><p>③点击左下角的：格式——边框与底纹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/c3cd23610183e716345f5d94e1aa6cb8.png" style="height:210px;"/><p>④选择自定义——点击那两个红圈设置上下线，然后确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/788384af9a791a03b43f7ec19c0b901f.png" style="height:210px;"/><p>⑤修改一下标题行的，之前修改的是“整个表格”，改成将格式用于标题行，</p><p>然后再点击边框与底纹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/8087f7a0cfc680e7bf2ba1d3016a3c45.png" style="height:210px;"/><p>⑥点击0.75磅——下框线，点击1.5磅——上框线，最后确定。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/2b83508fd04a817e7f974e0851cefcbd.png" style="height:250px;"/><p>⑦设置字体：格式——字体，具体配置如图。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/51b4d86f5d8626ec55e4b5c0aa8b0832.png" style="height:280px;"/><p>⑧调整段落，配置如图所示，</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/69611126d7cd7ddb7a404dae53c70969.png" style="height:280px;"/><p>⑨配置完成！以后使用时直接点击这个就行了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a550bec88efdfdaa3cbdb735d2f46fbb.png" style="height:150px;"/>]]></content>
       
       
       <categories>
@@ -1333,31 +1333,6 @@
     
     
     <entry>
-      <title>📌Ps特定区域换色</title>
-      <link href="/posts/59d90331.html"/>
-      <url>/posts/59d90331.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Ps </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>🏴‍☠️获取境外手机验证码</title>
       <link href="/posts/542dde82.html"/>
       <url>/posts/542dde82.html</url>
@@ -1375,6 +1350,31 @@
         <tags>
             
             <tag> 网站推荐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📌Ps特定区域换色</title>
+      <link href="/posts/59d90331.html"/>
+      <url>/posts/59d90331.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用Ps程序，将下面图片中特定区域的粉色变成蓝色？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6404ebc4c32e0b75.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①将图片放入Ps中去！</p><p>②点击“调整”——替换颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae2d58cb8da5c80fd463.png" style="height:250px;"/><p>③这里鼠标会变成一个“吸色笔”，你先点击图像(M)——用吸色笔点击那粉色，最上面那方框显示粉色说明没点偏！（颜色容差最好拉满）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae4358cb8da5c80fd46f.png" style="height:250px;"/><p>④点击那“结果”——写要改的色代码——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6894ae6f58cb8da5c80fd488.png" style="height:250px;"/><p>⑤再一路确定，就修改成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/c7f367b5155ceb7a.png" style="height:250px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ps </tag>
             
         </tags>
       
