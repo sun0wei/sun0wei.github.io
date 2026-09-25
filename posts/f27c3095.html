@@ -458,7 +458,7 @@ document.addEventListener('pjax:error', (e) => {
   if ((epage ==='all')&&(flag == 0)){
     butterfly_swiper_injector_config();
   }
-  else if (epage === cpage){
+  else if (epage === cpage || (epage === '/' && /^\/page\/\d+\/$/.test(cpage))){
     butterfly_swiper_injector_config();
   }
   </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
