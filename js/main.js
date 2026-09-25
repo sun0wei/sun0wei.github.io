@@ -326,6 +326,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!($article && (isToc || isAnchor))) return
 
+    // When an encrypted post is auto-decrypted from localStorage during a
+    // refresh, decryption can finish before the TOC element or this listener
+    // exists. Reveal the pre-rendered TOC once decrypted headings are present.
+    const $encryptedToc = document.querySelector('#card-toc .toc-div-class')
+    if ($encryptedToc && $article.querySelector('#hexo-blog-encrypt h1, #hexo-blog-encrypt h2, #hexo-blog-encrypt h3, #hexo-blog-encrypt h4, #hexo-blog-encrypt h5, #hexo-blog-encrypt h6')) {
+      $encryptedToc.style.removeProperty('display')
+    }
+
     if (window.tocScrollFn) {
       window.removeEventListener('scroll', window.tocScrollFn)
     }
