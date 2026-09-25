@@ -326,6 +326,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!($article && (isToc || isAnchor))) return
 
+    if (window.tocScrollFn) {
+      window.removeEventListener('scroll', window.tocScrollFn)
+    }
+
     let $tocLink, $cardToc, scrollPercent, autoScrollToc, isExpand
 
     if (isToc) {
@@ -360,19 +364,21 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // toc元素點擊
-      $cardToc.addEventListener('click', e => {
+      if (window.tocClickFn) $cardToc.removeEventListener('click', window.tocClickFn)
+      window.tocClickFn = e => {
         e.preventDefault()
-        const target = e.target.classList
-        if (target.contains('toc-content')) return
-        const $target = target.contains('toc-link')
-          ? e.target
-          : e.target.parentElement
-        const tocTargetTop = Math.max(0, btf.getEleTop(document.getElementById(decodeURI($target.getAttribute('href')).replace('#', ''))) - 80)
+        const $target = e.target.closest('.toc-link')
+        if (!$target || !$cardToc.contains($target)) return
+        const headingId = decodeURI($target.getAttribute('href')).replace('#', '')
+        const heading = document.getElementById(headingId)
+        if (!heading) return
+        const tocTargetTop = Math.max(0, btf.getEleTop(heading) - 80)
         btf.scrollToDest(window.pageYOffset > tocTargetTop ? tocTargetTop + 70 : tocTargetTop, 300)
         if (window.innerWidth < 900) {
           window.mobileToc.close()
         }
-      })
+      }
+      $cardToc.addEventListener('click', window.tocClickFn)
 
       autoScrollToc = item => {
         const activePosition = item.getBoundingClientRect().top
@@ -386,8 +392,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    // find head position & add active class
-    const list = $article.querySelectorAll('h1,h2,h3,h4,h5,h6')
+    // find head position & add active class. Build the list from TOC hrefs so
+    // dynamically decrypted content and non-heading widgets cannot shift indexes.
+    const headingEntries = isToc
+      ? Array.from($tocLink).map(link => {
+        const id = decodeURI(link.getAttribute('href')).replace('#', '')
+        return { heading: document.getElementById(id), link }
+      }).filter(item => item.heading)
+      : Array.from($article.querySelectorAll('h1,h2,h3,h4,h5,h6')).map(heading => ({ heading, link: null }))
     let detectItem = ''
     const findHeadPosition = function (top) {
       if (top === 0) {
@@ -396,12 +408,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let currentId = ''
       let currentIndex = ''
+      let currentActive = null
 
-      list.forEach(function (ele, index) {
-        if (top >= btf.getEleTop(ele) - 80) {
-          const id = ele.id
+      headingEntries.forEach(function (item, index) {
+        // A small tolerance avoids landing one sub-pixel before the clicked
+        // heading and incorrectly keeping the previous TOC item active.
+        if (top >= btf.getEleTop(item.heading) - 90) {
+          const id = item.heading.id
           currentId = id ? '#' + encodeURI(id) : ''
           currentIndex = index
+          currentActive = item.link
         }
       })
 
@@ -418,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function () {
           return
         }
 
-        const currentActive = $tocLink[currentIndex]
+        if (!currentActive) return
         currentActive.classList.add('active')
 
         setTimeout(() => {
@@ -443,7 +459,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 100)()
     }
     window.addEventListener('scroll', tocScrollFn)
+    window.tocScrollFn()
   }
+
+  // Encrypted posts inject their real headings only after decryption. Rebuild
+  // the heading/link mapping so nested TOC items and active highlighting work.
+  window.addEventListener('hexo-blog-decrypt', scrollFnToDo)
 
   /**
    * Rightside
