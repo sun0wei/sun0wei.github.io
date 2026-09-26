@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-09-25T06:35:51.396Z</updated>
+  <updated>2026-09-26T00:50:47.920Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📝AI傻逼记录</title>
+    <link href="https://blog.sunwei.online/posts/15936741.html"/>
+    <id>https://blog.sunwei.online/posts/15936741.html</id>
+    <published>2026-09-26T00:50:45.703Z</published>
+    <updated>2026-09-26T00:50:47.920Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-问题一（访问文件）"><a href="#1-问题一（访问文件）" class="headerlink" title="1. 问题一（访问文件）"></a>1. 问题一（访问文件）</h1><p>长时间使用后，ai就会被限流，然后降智，如下图所示，连项目文件都访问不了，后续只能新开个对话或者换个中转站进行提问……【明明给了完全访问权限】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/2a669d13b9af110f913511617cb6bc92.png" style="height:126px;"/><h1 id="2-问题二（识图）"><a href="#2-问题二（识图）" class="headerlink" title="2. 问题二（识图）"></a>2. 问题二（识图）</h1><p>像下面这个问题，你就太依赖codex了，你开了6 Astra Ultra，运行了40多min一点效果都没有；但是，这并不是中转站的问题，ai就是这样子的，它对图片等东西的调整太难，特别是chatgpt，它对图片的理解能力还不如豆包，叫它画模型图，它会直接给你做页ppt【图片能力：gmini&gt;豆包&gt;chatgpt&gt;&#x3D;deepseek】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/a658589a37edadc057fedd8fd0680ed3.png" style="height:164px;"/><h1 id="3-问题三（网络）"><a href="#3-问题三（网络）" class="headerlink" title="3. 问题三（网络）"></a>3. 问题三（网络）</h1><p>经常会碰到网络问题，甚至中转站也会，真的很烦人，ai没用了，我工作也停止了……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/fdc8a6c11ebc24929e3eecee8d412eb3.png" style="height:175px;"/><h1 id="4-问题四（变通）"><a href="#4-问题四（变通）" class="headerlink" title="4. 问题四（变通）"></a>4. 问题四（变通）</h1><p>之前让它调整word行距变为1.25，然后下面是它的效果，真不会变通，它直接选择多倍行距后1.25，应该是选择最小值后1.25。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/85fa2656d66ae8cc6c6ea5e5085aec49.png" style="height:142px;"/><h1 id="5-问题五（转义符）"><a href="#5-问题五（转义符）" class="headerlink" title="5. 问题五（转义符）"></a>5. 问题五（转义符）</h1><p>好多ai会在那些特殊符号前面加个转义符号，真离谱……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/6ee91c0cc603037b6e17e90709893942.png" style="height:177px;"/><h1 id="6-问题六（兼容性）"><a href="#6-问题六（兼容性）" class="headerlink" title="6. 问题六（兼容性）"></a>6. 问题六（兼容性）</h1><p>同样是chatgpt5.6，一个中转站的一直报工具调用问题，另外一个却不报，关键时候还是要靠自己啊……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/64efddbfc18a1d24f6599807331c370a.png" style="height:217px;"/>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-问题一（访问文件）&quot;&gt;&lt;a href=&quot;#1-问题一（访问文件）&quot; class=&quot;headerlink&quot; title=&quot;1. 问题一（访问文件）&quot;&gt;&lt;/a&gt;1. 问题一（访问文件）&lt;/h1&gt;&lt;p&gt;长时间使用后，ai就会被限流，然后降智，如下图所示，连项目文件都</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="AI" scheme="https://blog.sunwei.online/tags/AI/"/>
+    
+    <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>📝AI常用高级操作</title>
@@ -444,27 +470,6 @@
     
     
     <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌DSH加中转站</title>
-    <link href="https://blog.sunwei.online/posts/627eec32.html"/>
-    <id>https://blog.sunwei.online/posts/627eec32.html</id>
-    <published>2026-09-20T07:19:18.465Z</published>
-    <updated>2026-09-20T08:21:35.719Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>DSH只有下面只个模型，我想在期中加点中转站模型，应该如何操作？比如加个claude的。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/fd28017e4bd0c30085ee4c979124c988.png" style="height:210px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①打开”设置”，然后按下面图片中的步骤选择</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/28a6e6ea44074af07e1b741119e13e08.png" style="height:210px;"/><p>②需要填写的信息如下</p><p>Provider id：随便起个符合规则的名字就行</p><p>显示名称：随便起个符合规则的名字就行</p><p>API协议使用默认的</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/2f26c3d967c8e85b386d58947e688f16.png" style="height:180px;"/><p>③一般”中转站“都提供一键导入ccswitch的功能，剩余的2个空你可以打开ccswitch进行查看</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/7b00c59c3be2ce1cc475615beb15e7af.png" style="height:120px;"/><p>然后就会弹出下面东西，API地址对应下面的”API请求地址“；API密钥对应下面的”API Key“。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/8b8cd21f2241a333506f6429ce8f3ad5.png" style="height:210px;"/><p>如何中转站没用一键导入功能，可以试试下面这个：API地址一般是中转站网址后面加个&#x2F;v1</p><p>④然后点击“添加模型”——&gt;“获取可用模型”，点击添加（添加你常用的几个就行，尽量别全部加，因为模型太多选择时要一直滑动……）。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/abbbc2917c4d3dd4dda83d284a379f08.png" style="height:280px;"/><p>⑤最后点击”创建提供方“，回到对话页面，刷新一下就行了，没用的话重新启动下3080端口就行</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/5d4e204bffa7a11ceca33630e2bac7b3.png" style="height:150px;"/><p>然后效果如下所示</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/20/e8f6d60e1702374115f076e2a1d93ff5.png" style="height:210px;"/><p>（不仅能换中转哦，第一步哪点击“增加提供方”，能直接使用官方的比如gmini、chatgpt……）</p>]]></content>
-    
-    
-    <summary type="html">给DSH添加中转站教程。</summary>
-    
-    
-    
-    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="AI" scheme="https://blog.sunwei.online/tags/AI/"/>
     
   </entry>
   
