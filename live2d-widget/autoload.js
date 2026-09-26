@@ -12,18 +12,6 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
     document.querySelector('#body-wrap.post #card-toc')
   );
   let autoHidden = false;
-  let modelReady = false;
-  let retryCount = 0;
-  let readyTimer = null;
-  let retryTimer = null;
-  const maxRetries = 3;
-
-  const setModelVisibility = (visible) => {
-    const waifu = document.getElementById('waifu');
-    if (!waifu) return;
-    waifu.style.visibility = visible ? 'visible' : 'hidden';
-    waifu.style.pointerEvents = visible ? '' : 'none';
-  };
 
   const syncVisibility = () => {
     const waifu = document.getElementById('waifu');
@@ -42,7 +30,6 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
     autoHidden = false;
     waifu.style.display = '';
     waifu.style.bottom = 0;
-    if (modelReady) setModelVisibility(true);
     toggle.classList.remove('waifu-toggle-active');
   };
 
@@ -73,80 +60,6 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
     tag.onerror = () => reject(new Error(`Failed to load ${url}`));
     document.head.appendChild(tag);
   });
-
-  const canvasHasContent = (canvas) => {
-    if (!canvas || !canvas.width || !canvas.height) return false;
-    try {
-      const context = canvas.getContext('2d');
-      if (!context) return false;
-      const step = Math.max(8, Math.floor(Math.min(canvas.width, canvas.height) / 80));
-      const pixels = context.getImageData(0, 0, canvas.width, canvas.height).data;
-      let visiblePixels = 0;
-      for (let y = 0; y < canvas.height; y += step) {
-        for (let x = 0; x < canvas.width; x += step) {
-          if (pixels[(y * canvas.width + x) * 4 + 3] > 12) visiblePixels++;
-          if (visiblePixels >= 24) return true;
-        }
-      }
-    } catch (error) {
-      console.warn('[Live2D] canvas check failed:', error.message || error);
-    }
-    return false;
-  };
-
-  const removeWidget = () => {
-    if (readyTimer) {
-      window.clearInterval(readyTimer);
-      readyTimer = null;
-    }
-    document.getElementById('waifu')?.remove();
-    document.getElementById('waifu-toggle')?.remove();
-    window.__live2dWidgetInitialized = false;
-    modelReady = false;
-  };
-
-  const retryInit = (reason) => {
-    if (retryTimer || retryCount >= maxRetries) {
-      if (retryCount >= maxRetries) {
-        console.warn('[Live2D] model failed after retries:', reason);
-      }
-      return;
-    }
-    retryCount++;
-    retryTimer = window.setTimeout(() => {
-      retryTimer = null;
-      removeWidget();
-      init();
-    }, 900);
-  };
-
-  const waitForModelReady = () => {
-    const startedAt = Date.now();
-    setModelVisibility(false);
-    readyTimer = window.setInterval(() => {
-      const canvas = document.getElementById('live2d');
-      if (canvasHasContent(canvas)) {
-        modelReady = true;
-        window.clearInterval(readyTimer);
-        readyTimer = null;
-        setModelVisibility(true);
-        syncVisibility();
-      } else if (Date.now() - startedAt > 8000) {
-        window.clearInterval(readyTimer);
-        readyTimer = null;
-        retryInit('model canvas stayed empty');
-      }
-    }, 350);
-  };
-
-  window.addEventListener('error', (event) => {
-    const target = event.target;
-    const resource = target && (target.src || target.href || '');
-    if (typeof resource === 'string' && resource.startsWith(live2d_path)) {
-      retryInit(`resource failed: ${resource}`);
-    }
-  }, true);
-
   const init = () => {
     if (window.__live2dWidgetInitialized || document.getElementById('waifu')) return;
     window.__live2dWidgetInitialized = true;
@@ -162,12 +75,10 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
         cdnPath: live2d_path,
         tools: ['hitokoto', 'switch-texture', 'photo', 'quit']
       });
-      waitForModelReady();
+      syncVisibility();
     }).catch(error => {
-      removeWidget();
       window.__live2dWidgetInitialized = false;
       console.warn('[Live2D] skipped:', error.message || error);
-      retryInit(error.message || error);
     });
   };
 
