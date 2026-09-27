@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> 📌 </tag>
-            
             <tag> 电脑美化 </tag>
+            
+            <tag> 📌 </tag>
             
         </tags>
       
@@ -923,9 +923,9 @@
       
         <tags>
             
-            <tag> 📌 </tag>
-            
             <tag> 电脑美化 </tag>
+            
+            <tag> 📌 </tag>
             
         </tags>
       
@@ -1312,6 +1312,33 @@
     
     
     <entry>
+      <title>📌手机免费用主题</title>
+      <link href="/posts/1ce7b06d.html"/>
+      <url>/posts/1ce7b06d.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>我用下面两种方法找了个自己非常喜欢的主题，但要钱，如何进行免费更换？<br>来源一：去B站那个专门搞主题的up主下载，下载后是一个*.theme文件，“<a href="https://space.bilibili.com/67368617/lists">自制主题</a>“<br>来源二：手机上的主题商店的主题。</p><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①下载2个主要软件：Shizuku（用于启动手机ADB模式）、ShizukuRunner（用于运行冻结与解冻命令），下载链接<a href="https://www.123865.com/s/wkv5Vv-smQPh?%E6%8F%90%E5%8F%96%E7%A0%81:sfzt">123云盘</a>。提取码:sfzt，还有那个命令文件txt，主题商店也最好用个低版本的。<br>②打开手机开发者模式：设置——关于手机——版本号连接点击5~6下就可以打开“手机开发者模式”了！<br>（下图红框处连接点击就能打开）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/22rrfgrt454egrfg.png" style="height:200px;"/><p>③打开shizuku应用，点击图片左边红框中的“配对”，进入后点击图片右边红框中的“开发者选项”！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/22rdfdf3rrgrtr.png" style="height:200px;"/><p>④打开“USB调试”与“无线调试”，还有最下面那个“禁止权限监控”开关！然后点进“无线调试”中去（不是点按钮，是点文字，会进入一个新页面）！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/44frftrt4r4545.png" style="height:200px;"/><p>⑤进入之后，点击“使用配对码配对设备”，将得到的配对码在“悬浮窗”那输入（要点击右边那箭头按钮上传）！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/55gfgrgretetsrfg4.png" style="height:200px;"/><p>⑥返回shizuku应用首页，点击“启动”，再等一会，若显示图片右边那些代码，就说明启动成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/3334545454trt.png" style="height:200px;"/><p>⑦打开ShizukuRunner，输入云盘中下载的那个txt文件，把那4个命令放上去！：“冻结应用、解冻应用、冻结应用服务、解冻应用服务”！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/77dfdasfedrfew.png" style="height:200px;"/><p>⑧随便在主题软件中试用一个皮肤（或者点击下载后的主题文件，等待跳转到主题商店），然后在ShizukuRunner中运行“冻结应用、冻结应用服务”这两个命令，就能永久使用皮肤了，此时主题软件也会变灰，再也用不了，但试用的皮肤却能一直使用！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/88dfwsefefafewafewaaf.png" style="height:200px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 📌 </tag>
+            
+            <tag> 手机美化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>📌博客文章编写语法</title>
       <link href="/posts/5c139ded.html"/>
       <url>/posts/5c139ded.html</url>
@@ -1366,31 +1393,6 @@
     
     
     <entry>
-      <title>📌手机免费用主题</title>
-      <link href="/posts/48129dda.html"/>
-      <url>/posts/48129dda.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>我用下面两种方法找了个自己非常喜欢的主题，但要钱，如何进行免费更换？<br>来源一：去B站那个专门搞主题的up主下载，下载后是一个*.theme文件，“<a href="https://space.bilibili.com/67368617/lists">自制主题</a>“<br>来源二：手机上的主题商店的主题。</p><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①下载2个主要软件：Shizuku（用于启动手机ADB模式）、ShizukuRunner（用于运行冻结与解冻命令），下载链接<a href="https://www.123865.com/s/wkv5Vv-smQPh?%E6%8F%90%E5%8F%96%E7%A0%81:sfzt">123云盘</a>。提取码:sfzt，还有那个命令文件txt，主题商店也最好用个低版本的。<br>②打开手机开发者模式：设置——关于手机——版本号连接点击5~6下就可以打开“手机开发者模式”了！<br>（下图红框处连接点击就能打开）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/22rrfgrt454egrfg.png" style="height:200px;"/><p>③打开shizuku应用，点击图片左边红框中的“配对”，进入后点击图片右边红框中的“开发者选项”！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/22rdfdf3rrgrtr.png" style="height:200px;"/><p>④打开“USB调试”与“无线调试”，还有最下面那个“禁止权限监控”开关！然后点进“无线调试”中去（不是点按钮，是点文字，会进入一个新页面）！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/44frftrt4r4545.png" style="height:200px;"/><p>⑤进入之后，点击“使用配对码配对设备”，将得到的配对码在“悬浮窗”那输入（要点击右边那箭头按钮上传）！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/55gfgrgretetsrfg4.png" style="height:200px;"/><p>⑥返回shizuku应用首页，点击“启动”，再等一会，若显示图片右边那些代码，就说明启动成功了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/3334545454trt.png" style="height:200px;"/><p>⑦打开ShizukuRunner，输入云盘中下载的那个txt文件，把那4个命令放上去！：“冻结应用、解冻应用、冻结应用服务、解冻应用服务”！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/77dfdasfedrfew.png" style="height:200px;"/><p>⑧随便在主题软件中试用一个皮肤（或者点击下载后的主题文件，等待跳转到主题商店），然后在ShizukuRunner中运行“冻结应用、冻结应用服务”这两个命令，就能永久使用皮肤了，此时主题软件也会变灰，再也用不了，但试用的皮肤却能一直使用！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/blog%E5%9B%BE%E7%89%87%E6%9A%82%E5%AD%98/88dfwsefefafewafewaaf.png" style="height:200px;"/>]]></content>
-      
-      
-      <categories>
-          
-          <category> 其它 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 手机美化 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>🏴‍☠️获取境外手机验证码</title>
       <link href="/posts/9e660af4.html"/>
       <url>/posts/9e660af4.html</url>
@@ -1400,9 +1402,9 @@
       
       <categories>
           
-          <category> 技术 </category>
-          
           <category> 计算机基础 </category>
+          
+          <category> 技术 </category>
           
       </categories>
       
@@ -1592,9 +1594,9 @@
       
         <tags>
             
-            <tag> 📌 </tag>
-            
             <tag> 电脑美化 </tag>
+            
+            <tag> 📌 </tag>
             
         </tags>
       
