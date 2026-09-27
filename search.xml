@@ -315,11 +315,11 @@
       
         <tags>
             
+            <tag> ✍ </tag>
+            
             <tag> 研究生 </tag>
             
             <tag> 时间轴 </tag>
-            
-            <tag> ✍ </tag>
             
         </tags>
       
@@ -460,9 +460,9 @@
       
         <tags>
             
-            <tag> 研究生 </tag>
-            
             <tag> ✍ </tag>
+            
+            <tag> 研究生 </tag>
             
         </tags>
       
@@ -622,9 +622,9 @@
       
         <tags>
             
-            <tag> 时间轴 </tag>
-            
             <tag> ✍ </tag>
+            
+            <tag> 时间轴 </tag>
             
         </tags>
       
@@ -649,9 +649,9 @@
       
         <tags>
             
-            <tag> ✍ </tag>
-            
             <tag> 工作记录 </tag>
+            
+            <tag> ✍ </tag>
             
         </tags>
       
@@ -1123,9 +1123,9 @@
       
         <tags>
             
-            <tag> 时间轴 </tag>
-            
             <tag> ✍ </tag>
+            
+            <tag> 时间轴 </tag>
             
         </tags>
       
@@ -1742,31 +1742,6 @@
         <tags>
             
             <tag> 励志美文 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>📌Ps修改文字</title>
-      <link href="/posts/28917463.html"/>
-      <url>/posts/28917463.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>用PS修改图片中的字，并且要求背景不受影响！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/ffa5e64d1f55efed.png" style="height:250px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①PS打开图片，复制一个图层用于后面调整位置。</p><p>②用圈套工具圈出要修改的字。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6f9cb6ca0405b4c0.png" style="height:250px;"/><p>③选择——色彩范围——鼠标点击那字，并调整颜色容差至合适位置，确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/016de6ec1ce4c9c9.png" style="height:250px;"/><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/27e7c03ecbfde119.png" style="height:250px;"/><p>④选择——修改——扩展——扩展3个像素确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/9ded7056f3dc48f5.png" style="height:250px;"/><p>⑤编辑——填充——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/6c4eec0fb1bebbd1.png" style="height:250px;"/><p>⑥点击图片中的”写字“，写个”孙“字，用红色且与之前”孙“同字体，使用备用图层，使新字能正好盖住旧字（ctrl+一直按鼠标左键可移动字）。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/05fdf41c5bb6a975.png" style="height:250px;"/><p>⑦然后点击”孙“字，改成”李“字，使用去”孙“的图层并修改颜色。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/211cc39ef2eeaf52.png" style="height:250px;"/><p>⑧一个新，一个旧，一看P图，所以加工一下。ctrl+shift+alt+e生成一个组合图层，滤镜——风格化——扩散——各项异性——确定</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/abd431ec922f8084.png" style="height:500px;"/><p>⑨结束！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/9c026fad9eaffc80.png" style="height:250px;"/>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Ps </tag>
             
         </tags>
       
