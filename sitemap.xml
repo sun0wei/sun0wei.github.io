@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/bilibili/wantWatch/0.json</loc>
-    
-    <lastmod>2026-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sunwei.online/bilibili/watched/0.json</loc>
     
     <lastmod>2026-09-27</lastmod>
@@ -47,7 +38,25 @@
   </url>
   
   <url>
+    <loc>https://blog.sunwei.online/bilibili/wantWatch/0.json</loc>
+    
+    <lastmod>2026-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sunwei.online/tags/%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80/index.html</loc>
+    
+    <lastmod>2026-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/link/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
     
@@ -74,6 +83,15 @@
   </url>
   
   <url>
+    <loc>https://blog.sunwei.online/life/music/index.html</loc>
+    
+    <lastmod>2026-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sunwei.online/personal/love/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
@@ -92,16 +110,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/link/index.html</loc>
-    
-    <lastmod>2026-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/life/music/index.html</loc>
+    <loc>https://blog.sunwei.online/life/gallery/scene2/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
     
@@ -111,6 +120,24 @@
   
   <url>
     <loc>https://blog.sunwei.online/life/gallery/scene3/index.html</loc>
+    
+    <lastmod>2026-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/life/gallery/phone/p2/index.html</loc>
+    
+    <lastmod>2026-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/life/gallery/phone/p3/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
     
@@ -138,6 +165,15 @@
   
   <url>
     <loc>https://blog.sunwei.online/life/gallery/index.html</loc>
+    
+    <lastmod>2026-09-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/life/gallery/girl2/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
     
@@ -182,15 +218,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/life/gallery/scene2/index.html</loc>
-    
-    <lastmod>2026-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sunwei.online/life/gallery/girl2/p2/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
@@ -227,25 +254,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/life/gallery/phone/p2/index.html</loc>
-    
-    <lastmod>2026-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/life/gallery/phone/p3/index.html</loc>
-    
-    <lastmod>2026-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/life/gallery/girl2/index.html</loc>
+    <loc>https://blog.sunwei.online/categories/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
     
@@ -263,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/categories/index.html</loc>
+    <loc>https://blog.sunwei.online/bangumis/index.html</loc>
     
     <lastmod>2026-09-27</lastmod>
     
@@ -272,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/bangumis/index.html</loc>
+    <loc>https://blog.sunwei.online/posts/10ede32a.html</loc>
     
     <lastmod>2026-09-27</lastmod>
     
@@ -883,15 +892,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://blog.sunwei.online/posts/10ede32a.html</loc>
-    
-    <lastmod>2025-09-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://blog.sunwei.online/</loc>
@@ -958,14 +958,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/%E7%94%B5%E8%84%91%E7%BE%8E%E5%8C%96/</loc>
+    <loc>https://blog.sunwei.online/tags/AI/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/AI/</loc>
+    <loc>https://blog.sunwei.online/tags/%E7%94%B5%E8%84%91%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -979,14 +979,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/Office/</loc>
+    <loc>https://blog.sunwei.online/tags/%E7%A8%8B%E5%BA%8F%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/%E7%A8%8B%E5%BA%8F%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.sunwei.online/tags/Office/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1021,14 +1021,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/Pr/</loc>
+    <loc>https://blog.sunwei.online/tags/Ps/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/Ps/</loc>
+    <loc>https://blog.sunwei.online/tags/Pr/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
