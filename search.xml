@@ -560,6 +560,8 @@
       
         <tags>
             
+            <tag> 📌 </tag>
+            
             <tag> AI </tag>
             
         </tags>
@@ -1310,9 +1312,9 @@
       
       <categories>
           
-          <category> 技术 </category>
-          
           <category> 计算机基础 </category>
+          
+          <category> 技术 </category>
           
       </categories>
       
