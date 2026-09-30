@@ -33,9 +33,9 @@
     <category term="计算机基础" scheme="https://blog.sunwei.online/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
     <category term="电脑美化" scheme="https://blog.sunwei.online/tags/%E7%94%B5%E8%84%91%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
   </entry>
   
@@ -136,7 +136,7 @@
     <link href="https://blog.sunwei.online/posts/53dd3985.html"/>
     <id>https://blog.sunwei.online/posts/53dd3985.html</id>
     <published>2026-09-24T08:08:23.481Z</published>
-    <updated>2026-09-27T03:23:50.617Z</updated>
+    <updated>2026-09-30T11:08:44.138Z</updated>
     
     <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>我电脑上下载了一个MuMu模拟器，从电脑往模拟器传apk文件直接拖入就行，但我想传一些其它类型的文件，还有从模拟器中把apk文件传出来，应该如何做？</p><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①点击左上角那3个点——更多工具——共享文件夹</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/bf464ff387c2847bca3ce4c1afaf54e7.png" style="height:420px;"/><p>②然后这两个文件夹就能一一对应了！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/294f0284cd5ba09fbe6d297f02b319a5.png" style="height:280px;"/>]]></content>
     
@@ -150,7 +150,7 @@
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
-    <category term="MuMu模拟器" scheme="https://blog.sunwei.online/tags/MuMu%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
+    <category term="模拟器" scheme="https://blog.sunwei.online/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
     
   </entry>
   
