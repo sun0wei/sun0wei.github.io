@@ -474,6 +474,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // the heading/link mapping so nested TOC items and active highlighting work.
   window.addEventListener('hexo-blog-decrypt', scrollFnToDo)
 
+  // Encrypted content inserts its images after the initial lightbox setup.
+  // Bind the newly inserted images when decryption finishes.
+  window.addEventListener('hexo-blog-decrypt', runLightbox)
+
   /**
    * Rightside
    */
