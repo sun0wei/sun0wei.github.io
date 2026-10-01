@@ -194,11 +194,11 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
+    <category term="未来" scheme="https://blog.sunwei.online/tags/%E6%9C%AA%E6%9D%A5/"/>
+    
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
     <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
-    
-    <category term="未来" scheme="https://blog.sunwei.online/tags/%E6%9C%AA%E6%9D%A5/"/>
     
   </entry>
   
@@ -317,11 +317,11 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
     <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
   </entry>
   
@@ -342,9 +342,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
     <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
     
@@ -426,29 +426,6 @@
   </entry>
   
   <entry>
-    <title>✍研究生の成就</title>
-    <link href="https://blog.sunwei.online/posts/c6b8de6b.html"/>
-    <id>https://blog.sunwei.online/posts/c6b8de6b.html</id>
-    <published>2026-09-23T06:20:40.416Z</published>
-    <updated>2026-09-27T08:20:14.312Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-省赛"><a href="#1-省赛" class="headerlink" title="1. 省赛"></a>1. 省赛</h1><p>①研一江西省数学建模“特等奖”。【特等奖&gt;一等奖&gt;二等奖&gt;三等奖&gt;参考奖】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/23/bcf397075fe099bb1a131e93d703f6ba.png" style="height:210px;"/><h1 id="2-成绩单"><a href="#2-成绩单" class="headerlink" title="2. 成绩单"></a>2. 成绩单</h1><p>下面是我研究生期间的成绩单，还行，绩点差不多88分了……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/23/fefbe423d5b3218c406f623ad24095c7.png" style="height:400px;"/>]]></content>
-    
-    
-    <summary type="html">研究生期间所取得的成就汇总</summary>
-    
-    
-    
-    <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
-    <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
-    
-  </entry>
-  
-  <entry>
     <title>📌DSH插件推荐</title>
     <link href="https://blog.sunwei.online/posts/150479e.html"/>
     <id>https://blog.sunwei.online/posts/150479e.html</id>
@@ -493,6 +470,29 @@
     <category term="AI" scheme="https://blog.sunwei.online/tags/AI/"/>
     
     <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📌Java基础_Day02</title>
+    <link href="https://blog.sunwei.online/posts/e81b7383.html"/>
+    <id>https://blog.sunwei.online/posts/e81b7383.html</id>
+    <published>2026-09-21T12:38:26.090Z</published>
+    <updated>2026-09-27T03:22:56.905Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-注释"><a href="#1-注释" class="headerlink" title="1. 注释"></a>1. 注释</h1><blockquote><p>①注释的三种写法？</p></blockquote><p>注释（文档注释一般用于方法名&#x2F;类名的上面 ）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/63ef5cd13761afc60cd6f9653f3563a4.png" style="height:210px;"/><h1 id="2-字面量"><a href="#2-字面量" class="headerlink" title="2. 字面量"></a>2. 字面量</h1><blockquote><p>①常用的“字面量”书写？</p></blockquote><p>字面量的书写，就是在代码中，如何写“具体的值”？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/e9f10c8ef6bc0bbab70fdc3070be2ae4.png" style="height:210px;"/><p>示例代码：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/bdba2f404d3a917a5a20d69c1918a5d5.png" style="height:210px;"/><p>一些特殊字符\n与\t如下所示</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/668c20e419518846fb6d667d9378270e.png" style="height:180px;"/><p>字符串字符（里面可以随便写）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/f449827a2954ecc688361ac7d5bcb800.png" style="height:150px;"/><h1 id="3-变量"><a href="#3-变量" class="headerlink" title="3. 变量"></a>3. 变量</h1><blockquote><p>①什么是变量？<br>②变量存储原理？</p></blockquote><p>因为有些数据可能会要求修改，比如价格、年龄……所以引入变量，让它能随时变化！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/b5049de1e848cf766baac68cc0ec2434.png" style="height:210px;"/><p>存储的最小单元（字节）、数字的存法如下：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/689a4a2085404e9ab40ec21f0aa73186.png" style="height:210px;"/><p>存字符时，要用到ASCll编码表转为存数字！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/c90fa291f9598e20b91c1ac411d38820.png" style="height:210px;"/><p>证明如下</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/72a5543c910ee5b24d7d574e9386b079.png" style="height:210px;"/><h1 id="4-四大进制"><a href="#4-四大进制" class="headerlink" title="4. 四大进制"></a>4. 四大进制</h1><blockquote><p>①常见四大进制以及它们之间的转换？<br>②代码中如何表示不同进制？</p></blockquote><p>四大进制以及它们之间的转换就不详细讲了，这是408考试中的常识。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/195f140a2dfbc4ca9418330d1356012c.png" style="height:210px;"/><p>主要学习下在代码中如何表示不同的进制，代码示例：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/c7fae29e727516f5511529b8ba496a49.png" style="height:210px;"/><h1 id="5-基本数据类型"><a href="#5-基本数据类型" class="headerlink" title="5. 基本数据类型"></a>5. 基本数据类型</h1><blockquote><p>①有哪8大基本数据类型？<br>②代码中如何使用？</p></blockquote><p>会在代码中使用这8大基本数据类型就行了</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/5f9665422988dbf0ac550e0cc4cc836f.png" style="height:210px;"/><p>代码样例如下图（这里补充了一个前期常用的非基本数据类型string）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/5fe2e3cad4d891da2d4a15f66f0a8318.png" style="height:210px;"/><h1 id="6-关键字-标识符"><a href="#6-关键字-标识符" class="headerlink" title="6. 关键字&#x2F;标识符"></a>6. 关键字&#x2F;标识符</h1><p>关键字是系统自带的保留词（被官方征用）；标识符是我们自己取的名字。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/21/bcd0205a030adfbe8cc7bef89f6458fb.png" style="height:210px;"/>]]></content>
+    
+    
+    <summary type="html">注释、字面量、变量、数据类型、四大进制、关键字&amp;标识符</summary>
+    
+    
+    
+    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
     
   </entry>
   
