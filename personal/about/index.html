@@ -6,8 +6,8 @@
 <meta property="og:description" content="孙伟的个人介绍、网站入口与成长记录。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/default_cover_14.webp">
-<meta property="article:published_time" content="2026-10-01T03:32:03.155Z">
-<meta property="article:modified_time" content="2026-10-01T03:32:03.155Z">
+<meta property="article:published_time" content="2026-10-01T03:36:03.599Z">
+<meta property="article:modified_time" content="2026-10-01T03:36:03.599Z">
 <meta property="article:author" content="孙 伟">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/default_cover_14.webp"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://blog.sunwei.online/personal/about/"><script src="/js/statistics-charts.js"></script><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/font-awesome-all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/image/cssjs/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -52,7 +52,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2026-10-01 03:32:03'
+  postUpdate: '2026-10-01 03:36:03'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -192,12 +192,15 @@
         <button type="button" class="about-growth-filter" data-growth-filter="研究生">研究生</button>
       </div>
     </div>
-    <ol class="about-timeline">
-      <li data-growth-type="大学"><time>2021.09-2025.06</time><div><div class="about-timeline-title">校级奖学金</div><p>大学期间获得三等奖学金 2 份、二等奖学金 1 份、五好学生 1 次。</p></div></li>
-      <li data-growth-type="大学"><time>2022.12</time><div><div class="about-timeline-title">英语四级</div><p>获得全国大学生英语四级证书。</p></div></li>
-      <li data-growth-type="大学"><time>2023.09</time><div><div class="about-timeline-title">全国大学生数学建模竞赛</div><p>在“定日镜场的优化设计”题目中担任编程手，获得国家一等奖。</p></div></li>
-      <li data-growth-type="大学"><time>2024.04</time><div><div class="about-timeline-title">驾驶证</div><p>一次通过全部科目：科目一 96，科目二 90，科目三 100，科目四 92。</p></div></li>
-      <li data-growth-type="大学"><time>2024.06</time><div><div class="about-timeline-title">软考中级</div><p>取得计算机技术与软件专业技术资格（水平）考试软件设计师证书。</p></div></li>
+    <ol class="about-timeline" data-growth-timeline="大学">
+      <li><time>2021.09-2025.06</time><div><div class="about-timeline-title">校级奖学金</div><p>大学期间获得三等奖学金 2 份、二等奖学金 1 份、五好学生 1 次。</p></div></li>
+      <li><time>2022.12</time><div><div class="about-timeline-title">英语四级</div><p>获得全国大学生英语四级证书。</p></div></li>
+      <li><time>2023.09</time><div><div class="about-timeline-title">全国大学生数学建模竞赛</div><p>在“定日镜场的优化设计”题目中担任编程手，获得国家一等奖。</p></div></li>
+      <li><time>2024.04</time><div><div class="about-timeline-title">驾驶证</div><p>一次通过全部科目：科目一 96，科目二 90，科目三 100，科目四 92。</p></div></li>
+      <li><time>2024.06</time><div><div class="about-timeline-title">软考中级</div><p>取得计算机技术与软件专业技术资格（水平）考试软件设计师证书。</p></div></li>
+    </ol>
+    <ol class="about-timeline" data-growth-timeline="研究生" hidden>
+      <li class="about-growth-empty"><div><div class="about-timeline-title">暂无研究生成长记录</div><p>后续可以在这里补充研究生阶段的经历。</p></div></li>
     </ol>
   </section>
 </section>
@@ -225,6 +228,7 @@
   #about-profile .about-growth-filters { display: flex; flex-wrap: wrap; gap: 0.45rem; }
   #about-profile .about-growth-filter { min-height: 30px; padding: 0.25rem 0.7rem; border: 1px solid rgba(73, 177, 245, 0.32); border-radius: 7px; background: var(--about-surface); color: var(--about-muted); cursor: pointer; font: inherit; font-size: 0.82rem; }
   #about-profile .about-growth-filter:hover, #about-profile .about-growth-filter.is-active { border-color: var(--theme-color, #49b1f5); background: rgba(73, 177, 245, 0.16); color: var(--about-accent); }
+  #about-profile .about-growth-empty { display: block; padding: 1rem 0; color: var(--about-muted); }
   #about-profile .about-section-heading p { margin: 0; color: var(--about-muted); font-size: 0.85rem; }
   #about-profile .about-contact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.65rem; }
   #about-profile .about-contact-item { display: flex; align-items: center; gap: 0.75rem; min-width: 0; padding: 0.8rem; border: 1px solid var(--about-border); border-radius: 8px; background: var(--about-surface); color: var(--font-color, #333); line-height: 1.35; text-decoration: none; }
@@ -260,15 +264,15 @@
      hoverTargets.forEach(target => {
        target.addEventListener('mouseenter', setStaticCursor);
        target.addEventListener('mouseleave', clearStaticCursor);
-     });
+    });
     const growthFilters = aboutProfile.querySelectorAll('[data-growth-filter]');
-    const growthItems = aboutProfile.querySelectorAll('[data-growth-type]');
+    const growthTimelines = aboutProfile.querySelectorAll('[data-growth-timeline]');
     growthFilters.forEach(filter => {
       filter.addEventListener('click', () => {
         const selected = filter.dataset.growthFilter;
         growthFilters.forEach(item => item.classList.toggle('is-active', item === filter));
-        growthItems.forEach(item => {
-          item.hidden = item.dataset.growthType !== selected;
+        growthTimelines.forEach(timeline => {
+          timeline.hidden = timeline.dataset.growthTimeline !== selected;
         });
       });
     });
