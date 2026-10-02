@@ -1,70 +1,41 @@
-想加入图片时，只用在那下面第27行那加入图片就行了，比如
-const diaryImageUrls = [
-'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/dfe8457843574389frtfrf.png',
-'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/fdjkfljeroigyfhwruoeflf.png',
-'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/4347827540895tu4iff.png'
-];
-然后正文中直接引用就行
-比如你想在①内容一下面引用第1张图片
-{ type: 'text', value: '①内容一' },
-{ type: 'images', indexes: [0] },
-再比如你想在②内容二下面引用第2与第3张图片
-{ type: 'text', value: '②内容二 ' },
-{ type: 'images', indexes: [1, 2] },
-
-
-============================================================================
-
 {% raw %}
 
 <div id="graduate-diary-board-202608"></div>
 <script>
 (function () {
-
-
-
-
-
-
-
-
-
-
-const diaryImageUrls = [
-'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/23/afc74087430217f2362763ebf4cf85a4.png',
-'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/23/929144cba2899410cef78c75aedd45dd.png'
-];
-
 const diaryCards = [
 {
 month: '2026 年 09 月',
-date: '2026.09.13',
-title: '陌生人聊天',
+date: '第四周',
+title: '本周总结：⭐⭐⭐⭐⭐⭐',
 blocks: [
-{ type: 'text', value: '陌生人聊天：凌晨一位QQ陌生人替他弟弟向我打听江西理工大学好不好……然后聊到了工作……其实，活着都不容易，读博也一样，考公也一样，我们唯一能做的就是不断提升自己的能力，让自己的替代性变低！让公司不能没有自己！！！' },
-{ type: 'images', indexes: [0] }
+{ type: 'text', value: '开始“达目标”的每日复盘签到！今天正式把一堆应用全部禁止住了，然后达目标中的目标也优化了一下，明天重新回归吧，后面每一周都会上传一张周打卡图片，希望自己能坚持下去。（哎，从暑假一直拖到现在，我的自制力还是太差了！' },
+{ type: 'image', url: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/18/6c1f238414878929283a04e4d148a1fe.png' },
+{ type: 'text', value: '①内容二 ' },
+{ type: 'text', value: '②内容三' }
 ]
 },
 {
-month: '2026 年 09 月',
-date: '2026.09.03',
-title: 'inf拒稿',
+month: '2026 年 10 月',
+date: '第一周',
+title: '本周总结：⭐_⭐⭐⭐⭐',
 blocks: [
-{ type: 'text', value: '论文投稿被秒拒，烦死了……' },
-{ type: 'images', indexes: [1] }
+{ type: 'text', value: '③内容一' },
+{ type: 'text', value: '②内容二 ' },
+{ type: 'text', value: '③内容三' }
+]
+},
+{
+month: '2026 年 10 月',
+date: '第二周',
+title: '本周总结：⭐_⭐⭐⭐⭐',
+blocks: [
+{ type: 'text', value: '③内容一' },
+{ type: 'text', value: '②内容二 ' },
+{ type: 'text', value: '③内容三' }
 ]
 }
 ];
-
-
-
-
-
-
-
-
-
-
 const host = document.getElementById('graduate-diary-board-202608');
 if (!host || host.shadowRoot) return;
 const root = host.attachShadow({ mode: 'open' });
@@ -75,13 +46,12 @@ const lightboxStyle = document.createElement('style');
 lightboxStyle.textContent = '.record-note img{cursor:zoom-in}.diary-lightbox{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.82);cursor:zoom-out}.diary-lightbox img{display:block;width:auto;max-width:96vw;height:auto;max-height:92vh;margin:0;border:0;border-radius:4px;object-fit:contain;box-shadow:0 8px 32px rgba(0,0,0,.35)}';
 root.appendChild(lightboxStyle);
 root.innerHTML += ` <section class="board"> <div class="timeline" data-timeline></div> </section>`;
-const imageHtml = diaryImageUrls.map(url => '<img src="' + url + '" alt="" loading="lazy">');
 const records = diaryCards.map(card => ({
 month: card.month,
 date: card.date,
 title: card.title,
-note: card.blocks.map(block => block.type === 'images'
-? block.indexes.map(index => imageHtml[index] || '').join('')
+note: card.blocks.map(block => block.type === 'image'
+? '<img src="' + block.url + '" alt="" loading="lazy">'
 : '<p>' + block.value + '</p>'
 ).join('')
 }));
