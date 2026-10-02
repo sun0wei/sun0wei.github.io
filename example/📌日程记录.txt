@@ -4,24 +4,21 @@
 <script>
 (function () {
 const diaryCards = [
+
+
+
+
+
+
+
+
 {
-
-
-
-
-
-
-
-
-
 month: '2026 年 09 月',
 date: '第四周',
 title: '本周总结：⭐⭐⭐⭐⭐⭐',
 blocks: [
 { type: 'text', value: '开始“达目标”的每日复盘签到！' },
-{ type: 'image', url: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/18/6c1f238414878929283a04e4d148a1fe.png' },
-{ type: 'text', value: '①内容二 ' },
-{ type: 'text', value: '②内容三' }
+{ type: 'image', url: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/18/6c1f238414878929283a04e4d148a1fe.png' }
 ]
 },
 {
