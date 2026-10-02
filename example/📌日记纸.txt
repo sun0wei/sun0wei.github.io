@@ -4,6 +4,12 @@
 <script>
   (function () {
     const diaryEyebrow = 'PERSONAL DIARY';
+    
+    
+    
+    
+    
+    
     const diaryTitle = 'Java笔记本';
     const diaryIntro = '把纸上的记录，整理成可以慢慢翻阅的电子版本。';
     const diaryCards = [
@@ -13,12 +19,15 @@
       ] },
       { title: '准则', pages: [] },
       { title: '目标', pages: [] },
-      { title: '金钱', pages: [] },
-      { title: '爱好', pages: [] },
-      { title: '回忆', pages: [] },
-      { title: '其它', pages: [] },
-      { title: '附录', pages: [] }
+      { title: '金钱', pages: [] }
     ];
+    
+    
+    
+    
+    
+    
+    
     const host = document.getElementById('rhodes-diary-book');
     if (!host || host.shadowRoot) return;
 const chapters = diaryCards.map(function (card) {
