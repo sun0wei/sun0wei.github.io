@@ -5,11 +5,20 @@
 (function () {
 const diaryCards = [
 {
+
+
+
+
+
+
+
+
+
 month: '2026 年 09 月',
 date: '第四周',
 title: '本周总结：⭐⭐⭐⭐⭐⭐',
 blocks: [
-{ type: 'text', value: '开始“达目标”的每日复盘签到！今天正式把一堆应用全部禁止住了，然后达目标中的目标也优化了一下，明天重新回归吧，后面每一周都会上传一张周打卡图片，希望自己能坚持下去。（哎，从暑假一直拖到现在，我的自制力还是太差了！' },
+{ type: 'text', value: '开始“达目标”的每日复盘签到！' },
 { type: 'image', url: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/18/6c1f238414878929283a04e4d148a1fe.png' },
 { type: 'text', value: '①内容二 ' },
 { type: 'text', value: '②内容三' }
@@ -36,6 +45,15 @@ blocks: [
 ]
 }
 ];
+
+
+
+
+
+
+
+
+
 const host = document.getElementById('graduate-diary-board-202608');
 if (!host || host.shadowRoot) return;
 const root = host.attachShadow({ mode: 'open' });
