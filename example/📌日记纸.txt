@@ -4,11 +4,8 @@
 <script>
   (function () {
     const diaryEyebrow = 'PERSONAL DIARY';
-    const diaryTitle = '罗德岛日记本';
+    const diaryTitle = 'Java笔记本';
     const diaryIntro = '把纸上的记录，整理成可以慢慢翻阅的电子版本。';
-    // 每一页直接填写自己的图片地址，不再需要维护图片编号。
-    // 新增页面：复制一行并修改 image；删除页面：删除对应一行。
-    // 可选字段：thumb（缩略图地址）、title（页标题）、date（日期）、note（备注）。
     const diaryCards = [
       { title: '信息', pages: [
         { image: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/20260901/001.jpg' },
