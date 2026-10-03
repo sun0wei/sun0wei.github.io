@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.sunwei.online/posts/15936741.html</loc>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
     <loc>https://blog.sunwei.online/posts/de55b7d4.html</loc>
     <lastmod>2026-10-03</lastmod>
   </url>
@@ -259,9 +263,5 @@
   <url>
     <loc>https://blog.sunwei.online/posts/627eec32.html</loc>
     <lastmod>2026-09-27</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.sunwei.online/posts/15936741.html</loc>
-    <lastmod>2026-09-26</lastmod>
   </url>
 </urlset> 
