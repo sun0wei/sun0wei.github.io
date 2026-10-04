@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>📌中转codex安装插件</title>
+      <link href="/posts/31ea8b4e.html"/>
+      <url>/posts/31ea8b4e.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>使用api登录codex时插件中心没有插件市场，只有固定的几个插件，问ai叫它帮我安装插件，它总叫我用官方chatgpt账号进行登录，谁tm有钱不会用官方的啊，问题是我没钱啊……【麻烦解决一下这个问题，并给我推荐一些常用插件】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/64b21e664a7f3a079ffa151e0c173a72.png" style="height:267px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①首先先下载一个codex++，b站等网站上都有过程，浏览器搜索后是一个github网站，点击下载就行：<a href="https://github.com/BigPizzaV3/CodexPlusPlus">网站</a>，下载教程我不详细教，github下载应用教程一定要会（右边releases选择版本，然后一直下滑选择操作系统，然后点击下载就行了，如下图选择那64位、windows、setup.exe下载就行）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/27f32385a1f3afcff837dd2c717fc3f9.png" style="height:272px;"/><p>②安装后会产生2个启动程序，一个codex++（codex的升级版本，有这个后，codex就没用了，以后也不用打开codex）、一个codex++管理器</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/92d7749f042f26543c84a6e2ef6e22d1.png" style="height:67px;"/><p>③先打开codex++管理工具，然后依次点击图片中3个红框，就能导入ccswitch中配置好的中转站与模型信息了，当然，你也可以自己填写信息导入……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/3c567cc7531d20e606342db0bbd1e5d0.png" style="height:217px;"/><p>④打开codex++，就能发现相关于codex多出来了很多组件，特别是插件页面，左边多出一堆可以选择进行下载</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/76e492c34494ebf44ca752fbec8f0836.png" style="height:290px;"/><p>⑤接下来推荐一些常用的插件&#x2F;扩展</p><p>codex++管理工具中的功能就不详细讲了，自己多看看就会，比如壁纸、转接微信、会话管理……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/979cd6d13b26484a48b7d1c58c054f73.png" style="height:361px;"/><p>⑥codex++的扩展的话，就自己就只装了下面4个，其实尽量不要装太多，说是插件，其实就是提示词，我测试了一个，同一个回答使用插件的话会花费更多的token，所以，少装点吧。（codex++安装时就会自带插件，比如删除会话、会话分支、会话导出、会话分享……够用了）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/9fde654d1b6b13cd79057ba23b6eee79.png" style="height:263px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 📌 </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>📌无价的奖赏</title>
       <link href="/posts/14df55c2.html"/>
       <url>/posts/14df55c2.html</url>
@@ -47,11 +74,11 @@
       
         <tags>
             
-            <tag> ✍ </tag>
-            
             <tag> 研究生 </tag>
             
             <tag> 工作记录 </tag>
+            
+            <tag> ✍ </tag>
             
         </tags>
       
@@ -76,11 +103,11 @@
       
         <tags>
             
+            <tag> 研究生 </tag>
+            
             <tag> ✍ </tag>
             
             <tag> 🔒 </tag>
-            
-            <tag> 研究生 </tag>
             
         </tags>
       
@@ -464,9 +491,9 @@
       
         <tags>
             
-            <tag> 🔒 </tag>
-            
             <tag> 研究生 </tag>
+            
+            <tag> 🔒 </tag>
             
             <tag> 📌 </tag>
             
@@ -493,9 +520,9 @@
       
         <tags>
             
-            <tag> 🔒 </tag>
-            
             <tag> 研究生 </tag>
+            
+            <tag> 🔒 </tag>
             
             <tag> 📝 </tag>
             
@@ -1111,9 +1138,9 @@
       
         <tags>
             
-            <tag> 🔒 </tag>
-            
             <tag> 研究生 </tag>
+            
+            <tag> 🔒 </tag>
             
             <tag> 📌 </tag>
             

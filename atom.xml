@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-02T09:03:58.899Z</updated>
+  <updated>2026-10-04T07:46:43.052Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📌中转codex安装插件</title>
+    <link href="https://blog.sunwei.online/posts/31ea8b4e.html"/>
+    <id>https://blog.sunwei.online/posts/31ea8b4e.html</id>
+    <published>2026-10-04T07:46:43.486Z</published>
+    <updated>2026-10-04T07:46:43.052Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>使用api登录codex时插件中心没有插件市场，只有固定的几个插件，问ai叫它帮我安装插件，它总叫我用官方chatgpt账号进行登录，谁tm有钱不会用官方的啊，问题是我没钱啊……【麻烦解决一下这个问题，并给我推荐一些常用插件】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/64b21e664a7f3a079ffa151e0c173a72.png" style="height:267px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①首先先下载一个codex++，b站等网站上都有过程，浏览器搜索后是一个github网站，点击下载就行：<a href="https://github.com/BigPizzaV3/CodexPlusPlus">网站</a>，下载教程我不详细教，github下载应用教程一定要会（右边releases选择版本，然后一直下滑选择操作系统，然后点击下载就行了，如下图选择那64位、windows、setup.exe下载就行）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/27f32385a1f3afcff837dd2c717fc3f9.png" style="height:272px;"/><p>②安装后会产生2个启动程序，一个codex++（codex的升级版本，有这个后，codex就没用了，以后也不用打开codex）、一个codex++管理器</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/92d7749f042f26543c84a6e2ef6e22d1.png" style="height:67px;"/><p>③先打开codex++管理工具，然后依次点击图片中3个红框，就能导入ccswitch中配置好的中转站与模型信息了，当然，你也可以自己填写信息导入……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/3c567cc7531d20e606342db0bbd1e5d0.png" style="height:217px;"/><p>④打开codex++，就能发现相关于codex多出来了很多组件，特别是插件页面，左边多出一堆可以选择进行下载</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/76e492c34494ebf44ca752fbec8f0836.png" style="height:290px;"/><p>⑤接下来推荐一些常用的插件&#x2F;扩展</p><p>codex++管理工具中的功能就不详细讲了，自己多看看就会，比如壁纸、转接微信、会话管理……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/979cd6d13b26484a48b7d1c58c054f73.png" style="height:361px;"/><p>⑥codex++的扩展的话，就自己就只装了下面4个，其实尽量不要装太多，说是插件，其实就是提示词，我测试了一个，同一个回答使用插件的话会花费更多的token，所以，少装点吧。（codex++安装时就会自带插件，比如删除会话、会话分支、会话导出、会话分享……够用了）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/9fde654d1b6b13cd79057ba23b6eee79.png" style="height:263px;"/>]]></content>
+    
+    
+    <summary type="html">codex中转站安装插件市场，以及一些常用插件推荐……</summary>
+    
+    
+    
+    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="AI" scheme="https://blog.sunwei.online/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>📌无价的奖赏</title>
@@ -56,11 +79,11 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
   </entry>
   
@@ -81,11 +104,11 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
     <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
-    
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
   </entry>
   
@@ -413,9 +436,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
@@ -438,9 +461,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
     
     <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
     
@@ -468,31 +491,6 @@
     <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
     
     <category term="大学" scheme="https://blog.sunwei.online/tags/%E5%A4%A7%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📝初中日记</title>
-    <link href="https://blog.sunwei.online/posts/13c2e94c.html"/>
-    <id>https://blog.sunwei.online/posts/13c2e94c.html</id>
-    <published>2026-09-23T07:52:59.571Z</published>
-    <updated>2026-09-30T11:29:26.769Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试!" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="b0444ba67bc8b60b9392c66a1f0bd7541872da95b8d506c9fd5422dceaebef2b">7f06c9cfbfaa9d4cc48d66d992572e3a03365183bb6ef6b227ac117222803bc3f4fe39f1254e3452cbf9153cd7bca2a022453801d43c94570a9094a2951a238e1c45ab98b0e904165f9e4afe4a528821c64440318529ef9272aa9a5079338eedf65fefb216cd57cca1416835466985553ab7d5f93f0bf84d5f44f43d20abdfc3a0f289e1d005db5d2764a82a99ece1db7487e83617e853f3a582489207b3aebbe4403a8fd0d5c1bacf7b675244f25c6eae91b41ab988ba540b185325d7953fc4f187f5274484e2ba580288e3f05ea94adb32d576dd017ec82cfc177828832b1cadc212c5413618936b71c434994c77787903ef88363378ecb2e683d1a81e59ae6b41b21c19a1501c1dfe3abfa355503894c2d8fe4e356edc779cb675250e8744fecf615db3f674e6a81c5877e4254efe253588332697b9671f902b54aaff690bde98414d4358e1f69cdb2cc16ee60687d9b6fbdcccf16cfdbf11e7825cf8639eda0ba3295374990f6b08bddbab7f5e8606d130e139db3f1c44fdd701d46bc8db84b2a3a2e5caaa9f98c37777cf511dc1003f5adc7beecaa95201792a1c45c2a3fb9379ee90b826766dc036569d5b9cf75c43eff2cbd3c35fab31bd4ab941291c478909a8a84d1311ce2004bb43b7c433c63aaa24536c10c1102724d3d32f150e19fb791fd2b9b8661973472a758b63d77f42f45b92f0c3687295f39d72aa5a7489da588d337ebd47273fa9c90a9632ac63b3a34e01a690749632f3398ce876e0f7a142142d92d0dd03b62960e2cdd29d9dcf060fe317a25fcaf75631ee984359249a5e2d808739a4037ef89337b17da902315bd5182a3a9dc2ad4329b00a49de827409ad512425ada84167a77930966e377c7087cf525af49d8a249c2287a9000d8a13062b8a91eb24e7c7365f57453bda9326c94017997b19a15795a2c734ca6f882b533e8b2280ed12080101e68b1913da3508f3b918de1e18c26ac434e88e12a3a5625f78549f277a4fed0ad3de61d9a8766cd0ac65beb74b7999c8bdf85ed8034262372e9d8ee99f452af265dafc198c96724643537e2becf55e9583ec6d128eb40a0488a7c2c98922a336fb2e8c10b22098d8672e78122be984e4fe54612ca6b69e8fede811c199357b5afb4ff12d057692391fc59806916c6d6262da3b59eb9d60fda419a746e2d78a9dcae208e9e8f5bcef79bdc7ab9d1cbbe9916fbfd743d7910736828e5ec683275a4171a829700852ba3c02965f3f69df50e5c737f64bb1211195183b2b83446aab6d19cb677604019bf8280330c8e417bcb752327d0daaa9a1d57e4fcb6817382738399fa050faddf6434d616a53c27889d91a57d659076ff681715f6843756243a214b6340767b569cbb6f9feb2c1bf689f7585553f8635c21f4be8206f2b49d81c6a7a4cc8d2f2998c042a26239cc163eac7e24e9cb58a1b66fc2e9d96110587ce86064c03eaa9344aa5a597ed82aa07ed347e8c7b86c5a41afd14cbbebf5c2bb3e7f52cf9bc189f1a10b75769e6e800276ef4bc605e2bb8f46bcc228e0504740643db9f01dc15aa6d95fd6fe287b3750f5df0bc52e3acb96cc41059d0d9b6cf4854dfd2baa6cbbe84c305797b5ad743f09be2efa13930845575c6a4b87e96e2f257e11abb1ebdde9a1af9524bdf2a9b551b211714613b57735510677566083694375ed47cd6263bea5e1c28213762757d6f1d4934e829115ac85acda8fe1a601b671824a719389cd9151849d48412052a4e9c54780209bebd534060aa86acdfa41290e6eeeedfa3f8953bece69c9d2595e08c6c78f97558c3bb0b4bee863c3205efc72bb03d7f6917b65566f7b3ee7adf96db0f6d63a11662eea0b63e16a90b8e2c528ceaa1d4c9de6a7ff37f03314b511953899603d782b393db7378ec2d105571968699a2c67fa532595ff19c46f3d84f5522a3c58ce98075fc04ea60dbc068d490d97f9822c6d9cc36ef6c85399e6b5f9ddd0c8c21260cc50bf2eaf0d9868d8b10c842bbd1b59aa1e4caa38fecb4aa16daab905a6e002b62d56c61b34f0bd9a004bafb884fa39c066a9300a311bfd904c6143e3e5a4135460ac880b50ec1b2631289267c82a84ae00e69d7cc08b93e2cd48f9a132e8abb72b52d3110f0b604ac6706f63f2698a57955922acf34cd9d4942c660764e25ed0dda55bf649b169841366607e9eaedb0e3e2123e4e2f69636ffc2f971566dd6632ab0d5e3fcec0d59eabca210e572835f2a3bd0201ba09c33d91a9d77918d0e31fac99267fadd8ab7bcf3a0df9199b8c939a70a5073c910c0f824cd063f15ddcef44c225f86f44f8a55381d4e74a2625f005d36403debda3d5e6dee6a46040298924064007df476a5e005c66d51a5fd555619b6522380b7f3cee4a4ce18455e989bac5e87b5f47ab500027305fb364eae42a3d86bce8c342218713cab95e8614f5995ec01bff3da39d2c54c8e0c85b97558e5f1139d8f5cbbbeea71b85b1b0d2b8a7d0e652d2c29af5d50e2b62fc384f96b15ad3fa9e3afe9877ad257b74ffcc142dd0a959aa1189921bec94daf588aab84c4d52ceebca2df7ac94d79a2e4f50cebedb57467e6b2636046f0dde64dad452e5ed272857ea7544d59b36a560d866bcbf0fe05cb5b94465bc17e04ead6fbfa8c4970b5462061ee895374ef92df08380dfbf08780298f11574f1dbdb8802a73b1b2609dcc03a0496faeb98ec90b28ac96dd189d1522c8ddcb9f211d33b49bab2a1917a45c99d5de38f33e570c8b4d1b0e1ed0a46764df7e239ad053e0ea5e3f27b02a238ff599809e2de5ff6bfdf35b479ec93db8ea40c4911f4e0d23c20a7b955880ba78ca9da2d17b3c8fe8f48169699ade70d7e875ad4050eb72543eb6ace705e3ace8913cfac96cbe5464f8b6d2eaa27e81b13cc1e29614cc582860d389886103da1e60d21d2c0c6988913a0bdce3ec361af7b7a87fba28f5593d3bb45fd2b43f8bb7e8c3f6f1b15d0299cea1982d215479f9dc2c7b6c1b3362c36e01d360afb7cb1f53cef42f85578539164bdff6d392bb46339d0b17f059412f9d45553172e22ba978f181a312bab0061ae9a763c49f411a4b7559696601206c8512851d5c499ca8250994da19d69c33d97dec438e04862fc8cf821715ead1909d4fd2e8537a0273c40fa7ba741aaa2f4635465d964b3144dbe9c388c9cf239717830b89bd03137ca509dd11763ff118550e7e9e012c5b2dc4a2cbbf49c7d7c013803e48b9737c371e9a22245e69433d70902cc943ce9b840a135158b72edb2204994227623bcee0703d87f17010e0a25694555e0aeea8b5da9d4c6843cb7582155fc2f8dab887780a9c9ddab297ab481dedb84a2e4d157542dbf93a9c453be2a377e6f896ffcd856ba55be2f27e3e56b22499b0a97602696d4f9259373be3678f2f7b5a4509af3eef3d14a8f4aea4f16dfa976b75b2f2fd95ecf9e8588097a1e6a399d27138f4aa1a1cb9d33132f1d2b4e36729d9f1f9c6a76fd130366eef8b9bb79458688bf548eb9f2674ff3c5f4f1a1d3a354bdf3b58b30639143ffe67ad821888dc72a8d59536c688876c42d1d6cd2db8b3096995b405b5690d4195d6853fc88d954c1666690386508c73f62c5d84737eb2905bb0f1260c9a8182eef1b3138ce9ae48f1b02bc11100756026c7621a6a4e368a677c2a8677c83311642fe8f38d397214061be704c21895238221b3ace5a433b580ad9f921fc3c4e85e3c972712018c96624c7413c7c3bfa8c4c792fe2b2ecf422db8548be9703740a7d6d80dd58582a99e05c54e618e30e061c8eba05f359a3c0865695b1e935b2cdf142cb790d9f9117723b66662af6fda0831ef0268d1137699eb5bfd3eabd0be8fb78714d21aa22ade837b125faf036d1bd1e54b6c1515d08f9e27699fd74a582bf3e7beede362130ab4370159a93629ca2210ed8c41fe4ea52cfa0441ed7d455514936f2f4f4ce2b885b4dac7f280bd93db89b1db1a2feaded2a977790c47439b105b270484201bc6437d90fa63a586c6ff6a78bfe3cc21f6107b9b28b92b80ce770ec99426ad27dc22750a01ec96a72fc9814efa32d0eb34318fa722bad7ebbbc1c9295b94ca5f7f11c10458a8b3ead5a5a62b1638902c0f43d1335b1fc525c012629f9e77bb96bcdd768679542131e8a41ed3d42ae72c0cab64353e66c6f05d54acc5f2228abe6a9008bdad3a99613c10899ba89e309d79e6d8051bf3bc4ed5140377a8e6abfc5f0fe614acf049387bcfea70690c33e9b177673844531b93a7bfab5420817323bf2c87aa42d4efcb5469efcfd03117501278459218ab5dd1733e5ec81f85ba28779bee1df20482a922b907889d061548a9ccf75f3755cbfe98df5e73632ba60172466e86fac557abf444231559cbf6dee894351d52d218378759f822b04360a2ad34477b40445ac8f69a200b8950134bbe4b81a15cb0aa87a5ee2fd87d5fca7fb9391e1589cb96e139276573d2aefbe4a4e72a88a673c12c1683df5b745655dc6ab8b5a9e02e4f86b9610063e3bd1cbf3c1e1d17db916ba5a1eca69a38293f833e9f8f90a82914647cf4f11faa0f4119124a6b6f5de60f3fdd14ed45a5447c5046d60e20ea03d634b9ccbbe04ed9ff2ba54720234af00ad0b0bb837ca3e0aa7ca6391935f607eed672b7ed82cab47750275e12ff94a84474ea02d499d684f65169abc0a59f695bdb6ad04d67e2beeadb95ceb33de03617783ac9574d6ffd1a44cae83177dd7c741ba65fde1edf16e878c64bac276bb1a967888c0d55e6133ce4bc52876c5062a0c9cb03f0c7e4bc468537228dcbc6b86c96b7f007885042e23a1fc7a3c999bab8bca113b8550175a6d7bc26f4e7f9673258b5f5024d5f1c8fc302773f393f22bac7a8499b6fb6c0bcd0458e3a80ceccd4b52c05aabcc4f0de840e48759178535fed2480c52ad30cedc8274b0c9fad466515c61a1966874a3a819988f359b01e8f12671eca314b632f63543f1ff5acc348fa6c7ba5171b3fe7c1d4e81168fe54fd6353646a31ed8c9d940d119a56f08b189690d31bfc1d9fc7a0e1a726dd633fdb7e6f9f8b6c1384c6ca7d5ef00adac69f95b758522d22e94f457728de150fc006db0d65b3ae9a590ac058cc1aca1c2e248a041f027d8a59088f981dc801106baa7b65ec0e1f9c08cf02bfee821e6bf84aae960eaa41e0e605c64e3eadc198da65b78314de82031c06665f402f478ab8a597720a2ed0f147d1923913ca61bda1c729ef86e35b21ce17012d95259165d8ade1a90c10e9bbed5b0851e72bff6b6599d469d84999afbe028ff4d68d5d8a93d6553c042549d476d35363b435c41a73bcb3fe30403fb6faa68283bf3385d75a5d4e0625faae004ec1601cd12c445921ff709f4a0ceb8129ceb5923f581ad5f05956a1cb9423d6319c3a2c21ef1d05fd4af739521e6872af04a096a27070c431b8507259cc3f4db54c00db308b07becdd6512af022ea301763229d70fc123e4b723e559bd548df6a0112b7e90f1386717e447894316d3f31914a2ea9ab07d32ee3af7d04ed120ea87804d703f4774cc13cb0eeb60075667b9d83c1f659d08d6f781facde9aace74fdd57c19b61bcaaf5266d10cd96bd8c760ed4081966f8e1d5e70808f2fc332c18fdd30c2455afbc3ad2f054320028a3f8deff0eebfdc8f03b01ba7913f2107a4156acb1c3550733c04f7c92b3770bc594b72b503eb5e11eadf7c3ff86cb6c79112fc539bcb6eb0588c20f07d18b57d81b7c80bb25e7995247a252e17fc1c392aa9dc50ad839e9dd15e517f98e83f2e4c095cb178e40bc15ced1d2b2ba0ef406f89abedbbabe924eaea05b76fd5cd52c9c86b7acef8afb27d9b8347a04c4415e7ee9d05c7a325edb7f55a3ecb084f3b59bf91523f9c6fe9e9bd28e397a572cf8dafbfe4bc5e382bfb481c3e8934e9c8e00de92873cdd1878269bba6262cff3f8186060b4ff80690472ca789506fae7cff7aa72def92509f8af3b47a581f6d4c73f269939cad5eff2828b543f822cadef0e9cea5afc66c6ae002cec56d4c63d5275dd23421bfb0e331796aaa8cdd6de30cfbcd86bdfd458138253c48e564d7bca922953ae74277a7b2a76ad9d2f940e52f13914f984ffda86023d69191374317d7db47c64c22eab13f8df986adb8fc89cb9973cfe5c5be05c00457c48b90e71f1b9571ce2ff8243c06cb70f66a470a180a54368a872611aa87103ba7ddb45821c025200ba7ffd597d0a6a4bc64ff6b1fec4e4399c51fbc2cfe52ed500e56066db63f44e2d1672df6b5e0306dfe7ede3db7e926a46bbd7de7e110889c76094a8aec501322a44839507de124b6474ebddaddf3874162c9314e1ed82ce8ff2ffa64e73f27d62ee07fbb9ef2d23faf897d5c9e26cfc4f6732c588afc5e0e5b1843353eaa8cc541201810d27113d00e462c9e556e989a0c11fb0822f53d7eedc0592e8308e2a5e605a7b9ae2be01323fc4ff0f7483cdc8e545f7fc0c2ac48fe1c3f64c09a4c92987be1ec7c0d67ff0944cdb720e98c62b6f1636ec8c8240f148ac912063b12ffec755881a9ef7966846e2d728daf7bb4253eaff5d4bf1ffb57bf84ea512bd27ac656b0c5a9f3cd6e2df07016d952e80ebf39309a2cebcaa6268647c098b0d3520ab913f4ddee4ff68624c51591d4ecdd7faf51d4b33bbafb376a0184fbc8cdaeccaef7d1e923281cf5a6178210f44e0e0747edb78fa6c01fc1576e26987674ea66498dcf805ceeca6cb8881002706881e17d327a418abf367479c976176e7a0fd3e2ef5b51ca3c315d327e5f6eff4780694d99108153665e910fa6160ef7ee1e25f162a92778f4249e98e07decb23ebac8c6f30c6178c661fe13f6b863ea61c7fca803694f44ac39ceef129239b4b41147078b1c12ffad2f28c8b9aae41edef39982326f9442778cf1185a914ba3bfad29ed7e758f3ade9f780acd44456e66e8a21ae22494646df9997f0ae09725eb58a4945786cbc353239a0555bc0fc4e2ebac0157dc74b24c70eefccebd6cb76ff925a39a9e62843bfc540152036002a4442c32a4acb0040326a6bc779238d3cfe791bdea29c44252e5bf99a071dd29ee58ef26219afa96c8776169f26aa369b3c6aaf97a999cc9ba8bd537fb2853e251b524c595c486b34312931462171d2e02aaa364a8c5d8ea3e7fd544d38567a6162bae7f1def03d20f7027687763fed163542d82d94df66cc1b96cf6ba2dc55af764a4f41e5ee2e378adad24eb33e90e94ba456b037acb3f979c11b4b0524d47830ccd03f9e91ced9cb727328da3cce0e353f5ccfa7bd3c9ca538cd87ffd774d6fbbddc74b0f564b504712bd3507c61d2a3ec03de5ff384ba291e71f0b774de0ad78f18feece7833f48fc1966e853382b3e3fd688a132b25788b952044de03fcceeb4007296cba8eedd71d2e39d33c156410ef829358cda3bb94b9d801ae21cf7f184dad456e864c042e90a1d8921f90ee45588cf5fa52f534260747a9bf46c81a9ad5f49eb7ee97a20c2cbd4f925354b7a8b2ac875dc410feb23cf1bfd63e60ec9c8ceaf18360c9c4325dd6e448c6e2a159dbdefa596f93df5f31b3ed06c3a2393ebc7763aa392235a518b8a8e063c8e70614e946c0fddbb40785c5f159edb78c0f40bd3d68c47107d2ba8d5bb87c5ecf85a218a1c2ad8df1e57da25b48b0254a629fe44df6240a1a2ee2ce9c223cff275f7a5ff57033c004625d060fbe842be9e1c38f5c0002404bb5c3ad5d232a7127bf2dbadde47c4acd5efc73b0bf77d19683b0f2f468585fcd861e79976529ff6a10e1a2c4a1235e34057f87e8d05712adfdf2db13e0d6f62d77203fcbad1ad1d3697ca2f9d23a29c0da6ab57c3cbe5bf4687692a10f63b296985c31f2a57f57b0a959f5aa21c7a268</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-xray">      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">这里是我の加密文章，需要密码才能进入!</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">初中时期一些值得回忆的事情……</summary>
-    
-    
-    
-    <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
-    
-    <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
-    
-    <category term="初中" scheme="https://blog.sunwei.online/tags/%E5%88%9D%E4%B8%AD/"/>
     
   </entry>
   
