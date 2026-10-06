@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-06T12:11:41.974Z</updated>
+  <updated>2026-10-06T12:18:48.423Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📌MDFL论文实验</title>
+    <link href="https://blog.sunwei.online/posts/86ef2c30.html"/>
+    <id>https://blog.sunwei.online/posts/86ef2c30.html</id>
+    <published>2026-10-06T12:18:47.279Z</published>
+    <updated>2026-10-06T12:18:48.423Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-选择数据集"><a href="#1-选择数据集" class="headerlink" title="1. 选择数据集"></a>1. 选择数据集</h1><p>作者没有直接使用真实车辆的摄像头或激光雷达数据，而是选择了 Fashion-MNIST，这是一个服饰图片分类数据集。</p><p>它包含：</p><ul><li>10 个类别，例如衣服、鞋子、包等；</li><li>每个类别有 6000 张训练图片；</li><li>每个类别有 1000 张测试图片；</li><li>图片通常是 28×28 的灰度图。</li></ul><p>所以整个任务是：车辆（客户端）利用各自拥有的服饰图片数据，共同训练一个分类模型。</p><h1 id="2-选择模型"><a href="#2-选择模型" class="headerlink" title="2. 选择模型"></a>2. 选择模型</h1><p>作者选择经典的 LeNet 卷积神经网络（作为模型）进行分类。</p><p>每辆车的训练过程大致是：①接收当前的全局模型；②使用本地 Fashion-MNIST 数据训练 LeNet；③得到更新后的模型参数；④把模型参数发送给当前领导车辆；⑤由领导车辆进行模型聚合。</p><h1 id="3-模拟车辆移动性"><a href="#3-模拟车辆移动性" class="headerlink" title="3. 模拟车辆移动性"></a>3. 模拟车辆移动性</h1><p>论文构造了一个矩形道路区域，也就是它的研究范围，叫 RoI，可以理解为“当前参与训练的道路区域”。</p><p>本实验的tol设置区域如图所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/b4ad44bd3fefadfa85cc79831ff0d6eb.png" style="height:356px;"/><p>rol的作用是：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/0e0a76cf3c48ba7fe938fe7186476480.png" style="height:131px;"/><p>然后用到了SUMO（全称是 Simulation of Urban MObility，中文通常叫“城市交通仿真平台”。）<br>SUMO为每辆车设置了下面东西：<br>①位置坐标 (x, y)<br>②速度 s<br>③加速度 a</p><h1 id="4-车辆信息设置"><a href="#4-车辆信息设置" class="headerlink" title="4. 车辆信息设置"></a>4. 车辆信息设置</h1><p>①-③上面sumo设置的3个信息。</p><p>④能耗：初始、本地训练、通信能耗</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/da7bb698e29a8c2a3081ae2d35b377af.png" style="height:200px;"/><p>然后还有两种通信能耗，先简单介绍下，后面会详细讲：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/9898552234339467f7dbcb34107da9e6.png" style="height:100px;"/><p>⑤车辆直接通信半径</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/eaa466d93208f886f1273b2c9410fab9.png" style="height:242px;"/><p>一轮联邦学习的能耗计算方法如下所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/20974c19601737dad9822ceb373cbc24.png" style="height:245px;"/>]]></content>
+    
+    
+    <summary type="html">面向车联网的移动性感知去中心化联邦学习：本地迭代与领导节点选择联合优化</summary>
+    
+    
+    
+    <category term="阅读" scheme="https://blog.sunwei.online/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>📌MDFL论文速读</title>
@@ -462,31 +485,6 @@
     <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
     
     <category term="周围人" scheme="https://blog.sunwei.online/tags/%E5%91%A8%E5%9B%B4%E4%BA%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📝我の缺点</title>
-    <link href="https://blog.sunwei.online/posts/8fedfa7e.html"/>
-    <id>https://blog.sunwei.online/posts/8fedfa7e.html</id>
-    <published>2026-09-23T13:23:57.846Z</published>
-    <updated>2026-10-02T06:39:33.116Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试!" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="37c823a37c0467f4f24b0ef83cf9834d2f0ca1367dec99a8db6d79803790991b">7f06c9cfbfaa9d4cc48d66d992572e3a704bc4a29972a9ab9ce2574f928e8f3a6e481e452ef68088cd60c4958f8c981c96540eb428fa5d8786a141e1191d2dc4e85eb25bafb9b7d83b530d64263f4cd96716a24bd2bb9c329111ec30c49ceaba37b3c65502ecbb02628abdcc95d30b295abeea2f32282a490ee10f5ee64da9a32903241787f57af46935a8f71498552926ce2fdf229605dc649a49d3921be22732646b5945689b49c1b30bc95ef2639ce8e9d20fddc16ca5dd6c8555c13a0c712cf0c6b5528ce9ab6c18372208ccdac80712433dc0beabb7cec140e80a33240066478b0a3e71f50a188de813a433ea1aba8b2f6a4e6542dcc4e2c051dd08c49fb11ac1626fbc9da21850bf15e62aa46bdad69d172910d612ee606b871177ca3a16e50b857584c02bc38555825383a3d46229f858576a3857a9f1c6f7b6085f730ab013a5de8a87640099cd5a4afc7b49f20222c5bdbae81e507cd3bdcd96c9fe735e611d1b15d819928331a4672ca381d6123e8508b4eacdf3e76abb2733ca9b8c7fdc5594d64900032930f72ec3ca4bda37e945d8660c8ceabb4e1a9237a84b562e9853e76dc0deb65436596f41d67c0d1b859101f3e3adcd11c0b769a92fce3d2413dee6b24f4d8fffd8b55a97c959f450f4a897746604f01f55da62b9890f94c98c774afb0ed0053c62904fddc667d4cf1322cdad988720a66a19022bfee6259732eb4a5861ff0d44884bc54cdd438f124807913e0d4140e5be4c407ba3aa8f62a8da0844cb11a60364eef55b749e63552f2446bf61f7441bdda5ec24746bd38019e480e8e5fd01638c8abd564f54014afeeb0b394b6af22f9eae3a380f03e1d62d20c8d97db4fb7ab5b555805698a9dc15e9d72f6832e4a9e46579b7742f614f9ff8569652a61aea00c96657609cb8df56ce8ec31e4e78698db92217a605c07503d8c817c43fb1f1650a0f0d802d2867ada84cb14e19b26b02960e1aa289b56fa754fb0ad836b76677ad425b5a26d3a49b9d3ddc5211d4d16f3f4c9be70e85c37f140527bb43e30da686da447fe4298df87c70ed5c3e926c41ef92d7604b0384b1f11fef7a8fbc7287a443d81f685f28929c04bc415f3ae459f1ea724be7282734e5ac4303d5c385a28b8534df566d32e48c25c4c6cee029824edf4c2d6a8fd85ba50eef02f79332ce01b91c8dd810c21e84892d9a5f0af41b494fa0b84928b4b8f5356250428492b8b3030c8a4b43ab330e981d609630a275764714cc2c3461d7e398c89177219af3eb9b11665a34418f91138218e189ef579e6e117e631db3b038c454db21c40f025127cdafda6e6ab6c759e4ba4be0d06579ed4430cd740b837562886dad5acf2879235253ef2a1b4c2a64a0e1468be9ba97252143e94bcd3c231f676caa20997a69f72b7eb0cc8da973ec7b9da04a9eed3c407a33ad3b6e93ebce95299937cbdd060133ad283bcc729ab6abae476e23cac4674e6c758e8edc6ad6030466483ad0b12963039999d71274bead5f2bd0b91551314e1ae1c6778d5ec67eedfd0ec88aca9cff8a15d46ab266287025ff4cac54f4f9071b413fda8cbf54c289ccddd13584e7a43345098671f7f87b6a5eed858c22eaf58d282fe6d361c1d5b9e52b4dd552ebb28915a1abc0888c96b2c5efd614b8a761126bb1fe309f0784d5be6aa6b70431e9fc65b1dc8a64cb42ffd304760a21391365305a0f0e99bfecb3283a3ae8411a9eca427c713c74b50c92e59a2254368857db25d91211caea643b009d4dcbd3fa97ad1a4e30e1750ea52ff265aec981c60609d6799eb0a65330c6f16dd06f686ddb36e19f42250ec10cfbb497bfbb779875d7191478cb01f657125e6fefd51628ce6e5f1208f85c710c9324d1086b4a8f944222fbbf072f8e9202bacf843ff5a5fddc497a3ac392c2775d805053449983150e367ca850b79780237711621655298422965ea116795b6a054404329a89618fc70d15310e711f59d4be28cb581a24ccd2c60bb79ed7b265951ed19a0215927ef3cc7bddae9e2ecacc4b89e47279b6482dc5efb6224a5a7b2263c744427d677fb5162285092e281713a7234e664de2ead7449509010defe8ac20fb1bb4aad196e9c8e58ca4243fab3a59bcb15601e715d6719c58994805e22d078804e98ebed9b1e757fb675b3f7d473f10fb18de6ea2ac9c0466eb7b3c1551b40ec40c629b428f92316bfc3e3adc4e15371344bf1c66975d3b0e921b0fc6efecf91724f1f083dc41ce02ac1b4030b402beae3566eb60f2ef7dda4e71a212eeb33b9221bb0dcfbdf57ece0ee57d232c5d08129738e3a34e2d0c472972999f95ea173d44e284705c3aae6c5c1e6b9da4bd1fbc2c378f07ff3e281e2e1f41aaafe51ed0296b7c70bc6cffa374334f0229e28b4c8f3319fdca477be8f407f1dbc70eab1d92aa43aeeb789c3eb4b0a5b60bb75e90282a469066f789819bc48266745a1283e4de35a10c68851fa4b8e917f4b849b6a03e501a1f1b5aa183c636cd3f47e0d4b1358fa9b941eb162733c07c1d6fde67c0cb322f118dd3a5db51f899b6a296b66e3a3269041602f23e80468a478abd259a8a55f4ba8f17746a356ad02f4d72ef39e8fe481e619650e7cde2b0c592e73c57e791d1a2715315f7b5700dd92035b070677d64a73f5948400182b314c0ec21617e15af86e3af5a83ee2be75d23347f2da11dbe406a</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-xray">      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">这里是我の加密文章，需要密码才能进入!</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-    
-    
-    <summary type="html">用来记录自己的一些不足之处，时刻警惕自己改正。</summary>
-    
-    
-    
-    <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
-    
-    <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
-    
-    <category term="警惕" scheme="https://blog.sunwei.online/tags/%E8%AD%A6%E6%83%95/"/>
     
   </entry>
   
