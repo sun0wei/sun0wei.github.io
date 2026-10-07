@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-07T12:56:42.405Z</updated>
+  <updated>2026-10-07T13:31:53.268Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>🚩测试</title>
+    <link href="https://blog.sunwei.online/posts/a6f05fb0.html"/>
+    <id>https://blog.sunwei.online/posts/a6f05fb0.html</id>
+    <published>2026-10-07T13:31:52.430Z</published>
+    <updated>2026-10-07T13:31:53.268Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="B站视频"><a href="#B站视频" class="headerlink" title="B站视频"></a>B站视频</h2><div style="position:relative;width:100%;padding-top:56.25%;margin:20px 0;">  <iframe    src="https://player.bilibili.com/player.html?bvid=BV1p3411S7Ay&page=1"    scrolling="no"    frameborder="0"    allowfullscreen    loading="lazy"    style="position:absolute;left:0;top:0;width:100%;height:100%;">  </iframe></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;B站视频&quot;&gt;&lt;a href=&quot;#B站视频&quot; class=&quot;headerlink&quot; title=&quot;B站视频&quot;&gt;&lt;/a&gt;B站视频&lt;/h2&gt;&lt;div style=&quot;position:relative;width:100%;padding-top:56.25%;margi</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>📌Java基础_Day04</title>
@@ -460,29 +486,6 @@
     <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
     
     <category term="未来" scheme="https://blog.sunwei.online/tags/%E6%9C%AA%E6%9D%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📝论文修改经验</title>
-    <link href="https://blog.sunwei.online/posts/377093ae.html"/>
-    <id>https://blog.sunwei.online/posts/377093ae.html</id>
-    <published>2026-09-24T02:01:16.578Z</published>
-    <updated>2026-09-30T11:48:00.582Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-排版问题"><a href="#1-排版问题" class="headerlink" title="1. 排版问题"></a>1. 排版问题</h1><h2 id="1-1-经验一"><a href="#1-1-经验一" class="headerlink" title="1.1 经验一"></a>1.1 经验一</h2><p>单个单词不要独自占用一行，如下错误所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/398fefe7fcd0bdb044403700f2d2eaf7.png" style="height:210px;"/><h2 id="1-2-经验二"><a href="#1-2-经验二" class="headerlink" title="1.2 经验二"></a>1.2 经验二</h2><p>每页下面内容要对齐，如下错误所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/a936e588235b22a3d0840478c5739109.png" style="height:210px;"/><h1 id="2-内容问题"><a href="#2-内容问题" class="headerlink" title="2. 内容问题"></a>2. 内容问题</h1><h2 id="2-1-经验一"><a href="#2-1-经验一" class="headerlink" title="2.1 经验一"></a>2.1 经验一</h2><p>引用要统一，推荐全部用“仅数字加蓝”方案，同时，表格、算法与公式尽量不要用缩写Eq、T等，如下错误所示：【要学习师兄们的，如下右所示】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/ae6dcc2901109e2cb87e7bda7e04f7bf.png" style="height:210px;"/><h2 id="2-2-经验二"><a href="#2-2-经验二" class="headerlink" title="2.2 经验二"></a>2.2 经验二</h2><p>引出后面不要写，这种一般是写在每个章节引入段落中，其它地方一定不要写这东西。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/24/5bfd81b278393f6a46d2bb069157b5db.png" style="height:210px;"/>]]></content>
-    
-    
-    <summary type="html">写论文的一些常见的排版问题。</summary>
-    
-    
-    
-    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
-    
-    <category term="📝" scheme="https://blog.sunwei.online/tags/%F0%9F%93%9D/"/>
     
   </entry>
   
