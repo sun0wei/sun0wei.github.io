@@ -8337,8 +8337,7 @@ span.card-clock-weather {
 }
 
 /* 右边的按钮间距 */
-#meihua-button,
-#nightmode-button {
+#nav-right > a {
   padding-left: 12px;
 }
 
