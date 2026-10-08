@@ -8337,8 +8337,15 @@ span.card-clock-weather {
 }
 
 /* 右边的按钮间距 */
-#nav-right > a {
-  padding-left: 12px;
+#nav-right > a,
+#nav-right > #search-button {
+  margin-left: 12px;
+  padding-left: 0;
+}
+
+#nav-right > a:first-child,
+#nav-right > #search-button:first-child {
+  margin-left: 0;
 }
 
 /* 搜索框样式 */
