@@ -9518,7 +9518,7 @@ hr:before {
 /* 首页分类磁贴：增强与外层背景的区分 */
 [data-theme="light"] li.categoryBar-list-item {
   border: 1px solid rgba(80, 70, 100, 0.14);
-  background: #e8e8e8;
+  background-color: #e3e3e3 !important;
   box-shadow: 0 2px 7px rgba(40, 35, 55, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
