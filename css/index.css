@@ -9523,6 +9523,14 @@ hr:before {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+[data-theme="light"] li.categoryBar-list-item > a.categoryBar-list-link {
+  background-color: #e3e3e3 !important;
+}
+
+[data-theme="light"] li.categoryBar-list-item:hover > a.categoryBar-list-link {
+  background-color: var(--theme-color) !important;
+}
+
 [data-theme="light"] li.categoryBar-list-item:hover {
   transform: translateY(-2px);
   border-color: rgba(80, 70, 100, 0.24);
