@@ -2575,6 +2575,39 @@ if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {
 
 //----------------------------------------------------------------
 
+/* 特定文章提示弹窗 start */
+function showPirateArticlePopup() {
+  const titleElement = document.querySelector('#post-info .post-title, h1.post-title');
+  if (!titleElement) return;
+
+  const title = titleElement.textContent.trim();
+  if (!title.startsWith('🏴‍☠️')) return;
+
+  // 同一标签页会话中，同一篇文章只提示一次，避免 PJAX 重复触发。
+  const popupKey = 'pirateArticlePopup:' + window.location.pathname;
+  if (sessionStorage.getItem(popupKey) === '1') return;
+
+  const showPopup = () => {
+    if (typeof Swal !== 'undefined' && typeof Swal.fire === 'function') {
+      Swal.fire('这篇文章博主不推荐观看，原因见评论区！');
+      sessionStorage.setItem(popupKey, '1');
+    }
+  };
+
+  if (typeof Swal !== 'undefined' && typeof Swal.fire === 'function') {
+    showPopup();
+  } else {
+    window.addEventListener('load', showPopup, { once: true });
+  }
+}
+
+showPirateArticlePopup();
+document.addEventListener('pjax:complete', showPirateArticlePopup);
+
+/* 特定文章提示弹窗 end */
+
+//----------------------------------------------------------------
+
 /* 听话鼠标 start */
 var CURSOR;
 
