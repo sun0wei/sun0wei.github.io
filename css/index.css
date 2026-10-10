@@ -9517,14 +9517,14 @@ hr:before {
 
 /* 首页分类磁贴：增强与外层背景的区分 */
 [data-theme="light"] li.categoryBar-list-item {
-  border: 1px solid rgba(80, 70, 100, 0.14);
-  background-color: #e3e3e3 !important;
-  box-shadow: 0 2px 7px rgba(40, 35, 55, 0.06);
+  border: 1px solid rgba(65, 60, 75, 0.28);
+  background-color: #c9c9ce !important;
+  box-shadow: 0 3px 9px rgba(40, 35, 55, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 [data-theme="light"] li.categoryBar-list-item > a.categoryBar-list-link {
-  background-color: #e3e3e3 !important;
+  background-color: #c9c9ce !important;
 }
 
 [data-theme="light"] li.categoryBar-list-item:hover > a.categoryBar-list-link {
@@ -9533,8 +9533,8 @@ hr:before {
 
 [data-theme="light"] li.categoryBar-list-item:hover {
   transform: translateY(-2px);
-  border-color: rgba(80, 70, 100, 0.24);
-  box-shadow: 0 5px 12px rgba(40, 35, 55, 0.12);
+  border-color: rgba(65, 60, 75, 0.42);
+  box-shadow: 0 6px 14px rgba(40, 35, 55, 0.18);
 }
 
 [data-theme="dark"] li.categoryBar-list-item {
