@@ -2583,14 +2583,9 @@ function showPirateArticlePopup() {
   const title = titleElement.textContent.trim();
   if (!title.startsWith('🏴‍☠️')) return;
 
-  // 同一标签页会话中，同一篇文章只提示一次，避免 PJAX 重复触发。
-  const popupKey = 'pirateArticlePopup:' + window.location.pathname;
-  if (sessionStorage.getItem(popupKey) === '1') return;
-
   const showPopup = () => {
     if (typeof Swal !== 'undefined' && typeof Swal.fire === 'function') {
       Swal.fire('这篇文章博主不推荐观看，原因见评论区！');
-      sessionStorage.setItem(popupKey, '1');
     }
   };
 
