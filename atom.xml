@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-11T11:49:07.977Z</updated>
+  <updated>2026-10-11T11:57:21.615Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://blog.sunwei.online/posts/28b8ce71.html"/>
     <id>https://blog.sunwei.online/posts/28b8ce71.html</id>
     <published>2026-10-11T11:49:05.177Z</published>
-    <updated>2026-10-11T11:49:07.977Z</updated>
+    <updated>2026-10-11T11:57:21.615Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h1><p>FedCure: Mitigating Participation Bias in Semi-Asynchronous Federated Learning with Non-IID Data<br>FedCure：面向非独立同分布数据的半异步联邦学习参与偏差缓解方法<br>①半异步联邦学习，表明它不是传统的完全同步联邦学习，也不是完全异步，而是介于两者之间的训练方式。<br>②各客户端的数据分布不同（Non-IID）；<br>③参与偏差，应该是指不同客户端参与训练不公平；</p><h1 id="2-摘要"><a href="#2-摘要" class="headerlink" title="2. 摘要"></a>2. 摘要</h1><p>①半异步联邦学习中，训练快的客户端经常参与，训练慢的客户端容易被忽略，形成参与偏差；非 IID 数据会进一步加剧这个问题。<br>②提出了一种新的半异步联邦学习框架 FedCure，通过联盟构建和参与感知调度来缓解非 IID 数据条件下的参与偏差。具体而言，FedCure 包含三项关键机制：<br>&lt;1&gt;联盟构建：先根据客户端的数据分布，把合适的客户端分到同一个组，尽量让每个组的数据比较均衡，避免某个组只包含单一类型的数据。<br>&lt;2&gt;参与调度：决定每一轮让哪个组参加训练。系统会记录哪些组很久没被选中，并适当提高它们的优先级；同时估计各组需要多长时间，避免为了公平而让训练速度过慢。<br>&lt;3&gt;资源分配：根据客户端的计算能力、训练耗时和能耗，调整它们的 CPU 使用频率。计算能力强的设备可以多分配资源，较弱的设备则避免负担过重。</p><h1 id="3-场景流程"><a href="#3-场景流程" class="headerlink" title="3. 场景流程"></a>3. 场景流程</h1><p>以手写数字为例子</p><p>① 系统建立云端—边缘—客户端三层结构。<br>系统包含一个云服务器、多个边缘服务器以及多个客户端。每个客户端可以理解为一台参与联邦学习的设备，边缘服务器负责管理一组客户端，云服务器负责汇总不同边缘服务器的模型。</p><p>② 每个客户端保存自己的手写数字数据。<br>每个客户端拥有一部分 MNIST 手写数字图片和标签，使用一个包含卷积层、池化层和全连接层的 CNN 模型进行分类。原始图片始终保存在客户端本地，不上传给边缘服务器或云服务器。</p><p>③ 不同客户端的数据分布可能不同。<br>例如，客户端 A 可能主要拥有数字“0”和“1”，客户端 B 主要拥有数字“5”和“6”。这种不同客户端拥有不同类别数据的情况，就是非 IID 数据。</p><p>④ FedCure 先构建客户端联盟。<br>系统根据客户端的数据分布情况，将客户端分配给不同的边缘服务器，形成多个客户端联盟。目标是让每个联盟中的数据尽量合理、均衡，减少不同联盟之间的数据差异。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/af5b1180e8cccfb7e8076f2107951cba.png" style="height:104px;"/><p>⑤云服务器选择本轮参与训练的联盟</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/2bb02d8fc905b3cf1d395631d1607b0f.png" style="height:183px;"/><p>⑥云服务器向被选中的联盟下发全局模型<br>例如本轮选择了联盟 B，云服务器就把当前全局 CNN 模型发送给联盟 B 对应的边缘服务器。<br>然后，边缘服务器再把模型发送给联盟 B 中的各个客户端。<br>发送的是模型参数，不是 MNIST 手写数字图片。</p><p>⑦系统为联盟内客户端分配计算资源</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/05bfd8ad49e73943c8ced0841cc7b505.png" style="height:123px;"/><p>⑧客户端使用本地 MNIST 数据进行训练<br>客户端收到模型后，使用自己本地保存的手写数字图片进行训练。</p><p>⑨客户端向边缘服务器上传本地模型<br>本地训练完成后，客户端把更新后的模型参数发送给所属边缘服务器。<br>如果某个客户端暂时不可用、训练太慢或上传失败，边缘服务器可以先处理已经成功收到的模型，不必无限期等待所有客户端。</p><p>⑩边缘服务器聚合联盟内的客户端模型<br>边缘服务器收到客户端模型后，先在联盟内部进行一次聚合。<br>通常会根据每个客户端的本地数据量分配权重。拥有更多训练样本的客户端，对联盟模型的影响通常更大。<br>聚合完成后，边缘服务器得到一个联盟模型。</p><p>⑪云服务器进行全局模型聚合<br>云服务器收到联盟模型后，将其与当前全局模型进行聚合，生成新的全局模型。<br>云服务器不会一直等待其他还没完成的联盟。<br>如果某个联盟的模型上传得比较晚，该模型可能已经比较“旧”，云服务器会降低它的聚合权重，避免旧模型对全局模型造成过大影响。</p><p>⑫更新联盟的参与状态<br>一轮训练结束后，系统会更新各联盟的状态：</p><ul><li>本轮参加训练的联盟，等待时间减少；</li><li>没有参加的联盟，等待时间增加；</li><li>记录每个联盟本轮的实际训练耗时；</li><li>更新下一轮的耗时预测。</li></ul><p>⑬ 进入下一轮训练，每一轮选择的联盟可能不同，因此不同客户端群体可以逐渐获得参与机会。</p><p>⑭最终得到共享的手写数字识别模型<br>经过多轮训练后，云服务器得到一个共享 CNN 模型。</p><h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><p>这篇文章主要是联邦学习方向（三层云边端场景），具体是异步联邦学习，它先将客户端分成多个联盟（联盟中选择一个边缘服务器用于聚合此联盟中的客户端），然后云服务器每次选择一个联盟和已经有的云端模型进行聚合！创新点说是摘要中说的那3点！</p>]]></content>
     
     
-    <summary type="html">FedCure: Mitigating Participation Bias in Semi-Asynchronous Federated Learning with Non-IID Data</summary>
+    <summary type="html">FedCure: Mitigating Participation Bias in Semi-Asynchronous Federated Learning with Non-IID Data</summary>
     
     
     
@@ -104,9 +104,9 @@
     
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
-    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
@@ -339,9 +339,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
@@ -410,9 +410,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
@@ -437,9 +437,9 @@
     
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
   </entry>
   
