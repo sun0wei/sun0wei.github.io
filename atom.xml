@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-11T12:38:02.672Z</updated>
+  <updated>2026-10-11T12:46:28.968Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.sunwei.online/posts/767fe620.html"/>
     <id>https://blog.sunwei.online/posts/767fe620.html</id>
     <published>2026-10-11T12:37:59.827Z</published>
-    <updated>2026-10-11T12:38:02.672Z</updated>
+    <updated>2026-10-11T12:46:28.968Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-一维数组"><a href="#1-一维数组" class="headerlink" title="1. 一维数组"></a>1. 一维数组</h1><blockquote><p>①数组介绍？静态数组代码定义？<br>②数组的访问、赋值？获取长度？<br>③数组底层实现原理？<br>④动态数组代码定义？</p></blockquote><p>数组含义：一种用于存储“同一类型”数据的容器！<br>数组的定义方法</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/3f9ae9ef1bf412e2b79c87b8d64dc95e.png" style="height:115px;"/><p>数组的访问与赋值</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/33d88b6437b0f36d0bfadf11a847ebf2.png" style="height:85px;"/><p>获取数组长度</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/e44a84927e3c9c3f992314fd4e6f5c91.png" style="height:66px;"/><p>数组的计算机硬件层次原理（开一个静态的连续空间存，同类型，arr只指向首地址……）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/915a80c43dd29bc486bf5fc5a1c3f2dc.png" style="height:143px;"/><p>打印数组就是打印它的首地址！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/94d5f8ae1beb78554d4fa732028777b3.png" style="height:208px;"/><p>动态初始化数组定义、默认值（“动态”指数据后面再存进去）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/9c172ac236a603c0211e59df5a2ec6ca.png" style="height:307px;"/><p>具体代码例子</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/a70a398cbe706f8a51f9ca5c30c9a383.png" style="height:238px;"/><h1 id="2-二维数组"><a href="#2-二维数组" class="headerlink" title="2. 二维数组"></a>2. 二维数组</h1><blockquote><p>①二维数组代码定义？<br>②二维数组访问、获取长度、遍历？</p></blockquote><p>二维数组的定义如下：数组中的每个元素都是一个“一维数组”的数组！<br>具体代码1（静态二维数组）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/e7adef6eb1c1b94a109ad107c208a592.png" style="height:91px;"/><p>具体代码2（动态二维数组）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/b2ea23045f407f7779cd5b9984871d4d.png" style="height:33px;"/><p>数组的访问例子（访问数组中数组、访问数组中数组中元素）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/680235b3024ac9e69863c30425fbd7f6.png" style="height:134px;"/><p>二维数组的长度（访问整个、访问某个一维数组的）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/1a38643c035e999a43ddd953a1c2d7d7.png" style="height:49px;"/><p>根据上面那2个length方法，可以得到一种更好的遍历方法</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/bedf847d1004c40788a716a1c7c82a0f.png" style="height:75px;"/>]]></content>
     
