@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-11T08:39:20.688Z</updated>
+  <updated>2026-10-11T11:49:07.977Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📌FedCure论文速读</title>
+    <link href="https://blog.sunwei.online/posts/28b8ce71.html"/>
+    <id>https://blog.sunwei.online/posts/28b8ce71.html</id>
+    <published>2026-10-11T11:49:05.177Z</published>
+    <updated>2026-10-11T11:49:07.977Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h1><p>FedCure: Mitigating Participation Bias in Semi-Asynchronous Federated Learning with Non-IID Data<br>FedCure：面向非独立同分布数据的半异步联邦学习参与偏差缓解方法<br>①半异步联邦学习，表明它不是传统的完全同步联邦学习，也不是完全异步，而是介于两者之间的训练方式。<br>②各客户端的数据分布不同（Non-IID）；<br>③参与偏差，应该是指不同客户端参与训练不公平；</p><h1 id="2-摘要"><a href="#2-摘要" class="headerlink" title="2. 摘要"></a>2. 摘要</h1><p>①半异步联邦学习中，训练快的客户端经常参与，训练慢的客户端容易被忽略，形成参与偏差；非 IID 数据会进一步加剧这个问题。<br>②提出了一种新的半异步联邦学习框架 FedCure，通过联盟构建和参与感知调度来缓解非 IID 数据条件下的参与偏差。具体而言，FedCure 包含三项关键机制：<br>&lt;1&gt;联盟构建：先根据客户端的数据分布，把合适的客户端分到同一个组，尽量让每个组的数据比较均衡，避免某个组只包含单一类型的数据。<br>&lt;2&gt;参与调度：决定每一轮让哪个组参加训练。系统会记录哪些组很久没被选中，并适当提高它们的优先级；同时估计各组需要多长时间，避免为了公平而让训练速度过慢。<br>&lt;3&gt;资源分配：根据客户端的计算能力、训练耗时和能耗，调整它们的 CPU 使用频率。计算能力强的设备可以多分配资源，较弱的设备则避免负担过重。</p><h1 id="3-场景流程"><a href="#3-场景流程" class="headerlink" title="3. 场景流程"></a>3. 场景流程</h1><p>以手写数字为例子</p><p>① 系统建立云端—边缘—客户端三层结构。<br>系统包含一个云服务器、多个边缘服务器以及多个客户端。每个客户端可以理解为一台参与联邦学习的设备，边缘服务器负责管理一组客户端，云服务器负责汇总不同边缘服务器的模型。</p><p>② 每个客户端保存自己的手写数字数据。<br>每个客户端拥有一部分 MNIST 手写数字图片和标签，使用一个包含卷积层、池化层和全连接层的 CNN 模型进行分类。原始图片始终保存在客户端本地，不上传给边缘服务器或云服务器。</p><p>③ 不同客户端的数据分布可能不同。<br>例如，客户端 A 可能主要拥有数字“0”和“1”，客户端 B 主要拥有数字“5”和“6”。这种不同客户端拥有不同类别数据的情况，就是非 IID 数据。</p><p>④ FedCure 先构建客户端联盟。<br>系统根据客户端的数据分布情况，将客户端分配给不同的边缘服务器，形成多个客户端联盟。目标是让每个联盟中的数据尽量合理、均衡，减少不同联盟之间的数据差异。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/af5b1180e8cccfb7e8076f2107951cba.png" style="height:104px;"/><p>⑤云服务器选择本轮参与训练的联盟</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/2bb02d8fc905b3cf1d395631d1607b0f.png" style="height:183px;"/><p>⑥云服务器向被选中的联盟下发全局模型<br>例如本轮选择了联盟 B，云服务器就把当前全局 CNN 模型发送给联盟 B 对应的边缘服务器。<br>然后，边缘服务器再把模型发送给联盟 B 中的各个客户端。<br>发送的是模型参数，不是 MNIST 手写数字图片。</p><p>⑦系统为联盟内客户端分配计算资源</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/05bfd8ad49e73943c8ced0841cc7b505.png" style="height:123px;"/><p>⑧客户端使用本地 MNIST 数据进行训练<br>客户端收到模型后，使用自己本地保存的手写数字图片进行训练。</p><p>⑨客户端向边缘服务器上传本地模型<br>本地训练完成后，客户端把更新后的模型参数发送给所属边缘服务器。<br>如果某个客户端暂时不可用、训练太慢或上传失败，边缘服务器可以先处理已经成功收到的模型，不必无限期等待所有客户端。</p><p>⑩边缘服务器聚合联盟内的客户端模型<br>边缘服务器收到客户端模型后，先在联盟内部进行一次聚合。<br>通常会根据每个客户端的本地数据量分配权重。拥有更多训练样本的客户端，对联盟模型的影响通常更大。<br>聚合完成后，边缘服务器得到一个联盟模型。</p><p>⑪云服务器进行全局模型聚合<br>云服务器收到联盟模型后，将其与当前全局模型进行聚合，生成新的全局模型。<br>云服务器不会一直等待其他还没完成的联盟。<br>如果某个联盟的模型上传得比较晚，该模型可能已经比较“旧”，云服务器会降低它的聚合权重，避免旧模型对全局模型造成过大影响。</p><p>⑫更新联盟的参与状态<br>一轮训练结束后，系统会更新各联盟的状态：</p><ul><li>本轮参加训练的联盟，等待时间减少；</li><li>没有参加的联盟，等待时间增加；</li><li>记录每个联盟本轮的实际训练耗时；</li><li>更新下一轮的耗时预测。</li></ul><p>⑬ 进入下一轮训练，每一轮选择的联盟可能不同，因此不同客户端群体可以逐渐获得参与机会。</p><p>⑭最终得到共享的手写数字识别模型<br>经过多轮训练后，云服务器得到一个共享 CNN 模型。</p><h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><p>这篇文章主要是联邦学习方向（三层云边端场景），具体是异步联邦学习，它先将客户端分成多个联盟（联盟中选择一个边缘服务器用于聚合此联盟中的客户端），然后云服务器每次选择一个联盟和已经有的云端模型进行聚合！创新点说是摘要中说的那3点！</p>]]></content>
+    
+    
+    <summary type="html">FedCure: Mitigating Participation Bias in Semi-Asynchronous Federated Learning with Non-IID Data</summary>
+    
+    
+    
+    <category term="阅读" scheme="https://blog.sunwei.online/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>📌FedSTGD论文实验</title>
@@ -463,29 +486,6 @@
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
     <category term="电脑美化" scheme="https://blog.sunwei.online/tags/%E7%94%B5%E8%84%91%E7%BE%8E%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌AI傻逼记录</title>
-    <link href="https://blog.sunwei.online/posts/e80a23e6.html"/>
-    <id>https://blog.sunwei.online/posts/e80a23e6.html</id>
-    <published>2026-09-26T00:50:45.703Z</published>
-    <updated>2026-10-04T08:08:33.748Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-问题一（访问文件）"><a href="#1-问题一（访问文件）" class="headerlink" title="1. 问题一（访问文件）"></a>1. 问题一（访问文件）</h1><p>长时间使用后，ai就会被限流，然后降智，如下图所示，连项目文件都访问不了，后续只能新开个对话或者换个中转站进行提问……【明明给了完全访问权限】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/2a669d13b9af110f913511617cb6bc92.png" style="height:137px;"/><h1 id="2-问题二（识图）"><a href="#2-问题二（识图）" class="headerlink" title="2. 问题二（识图）"></a>2. 问题二（识图）</h1><p>像下面这个问题，你就太依赖codex了，你开了6 Astra Ultra，运行了40多min一点效果都没有；但是，这并不是中转站的问题，ai就是这样子的，它对图片等东西的调整太难，特别是chatgpt，它对图片的理解能力还不如豆包，叫它画模型图，它会直接给你做页ppt【图片能力：gmini&gt;豆包&gt;chatgpt&gt;&#x3D;deepseek】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/a658589a37edadc057fedd8fd0680ed3.png" style="height:179px;"/><h1 id="3-问题三（网络）"><a href="#3-问题三（网络）" class="headerlink" title="3. 问题三（网络）"></a>3. 问题三（网络）</h1><p>经常会碰到网络问题，甚至中转站也会，真的很烦人，ai没用了，我工作也停止了……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/fdc8a6c11ebc24929e3eecee8d412eb3.png" style="height:191px;"/><h1 id="4-问题四（变通）"><a href="#4-问题四（变通）" class="headerlink" title="4. 问题四（变通）"></a>4. 问题四（变通）</h1><p>之前让它调整word行距变为1.25，然后下面是它的效果，真不会变通，它直接选择多倍行距后1.25，应该是选择最小值后1.25。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/85fa2656d66ae8cc6c6ea5e5085aec49.png" style="height:155px;"/><h1 id="5-问题五（转义符）"><a href="#5-问题五（转义符）" class="headerlink" title="5. 问题五（转义符）"></a>5. 问题五（转义符）</h1><p>好多ai会在那些特殊符号前面加个转义符号，真离谱……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/6ee91c0cc603037b6e17e90709893942.png" style="height:193px;"/><h1 id="6-问题六（兼容性）"><a href="#6-问题六（兼容性）" class="headerlink" title="6. 问题六（兼容性）"></a>6. 问题六（兼容性）</h1><p>同样是chatgpt5.6，一个中转站的一直报工具调用问题，另外一个却不报，关键时候还是要靠自己啊……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/26/64efddbfc18a1d24f6599807331c370a.png" style="height:237px;"/><h1 id="7-问题七（没钱）"><a href="#7-问题七（没钱）" class="headerlink" title="7. 问题七（没钱）"></a>7. 问题七（没钱）</h1><p>太浪费钱了，一上午就花了我16块，主要是我才用2-3小时，哎……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/03/ff687575b05ee36ff50ab206e1ffb2d7.png" style="height:380px;"/><h1 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h1><p>这篇文章就到这里结束吧，ai还有很多其它的不足之处就不讲了，写这篇文章主要是想告诉自己，不能太依赖AI。<br>①决对不要太相信ai，ai做完事情后一定要自己检查一遍，可能是你的表达能力有问题让ai误解，也可能是ai使用太长了导致ai降智乱答……【检查回答】<br>②不要凡事都让ai做，比如把word中某个词加粗，你自己打开word，ctrl+f搜索到词，然后ctrl+b就行了，你交给ai，它要调用工具，然后审请权限，然后一行一行搜索……大约要花个5min，但你自己动手只要10s左右，ai是用来提高效率的，不是降低效率的……【给不给ai做】<br>③不要过渡高看ai，ai能解决的问题是有限制的，AI无法自己进行迭代（ai之间也有差距）；对于大项目，ai无法完成，或者说无法按自己心中所想完成，必须切分成很多小任务分给ai；ai在一些新方向上更不行，训练ai用的数据可能不够新……【能力有限】<br>④…………<br>⑤…………</p>]]></content>
-    
-    
-    <summary type="html">一些常见的ai傻逼记录，警惕自己不要太依赖AI……</summary>
-    
-    
-    
-    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-    <category term="AI" scheme="https://blog.sunwei.online/tags/AI/"/>
     
   </entry>
   
