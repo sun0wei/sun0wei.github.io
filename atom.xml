@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-11T12:00:35.491Z</updated>
+  <updated>2026-10-11T12:09:55.055Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://blog.sunwei.online/posts/5d3fc377.html"/>
     <id>https://blog.sunwei.online/posts/5d3fc377.html</id>
     <published>2026-10-11T12:00:32.625Z</published>
-    <updated>2026-10-11T12:00:35.491Z</updated>
+    <updated>2026-10-11T12:09:55.055Z</updated>
     
     <content type="html"><![CDATA[<h1>1. 选择数据集</h1><p>FedCure 使用了 4 个图像分类数据集：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/ba7dd5161e91365a0c456b0f501c70e3.png" style="height:62px;"/><h1>2. 选择模型</h1><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/e906e157ecaa58a77c775dbc42c7687c.png" style="height:133px;"/><h1>3. 对比算法</h1><p>①那个客户端分联盟时对比</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/b38dd1b07b8f4eb770ad8ced336b631c.png" style="height:85px;"/><p>②联盟选择方式对比<br>Greedy；<br>Fair；<br>FedG；<br>FedFair；<br>FedCure。</p><h1>4. 评价指标</h1><p>①准确率（Accuracy）<br>衡量最终模型识别图片的正确程度。例如，MNIST 准确率为 96%，表示约 96% 的手写数字被正确识别。这个指标反映模型效果。<br>②Jensen-Shannon 散度（JS Divergence）<br>用来衡量不同客户端联盟之间的数据分布差异。JS 值越小，说明各联盟的数据越接近，非 IID 程度越低。这个指标主要用于评价 FedCure 的联盟构建效果。<br>③训练时延（Training Latency）<br>表示完成一轮训练需要多长时间，包括本地训练、边缘聚合和模型上传等过程。时延越低，说明训练效率越高。<br>④时延变异系数（COV）<br>用来衡量每轮训练时延是否稳定。COV 越小，说明不同轮次之间的训练时间波动越小，系统更加稳定。<br>⑤虚拟队列长度（Virtual Queue Length）<br>用来衡量某个联盟等待参与训练的程度。队列越长，说明该联盟被忽略的时间越久。通过观察队列长度，可以判断 FedCure 是否实现了长期参与平衡。<br>⑥收敛速度<br>观察模型达到较高准确率或稳定状态所需要的训练轮数。收敛越快，说明训练效率越高。<br>⑦Cohen’s d 效应量<br>用来判断不同方法之间的准确率差异是否明显。它不是主要性能指标，而是用于说明 FedCure 与其他方法之间的差异是否具有实际意义。</p><h1>5. 实验（图）</h1><h2 id="5-1-图1解释">5.1 图1解释</h2><p>上层：边缘服务器与去服务器<br>下层：客户端与边缘服务器</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/f6f972197c2668f40272e74ab500b9fd.png" style="height:215px;"/><p>橙色公式</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/c8d64ce6b3130a0b4218aecae5705095.png" style="height:263px;"/><p>右边第二个白色方框</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/8eb76ff7bc76a151195281ccfb423d43.png" style="height:230px;"/><p>Scheduling Rule II for SC：用来确定第 t 轮到底选择哪个联盟参加训练。<br>Resource Allocation Rule F for RC：用来确定被选中的客户端应该使用多少 CPU 资源来训练？</p><h2 id="5-2-图2解释">5.2 图2解释</h2><p>x轴是客户端联盟的编号1，2，3，4，5<br>y轴是各个联盟中不同标签数据的分布密度（纵轴上的数字 0 到 9 可以理解为手写数字类别）。<br>a,b,c图是客户端分组状态，a是刚开始时的，b是客户端切换过程中的，c是最终分组情况。<br>d图是连接性的切换js值变化，abc是从中取的3个状态！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/8ae0ddaab1e6c826ef06ddcad6ec8d2b.png" style="height:240px;"/><h2 id="5-3-图3解释">5.3 图3解释</h2><p>x轴都是联邦训练轮次<br>y轴都是分类准确率<br>abcd分别表示使用的4个数据集<br>然后是对比方法</p><ul><li>K-Means：用 K-Means 方法给客户端分组；</li><li>Mean-Shift：用 Mean-Shift 方法给客户端分组；</li><li>JS=0.69：客户端联盟之间的数据差异较大；</li><li>JS=0.45：数据差异有所降低；</li><li>JS=0.0：各联盟的数据分布基本一致。</li></ul><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/844dac516c92c5553f380aa622609108.png" style="height:244px;"/><h2 id="5-4-图4解释">5.4 图4解释</h2><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/7008d5bfa6588466441c7a3dfbc91f47.png" style="height:141px;"/><p>左边那张图表示5种联盟选择方案训练时延波动大小比较！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/ca4e60105e4934e777bd5c2dd2679ad4.png" style="height:149px;"/><p>右边那张图是“虚拟队列长度”图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/556b4d879897db249a391432cad2c809.png" style="height:132px;"/><p>图片b的主要作用是证明cure能不让联盟长时间被忽略！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/d2eef858618308ba3be70c21dcc3dba2.png" style="height:112px;"/><h1>6. 实验（表）</h1><h2 id="6-1-表1解释">6.1 表1解释</h2><p>与图4对应，图4描述的是时间，表1描述的是准确率，可以看出，在4个数据集上，作者的方法还是非常不错了。<br>表格最后一行是 Cohen’s d，用于衡量 FedCure 和其他最佳方法之间的实际差异大小。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/c04929a0d0795a8c7470a6fed090b161.png" style="height:177px;"/><p>最下面那行的计算方式</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/c03761e1f4996108ac5266acaa34b58b.png" style="height:262px;"/><p>常见标准</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/a3e1d1cf6e39bcf28650933c56c4e847.png" style="height:49px;"/>]]></content>
     
     
-    <summary type="html">FedCure: Mitigating Participation Bias in Semi-Asynchronous Federated Learning with Non-IID Data</summary>
+    <summary type="html">FedCure: Mitigating Participation Bias in Semi-Asynchronous Federated Learning with Non-IID Data</summary>
     
     
     
@@ -127,9 +127,9 @@
     
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
   </entry>
   
@@ -365,9 +365,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
@@ -436,9 +436,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
@@ -463,9 +463,9 @@
     
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
-    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="🔒" scheme="https://blog.sunwei.online/tags/%F0%9F%94%92/"/>
     
   </entry>
   
