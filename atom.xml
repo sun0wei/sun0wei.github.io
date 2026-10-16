@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-16T03:15:29.999Z</updated>
+  <updated>2026-10-16T11:11:40.089Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📌MSCFL论文速读</title>
+    <link href="https://blog.sunwei.online/posts/f181520d.html"/>
+    <id>https://blog.sunwei.online/posts/f181520d.html</id>
+    <published>2026-10-16T11:11:39.071Z</published>
+    <updated>2026-10-16T11:11:40.089Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h1><p>MSCFL: Model Structure-Aware Clustered Federated Learning for System Heterogeneity and Data Drift<br>MSCFL：面向系统异构与数据漂移的模型结构感知聚类联邦学习<br>①联邦学习方向上的，还是聚类联邦学习……<br>②分组依据：Model Structure-Aware 表示分组过程会考虑模型结构信息，而不只是看客户端数据或设备状态。</p><h1 id="2-摘要"><a href="#2-摘要" class="headerlink" title="2. 摘要"></a>2. 摘要</h1><p>①普通聚类联邦学习会把数据相似的客户端分成一组，但不同客户端的算力和通信能力也可能不同。为了适应能力差异，客户端可以使用不同大小的剪枝模型；问题是模型结构不同后，原来的聚类方法就不容易再判断客户端之间是否相似。另外，客户端的数据会随时间变化。若一直留在原来的组里，分组可能逐渐不合适；但每轮都重新分组又会增加开销。论文因此要解决两个问题：不同结构的模型怎么分组，以及什么时候值得重新分组。<br>②论文明确提出 两个核心模块：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/16/4f5f66e0b39624fd0b006838d0be7f9a.png" style="height:92px;"/><h1 id="3-场景流程"><a href="#3-场景流程" class="headerlink" title="3. 场景流程"></a>3. 场景流程</h1><p><strong>① 服务器初始化模型和客户端分组</strong><br>训练开始时，服务器初始化模型，并设置客户端的剪枝比例等参数。客户端的数据分布可能不同，设备的计算能力也可能不同。服务器会把客户端划分成若干组，每组维护一个自己的模型，称为“簇模型”。</p><p><strong>② 服务器向客户端下发所属组的模型</strong><br>每轮开始时，服务器把每个客户端当前所属组的模型发给它。也就是说，客户端收到的是自己所在簇的模型，不一定所有客户端都收到同一个模型。</p><p><strong>③ 客户端先进行一段预训练</strong><br>客户端用自己的本地数据训练刚收到的模型一段时间。论文把这一步称为预训练。这样做是为了让模型先适应客户端本地数据，再进行后续剪枝。</p><p><strong>④ 客户端根据设备能力剪枝</strong><br>客户端按照设定的剪枝方法，删掉一部分神经网络结构，形成较小的模型。设备能力不同的客户端可以采用不同剪枝比例。<br>客户端同时生成一个掩码，记录模型中哪些结构被保留、哪些结构被剪掉。</p><p><strong>⑤ 客户端继续训练并上传结果</strong><br>客户端在剪枝后的模型上继续训练，然后上传两样东西：训练后的剪枝模型；对应的剪枝掩码。<br>客户端不上传本地图片，只上传模型相关信息。</p><p><strong>⑥ 服务器检查客户端模型结构是否明显变化</strong><br>服务器会比较客户端最近几轮的掩码变化，用汉明距离衡量变化了多少位。可以把它想成逐位比较两张“保留&#x2F;剪除记录表”，统计其中不同的位置。<br>如果变化不明显，服务器认为暂时没有足够信号表明客户端的数据特征发生了明显变化，于是沿用之前的分组；<br>如果变化超过阈值，服务器就判断原分组可能不再合适，启动重新聚类。</p><p><strong>⑦ 需要时，服务器重新聚类客户端</strong><br>服务器根据客户端掩码和剪枝比例计算结构相似度，再把相似客户端重新分到一组。某个客户端可能因此从原来的簇转到另一个簇，这就是论文所说的“簇迁移”。</p><p><strong>⑧ 服务器在每个簇内聚合模型</strong><br>分组确定后，服务器分别聚合每个簇中客户端上传的模型，生成各簇的新模型。由于不同客户端的模型可能剪掉了不同部分，论文聚合时会考虑它们共同保留的模型参数。</p><p><strong>⑨ 服务器下发各簇的新模型，进入下一轮</strong><br>每个簇的新模型被发回对应客户端，客户端继续本地训练。之后重复“本地训练、剪枝、上传、检查分组、聚合”的流程，直到训练结束。</p><h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><p>这篇论文主要是做聚类联邦学习的，创新点呢，大概就是：①利用客户端剪枝后模型的结构来进行聚类。②每轮会根据结构变化判断何时重新分组。【目标是适应设备能力差异和数据变化】</p>]]></content>
+    
+    
+    <summary type="html">MSCFL: Model Structure-Aware Clustered Federated Learning for System Heterogeneity and Data Drift</summary>
+    
+    
+    
+    <category term="阅读" scheme="https://blog.sunwei.online/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>📌TinyProto论文实验</title>
@@ -219,9 +242,9 @@
     
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
   </entry>
   
@@ -454,34 +477,11 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
-    
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌中转codex安装插件</title>
-    <link href="https://blog.sunwei.online/posts/31ea8b4e.html"/>
-    <id>https://blog.sunwei.online/posts/31ea8b4e.html</id>
-    <published>2026-10-04T07:46:43.486Z</published>
-    <updated>2026-10-04T07:58:03.838Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>使用api登录codex时插件中心没有插件市场，只有固定的几个插件，问ai叫它帮我安装插件，它总叫我用官方chatgpt账号进行登录，谁tm有钱不会用官方的啊，问题是我没钱啊……【麻烦解决一下这个问题，并给我推荐一些常用插件】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/64b21e664a7f3a079ffa151e0c173a72.png" style="height:267px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①首先先下载一个codex++，b站等网站上都有过程，浏览器搜索后是一个github网站，点击下载就行：<a href="https://github.com/BigPizzaV3/CodexPlusPlus">网站</a>，下载教程我不详细教，github下载应用教程一定要会（右边releases选择版本，然后一直下滑选择操作系统，然后点击下载就行了，如下图选择那64位、windows、setup.exe下载就行）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/27f32385a1f3afcff837dd2c717fc3f9.png" style="height:272px;"/><p>②安装后会产生2个启动程序，一个codex++（codex的升级版本，有这个后，codex就没用了，以后也不用打开codex）、一个codex++管理器</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/92d7749f042f26543c84a6e2ef6e22d1.png" style="height:67px;"/><p>③先打开codex++管理工具，然后依次点击图片中3个红框，就能导入ccswitch中配置好的中转站与模型信息了，当然，你也可以自己填写信息导入……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/3c567cc7531d20e606342db0bbd1e5d0.png" style="height:217px;"/><p>④打开codex++，就能发现相关于codex多出来了很多组件，特别是插件页面，左边多出一堆可以选择进行下载</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/76e492c34494ebf44ca752fbec8f0836.png" style="height:290px;"/><p>⑤接下来推荐一些常用的插件&#x2F;扩展</p><p>codex++管理工具中的功能就不详细讲了，自己多看看就会，比如壁纸、转接微信、会话管理……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/979cd6d13b26484a48b7d1c58c054f73.png" style="height:361px;"/><p>⑥codex++的扩展的话，就自己就只装了下面4个，其实尽量不要装太多，说是插件，其实就是提示词，我测试了一个，同一个回答使用插件的话会花费更多的token，所以，少装点吧。（codex++安装时就会自带插件，比如删除会话、会话分支、会话导出、会话分享……够用了）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/9fde654d1b6b13cd79057ba23b6eee79.png" style="height:263px;"/>]]></content>
-    
-    
-    <summary type="html">codex中转站安装插件市场，以及一些常用插件推荐……</summary>
-    
-    
-    
-    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
-    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-    <category term="AI" scheme="https://blog.sunwei.online/tags/AI/"/>
     
   </entry>
   
