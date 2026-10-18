@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-16T13:15:35.342Z</updated>
+  <updated>2026-10-18T08:18:53.564Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>✍202610第4周工作记录</title>
+    <link href="https://blog.sunwei.online/posts/951a5eff.html"/>
+    <id>https://blog.sunwei.online/posts/951a5eff.html</id>
+    <published>2026-10-18T08:18:52.910Z</published>
+    <updated>2026-10-18T08:18:53.564Z</updated>
+    
+    <content type="html"><![CDATA[<div id="graduate-diary-board-202608"></div><script>(function () {const diaryCards = [//【=========请修改下面内容=========】{month: '2026 年 10 月',date: '2026.10.19',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' }]},{month: '2026 年 10 月',date: '2026.10.20',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' }]},{month: '2026 年 10 月',date: '2026.10.21',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' }]},{month: '2026 年 10 月',date: '2026.10.22',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' }]},{month: '2026 年 10 月',date: '2026.10.23',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' }]},{month: '2026 年 10 月',date: '2026.10.24',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' }]},{month: '2026 年 10 月',date: '2026.10.25',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' },{ type: 'image', url: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/18/6c1f238414878929283a04e4d148a1fe.png' }]}];//【=========请修改上面内容=========】const host = document.getElementById('graduate-diary-board-202608');if (!host || host.shadowRoot) return;const root = host.attachShadow({ mode: 'open' });const css = document.createElement('style');css.textContent = `:host{display:block;max-width:980px;margin:18px auto;color:#52616b;font-family:inherit}*{box-sizing:border-box}.board{overflow:hidden;border:1px solid rgba(73,177,245,.2);border-radius:12px;background:rgba(255,255,255,.9);box-shadow:0 8px 24px rgba(52,73,94,.08)}.timeline{position:relative;padding:24px 28px 30px 52px}.timeline:before{position:absolute;top:30px;bottom:30px;left:31px;width:2px;background:rgba(73,177,245,.22);content:''}.month{position:relative}.month-title{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:28px;margin:0 0 12px -34px;padding:0 10px;border:1px solid rgba(73,177,245,.24);border-radius:14px;background:#fff;color:#49b1f5;font-size:.82rem;font-weight:700}.record{position:relative;margin:0 0 24px;padding:20px 18px;border:1px solid #a9d8f4;border-radius:9px;background:#f8fcff;box-shadow:0 6px 16px rgba(42,111,157,.16)}.record:before{position:absolute;top:22px;left:-27px;width:10px;height:10px;border:3px solid #fff;border-radius:50%;background:#49b1f5;box-shadow:0 0 0 1px rgba(73,177,245,.3);content:''}.record-date{display:inline-flex;align-items:center;padding:5px 10px;border:1px solid rgba(73,177,245,.34);border-radius:7px;background:#eaf6ff;color:#28648d;font-size:.82rem;font-weight:700;line-height:1.2}.record-title{margin:12px 0 8px;color:#52616b;font-size:1rem;font-weight:600}.record-note{margin:0;color:#687780;font-size:.9rem;line-height:1.8}.record-note p{margin:0 0 14px}.record-note p:last-child{margin-bottom:0}.record-note img{display:block;width:auto;max-width:100%;height:210px;margin:10px 0 16px;object-fit:contain;border:1px solid #d7eaf7;border-radius:6px;background:#fff;box-shadow:0 3px 10px rgba(42,111,157,.1)}@media(max-width:680px){.timeline{padding:22px 18px 26px 42px}.timeline:before{left:23px}.month-title{margin-left:-28px}.record:before{left:-25px}.record-note img{height:auto;max-height:210px}}`;root.appendChild(css);const lightboxStyle = document.createElement('style');lightboxStyle.textContent = '.record-note img{cursor:zoom-in}.diary-lightbox{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.82);cursor:zoom-out}.diary-lightbox img{display:block;width:auto;max-width:96vw;height:auto;max-height:92vh;margin:0;border:0;border-radius:4px;object-fit:contain;box-shadow:0 8px 32px rgba(0,0,0,.35)}';root.appendChild(lightboxStyle);root.innerHTML += ` <section class="board"> <div class="timeline" data-timeline></div> </section>`;const records = diaryCards.map(card => ({month: card.month,date: card.date,title: card.title,note: card.blocks.map(block => block.type === 'image'? '<img src="' + block.url + '" alt="" loading="lazy">': '<p>' + block.value + '</p>').join('')}));const timeline = root.querySelector('[data-timeline]');function render() {const months = {};records.forEach(record => {if (!months[record.month]) months[record.month] = [];months[record.month].push(record);});timeline.innerHTML = Object.keys(months).map(month => '<section class="month"><h2 class="month-title">' + month + '</h2>' + months[month].map(item => '<article class="record"><time class="record-date">' + item.date + '</time><h3 class="record-title">' + item.title + '</h3><div class="record-note">' + item.note + '</div></article>').join('') + '</section>').join('');}function openDiaryImage(img) {const src = img.currentSrc || img.src;if (window.Fancybox && typeof window.Fancybox.show === 'function') {window.Fancybox.show([{ src: src, type: 'image', caption: img.alt || '' }]);return;}const overlay = document.createElement('div');overlay.className = 'diary-lightbox';overlay.setAttribute('role', 'dialog');overlay.setAttribute('aria-label', '图片预览');const preview = document.createElement('img');preview.src = src;preview.alt = img.alt || '';overlay.appendChild(preview);overlay.addEventListener('click', () => overlay.remove());root.appendChild(overlay);}function bindDiaryImageZoom() {root.querySelectorAll('.record-note img').forEach(img => {if (img.dataset.diaryZoomBound) return;img.dataset.diaryZoomBound = 'true';img.addEventListener('click', event => {event.preventDefault();event.stopPropagation();openDiaryImage(img);});});}render();bindDiaryImageZoom();}());</script>]]></content>
+    
+    
+    <summary type="html">202610第4周工作记录总结</summary>
+    
+    
+    
+    <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+    <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>📌论文专科审请</title>
@@ -334,9 +359,9 @@
     
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
   </entry>
   
@@ -455,29 +480,6 @@
     <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌MDFL论文实验</title>
-    <link href="https://blog.sunwei.online/posts/86ef2c30.html"/>
-    <id>https://blog.sunwei.online/posts/86ef2c30.html</id>
-    <published>2026-10-06T12:18:47.279Z</published>
-    <updated>2026-10-11T09:02:32.692Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-选择数据集"><a href="#1-选择数据集" class="headerlink" title="1. 选择数据集"></a>1. 选择数据集</h1><p>作者没有直接使用真实车辆的摄像头或激光雷达数据，而是选择了 Fashion-MNIST，这是一个服饰图片分类数据集。<br>它包含：<br>• 10 个类别，例如衣服、鞋子、包等；<br>• 每个类别有 6000 张训练图片；<br>• 每个类别有 1000 张测试图片；<br>• 图片通常是 28×28 的灰度图。<br>所以整个任务是：车辆（客户端）利用各自拥有的服饰图片数据，共同训练一个分类模型。</p><h1 id="2-选择模型"><a href="#2-选择模型" class="headerlink" title="2. 选择模型"></a>2. 选择模型</h1><p>作者选择经典的 LeNet 卷积神经网络（作为模型）进行分类。<br>每辆车的训练过程大致是：①接收当前的全局模型；②使用本地 Fashion-MNIST 数据训练 LeNet；③得到更新后的模型参数；④把模型参数发送给当前领导车辆；⑤由领导车辆进行模型聚合。</p><h1 id="3-模拟车辆移动性"><a href="#3-模拟车辆移动性" class="headerlink" title="3. 模拟车辆移动性"></a>3. 模拟车辆移动性</h1><p>论文构造了一个矩形道路区域，也就是它的研究范围，叫 RoI，可以理解为“当前参与训练的道路区域”。<br>本实验的tol设置区域如图所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/b4ad44bd3fefadfa85cc79831ff0d6eb.png" style="height:356px;"/><p>rol的作用是：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/0e0a76cf3c48ba7fe938fe7186476480.png" style="height:131px;"/><p>然后用到了SUMO（全称是 Simulation of Urban MObility，中文通常叫“城市交通仿真平台”。）<br>SUMO为每辆车设置了下面东西：<br>①位置坐标 (x, y)<br>②速度 s<br>③加速度 a</p><h1 id="4-车辆信息设置"><a href="#4-车辆信息设置" class="headerlink" title="4. 车辆信息设置"></a>4. 车辆信息设置</h1><p>①-③上面sumo设置的3个信息。<br>④能耗：初始、本地训练、通信能耗</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/da7bb698e29a8c2a3081ae2d35b377af.png" style="height:200px;"/><p>然后还有两种通信能耗，先简单介绍下，后面会详细讲：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/9898552234339467f7dbcb34107da9e6.png" style="height:100px;"/><p>⑤车辆直接通信半径</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/eaa466d93208f886f1273b2c9410fab9.png" style="height:242px;"/><p>一轮联邦学习的能耗计算方法如下所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/20974c19601737dad9822ceb373cbc24.png" style="height:245px;"/><h1 id="5-对比方法"><a href="#5-对比方法" class="headerlink" title="5. 对比方法"></a>5. 对比方法</h1><p>为了决定：①谁当领导车辆。②每辆车本地训练多少次。<br>MAPPO：论文方法，动态调度</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/69192e87aa6202ba16f6254c834f9031.png" style="height:231px;"/><p>Random：完全随机<br>DFL：所有车辆直接协作，固定训练策略</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/7bb07325bc28349d02c822762bc0d2b7.png" style="height:260px;"/><h1 id="6-评价指标"><a href="#6-评价指标" class="headerlink" title="6. 评价指标"></a>6. 评价指标</h1><p>论文主要看两个指标：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/dfbf5b1ad2afee82a344b668ef465697.png" style="height:202px;"/><h1 id="7-实验（图）"><a href="#7-实验（图）" class="headerlink" title="7. 实验（图）"></a>7. 实验（图）</h1><h2 id="7-1-图1解释"><a href="#7-1-图1解释" class="headerlink" title="7.1 图1解释"></a>7.1 图1解释</h2><p>①红色领导车辆把当前模型发给其他车辆；②每辆车拿到领导车辆的模型后，使用自己的本地数据进行训练。③本地训练完成后，普通车辆把训练后的模型发回领导车辆。④领导车辆收集各辆车的本地模型后，进行加权平均。⑤聚合完成后，领导车辆把新的聚合模型发给其他车辆。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/ae2ee80124c160601c7ae787b891753a.png" style="height:204px;"/><h2 id="7-2-图2解释"><a href="#7-2-图2解释" class="headerlink" title="7.2 图2解释"></a>7.2 图2解释</h2><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/bf73d7aabcaae0a490dd6963c18b8ee6.png" style="height:206px;"/><h2 id="7-3-图3解释"><a href="#7-3-图3解释" class="headerlink" title="7.3 图3解释"></a>7.3 图3解释</h2><p>用于解释直接通信与间接通信……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/91aa20e60dd0ddb6e11cda029ef0aac3.png" style="height:348px;"/><h2 id="7-4-图4解释"><a href="#7-4-图4解释" class="headerlink" title="7.4 图4解释"></a>7.4 图4解释</h2><p>论文设计了两类智能体：<br>①底部：每辆车一个本地训练次数选择器<br>②顶部：一个领导车辆选择器<br>普通车与领导车之间传输的东西是“位置、速度、加速度、剩余能量”。<br>普通车与普通车之间传输的东西是“位置、本地迭代次数”。<br>上传位置是为了计算位置距离，从而确定通信类别；上传本地迭代次数是为了让各个智能体了解各车状态，方便决定下次的本地训练次数。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/92aea2cef41605f6ab412f6c1f5e5834.png" style="height:171px;"/><h2 id="7-5-图56解释"><a href="#7-5-图56解释" class="headerlink" title="7.5 图56解释"></a>7.5 图56解释</h2><p>车辆一开始拥有多少能量，会怎样影响最终模型准确率？用来说明针对不用车辆能量，我论文中的客户端选择与本地轮次规定更能让acc好，且ecr也不差。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/ad00aa3f0e174a5fe8ee9e50f7fea29c.png" style="height:155px;"/><h2 id="7-6-图78解释"><a href="#7-6-图78解释" class="headerlink" title="7.6 图78解释"></a>7.6 图78解释</h2><p>间接通信能耗对实验结果的影响</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/a602390f0b69b9ce0e940535feb155b5.png" style="height:150px;"/><h2 id="7-7-图910解释"><a href="#7-7-图910解释" class="headerlink" title="7.7 图910解释"></a>7.7 图910解释</h2><p>道路中车辆数量 N 增加时，三种方法最终模型准确率如何变化。【N是总车辆，不是参考训练的车辆】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/d592674e44ee7eb78fd820d2842abff5.png" style="height:184px;"/><h2 id="7-8-图11解释"><a href="#7-8-图11解释" class="headerlink" title="7.8 图11解释"></a>7.8 图11解释</h2><p>横轴是联邦训练轮数，纵轴是奖励值，奖励越高，说明 MAPPO 当前做出的调度越好</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/b85e5b3c2460f574e725b408810ab707.png" style="height:275px;"/><h2 id="7-9-图12解释"><a href="#7-9-图12解释" class="headerlink" title="7.9 图12解释"></a>7.9 图12解释</h2><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/8a083257cd1a44c25a7eed03b4a0fa62.png" style="height:258px;"/><p>Leader 选择奖励中的参数 \(\epsilon\) 取不同数值时，模型准确率如何变化。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/0af19f73eddf700bd54b73ff0d360cf8.png" style="height:111px;"/><h2 id="7-10-图13解释"><a href="#7-10-图13解释" class="headerlink" title="7.10 图13解释"></a>7.10 图13解释</h2><p>三列图，分别代表三种数据分布<br>先讲第二列图，这列图很好懂，x轴是客户端，y轴是样本数量，然后不同颜色表样样本的种类，从左到右越来越复杂！（①均匀。②每客户端只有少量种类。③完全模拟现实。）<br>然后开始讲第一列的，对比的是4种聚合方法，用来证明自己的客户端选择&amp;本地训练轮次设置（MAPPO）能够适用于不同的聚类方法！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/8f345262cc9c68c309acab7308368ff7.png" style="height:310px;"/><h2 id="7-11-图14解释"><a href="#7-11-图14解释" class="headerlink" title="7.11 图14解释"></a>7.11 图14解释</h2><p>与表3对应，是交通流预测实验的可视化结果。（本文的方法结果与实际上的差不多）<br>横轴：Time of Day，表示一天中的时间；<br>纵轴：Flow，表示交通流量；</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/c6f4042eca483d294337e8a8ba704301.png" style="height:294px;"/><h1 id="8-实验（表）"><a href="#8-实验（表）" class="headerlink" title="8. 实验（表）"></a>8. 实验（表）</h1><h2 id="8-1-表1解释"><a href="#8-1-表1解释" class="headerlink" title="8.1 表1解释"></a>8.1 表1解释</h2><p>与图12对应，研究的是奖励比例系数改变时，能耗指标是否稳定？</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/97ea6e19364212ef762c9099ad9c8a39.png" style="height:122px;"/><h2 id="8-2-表2解释"><a href="#8-2-表2解释" class="headerlink" title="8.2 表2解释"></a>8.2 表2解释</h2><p>研究的是直接通信半径对2类指标的影响……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/4a91d2d8bb18b2fbdf9061b3d034f4e4.png" style="height:124px;"/><h2 id="8-3-表3解释"><a href="#8-3-表3解释" class="headerlink" title="8.3 表3解释"></a>8.3 表3解释</h2><p>用交通流预测任务比较分布式 MAPPO 和集中式 CGRUL，结果显示 本文的MAPPO 预测误差与集中式CGRUL训练非常接近，说明该方法不仅能在 Fashion-MNIST 上运行，也有迁移到交通预测任务的能力。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/06/fd59cf287b2d75afabc33980ce8b886b.png" style="height:111px;"/>]]></content>
-    
-    
-    <summary type="html">面向车联网的移动性感知去中心化联邦学习：本地迭代与领导节点选择联合优化</summary>
-    
-    
-    
-    <category term="阅读" scheme="https://blog.sunwei.online/categories/%E9%98%85%E8%AF%BB/"/>
-    
-    
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-    <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
     
   </entry>
   
