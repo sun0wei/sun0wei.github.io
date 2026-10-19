@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-19T07:02:50.348Z</updated>
+  <updated>2026-10-19T13:01:04.834Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📌Java基础_Day06</title>
+    <link href="https://blog.sunwei.online/posts/ef76b79a.html"/>
+    <id>https://blog.sunwei.online/posts/ef76b79a.html</id>
+    <published>2026-10-19T13:01:02.902Z</published>
+    <updated>2026-10-19T13:01:04.834Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-面向对象编程"><a href="#1-面向对象编程" class="headerlink" title="1. 面向对象编程"></a>1. 面向对象编程</h1><blockquote><p>①什么是类？什么是对象？<br>②类与对象的简单代码定义？</p></blockquote><p>以前存数据都是用“变量、数组”，而“对象”是新的一种存东西的方式！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/19b1d5528905106d0dce34634dff4ce6.png" style="height:338px;"/><p>面向对象的定义</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/7089e4e3a0fda5e85bb0b1ee6479a818.png" style="height:335px;"/><p>具体操作过程<br>①新建一个class文件用来放“类”设计图</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/4a99be5143979c10d8ef63cd0e844a40.png" style="height:193px;"/><p>②再在主类中进行new对象！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/a1d885a7256ed7404d3d3b4dd1dc25c4.png" style="height:285px;"/><h1 id="2-类与对象"><a href="#2-类与对象" class="headerlink" title="2. 类与对象"></a>2. 类与对象</h1><blockquote><p>①类与对象关系？<br>②对象的计算机硬件层次存储原理？</p></blockquote><p>类是对象的模板，对象是类的实例</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/12a48d0fd8c86ab3a6dd5aef694cb68d.png" style="height:327px;"/><p>计算机底层中（java代码在JVM虚拟机中跑，而跑java代码时JVM在内存中）<br>①计算机先拿到Test类，把它放“方法区”。<br>②拿到main方法，把它放“栈内存”。<br>③在main方法中new一个对象，对象指向堆内存中新开的一片区域！<br>④新开的那片区域只存“属性”+“地址”，这个地址指向“方法区”中的模板类。<br>⑤当调用打印总成绩的方法时，会一路从“栈——堆——方法区”找到相应方法，然后放入“栈内存”中进行执行，执行完后出栈……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/7ae452e3851f807f034c2dd65e252111.png" style="height:328px;"/><h1 id="3-类的设计（构造器）"><a href="#3-类的设计（构造器）" class="headerlink" title="3. 类的设计（构造器）"></a>3. 类的设计（构造器）</h1><blockquote><p>①类的设计——构造器（定义、特点、使用场景、注意事项）？</p></blockquote><p>无返回值，方法名&#x3D;类名的方法就叫构造器。（有参、无参、重载）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/31c2bcae2491073c89674fc45c01386c.png" style="height:186px;"/><p>特点（创建对象时初始化）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/43fe37c41efda1fe0c22b77149fd55f7.png" style="height:60px;"/><p>比如下面代码，写了下面那2行后，输出会自动运行打印上面那两个“输出”！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/05ead82aad563c364ffaba2c8a85e10d.png" style="height:34px;"/><p>实际应用场景</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/b51a88a29d8a25c5986e0075a6470dd3.png" style="height:55px;"/><p>一些注意事项</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/94e69af487ea8df6d1118d2fe011cf12.png" style="height:111px;"/><h1 id="4-类的设计（this关键字）"><a href="#4-类的设计（this关键字）" class="headerlink" title="4. 类的设计（this关键字）"></a>4. 类的设计（this关键字）</h1><blockquote><p>①类的设计——this关键字（定义、场景）？<br>②成员变量、局部变量?</p></blockquote><p>this是用来拿到当前对象用的，方便后续.这个对应的属性与方法。<br>比如有个类如下图所示（当对象s1调用此方法时，会输出对象s1在“堆内存”中的首地址。）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/3aaf8425d57384ba6d1b633392631de0.png" style="height:109px;"/><p>那它有什么作用呢？【用于解决变量名称冲突问题】<br>下面举个具体的代码例子（下面那个输出第1个name是对象的name，第2个name是调用方法时传入的name）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/5a0c23452cf188578fa4a4251759f745.png" style="height:160px;"/><p>当然，上面图片中你直接把类中那方法String name改成String n也是可以的，但会被员工骂，毕竟n无法做到见名知意！<br>开发中，我们把上图第1个String name称为“成员变量”（写在类最前面的）；上图方法中形参的String name称为“局部变量（不在类前面定义的所有变量）”。（this用于解决这两变量冲突问题）</p><h1 id="5-类的设计（封装）"><a href="#5-类的设计（封装）" class="headerlink" title="5. 类的设计（封装）"></a>5. 类的设计（封装）</h1><blockquote><p>①类的设计——封装（定义、场景、private、get&#x2F;set方法）？</p></blockquote><p>封装的定义</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/2efa96a9f107874d0f44de17ac91e9ac.png" style="height:287px;"/><p>封装的目标：（针对类中的属性与方法进行“合理隐藏&amp;合理暴露”）<br>比如下图中，一个类中定义了下面那3个属性，在main方法中就不能用“s1.age、s1.chinese、s1.math”了。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/3bf1c365ac48c6f9addd867e2c041dba.png" style="height:105px;"/><p>上面是合理隐藏，对于合理暴露，java用于两种方法set与get</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/130adc4968f752ada09ec067429a7fb9.png" style="height:178px;"/><p>使用get与set后，就能进行对变量的赋值与取值了</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/2a9751085891fcff31cd749290872410.png" style="height:62px;"/><h1 id="6-Javabean类"><a href="#6-Javabean类" class="headerlink" title="6. Javabean类"></a>6. Javabean类</h1><blockquote><p>①javabean含义？要求？应用场景？<br>②jb代码规范？</p></blockquote><p>Javabean定义</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/02e7bf22fc40b385a2d0f413d49f12ab.png" style="height:129px;"/><p>为每一个私有属性自动生成get与set方法（无参&#x2F;有参构造器的生成也可以使用这种方法）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/8b120677f7b1f69a561e051b143db12f.png" style="height:229px;"/><p>应用场景（实际开发中，”学生类“中只存学生属性、get&#x2F;set方法，对学生属性的操作一般再写一个“学生操作类”，这个“学生操作类”中有1个属性就是学生类数据结构）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/5b902c94d655fd4eefc9e004ee6fabe8.png" style="height:151px;"/><p>下面是一个具体的使用例子</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/e611f66e102bf709346c8a387bb22077.png" style="height:369px;"/><p>最后再总结一下，Javabean就是一个“实体类”，此类只有“私有属性+get&#x2F;set方法”，引入这东西<br>是为了实现开发 中的“分层”思想，就是“数据”与“数据的处理业务”相分离！</p><h1 id="7-static关健字"><a href="#7-static关健字" class="headerlink" title="7. static关健字"></a>7. static关健字</h1><blockquote><p>①static是什么，做什么用的？<br>②static修饰“变量”？<br>③static修饰“方法”？<br>④static注意事项？</p></blockquote><p>static关键字是用于将变量、方法等变成静态的，然后让它可以直接“对象.变量&#x2F;方法”，就不用单独new对象了……<br>static定义变量，使用类名进行调用</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/63b62022c2260799c80e8289f0643d41.png" style="height:323px;"/><p>怎么说了，下面这图它这举的例子不好，不应该用name，应该用那“手机品牌”（同时为每个手机品牌创建一个类）（就是用这个类实例的所有对象都指向同一个内存区域）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/b9ed746f62339df92d41bb499e6dc2fb.png" style="height:283px;"/><p>就如上面例子一样，左边主函数访问的name都是访问同一个内存区域，不管输出哪个对象的类，返回的都是以最后修改的那个为准！所以计算机底层原理如下图，name不是存在相应对象内，而是重新开了一个内存区域放</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/cc99ad723b30088da20920cf71c67fbe.png" style="height:360px;"/><p>应用场景（就比如理财通中账户，有一个总金额，以及一堆基金金额……金额就要被定义为静态变量）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/9a65c01e551fb763bdbeb132b343e8b6.png" style="height:48px;"/><p>static修饰方法（静态方法）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/26ed801faf213b6dc6131ff91b161ae2.png" style="height:278px;"/><p>使用场景（用来做工具类）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/5490047620c793562951043f26b6468a.png" style="height:37px;"/><p>静态方法中无法写类的实例属性，会报错（只能写静态属性）；实例方法中可以写！（由使用场景决定）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/c76fc6e8bf17809e8f9924cffbacbe2b.png" style="height:212px;"/><p>再举个例子，比如经典的main方法就是静态的（JVM拿到java代码后，做的第一件事就是Test.main(……)）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/1db6cc9f9d66a3727371db4e28f896a9.png" style="height:284px;"/><p>实际开发中，一般把这种方法写在一个工具类中，使用时直接“工具类名.方法”就行，不用new对象（少占内存），比如“验证码方法……”（创建工具类时，建议将它的构造方法私有一下，让它无法在main方法中new对象，优雅）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/6be3ad952c5db59e6e3ece399d121b73.png" style="height:108px;"/><p>static注意事项：静态成员就是用staic修饰的“静态变量”、“静态方法”。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/87d68c6a019bc86c9ffe50b598a1ec32.png" style="height:105px;"/><p>具体代码例子（count被static修饰，name没被static修饰，run方法没被static修饰）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/19/903ea211b6ab572416df22ea2f710152.png" style="height:271px;"/>]]></content>
+    
+    
+    <summary type="html">类&amp;对象含义、代码定义、new底层原理、构造器、this、封装（合理隐藏&amp;合理暴露）、javabean类、static</summary>
+    
+    
+    
+    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>✍202610第4周工作记录</title>
@@ -35,9 +58,9 @@
     
     <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
     
-    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
@@ -357,9 +380,9 @@
     <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
-    
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
@@ -448,29 +471,6 @@
       
     <summary type="html">&lt;h2 id=&quot;B站视频&quot;&gt;&lt;a href=&quot;#B站视频&quot; class=&quot;headerlink&quot; title=&quot;B站视频&quot;&gt;&lt;/a&gt;B站视频&lt;/h2&gt;&lt;div style=&quot;position:relative;width:90%;padding-top:50.625%;margi</summary>
       
-    
-    
-    
-    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
-    
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌Java基础_Day04</title>
-    <link href="https://blog.sunwei.online/posts/178d6b6.html"/>
-    <id>https://blog.sunwei.online/posts/178d6b6.html</id>
-    <published>2026-10-07T12:42:41.493Z</published>
-    <updated>2026-10-07T12:56:42.405Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-程序流程控制介绍"><a href="#1-程序流程控制介绍" class="headerlink" title="1. 程序流程控制介绍"></a>1. 程序流程控制介绍</h1><blockquote><p>①常见“三种结构”？</p></blockquote><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/d83e7b439d701f7c5666762e982f1338.png" style="height:263px;"/><h1 id="2-分支结构"><a href="#2-分支结构" class="headerlink" title="2. 分支结构"></a>2. 分支结构</h1><blockquote><p>①if分支？<br>②switch分支？使用注意事项？<br>③两者适用场景&#x2F;优缺点？</p></blockquote><p>分支结构的写法</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/8d368444ec1c5e473af86aa2285e541e.png" style="height:256px;"/><p>例子1</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/a061f97a332fd4102c7854dd25717d6d.png" style="height:107px;"/><p>例子2</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/b6bcd142d383f96af13f47617f9edb10.png" style="height:133px;"/><p>例子3</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/f053ea56ab1602da66b691595cd839a5.png" style="height:280px;"/><p>switch介绍，与if的比较</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/c295b26b7994283e5137620ca0bf0ee4.png" style="height:302px;"/><p>具体代码例子</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/bb24fe51e662f48d25c76e16e4a2f38a.png" style="height:146px;"/><p>几点注意事项【特定类型，具体值，穿透】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/5db2c940f33b9734e4b352f3385bdd04.png" style="height:150px;"/><p>错误代码例子1</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/4953b34de1d89ee11aac92e3f38ea065.png" style="height:198px;"/><p>为什么不能用double，因为java中小数运算是不精确的，比如下面这处0.1+0.2!&#x3D;0.3的代码例子</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/19da67d58b21d2e23123456d22f7733f.png" style="height:370px;"/><p>错误代码例子2</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/f532ff8bc3b5f91a284e490a4f51dfa4.png" style="height:221px;"/><p>为什么呢？这个研究下jvm就明白了，实际上switch相当于goto，要在编译时就确定分支结构，效率比if高就是因为它是静态的！</p><p>代码例子3</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/6a7f4b1f678b4774a9ef228f01fe8f5b.png" style="height:277px;"/><p>这穿透性的作用如下所示，可以节约代码量！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/10ce390b9b8b087f398a89ddf6d5c315.png" style="height:187px;"/><h1 id="3-循环结构"><a href="#3-循环结构" class="headerlink" title="3. 循环结构"></a>3. 循环结构</h1><blockquote><p>①for循环？<br>②while循环？<br>③for与while使用场景？<br>④do while循环？与while区别？</p></blockquote><p>for循环结构格式与代码样例</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/55e060b67166baabd1886cf28b647c23.png" style="height:220px;"/><p>具体代码例子与流程</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/00a5c9e3fa02d827e92a2f0b3944a738.png" style="height:222px;"/><p>while的定义与执行流程</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/341918dc19b6da50b8a17d453fe604b6.png" style="height:274px;"/><p>for与while对比</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/1e49f418a37be5c1bd61927df550be1d.png" style="height:73px;"/><p>比如下面这道题，就要用while</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/95a1d14b45573ef64d8da75bb8723159.png" style="height:225px;"/><p>其实也能用for写，但会显得很奇怪</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/cb3c2209d53e445dafcad5c131faba8a.png" style="height:229px;"/><p>do while代码格式</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/a20d06c9ee81a026aa5ca7fc88de2fb8.png" style="height:194px;"/><p>代码例子</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/9acbde571832a8137c9d12f804747651.png" style="height:107px;"/><p>三种循环的区别</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/df436b0f87f725c06f95f6499ef7b962.png" style="height:307px;"/><h1 id="4-循环结构（补）"><a href="#4-循环结构（补）" class="headerlink" title="4. 循环结构（补）"></a>4. 循环结构（补）</h1><blockquote><p>①死循环？<br>②循环嵌套？<br>③break、continue关键字？</p></blockquote><p>三种常见死循环写法如下图。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/9dfa70c7cdabe10f95dead6100d973c9.png" style="height:318px;"/><p>循环嵌套含义与特点：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/47d02ced9f33afdd4d72c7d253d7aa5c.png" style="height:265px;"/><p>break、continue定义：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/f9b76b6076d4625e7cfd2b5274b60703.png" style="height:181px;"/><p>具体代码案例（下面输出01234）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/5e214b82e6b106bc11e25177f3b43203.png" style="height:122px;"/><p>具体代码案例（上面输出012346789）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/8bc29a8fa2eb60d8dbb7783d1c81022c.png" style="height:113px;"/><h1 id="5-random对象"><a href="#5-random对象" class="headerlink" title="5. random对象"></a>5. random对象</h1><blockquote><p>①会使用random随机对象？</p></blockquote><p>random随机对象（左闭右开）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/d4aa49beb2f697582e0bfbc3698713ea.png" style="height:298px;"/><p>如果是生成65-91之间的随机数，我推荐用下面的减法操作（函数中填27）。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/07/64b9a35590f6e6f4325f735069eb7e45.png" style="height:112px;"/>]]></content>
-    
-    
-    <summary type="html">if、switch、for、while、do-while、break/continue、random对象</summary>
     
     
     
