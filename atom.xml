@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-23T11:22:50.769Z</updated>
+  <updated>2026-10-23T12:18:54.356Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📌SMARL论文速读</title>
+    <link href="https://blog.sunwei.online/posts/b6c9f935.html"/>
+    <id>https://blog.sunwei.online/posts/b6c9f935.html</id>
+    <published>2026-10-23T12:18:53.877Z</published>
+    <updated>2026-10-23T12:18:54.356Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="0-介绍"><a href="#0-介绍" class="headerlink" title="0. 介绍"></a>0. 介绍</h1><p>这是我师兄被拒稿的论文，我入手来大修！</p><h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h1><p>Resilient and Efficient Split Federated Learning in IoV via Stackelberg Multi-Agent Meta-Reinforcement Learning<br>基于 Stackelberg 多智能体元强化学习的车联网高韧性与高效分割联邦学习<br>①云—边—端三层架构，车联网场景下，车辆通过网络与边缘服务器协作。<br>②分割联邦学习（SFL），即把模型拆分到车辆和服务器侧执行，并进行协作学习。【模型切分是在端—边之间进行的】<br>③使用的方法是：Stackelberg 多智能体元强化学习。<br>④主要解决的是：SFL 更高效，并在故障或环境变化时更有韧性。</p><h1 id="2-摘要"><a href="#2-摘要" class="headerlink" title="2. 摘要"></a>2. 摘要</h1><p>①车联网里的车辆需要快速运行 AI 任务，但车载设备算力有限；把任务交给远处的云，又可能因为网络传输而变慢。于是论文考虑把 AI 模型拆成两部分：一部分在车辆上运行，另一部分交给附近的边缘服务器。<br>难点是车辆会移动、网络状况会变化，边缘服务器也可能故障。论文因此研究如何安排模型切分、选择边缘服务器和分配计算资源，让系统尽量保持高效，并在故障后尽快恢复。</p><p>②主要可以分成4个模块，如下所示<br>任务聚类（DBSCAN）：把不同运行场景分组。<br>任务编码（VAE）：从历史经验中提取场景信息，帮助策略适应环境变化。<br>车辆—边缘决策（Stackelberg 博弈）：车辆先选切分位置、服务器和资源需求，边缘服务器再分配算力。<br>策略训练（CTDE-DDPG）：训练多智能体策略；车辆和服务器分散决策，云端集中评估和指导训练。</p><h1 id="场景流程"><a href="#场景流程" class="headerlink" title="场景流程"></a>场景流程</h1><p><strong>① 系统里有多辆车、多台边缘服务器和一个中心云</strong><br>每辆车是一个客户端，拥有本地数据和计算能力；附近的路侧单元或 5G 基站作为边缘服务器，提供额外算力；云端负责系统级的模型聚合等功能。<br>论文的通用模型里有 N 辆车和 M 台边缘服务器。仿真实验中则设置了 20 辆车、4 台边缘服务器和 1 台云服务器。</p><p><strong>② 车辆要完成机器学习任务，但车载算力有限</strong><br>例如车辆要做车辆识别或驾驶员疲劳检测。完全在车上运行模型，可能计算太慢；把任务送到较远的云端，又可能增加通信时延。<br>因此论文考虑把模型拆成两段：前一段在车辆上运行，后一段在边缘服务器上运行。论文没有把模型再拆出一段交给云端执行。</p><p><strong>③ 车辆先决定把任务交给哪台边缘服务器、模型在哪里切开</strong><br>每辆车要做几项选择：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/23/c55760dcb446e3b65e278b27a1bf0a95.png" style="height:70px;"/><p><strong>④ 边缘服务器收到车辆的选择后，再决定怎么分配算力</strong><br>辆车可能同时请求同一台边缘服务器，而服务器的计算资源有限。服务器要决定把多少算力分给每辆车。<br>论文把这个先后关系称为 Stackelberg 领导者—跟随者结构：车辆先作选择，作为“领导者”；边缘服务器观察车辆的选择后再分配资源，作为“跟随者”。</p><p><strong>⑤ 运行模型时，车辆先算前半段，再把中间结果发给边缘</strong><br>车辆把输入数据放进本地模型部分，得到中间特征，再通过无线网络发送给选定的边缘服务器。车辆发送的是模型切分处产生的中间数据，不是把原始图片或完整模型都交给云端。</p><p><strong>⑥ 边缘服务器接着计算模型后半段</strong><br>边缘服务器收到中间特征后，继续运行模型剩余部分，完成这次推理或训练所需的计算。<br>如果执行的是训练任务，车辆和边缘服务器之间还需要交换训练过程所需的信息，例如反向传播的梯度；论文的时延模型也分别考虑了前向和反向传输。</p><p><strong>⑦ 联邦学习时，各方还要参与模型聚合</strong><br>在分割联邦学习过程中，各车辆的数据保留在本地，车辆与边缘服务器协作完成模型计算；模型更新还需要经过聚合。论文把客户端到边缘、再到云端的通信开销纳入聚合时延模型。<br>这里的云端聚合和“把模型切一段放在云上运行”是两回事：前者是模型更新汇总，后者是模型执行位置；论文描述的是前者，并未设置云端模型分段执行。</p><p><strong>⑧ 环境变化或服务器故障时，车辆和服务器需要重新安排</strong><br>车辆会移动，网络速率会变化；边缘服务器也可能故障。一旦原来连接的服务器不可用，车辆可能需要重新选服务器、调整模型切分位置，服务器也需要重新分配算力。<br>论文希望 SMARL 能根据变化后的任务和系统状态调整策略，并降低故障后的恢复成本。</p><p><strong>⑨ SMARL 学习如何作出这些选择</strong><br>论文用任务聚类和 VAE 从历史交互中提取当前场景的表示；车辆策略根据场景和本地观测选择服务器、切分位置及资源请求，边缘服务器策略决定资源分配。训练时，云端的集中式 Critic 利用全局信息指导策略更新；实际决策时，各智能体根据各自可用的信息行动。</p><h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><p>这篇论文是研究分割联邦学习方面的，创新点是：①客户端如何选择它的边缘服务器？②客户端的模型应该如何切分？③边缘服务器的资源应该如何分配？</p><h1 id="5-补充一"><a href="#5-补充一" class="headerlink" title="5. 补充一"></a>5. 补充一</h1><p>特别补充一点，模型训练好了之后并不是直接放车子上，车子上只有一部分，模型的中间部分会被保存在边缘服务器，所以推理时也要用到边缘服务器</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/23/b0c8aa52b59d1d301ecde4ac27ee1c06.png" style="height:132px;"/>]]></content>
+    
+    
+    <summary type="html">Resilient and Efficient Split Federated Learning in IoV via Stackelberg Multi-Agent Meta-Reinforcement Learning</summary>
+    
+    
+    
+    <category term="阅读" scheme="https://blog.sunwei.online/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>📌基金&amp;股票警戒</title>
@@ -456,29 +479,6 @@
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌一碗馄饨</title>
-    <link href="https://blog.sunwei.online/posts/47eab010.html"/>
-    <id>https://blog.sunwei.online/posts/47eab010.html</id>
-    <published>2026-10-10T02:53:46.207Z</published>
-    <updated>2026-10-10T02:53:47.648Z</updated>
-    
-    <content type="html"><![CDATA[<div id="short-story-container">  <script>    (function () {      const container = document.getElementById('short-story-container');      const shadowRoot = container.attachShadow({ mode: 'open' });      //【=========标题、作者、AI总述、正文、我的读后感=========】      const storyTitle = '一碗馄饨';      const storyAuthor = '周长海';      const storyAiSummary = '本文记叙了女孩与母亲争吵后离家，一位老婆婆一碗馄饨让她心生感激，在老婆婆的点拨下，女孩恍然大悟，懂得理解与感恩母亲长久默默的付出。';      const storyParagraphs = [        '那天，她跟妈妈又吵架了，一气之下，她转身向外跑去。',        '她走了很长时间，看到前面有个面摊，这才感觉到肚子饿了。可是，她摸遍了身上的口袋，连一个硬币也没有。',        '面摊的主人是一个看上去很和蔼的老婆婆，她看到她站在那里，就问：“孩子，你是不是要吃面?”“可是，可是我忘了带钱。”她有些不好意思地回答。“没关系，我请你吃。”',        '老婆婆端来一碗馄饨和一碟小菜。她满怀感激，刚吃了几口，眼泪就掉了下来，纷纷落在碗里。“你怎么了?”老婆婆关切地问。“我没事，我只是很感激!”她忙擦眼泪，对面摊主人说，“我们不认识，而你却对我这么好，愿意煮馄饨给我吃。可是我妈妈，我跟她吵架，她竟然把我赶出来，还叫我不要再回去!”',        '老婆婆听了，平静地说道：“孩子，你怎么会这么想呢?你想想看，我只不过煮了一碗馄饨给你吃，你就这么感激我，那你妈妈煮了十多年的饭给你吃，你怎么会不感激她呢?你怎么还要跟她吵架?”',        '女孩愣住了。',        '女孩匆匆吃完了馄饨，开始往家走去。当她走到家附近时，一下就看到疲惫不堪的母亲正在路口四处张望……母亲看到她，脸上立即露出了喜色：“赶快过来吧，饭早就做好了，你再不回来吃，菜都要凉了!”',        '这时，女孩的眼泪又开始掉了下来!',        '有时候，我们会对别人给予的小恩小惠“感激不尽”，却对亲人一辈子的恩情“视而不见”。'      ];      const storyReflection = '小时候读过的一篇短文，记录一下。';      //【=========标题、作者、AI总述、正文、我的读后感=========】      const style = document.createElement('style');      style.textContent = `        :host {          display: block;          max-width: 900px;          margin: 18px auto;          padding: 0;          position: relative;          overflow: hidden;          background: rgba(255, 255, 255, 0.82);          border: 1px solid rgba(73, 177, 245, 0.2);          border-radius: 12px;          box-shadow: 0 8px 24px rgba(52, 73, 94, 0.08);        }        .title-wrap {          border-bottom: 1px solid rgba(73, 177, 245, 0.18);          padding: 24px 28px 18px;          margin: 0;          background: linear-gradient(135deg, rgba(73, 177, 245, 0.1), rgba(255, 255, 255, 0.78));          position: relative;        }        .title-wrap::before,        .title-wrap::after {          content: "";          position: absolute;          bottom: -1px;          width: 72px;          height: 3px;          background: #49b1f5;          border-radius: 3px;        }        .title-wrap::before {          left: 28px;        }        .title-wrap::after {          right: 28px;        }        .story-title {          text-align: center;          color: #34495e;          font-size: 28px;          line-height: 1.4;          margin: 0 0 8px;          font-weight: 700;          letter-spacing: 0;          font-family: inherit;        }        .author {          text-align: center;          color: #7f8c8d;          margin: 0;          font-size: 14px;          letter-spacing: 0;        }        .story-intro {          margin: 22px 28px 0;          padding: 14px 18px;          color: #5f6f7a;          background: rgba(73, 177, 245, 0.08);          border-left: 3px solid #49b1f5;          border-radius: 6px;          line-height: 1.8;          font-size: 15px;        }        .story-content {          line-height: 2;          color: #4f5f6d;          text-indent: 2em;          background: transparent;          padding: 22px 28px 8px;          margin: 0;          position: relative;        }        .story-content p {          margin: 0 0 1.15em;          font-size: 16px;        }        .reflection {          background: rgba(73, 177, 245, 0.06);          padding: 20px 28px 24px;          border-top: 1px solid rgba(73, 177, 245, 0.16);          margin: 0;          position: relative;          color: #5f6f7a;          line-height: 1.9;        }        .reflection-title {          color: #34495e;          margin-top: 0;          font-family: inherit;          text-align: left;          font-size: 20px;          border-bottom: 1px solid rgba(73, 177, 245, 0.18);          padding-bottom: 9px;          margin-bottom: 12px;        }        .reflection p {          margin: 0 0 8px;          font-size: 15px;        }        @media (max-width: 600px) {          :host {            margin: 12px 0;            border-radius: 10px;          }          .title-wrap {            padding: 20px 18px 16px;          }          .story-title {            font-size: 23px;          }          .title-wrap::before {            left: 18px;          }          .title-wrap::after {            right: 18px;          }          .story-intro {            margin-left: 18px;            margin-right: 18px;          }          .story-content {            padding: 18px 18px 4px;          }          .story-content p {            font-size: 15px;            line-height: 1.9;          }          .reflection {            padding-left: 18px;            padding-right: 18px;          }        }      `;      shadowRoot.appendChild(style);      const content = document.createElement('div');      content.innerHTML = `        <div class="title-wrap">          <p class="story-title">${storyTitle}</p>          <p class="author">作者：${storyAuthor}</p>        </div>        <div class="story-intro">AI 总述：${storyAiSummary}</div>        <div class="story-content">          ${storyParagraphs.map(paragraph => `<p>${paragraph}</p>`).join('')}        </div>        <div class="reflection">          <h3 class="reflection-title">我的读后感</h3>          <p>${storyReflection}</p>        </div>      `;      shadowRoot.appendChild(content);    })();  </script></div>]]></content>
-    
-    
-    <summary type="html">一篇不错的文章推荐</summary>
-    
-    
-    
-    <category term="阅读" scheme="https://blog.sunwei.online/categories/%E9%98%85%E8%AF%BB/"/>
-    
-    
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-    <category term="短篇小说" scheme="https://blog.sunwei.online/tags/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/"/>
     
   </entry>
   
