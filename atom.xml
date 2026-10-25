@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-10-23T12:34:42.612Z</updated>
+  <updated>2026-10-25T12:35:52.839Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>✍202611第1周工作记录</title>
+    <link href="https://blog.sunwei.online/posts/8a24b8af.html"/>
+    <id>https://blog.sunwei.online/posts/8a24b8af.html</id>
+    <published>2026-10-25T12:35:52.148Z</published>
+    <updated>2026-10-25T12:35:52.839Z</updated>
+    
+    <content type="html"><![CDATA[<div id="graduate-diary-board-202608"></div><script>(function () {const diaryCards = [//【=========请修改下面内容=========】{month: '2026 年 10 月',date: '2026.10.26',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【】。' }]},{month: '2026 年 10 月',date: '2026.10.27',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【】。' }]},{month: '2026 年 10 月',date: '2026.10.28',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【】。' }]},{month: '2026 年 10 月',date: '2026.10.29',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【】。' }]},{month: '2026 年 10 月',date: '2026.10.30',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【】。' }]},{month: '2026 年 10 月',date: '2026.10.31',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【】。' }]},{month: '2026 年 11 月',date: '2026.11.01',title: '本周总结：⭐⭐⭐⭐⭐⭐',blocks: [{ type: 'text', value: '①内容一【✔】。' },{ type: 'image', url: 'https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/09/18/6c1f238414878929283a04e4d148a1fe.png' }]}];//【=========请修改上面内容=========】const host = document.getElementById('graduate-diary-board-202608');if (!host || host.shadowRoot) return;const root = host.attachShadow({ mode: 'open' });const css = document.createElement('style');css.textContent = `:host{display:block;max-width:980px;margin:18px auto;color:#52616b;font-family:inherit}*{box-sizing:border-box}.board{overflow:hidden;border:1px solid rgba(73,177,245,.2);border-radius:12px;background:rgba(255,255,255,.9);box-shadow:0 8px 24px rgba(52,73,94,.08)}.timeline{position:relative;padding:24px 28px 30px 52px}.timeline:before{position:absolute;top:30px;bottom:30px;left:31px;width:2px;background:rgba(73,177,245,.22);content:''}.month{position:relative}.month-title{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:28px;margin:0 0 12px -34px;padding:0 10px;border:1px solid rgba(73,177,245,.24);border-radius:14px;background:#fff;color:#49b1f5;font-size:.82rem;font-weight:700}.record{position:relative;margin:0 0 24px;padding:20px 18px;border:1px solid #a9d8f4;border-radius:9px;background:#f8fcff;box-shadow:0 6px 16px rgba(42,111,157,.16)}.record:before{position:absolute;top:22px;left:-27px;width:10px;height:10px;border:3px solid #fff;border-radius:50%;background:#49b1f5;box-shadow:0 0 0 1px rgba(73,177,245,.3);content:''}.record-date{display:inline-flex;align-items:center;padding:5px 10px;border:1px solid rgba(73,177,245,.34);border-radius:7px;background:#eaf6ff;color:#28648d;font-size:.82rem;font-weight:700;line-height:1.2}.record-title{margin:12px 0 8px;color:#52616b;font-size:1rem;font-weight:600}.record-note{margin:0;color:#687780;font-size:.9rem;line-height:1.8}.record-note p{margin:0 0 14px}.record-note p:last-child{margin-bottom:0}.record-note img{display:block;width:auto;max-width:100%;height:210px;margin:10px 0 16px;object-fit:contain;border:1px solid #d7eaf7;border-radius:6px;background:#fff;box-shadow:0 3px 10px rgba(42,111,157,.1)}@media(max-width:680px){.timeline{padding:22px 18px 26px 42px}.timeline:before{left:23px}.month-title{margin-left:-28px}.record:before{left:-25px}.record-note img{height:auto;max-height:210px}}`;root.appendChild(css);const lightboxStyle = document.createElement('style');lightboxStyle.textContent = '.record-note img{cursor:zoom-in}.diary-lightbox{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.82);cursor:zoom-out}.diary-lightbox img{display:block;width:auto;max-width:96vw;height:auto;max-height:92vh;margin:0;border:0;border-radius:4px;object-fit:contain;box-shadow:0 8px 32px rgba(0,0,0,.35)}';root.appendChild(lightboxStyle);root.innerHTML += ` <section class="board"> <div class="timeline" data-timeline></div> </section>`;const records = diaryCards.map(card => ({month: card.month,date: card.date,title: card.title,note: card.blocks.map(block => block.type === 'image'? '<img src="' + block.url + '" alt="" loading="lazy">': '<p>' + block.value + '</p>').join('')}));const timeline = root.querySelector('[data-timeline]');function render() {const months = {};records.forEach(record => {if (!months[record.month]) months[record.month] = [];months[record.month].push(record);});timeline.innerHTML = Object.keys(months).map(month => '<section class="month"><h2 class="month-title">' + month + '</h2>' + months[month].map(item => '<article class="record"><time class="record-date">' + item.date + '</time><h3 class="record-title">' + item.title + '</h3><div class="record-note">' + item.note + '</div></article>').join('') + '</section>').join('');}function openDiaryImage(img) {const src = img.currentSrc || img.src;if (window.Fancybox && typeof window.Fancybox.show === 'function') {window.Fancybox.show([{ src: src, type: 'image', caption: img.alt || '' }]);return;}const overlay = document.createElement('div');overlay.className = 'diary-lightbox';overlay.setAttribute('role', 'dialog');overlay.setAttribute('aria-label', '图片预览');const preview = document.createElement('img');preview.src = src;preview.alt = img.alt || '';overlay.appendChild(preview);overlay.addEventListener('click', () => overlay.remove());root.appendChild(overlay);}function bindDiaryImageZoom() {root.querySelectorAll('.record-note img').forEach(img => {if (img.dataset.diaryZoomBound) return;img.dataset.diaryZoomBound = 'true';img.addEventListener('click', event => {event.preventDefault();event.stopPropagation();openDiaryImage(img);});});}render();bindDiaryImageZoom();}());</script>]]></content>
+    
+    
+    <summary type="html">用于202611第1周工作记录（1026至1101）</summary>
+    
+    
+    
+    <category term="日记" scheme="https://blog.sunwei.online/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+    <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>📌SMARL论文实验</title>
@@ -104,9 +129,9 @@
     <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
-    
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
     
   </entry>
   
@@ -127,9 +152,9 @@
     <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
-    
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
     
   </entry>
   
@@ -150,9 +175,9 @@
     <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
-    
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
     
   </entry>
   
@@ -175,9 +200,9 @@
     
     <category term="研究生" scheme="https://blog.sunwei.online/tags/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
     
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
     <category term="工作记录" scheme="https://blog.sunwei.online/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
     
   </entry>
   
@@ -382,9 +407,9 @@
     <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
-    
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
+    
+    <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
     
   </entry>
   
@@ -442,29 +467,6 @@
     <updated>2026-10-11T08:39:20.688Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-选择数据集"><a href="#1-选择数据集" class="headerlink" title="1. 选择数据集"></a>1. 选择数据集</h1><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/e76ce988f893ec917de6c402f8566600.png" style="height:131px;"/><p>这里的节点是指站点，比如杭州地铁有80个站点；数据大致长下面样子</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/53317138163c9d3f55cc74e87d5d141f.png" style="height:120px;"/><h1 id="2-选择模型"><a href="#2-选择模型" class="headerlink" title="2. 选择模型"></a>2. 选择模型</h1><p>这篇论文使用的核心模型是 TGCRN，全称是：Time-aware Graph Convolutional Recurrent Network（时间感知图卷积循环网络）<br>模型的输入就是上面第1节的图片2那张表！输出是“预测时间点时，各节点的流量”。</p><h1 id="3-对比算法"><a href="#3-对比算法" class="headerlink" title="3. 对比算法"></a>3. 对比算法</h1><p>Central：把所有数据集中起来训练</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/0bf3ed32dfced65f5b7ddbe646b29767.png" style="height:244px;"/><p>FLoS：不上传原始数据，但使用固定交通关系图（与本文方法相比，没有体现实时变化关系的特性）。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/9cc0ba1b0fdb0d3c240c5e620de7cf66.png" style="height:122px;"/><p>FedGTP：尝试学习客户端之间的关系，但主要是静态关系（和FLoS类似，节点之间关系不变）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/79a11f2ec03e0d037ac5af52c8a5503d.png" style="height:245px;"/><p>FedSTGD：本文方法，学习动态的客户端间关系<br>还有一堆其它乱七八糟的，就不写了……</p><h1 id="4-评价指标"><a href="#4-评价指标" class="headerlink" title="4. 评价指标"></a>4. 评价指标</h1><p>有 3个评价指标：<br>RMSE：均方根误差；<br>MAE：平均绝对误差；<br>MAPE：平均绝对百分比误差。</p><h1 id="5-模块分解"><a href="#5-模块分解" class="headerlink" title="5. 模块分解"></a>5. 模块分解</h1><p>联邦非线性计算分解模块（FNCD）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/0d4ca9e5f9bb62978c369206681ac1f2.png" style="height:167px;"/><p>图节点嵌入增强模块（GNEA）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/7c5e60678a09291cdde6ba30b77e6b0a.png" style="height:165px;"/><h1 id="6-实验（图）"><a href="#6-实验（图）" class="headerlink" title="6. 实验（图）"></a>6. 实验（图）</h1><h2 id="6-1-图1解释"><a href="#6-1-图1解释" class="headerlink" title="6.1 图1解释"></a>6.1 图1解释</h2><p>（a）不同日期的交通节点关系会变化<br>横轴和纵轴是不同的交通节点编号，例如 14、30、34、38、47、53、56、64、68、69。这里的节点可以理解为杭州地铁中的不同地铁站。每个小方格表示两个地铁站之间的空间依赖关系。颜色越明显，表示两个节点之间的交通联系越强或越明显。【地铁站之间的交通关系不是固定不变的，而是会随着星期和时间变化。】<br>（b）把交通节点分给不同客户端<br>针对杭州的数据集，把这数据集分成3个客户端，实线代表客户端内部的空间依赖关系；虚线代表不同客户端之间的空间依赖关系。<br>（c）FedSTGD 和其他方法的预测效果比较，rmse是预测误差，越小越好；<br>（d）FedSTGD 的联邦非线性计算分解方法，和其他方法使用的 AdptPoLU 非线性近似方法。【证明第5章节模块1】<br>x轴：k&#x3D;2、k&#x3D;3、k&#x3D;4 表示 AdptPoLU 使用的多项式近似阶数；FedSTGD 表示本文方法使用的 FNCD 联邦非线性计算分解模块。<br>y轴：3个误差与运行时间，都是越小越好。<br>这张图要详细讲下非线性关系是什么东西，先讲下线性关系</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/7075ba6d9d7b3f964226137405f9d4ad.png" style="height:145px;"/><p>非线性就是更复杂一点的，客流变化与其它站点的不是成比例！<br>（e）主要 是用来验证图节点嵌入增强模块 GNEA 到底有没有用。【第5章节模块2】<br>x轴：集中学习（参考上限）；w&#x2F;o GNEA（去掉模块）；FedSTGD（使用模块）<br>y軕：一堆误差，都是越小越好……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/1a8e0b3311a7aeec85f7fc27e6bcc4f7.png" style="height:266px;"/><h2 id="6-2-图2解释"><a href="#6-2-图2解释" class="headerlink" title="6.2 图2解释"></a>6.2 图2解释</h2><p>左边3个：其实就是第5章节的2个模块。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/ae38b18f70b358f0b66ae8334e966a98.png" style="height:155px;"/><p>中间那3层，第一层与第三层对应那2个模块的详细解读<br>第二层就是联邦流程……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/ea087e9b30a38a38b313ffeef0d7ea9c.png" style="height:273px;"/><h2 id="6-3-图3解释"><a href="#6-3-图3解释" class="headerlink" title="6.3 图3解释"></a>6.3 图3解释</h2><p>一个参数敏感性分析图。它想研究：FedSTGD中的一些设置改变后，预测效果会不会发生明显变化。<br>研究参数有3个：客户端数量，神经网络中负责处理复杂变化的计算部件，数据非独立程度（左边使用HZMetro数据集，右边使用NYC-Taxi数据集）<br>（ab）比较了使用 2个、4个、8个客户端时的效果。<br>（cd）使用不同计算部件时的影响。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/71aa8cf37867fbd67035f9d857e882d9.png" style="height:127px;"/><p>（ef）不同数据非独立程度的影响</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/b0f72993ed7ad746d7b137945af710a1.png" style="height:363px;"/><h1 id="7-实验（表）"><a href="#7-实验（表）" class="headerlink" title="7. 实验（表）"></a>7. 实验（表）</h1><h2 id="7-1-表1解释"><a href="#7-1-表1解释" class="headerlink" title="7.1 表1解释"></a>7.1 表1解释</h2><p>HZMetro：杭州地铁，包含80个地铁站，每15分钟记录一次数据，时间范围是2019年1月1日至1月25日，数据规模为2.35M。<br>SHMetro：上海地铁，包含288个地铁站，每15分钟记录一次数据，时间范围是2016年7月1日至9月30日，数据规模为811.8M。<br>NYC-Bike：纽约共享单车，包含250个单车站点，每30分钟记录一次，时间范围是2016年4月1日至6月30日，数据规模为30.7M。<br>NYC-Taxi：纽约出租车，包含266个出租车统计区域，每30分钟记录一次，时间范围同样是2016年4月1日至6月30日，数据规模为35M。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/d466e542119dcd6af937f3e16d8d3b09.png" style="height:117px;"/><h2 id="7-2-表2解释"><a href="#7-2-表2解释" class="headerlink" title="7.2 表2解释"></a>7.2 表2解释</h2><p>MFSTGNN、FLoS：关系提前规定好<br>FCGCN、CTFL：假设大家有一张公开或统一的图<br>FASTGNN、FedSTG、DSTGCRN、FUELS：尝试利用客户端之间的信息<br>FedGTP：能恢复关系，但主要是静态关系<br>FedSTGD：动态学习客户端之间的关系</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/3c5f0285d462fc58fae9ac379f8d1457.png" style="height:234px;"/><h2 id="7-3-表3解释"><a href="#7-3-表3解释" class="headerlink" title="7.3 表3解释"></a>7.3 表3解释</h2><p>表3主要证明了四件事：</p><ol><li>GNEA有用，去掉后效果会下降；</li><li>动态关系有用，只使用静态关系会变差；</li><li>客户端之间的关系很重要，不同区域之间确实会相互影响；</li><li>客户端内部关系也重要，不能只看不同客户端之间的联系。</li></ol><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/c23006f64e7163c5cfbed6a4d15224a5.png" style="height:170px;"/><p>每一列是什么意思</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/cdb56bd4eb3d2f3f75364012b4ba9137.png" style="height:203px;"/>]]></content>
-    
-    
-    <summary type="html">Unlocking Dynamic Inter-Client Spatial Dependencies: A Federated Spatio-Temporal Graph Learning Method for Traffic Flow Forecasting</summary>
-    
-    
-    
-    <category term="阅读" scheme="https://blog.sunwei.online/categories/%E9%98%85%E8%AF%BB/"/>
-    
-    
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-    <category term="论文" scheme="https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌FedSTGD论文速读</title>
-    <link href="https://blog.sunwei.online/posts/be3cad30.html"/>
-    <id>https://blog.sunwei.online/posts/be3cad30.html</id>
-    <published>2026-10-11T08:24:46.360Z</published>
-    <updated>2026-10-11T08:52:22.281Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h1><p>Unlocking Dynamic Inter-Client Spatial Dependencies: A Federated Spatio-Temporal Graph Learning Method for Traffic Flow Forecasting<br>解锁客户端间动态空间依赖关系：一种用于交通流预测的联邦时空图学习方法<br>①场景是：交通流预测方向，联邦学习的<br>②然后这篇论文主要是研究多个客户端，客户端中有多个站点，同一客户端内部站点与不同客户端之间站点之间有“随时间变化的联系”！</p><h1 id="2-摘要"><a href="#2-摘要" class="headerlink" title="2. 摘要"></a>2. 摘要</h1><p>①不同地区、部门或企业分别拥有部分交通数据，数据不能直接汇总；但不同区域之间的交通流又存在相互影响，而且这种空间关系会随时间变化。传统联邦学习通常忽略了这种“客户端之间的动态空间依赖”。<br>②论文提出 FedSTGD 联邦时空图学习框架，尝试在各客户端数据不出本地的情况下，学习不同客户端之间动态变化的交通关联关系。用于交通流预测时，FedSTGD 在 RMSE、MAE、MAPE 等指标上优于现有联邦方法，效果接近集中式训练。</p><h1 id="3-场景流程"><a href="#3-场景流程" class="headerlink" title="3. 场景流程"></a>3. 场景流程</h1><p><strong>① 不同客户端分别拥有部分交通数据。</strong><br>论文中的客户端不是单独的一辆车，而是不同的交通数据持有方，可以理解为不同的交通管理部门、地铁运营公司或数据平台。每个客户端只掌握整个交通网络的一部分数据（多个节点）。例如，客户端 A 掌握部分地铁站的客流量，客户端 B 掌握另一部分地铁站的客流量，客户端 C 掌握其他区域的数据。原始客流数据始终保存在各自客户端本地。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/2616a78827d6be9a26c7835398fb6f50.png" style="height:270px;"/><p><strong>② 每个客户端把自己的交通数据组织成局部交通图。</strong><br>在论文中，交通节点可以理解为地铁站、共享单车站点或出租车区域。节点上的数值表示某个时间段的交通流量，例如某个地铁站在 8:00—8:15 期间有多少人进站。节点之间的边表示交通节点之间存在联系，例如两个相邻地铁站之间存在客流传递关系。这样，每个客户端都有一张自己的局部交通图。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/53317138163c9d3f55cc74e87d5d141f.png" style="height:120px;"/><p><strong>③ 客户端保存一段连续的历史交通流量。</strong><br>模型不会只看当前一个时间点，而是会观察过去一段时间的交通变化。例如，客户端 A 可能保存 7:00、7:15、7:30、7:45、8:00 等多个时间点的地铁客流量。模型利用这些历史数据，预测接下来 8:15、8:30 等时间点的客流量。</p><p><strong>④ 客户端首先学习自己内部的交通关系。</strong><br>客户端 A 可以直接使用自己的数据，学习 A 区域内部不同地铁站之间的关系。例如，A 区域的一个住宅区地铁站客流增加后，可能会导致另一个换乘站客流增加。因为这些站点都属于客户端 A，所以 A 可以在本地完成这种关系的建模，不需要向其他客户端询问数据。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/8c5ec192df52cfc6ac626bb1185a29e7.png" style="height:165px;"/><p><strong>⑤ 但是不同客户端之间也存在交通影响。</strong><br>真正困难的是跨客户端关系。例如，客户端 A 管理的住宅区地铁站客流增加后，可能会影响客户端 B 管理的商务区地铁站。如果 A 和 B 直接共享原始客流数据，可能会带来隐私和数据管理问题。因此，论文要解决的不是简单的“客户端内部预测”，而是要在不交换原始数据的情况下，学习 A、B、C 之间的动态交通联系。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/bbd0483c1455ddafcd9018e750896082.png" style="height:107px;"/><p><strong>⑥ 这种客户端之间的关系还会随时间变化。</strong><br>A 区和 B 区之间的交通关系并不是固定的。工作日早高峰时，住宅区到商务区的联系可能很强；晚上下班时，方向可能反过来；周末时，商业区和景点附近的联系可能变得更强。因此，模型不能只使用一张固定的交通关系图，而要根据当前交通状态动态调整不同节点之间的关系。</p><p><strong>⑦ 服务器先给各个客户端发送当前的共享模型。</strong><br>训练开始时，服务器保存一个初始的全局模型。这个模型可以理解为一个用于交通流预测的通用模型。服务器把模型的共享部分发送给 A、B、C，三个客户端分别在自己的本地数据上进行训练。这里发送的是模型参数，不是其他客户端的交通原始数据。</p><p><strong>⑧ 客户端在本地提取自己的交通特征。</strong><br>每个客户端先对自己的历史交通流量进行处理，提取出本地交通特征。例如，客户端 A 会根据本地地铁站过去几个时间段的客流量，得到一个表示“当前 A 区交通状态”的特征。论文使用 MLP 对这些本地特征进行变换，得到可以用于后续协同计算的中间表示。</p><p><strong>⑨ 客户端把中间表示发送给服务器，而不是发送原始数据。</strong><br>客户端 A 不会把“每个地铁站具体有多少人”直接发给服务器，而是先将本地数据通过模型转换成中间结果。这个中间结果可以理解为对本地交通状态的编码。客户端 B、C 也做同样的处理，然后把这些经过变换的结果发送给服务器。</p><p><strong>⑩ 服务器对不同客户端的中间结果进行临时聚合。</strong><br>服务器收到 A、B、C 的中间结果后，会把它们进行求和或组合，然后把组合结果返回给各个客户端。这里要特别注意：这一步还不是最终的模型参数聚合，而是为了帮助客户端计算“不同客户端之间的交通关系”。服务器主要承担跨客户端中间计算的协调工作。</p><p><strong>⑪ 客户端结合返回结果计算跨区域交通关系。</strong><br>客户端 A 收到服务器返回的聚合结果后，会把它和自己的本地特征、图节点嵌入结合起来，估计 A 区与 B 区、C 区之间的空间依赖关系。比如，模型可能发现当前早高峰期间，A 区某个地铁站的客流变化对 B 区某个换乘站影响较大。客户端 B、C 也分别进行类似计算。</p><p><strong>⑫ 每个客户端利用综合信息做预测。</strong><br>比如客户端 A 原来只知道北区的客流情况，现在服务器又给了它一些经过处理的其他区域信息。于是 A 不仅能看到“北区现在有多少人”，还可以参考“其他区域的交通变化可能会不会影响北区”，然后预测北区下一时段的客流量。</p><p><strong>⑬ 客户端检查自己的预测准不准确。</strong><br>客户端 A 预测北区某个地铁站下一小时有 1000 人，后来真实数据是 1200 人，那么预测就有误差。客户端会根据这个误差判断模型哪里做得不好。B、C 客户端也会分别检查自己区域的预测结果。</p><p><strong>⑭ 每个客户端在本地修改模型。</strong><br>客户端根据预测错误调整自己的模型。例如，模型总是低估早高峰客流，那么客户端就会调整模型，让它以后更加重视早高峰数据。这个修改过程只在客户端本地完成。</p><p><strong>⑮ 客户端把“学习经验”发送给服务器。</strong><br>客户端不会把“北区每个地铁站具体有多少人”发出去，而是只发送模型参数。模型参数可以理解为模型通过训练得到的一些经验，例如“早高峰对预测很重要”“相邻站点之间存在影响”等。</p><p><strong>⑯ 服务器把不同客户端的经验合在一起。</strong><br>服务器收到 A、B、C 三个客户端的模型参数后，把它们进行综合。可以简单理解为：A 贡献了北区经验，B 贡献了南区经验，C 贡献了中心区经验，服务器把三方面经验合成一个更全面的模型。</p><p><strong>⑰ 服务器把新模型发回各个客户端。</strong><br>服务器整理出新的模型后，再发回给 A、B、C。这样，A 不仅保留自己的本地知识，也能使用其他区域共同贡献出来的经验。</p><p><strong>⑱ 下一轮继续重复。</strong><br>接下来又开始新一轮训练：每个客户端用自己的数据做预测，检查错误，修改模型，再把模型经验交给服务器。服务器再次把大家的经验合起来，然后发回去。<br>注意：<br>——&gt;与平常的联邦学习 不同，它一轮包含2次聚合，第一类聚合就是用来解决不同客户端之间节点关系问题的</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/11/50955d9df0e91de22cf8878213898c67.png" style="height:189px;"/><h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><p>我总结一下这篇论文吧，联邦学习方向的，一个客户端包含多个地铁等站点的交通流信息，然后客户端之间协同训练交通流量预测模型。<br>【这篇论文创新点在，它研究动态性的节点之间关系，不仅研究同一客户端内部不同节点间的，不同客户端节点的关系也研究】</p>]]></content>
     
     
     <summary type="html">Unlocking Dynamic Inter-Client Spatial Dependencies: A Federated Spatio-Temporal Graph Learning Method for Traffic Flow Forecasting</summary>
