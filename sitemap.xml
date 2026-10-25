@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.sunwei.online/bilibili/all.json</loc>
+    
+    <lastmod>2026-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sunwei.online/bilibili/config.json</loc>
     
     <lastmod>2026-10-25</lastmod>
@@ -38,15 +47,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/bilibili/all.json</loc>
-    
-    <lastmod>2026-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sunwei.online/statistics/index.html</loc>
     
     <lastmod>2026-10-25</lastmod>
@@ -57,6 +57,33 @@
   
   <url>
     <loc>https://blog.sunwei.online/tags/index.html</loc>
+    
+    <lastmod>2026-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/personal/about/index.html</loc>
+    
+    <lastmod>2026-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/personal/love/index.html</loc>
+    
+    <lastmod>2026-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/personal/time/index.html</loc>
     
     <lastmod>2026-10-25</lastmod>
     
@@ -102,33 +129,6 @@
   
   <url>
     <loc>https://blog.sunwei.online/life/music/index.html</loc>
-    
-    <lastmod>2026-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/personal/about/index.html</loc>
-    
-    <lastmod>2026-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/personal/love/index.html</loc>
-    
-    <lastmod>2026-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sunwei.online/personal/time/index.html</loc>
     
     <lastmod>2026-10-25</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/posts/fbbb247.html</loc>
+    <loc>https://blog.sunwei.online/posts/68dddc2d.html</loc>
     
     <lastmod>2026-10-25</lastmod>
     
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/posts/68dddc2d.html</loc>
+    <loc>https://blog.sunwei.online/posts/fbbb247.html</loc>
     
     <lastmod>2026-10-25</lastmod>
     
