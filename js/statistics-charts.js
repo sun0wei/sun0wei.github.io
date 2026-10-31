@@ -131,7 +131,7 @@
       })
       window.addEventListener('resize', () => chart.resize())
       if (updated) {
-        const range = stats.windowStart && stats.windowEnd ? `${stats.windowStart} 至 ${stats.windowEnd}` : '近 7 天'
+        const range = stats.windowStart && stats.windowEnd ? `历史累计（${stats.windowStart} 至 ${stats.windowEnd}）` : '历史累计'
         updated.textContent = `${range} · 更新于 ${stats.updatedAt ? new Date(stats.updatedAt).toLocaleString('zh-CN') : '未知时间'}`
       }
       el.dataset.loading = 'false'
@@ -139,7 +139,7 @@
     }).catch(error => {
       console.warn('访客全球分布：', error)
       if (empty) empty.hidden = false
-      if (updated) updated.textContent = '近 7 天 · 地域数据暂不可用'
+      if (updated) updated.textContent = '历史累计 · 地域数据暂不可用'
       el.dataset.loading = 'false'
     })
   }
