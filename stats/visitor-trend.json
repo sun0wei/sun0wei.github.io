@@ -1,1 +1,6933 @@
-{"version":1,"source":"51la-trend-day","startDay":null,"endDay":null,"updatedAt":null,"days":[],"months":[]}
+{
+  "version": 1,
+  "source": "51la-trend-day",
+  "startDay": "2025-01-01",
+  "endDay": "2026-10-30",
+  "updatedAt": "2026-10-31T11:57:11.215Z",
+  "days": [
+    {
+      "time": "2025-01-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-01-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-02-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-03-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-04-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-05-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-06-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-07-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-08-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-09-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-10-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-11-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2025-12-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-01-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-02-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-03-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-04-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-05-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-06-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-07-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-08-31",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-13",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-14",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-15",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-16",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-17",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-18",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-19",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-20",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-21",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-22",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-23",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-24",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-25",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-26",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-27",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-28",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-29",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-09-30",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-05",
+      "uv": 1,
+      "newUserCount": 1,
+      "sv": 1,
+      "pv": 11,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 3802930
+    },
+    {
+      "time": "2026-10-06",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 5,
+      "pv": 75,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 2128816.2
+    },
+    {
+      "time": "2026-10-07",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 4,
+      "pv": 27,
+      "ip": 1,
+      "bounceRate": 0.5,
+      "avgDuration": 1178378.75
+    },
+    {
+      "time": "2026-10-08",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 6,
+      "pv": 71,
+      "ip": 1,
+      "bounceRate": 0.3333,
+      "avgDuration": 1875011.8333
+    },
+    {
+      "time": "2026-10-09",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 2,
+      "pv": 35,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 891613
+    },
+    {
+      "time": "2026-10-10",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 5,
+      "pv": 82,
+      "ip": 1,
+      "bounceRate": 0.2,
+      "avgDuration": 2378847.4
+    },
+    {
+      "time": "2026-10-11",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 8,
+      "pv": 87,
+      "ip": 1,
+      "bounceRate": 0.125,
+      "avgDuration": 1153177
+    },
+    {
+      "time": "2026-10-12",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 2,
+      "pv": 9,
+      "ip": 1,
+      "bounceRate": 0.5,
+      "avgDuration": 241987
+    },
+    {
+      "time": "2026-10-13",
+      "uv": 2,
+      "newUserCount": 1,
+      "sv": 5,
+      "pv": 13,
+      "ip": 2,
+      "bounceRate": 0.6,
+      "avgDuration": 971073.2
+    },
+    {
+      "time": "2026-10-14",
+      "uv": 2,
+      "newUserCount": 1,
+      "sv": 5,
+      "pv": 16,
+      "ip": 2,
+      "bounceRate": 0.4,
+      "avgDuration": 308302.8
+    },
+    {
+      "time": "2026-10-15",
+      "uv": 2,
+      "newUserCount": 1,
+      "sv": 2,
+      "pv": 3,
+      "ip": 2,
+      "bounceRate": 0.5,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-16",
+      "uv": 3,
+      "newUserCount": 2,
+      "sv": 7,
+      "pv": 40,
+      "ip": 4,
+      "bounceRate": 0,
+      "avgDuration": 1083291.5714
+    },
+    {
+      "time": "2026-10-17",
+      "uv": 1,
+      "newUserCount": 1,
+      "sv": 2,
+      "pv": 17,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 201125.5
+    },
+    {
+      "time": "2026-10-18",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 2,
+      "pv": 14,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 1773490.5
+    },
+    {
+      "time": "2026-10-19",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 5,
+      "pv": 17,
+      "ip": 1,
+      "bounceRate": 0.2,
+      "avgDuration": 752738.8
+    },
+    {
+      "time": "2026-10-20",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 4,
+      "pv": 17,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 914330.5
+    },
+    {
+      "time": "2026-10-21",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 1,
+      "pv": 1,
+      "ip": 1,
+      "bounceRate": 1,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-22",
+      "uv": 3,
+      "newUserCount": 2,
+      "sv": 5,
+      "pv": 16,
+      "ip": 3,
+      "bounceRate": 0.4,
+      "avgDuration": 110506.2
+    },
+    {
+      "time": "2026-10-23",
+      "uv": 3,
+      "newUserCount": 2,
+      "sv": 7,
+      "pv": 16,
+      "ip": 3,
+      "bounceRate": 0.5714,
+      "avgDuration": 575119.7143
+    },
+    {
+      "time": "2026-10-24",
+      "uv": 1,
+      "newUserCount": 1,
+      "sv": 1,
+      "pv": 1,
+      "ip": 1,
+      "bounceRate": 1,
+      "avgDuration": 0
+    },
+    {
+      "time": "2026-10-25",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 3,
+      "pv": 27,
+      "ip": 1,
+      "bounceRate": 0.3333,
+      "avgDuration": 1209932.3333
+    },
+    {
+      "time": "2026-10-26",
+      "uv": 3,
+      "newUserCount": 2,
+      "sv": 5,
+      "pv": 11,
+      "ip": 2,
+      "bounceRate": 0.4,
+      "avgDuration": 59995.4
+    },
+    {
+      "time": "2026-10-27",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 1,
+      "pv": 5,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 66915
+    },
+    {
+      "time": "2026-10-28",
+      "uv": 1,
+      "newUserCount": 1,
+      "sv": 1,
+      "pv": 3,
+      "ip": 1,
+      "bounceRate": 0,
+      "avgDuration": 183901
+    },
+    {
+      "time": "2026-10-29",
+      "uv": 2,
+      "newUserCount": 1,
+      "sv": 3,
+      "pv": 16,
+      "ip": 2,
+      "bounceRate": 0.6667,
+      "avgDuration": 576845.3333
+    },
+    {
+      "time": "2026-10-30",
+      "uv": 1,
+      "newUserCount": 0,
+      "sv": 3,
+      "pv": 5,
+      "ip": 1,
+      "bounceRate": 0.6667,
+      "avgDuration": 3084.3333
+    }
+  ],
+  "months": [
+    {
+      "time": "2025-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2025-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 28
+    },
+    {
+      "time": "2025-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2025-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 30
+    },
+    {
+      "time": "2025-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2025-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 30
+    },
+    {
+      "time": "2025-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2025-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2025-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 30
+    },
+    {
+      "time": "2025-10",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2025-11",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 30
+    },
+    {
+      "time": "2025-12",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2026-01",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2026-02",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 28
+    },
+    {
+      "time": "2026-03",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2026-04",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 30
+    },
+    {
+      "time": "2026-05",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2026-06",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 30
+    },
+    {
+      "time": "2026-07",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2026-08",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 31
+    },
+    {
+      "time": "2026-09",
+      "uv": 0,
+      "newUserCount": 0,
+      "sv": 0,
+      "pv": 0,
+      "ip": 0,
+      "bounceRate": 0,
+      "avgDuration": 0,
+      "days": 30
+    },
+    {
+      "time": "2026-10",
+      "uv": 38,
+      "newUserCount": 16,
+      "sv": 95,
+      "pv": 635,
+      "ip": 38,
+      "bounceRate": 0.27988,
+      "avgDuration": 748047.1122966666,
+      "days": 30
+    }
+  ]
+}
