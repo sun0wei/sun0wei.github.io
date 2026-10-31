@@ -69,6 +69,38 @@
     chart.on('click', 'series', event => { if (event.data && event.data.path) window.location.href = '/' + event.data.path })
   }
 
+  function buildWeeklyTrend (days) {
+    const daily = days
+      .filter(item => item && /^\d{4}-\d{2}-\d{2}$/.test(String(item.time || '')))
+      .sort((a, b) => String(a.time).localeCompare(String(b.time)))
+    if (!daily.length) return []
+
+    const latest = new Date(`${daily[daily.length - 1].time}T00:00:00Z`)
+    const cutoff = new Date(latest)
+    cutoff.setUTCDate(cutoff.getUTCDate() - 364)
+    const grouped = {}
+
+    daily.forEach(item => {
+      const date = new Date(`${item.time}T00:00:00Z`)
+      if (Number.isNaN(date.getTime()) || date < cutoff) return
+      const day = date.getUTCDay()
+      const mondayOffset = day === 0 ? -6 : 1 - day
+      date.setUTCDate(date.getUTCDate() + mondayOffset)
+      const weekStart = date.toISOString().slice(0, 10)
+      const bucket = grouped[weekStart] || {
+        time: weekStart, end: item.time, uv: 0, sv: 0, pv: 0, days: 0
+      }
+      bucket.end = item.time > bucket.end ? item.time : bucket.end
+      bucket.uv += Number(item.uv || 0)
+      bucket.sv += Number(item.sv || 0)
+      bucket.pv += Number(item.pv || 0)
+      bucket.days += 1
+      grouped[weekStart] = bucket
+    })
+
+    return Object.keys(grouped).sort().map(week => grouped[week])
+  }
+
   function initVisitorTrendChart () {
     const el = getElement('visitor-trend-chart')
     if (!el || el.dataset.loading === 'true') return
@@ -82,10 +114,9 @@
         return response.json()
       })
       .then(stats => {
-        const allMonths = Array.isArray(stats.months) ? stats.months.filter(item => item && item.time) : []
-        // 只展示缓存中最新的 12 个完整月份，不重新请求 51.LA。
-        const months = allMonths.slice(-12)
-        if (!months.length) {
+        // 使用已有的每日缓存按周汇总，最近一年约 52 个点，不重新请求 51.LA。
+        const weeks = Array.isArray(stats.days) ? buildWeeklyTrend(stats.days) : []
+        if (!weeks.length) {
           if (empty) empty.hidden = false
           el.dataset.loading = 'false'
           return
@@ -97,15 +128,15 @@
           tooltip: {
             trigger: 'axis',
             formatter: params => {
-              const item = months[params[0].dataIndex] || {}
-              return `${item.time}<br/>访问会话：${Number(item.sv || 0).toLocaleString('zh-CN')}<br/>访客 UV：${Number(item.uv || 0).toLocaleString('zh-CN')}<br/>浏览量 PV：${Number(item.pv || 0).toLocaleString('zh-CN')}`
+              const item = weeks[params[0].dataIndex] || {}
+              return `${item.time} 至 ${item.end}<br/>访问会话：${Number(item.sv || 0).toLocaleString('zh-CN')}<br/>访客 UV：${Number(item.uv || 0).toLocaleString('zh-CN')}（每日累计）<br/>浏览量 PV：${Number(item.pv || 0).toLocaleString('zh-CN')}`
             }
           },
           grid: { left: 52, right: 18, top: 18, bottom: 40 },
           xAxis: {
             type: 'category',
             boundaryGap: false,
-            data: months.map(item => item.time),
+            data: weeks.map(item => item.time.slice(5)),
             axisTick: { show: false },
             axisLabel: { color: c },
             axisLine: { lineStyle: { color: c } }
@@ -127,7 +158,7 @@
             lineStyle: { width: 3, color: '#39c5bb' },
             itemStyle: { color: '#39c5bb' },
             areaStyle: { color: gradient(), opacity: 0.28 },
-            data: months.map(item => Number(item.sv || 0)),
+            data: weeks.map(item => Number(item.sv || 0)),
             markLine: {
               silent: true,
               lineStyle: { type: 'dashed', color: '#9ccfca' },
@@ -138,8 +169,8 @@
         })
         window.addEventListener('resize', () => chart.resize())
         if (updated) {
-          const range = months.length > 1 ? `${months[0].time} 至 ${months[months.length - 1].time}` : (months[0] ? months[0].time : '暂无')
-          updated.textContent = `最近 ${months.length} 个月（${range}） · 更新于 ${stats.updatedAt ? new Date(stats.updatedAt).toLocaleString('zh-CN') : '未知时间'}`
+          const range = weeks.length > 1 ? `${weeks[0].time} 至 ${weeks[weeks.length - 1].end}` : `${weeks[0].time} 至 ${weeks[0].end}`
+          updated.textContent = `最近 ${weeks.length} 周（${range}） · 更新于 ${stats.updatedAt ? new Date(stats.updatedAt).toLocaleString('zh-CN') : '未知时间'}`
         }
         el.dataset.loading = 'false'
         el.dataset.loaded = 'true'
@@ -147,7 +178,7 @@
       .catch(error => {
         console.warn('访客访问趋势：', error)
         if (empty) empty.hidden = false
-        if (updated) updated.textContent = '按月汇总 · 趋势数据暂不可用'
+        if (updated) updated.textContent = '按周汇总 · 趋势数据暂不可用'
         el.dataset.loading = 'false'
       })
   }
