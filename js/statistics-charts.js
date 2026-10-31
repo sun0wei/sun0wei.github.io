@@ -69,10 +69,86 @@
     chart.on('click', 'series', event => { if (event.data && event.data.path) window.location.href = '/' + event.data.path })
   }
 
+  function initVisitorWorldChart () {
+    const el = getElement('visitor-world-map')
+    if (!el || el.dataset.loading === 'true') return
+    el.dataset.loading = 'true'
+    const empty = document.getElementById('visitor-world-empty')
+    const updated = document.getElementById('visitor-world-updated')
+
+    Promise.all([
+      fetch('/stats/visitor-world.json?t=' + Date.now(), { cache: 'no-store' }).then(response => {
+        if (!response.ok) throw new Error('访客地图缓存不存在')
+        return response.json()
+      }),
+      fetch('/lib/echarts/world.json', { cache: 'force-cache' }).then(response => {
+        if (!response.ok) throw new Error('世界地图数据读取失败')
+        return response.json()
+      })
+    ]).then(([stats, geoJson]) => {
+      const countries = Array.isArray(stats.countries) ? stats.countries.filter(item => item && item.name && Number(item.value) > 0) : []
+      if (!countries.length) {
+        if (empty) empty.hidden = false
+        el.dataset.loading = 'false'
+        return
+      }
+      if (empty) empty.hidden = true
+      if (!echarts.getMap('visitor-world')) echarts.registerMap('visitor-world', geoJson)
+      const c = color()
+      const max = Math.max(1, ...countries.map(item => Number(item.value) || 0))
+      const chart = echarts.init(el, 'light')
+      chart.setOption({
+        tooltip: {
+          trigger: 'item',
+          formatter: params => {
+            const value = Number(params.value) || 0
+            return `${params.name}<br/>访问会话：${value.toLocaleString('zh-CN')}`
+          }
+        },
+        visualMap: {
+          min: 0,
+          max,
+          left: 12,
+          bottom: 8,
+          calculable: false,
+          text: ['多', '少'],
+          textStyle: { color: c },
+          inRange: { color: ['#dbeeed', '#39c5bb', '#147d78'] }
+        },
+        series: [{
+          name: '访问会话',
+          type: 'map',
+          map: 'visitor-world',
+          roam: false,
+          selectedMode: false,
+          layoutCenter: ['50%', '47%'],
+          layoutSize: '108%',
+          label: { show: false },
+          itemStyle: { areaColor: 'rgba(160, 170, 180, 0.18)', borderColor: 'rgba(110, 120, 130, 0.55)', borderWidth: 0.7 },
+          emphasis: { label: { show: false }, itemStyle: { areaColor: '#f0b35a' } },
+          data: countries
+        }]
+      })
+      window.addEventListener('resize', () => chart.resize())
+      if (updated) {
+        const range = stats.windowStart && stats.windowEnd ? `${stats.windowStart} 至 ${stats.windowEnd}` : '近 7 天'
+        updated.textContent = `${range} · 更新于 ${stats.updatedAt ? new Date(stats.updatedAt).toLocaleString('zh-CN') : '未知时间'}`
+      }
+      el.dataset.loading = 'false'
+      el.dataset.loaded = 'true'
+    }).catch(error => {
+      console.warn('访客全球分布：', error)
+      if (empty) empty.hidden = false
+      if (updated) updated.textContent = '近 7 天 · 地域数据暂不可用'
+      el.dataset.loading = 'false'
+    })
+  }
+
   function init () {
     initArchiveChart()
     initTagsChart()
     initCategoriesChart()
+    initVisitorWorldChart()
   }
 
   function scheduleInit () {
@@ -83,7 +159,7 @@
   }
 
   function hasChartElements () {
-    return ['posts-chart', 'tags-chart', 'categories-chart'].some(id => document.getElementById(id))
+    return ['posts-chart', 'tags-chart', 'categories-chart', 'visitor-world-map'].some(id => document.getElementById(id))
   }
 
   function loadEcharts (callback) {
