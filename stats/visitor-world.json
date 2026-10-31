@@ -3,14 +3,14 @@
   "windowDays": 7,
   "windowStart": "2026-10-30",
   "windowEnd": "2026-10-30",
-  "updatedAt": "2026-10-31T09:22:40.504Z",
+  "updatedAt": "2026-10-31T09:24:48.677Z",
   "truncated": false,
   "unmappedRegions": {
     "江西省-赣州市": 3
   },
   "countries": [
     {
-      "name": "江西省-赣州市",
+      "name": "China",
       "value": 3
     }
   ],
@@ -18,13 +18,13 @@
     "2026-10-30": {
       "totalSessions": 3,
       "countries": {
-        "江西省-赣州市": 3
+        "China": 3
       },
       "unmapped": {
         "江西省-赣州市": 3
       },
       "truncated": false,
-      "updatedAt": "2026-10-31T09:22:40.504Z"
+      "updatedAt": "2026-10-31T09:24:48.677Z"
     }
   }
 }
