@@ -4,7 +4,7 @@
   "retention": "all",
   "windowStart": "2026-10-30",
   "windowEnd": "2026-10-30",
-  "updatedAt": "2026-10-31T11:13:55.140Z",
+  "updatedAt": "2026-10-31T11:24:58.516Z",
   "truncated": false,
   "unmappedRegions": {
     "江西省-赣州市": 3
@@ -15,17 +15,26 @@
       "value": 3
     }
   ],
+  "provinces": [
+    {
+      "name": "江西省",
+      "value": 3
+    }
+  ],
   "days": {
     "2026-10-30": {
       "totalSessions": 3,
       "countries": {
         "China": 3
       },
+      "provinces": {
+        "江西省": 3
+      },
       "unmapped": {
         "江西省-赣州市": 3
       },
       "truncated": false,
-      "updatedAt": "2026-10-31T09:24:48.677Z"
+      "updatedAt": "2026-10-31T11:24:58.516Z"
     }
   }
 }
