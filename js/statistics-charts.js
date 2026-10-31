@@ -84,18 +84,32 @@
       fetch('/lib/echarts/world.json', { cache: 'force-cache' }).then(response => {
         if (!response.ok) throw new Error('世界地图数据读取失败')
         return response.json()
+      }),
+      fetch('/lib/echarts/china-provinces.json', { cache: 'force-cache' }).then(response => {
+        if (!response.ok) throw new Error('中国省份地图数据读取失败')
+        return response.json()
       })
-    ]).then(([stats, geoJson]) => {
+    ]).then(([stats, geoJson, chinaGeoJson]) => {
       const countries = Array.isArray(stats.countries) ? stats.countries.filter(item => item && item.name && Number(item.value) > 0) : []
-      if (!countries.length) {
+      const provinces = Array.isArray(stats.provinces) ? stats.provinces.filter(item => item && item.name && Number(item.value) > 0) : []
+      const mapCountries = provinces.length ? countries.filter(item => item.name !== 'China') : countries
+      const mapData = mapCountries.concat(provinces)
+      if (!mapData.length) {
         if (empty) empty.hidden = false
         el.dataset.loading = 'false'
         return
       }
       if (empty) empty.hidden = true
-      if (!echarts.getMap('visitor-world')) echarts.registerMap('visitor-world', geoJson)
+      if (!echarts.getMap('visitor-world')) {
+        const chinaFeatures = Array.isArray(chinaGeoJson.features)
+          ? chinaGeoJson.features.filter(feature => feature && feature.properties && feature.properties.name)
+          : []
+        echarts.registerMap('visitor-world', Object.assign({}, geoJson, {
+          features: (geoJson.features || []).concat(chinaFeatures)
+        }))
+      }
       const c = color()
-      const max = Math.max(1, ...countries.map(item => Number(item.value) || 0))
+      const max = Math.max(1, ...mapData.map(item => Number(item.value) || 0))
       const chart = echarts.init(el, 'light')
       chart.setOption({
         tooltip: {
@@ -119,14 +133,15 @@
           name: '访问会话',
           type: 'map',
           map: 'visitor-world',
-          roam: false,
+          roam: true,
+          scaleLimit: { min: 1, max: 8 },
           selectedMode: false,
           layoutCenter: ['50%', '47%'],
           layoutSize: '108%',
           label: { show: false },
           itemStyle: { areaColor: 'rgba(160, 170, 180, 0.18)', borderColor: 'rgba(110, 120, 130, 0.55)', borderWidth: 0.7 },
           emphasis: { label: { show: false }, itemStyle: { areaColor: '#f0b35a' } },
-          data: countries
+          data: mapData
         }]
       })
       window.addEventListener('resize', () => chart.resize())
