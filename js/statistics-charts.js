@@ -69,6 +69,87 @@
     chart.on('click', 'series', event => { if (event.data && event.data.path) window.location.href = '/' + event.data.path })
   }
 
+  function initVisitorTrendChart () {
+    const el = getElement('visitor-trend-chart')
+    if (!el || el.dataset.loading === 'true') return
+    el.dataset.loading = 'true'
+    const empty = document.getElementById('visitor-trend-empty')
+    const updated = document.getElementById('visitor-trend-updated')
+
+    fetch('/stats/visitor-trend.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error('访客趋势缓存不存在')
+        return response.json()
+      })
+      .then(stats => {
+        const months = Array.isArray(stats.months) ? stats.months.filter(item => item && item.time) : []
+        if (!months.length) {
+          if (empty) empty.hidden = false
+          el.dataset.loading = 'false'
+          return
+        }
+        if (empty) empty.hidden = true
+        const c = color()
+        const chart = echarts.init(el, 'light')
+        chart.setOption({
+          tooltip: {
+            trigger: 'axis',
+            formatter: params => {
+              const item = months[params[0].dataIndex] || {}
+              return `${item.time}<br/>访问会话：${Number(item.sv || 0).toLocaleString('zh-CN')}<br/>访客 UV：${Number(item.uv || 0).toLocaleString('zh-CN')}<br/>浏览量 PV：${Number(item.pv || 0).toLocaleString('zh-CN')}`
+            }
+          },
+          grid: { left: 52, right: 18, top: 18, bottom: 40 },
+          xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: months.map(item => item.time),
+            axisTick: { show: false },
+            axisLabel: { color: c },
+            axisLine: { lineStyle: { color: c } }
+          },
+          yAxis: {
+            type: 'value',
+            name: '访问会话',
+            nameTextStyle: { color: c },
+            axisTick: { show: false },
+            axisLabel: { color: c },
+            axisLine: { lineStyle: { color: c } },
+            splitLine: { lineStyle: { color: 'rgba(120, 140, 145, 0.12)' } }
+          },
+          series: [{
+            name: '访问会话',
+            type: 'line',
+            smooth: true,
+            showSymbol: false,
+            lineStyle: { width: 3, color: '#39c5bb' },
+            itemStyle: { color: '#39c5bb' },
+            areaStyle: { color: gradient(), opacity: 0.28 },
+            data: months.map(item => Number(item.sv || 0)),
+            markLine: {
+              silent: true,
+              lineStyle: { type: 'dashed', color: '#9ccfca' },
+              label: { color: c, formatter: '历史平均' },
+              data: [{ type: 'average', name: '历史平均' }]
+            }
+          }]
+        })
+        window.addEventListener('resize', () => chart.resize())
+        if (updated) {
+          const range = stats.startDay && stats.endDay ? `${stats.startDay} 至 ${stats.endDay}` : '历史累计'
+          updated.textContent = `按月汇总（${range}） · 更新于 ${stats.updatedAt ? new Date(stats.updatedAt).toLocaleString('zh-CN') : '未知时间'}`
+        }
+        el.dataset.loading = 'false'
+        el.dataset.loaded = 'true'
+      })
+      .catch(error => {
+        console.warn('访客访问趋势：', error)
+        if (empty) empty.hidden = false
+        if (updated) updated.textContent = '按月汇总 · 趋势数据暂不可用'
+        el.dataset.loading = 'false'
+      })
+  }
+
   function initVisitorWorldChart () {
     const el = getElement('visitor-world-map')
     if (!el || el.dataset.loading === 'true') return
@@ -164,6 +245,7 @@
     initArchiveChart()
     initTagsChart()
     initCategoriesChart()
+    initVisitorTrendChart()
     initVisitorWorldChart()
   }
 
@@ -175,7 +257,7 @@
   }
 
   function hasChartElements () {
-    return ['posts-chart', 'tags-chart', 'categories-chart', 'visitor-world-map'].some(id => document.getElementById(id))
+    return ['posts-chart', 'tags-chart', 'categories-chart', 'visitor-trend-chart', 'visitor-world-map'].some(id => document.getElementById(id))
   }
 
   function loadEcharts (callback) {
