@@ -82,7 +82,9 @@
         return response.json()
       })
       .then(stats => {
-        const months = Array.isArray(stats.months) ? stats.months.filter(item => item && item.time) : []
+        const allMonths = Array.isArray(stats.months) ? stats.months.filter(item => item && item.time) : []
+        // 只展示缓存中最新的 12 个完整月份，不重新请求 51.LA。
+        const months = allMonths.slice(-12)
         if (!months.length) {
           if (empty) empty.hidden = false
           el.dataset.loading = 'false'
@@ -136,8 +138,8 @@
         })
         window.addEventListener('resize', () => chart.resize())
         if (updated) {
-          const range = stats.startDay && stats.endDay ? `${stats.startDay} 至 ${stats.endDay}` : '历史累计'
-          updated.textContent = `按月汇总（${range}） · 更新于 ${stats.updatedAt ? new Date(stats.updatedAt).toLocaleString('zh-CN') : '未知时间'}`
+          const range = months.length > 1 ? `${months[0].time} 至 ${months[months.length - 1].time}` : (months[0] ? months[0].time : '暂无')
+          updated.textContent = `最近 ${months.length} 个月（${range}） · 更新于 ${stats.updatedAt ? new Date(stats.updatedAt).toLocaleString('zh-CN') : '未知时间'}`
         }
         el.dataset.loading = 'false'
         el.dataset.loaded = 'true'
