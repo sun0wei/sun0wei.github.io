@@ -1,10 +1,5 @@
 // Live2D is available on desktop pages and starts after the main page is ready.
-// Keep model/config files on OSS, but load executable runtime files locally.
-// The OSS objects are served with `Content-Disposition: attachment`, which can
-// prevent browser script loading and leave the widget uninitialized.
 const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live2d-widget/";
-const live2d_runtime_path = "/live2d-widget/";
-const live2d_model_path = "https://cdn.jsdelivr.net/npm/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json";
 
 (() => {
   if (window.__live2dAutoloadStarted) return;
@@ -45,23 +40,46 @@ const live2d_model_path = "https://cdn.jsdelivr.net/npm/live2d-widget-model-koha
   // Keep the mobile experience light. The toggle remains available on desktop.
   if (window.innerWidth < 768) return;
 
-  let initAttempts = 0;
-  const init = () => {
-    if (window.__live2dWidgetInitialized || document.getElementById('waifu')) return;
-    // The runtime files are declared as ordered, deferred scripts in the page.
-    // Wait briefly if a cached page resumes before they have executed.
-    if (typeof window.initWidget !== 'function' || typeof window.loadlive2d !== 'function') {
-      if (initAttempts++ < 12) window.setTimeout(init, 500);
+  const loadExternalResource = (url, type) => new Promise((resolve, reject) => {
+    const selector = type === 'css' ? `link[href="${url}"]` : `script[src="${url}"]`;
+    const existing = document.querySelector(selector);
+    if (existing) {
+      resolve(url);
       return;
     }
+
+    const tag = document.createElement(type === 'css' ? 'link' : 'script');
+    if (type === 'css') {
+      tag.rel = 'stylesheet';
+      tag.href = url;
+    } else {
+      tag.src = url;
+      tag.async = true;
+    }
+    tag.onload = () => resolve(url);
+    tag.onerror = () => reject(new Error(`Failed to load ${url}`));
+    document.head.appendChild(tag);
+  });
+  const init = () => {
+    if (window.__live2dWidgetInitialized || document.getElementById('waifu')) return;
     window.__live2dWidgetInitialized = true;
-    window.initWidget({
-      waifuPath: live2d_runtime_path + 'waifu-tips.json',
-      cdnPath: live2d_path,
-      modelPath: live2d_model_path,
-      tools: ['hitokoto', 'switch-texture', 'photo', 'quit']
+
+    Promise.all([
+      loadExternalResource(live2d_path + 'waifu.css', 'css'),
+      loadExternalResource(live2d_path + 'live2d.min.js', 'js'),
+      loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
+    ]).then(() => {
+      if (typeof window.initWidget !== 'function') throw new Error('Live2D initializer is unavailable');
+      window.initWidget({
+        waifuPath: live2d_path + 'waifu-tips.json',
+        cdnPath: live2d_path,
+        tools: ['hitokoto', 'switch-texture', 'photo', 'quit']
+      });
+      syncVisibility();
+    }).catch(error => {
+      window.__live2dWidgetInitialized = false;
+      console.warn('[Live2D] skipped:', error.message || error);
     });
-    syncVisibility();
   };
 
   const scheduleInit = () => {
@@ -72,12 +90,6 @@ const live2d_model_path = "https://cdn.jsdelivr.net/npm/live2d-widget-model-koha
     }
   };
 
-  // Do not depend on window.load: a slow third-party counter or image can
-  // keep the load event pending and prevent the widget from ever appearing.
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', scheduleInit, { once: true });
-    window.setTimeout(scheduleInit, 3000);
-  } else {
-    scheduleInit();
-  }
+  if (document.readyState === 'complete') scheduleInit();
+  else window.addEventListener('load', scheduleInit, { once: true });
 })();

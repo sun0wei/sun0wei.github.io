@@ -1,12 +1,12 @@
-import showMessage from "./message.js";
+import fa_comment from "@fortawesome/fontawesome-free/svgs/solid/comment.svg";
+import fa_paper_plane from "@fortawesome/fontawesome-free/svgs/solid/paper-plane.svg";
+import fa_user_circle from "@fortawesome/fontawesome-free/svgs/solid/circle-user.svg";
+import fa_street_view from "@fortawesome/fontawesome-free/svgs/solid/street-view.svg";
+import fa_camera_retro from "@fortawesome/fontawesome-free/svgs/solid/camera-retro.svg";
+import fa_info_circle from "@fortawesome/fontawesome-free/svgs/solid/circle-info.svg";
+import fa_xmark from "@fortawesome/fontawesome-free/svgs/solid/xmark.svg";
 
-// Keep the widget self-contained. The original SVG imports require the
-// optional Font Awesome build dependency and can leave the whole bundle
-// unusable when it is absent.
-const fa_comment = '<span aria-hidden="true">💬</span>';
-const fa_street_view = '<span aria-hidden="true">👤</span>';
-const fa_camera_retro = '<span aria-hidden="true">📷</span>';
-const fa_xmark = '<span aria-hidden="true">✕</span>';
+import showMessage from "./message.js";
 
 function showHitokoto() {
     // 增加 hitokoto.cn 的 API
