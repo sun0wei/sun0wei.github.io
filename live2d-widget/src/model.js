@@ -3,7 +3,7 @@ import randomSelection from "./utils.js";
 
 class Model {
     constructor(config) {
-        let { apiPath, cdnPath } = config;
+        let { apiPath, cdnPath, modelPath } = config;
         let useCDN = false;
         if (typeof cdnPath === "string") {
             useCDN = true;
@@ -16,6 +16,7 @@ class Model {
         this.useCDN = useCDN;
         this.apiPath = apiPath;
         this.cdnPath = cdnPath;
+        this.modelPath = modelPath;
     }
 
     async loadModelList() {
@@ -27,6 +28,10 @@ class Model {
         localStorage.setItem("modelId", modelId);
         localStorage.setItem("modelTexturesId", modelTexturesId);
         showMessage(message, 4000, 10);
+        if (this.modelPath) {
+            loadlive2d("live2d", this.modelPath);
+            return;
+        }
         if (this.useCDN) {
             if (!this.modelList) await this.loadModelList();
             const target = randomSelection(this.modelList.models[modelId]);
@@ -41,6 +46,11 @@ class Model {
         const modelId = localStorage.getItem("modelId"),
             modelTexturesId = localStorage.getItem("modelTexturesId");
         if (this.useCDN) {
+            if (this.modelPath) {
+                loadlive2d("live2d", this.modelPath);
+                showMessage("我的新衣服好看吗？", 4000, 10);
+                return;
+            }
             if (!this.modelList) await this.loadModelList();
             const target = randomSelection(this.modelList.models[modelId]);
             loadlive2d("live2d", `${this.cdnPath}model/${target}/index.json`);
@@ -59,6 +69,10 @@ class Model {
     async loadOtherModel() {
         let modelId = localStorage.getItem("modelId");
         if (this.useCDN) {
+            if (this.modelPath) {
+                loadlive2d("live2d", this.modelPath);
+                return;
+            }
             if (!this.modelList) await this.loadModelList();
             const index = (++modelId >= this.modelList.models.length) ? 0 : modelId;
             this.loadModel(index, 0, this.modelList.messages[index]);

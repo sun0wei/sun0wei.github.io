@@ -1,5 +1,10 @@
 // Live2D is available on desktop pages and starts after the main page is ready.
+// Keep model/config files on OSS, but load executable runtime files locally.
+// The OSS objects are served with `Content-Disposition: attachment`, which can
+// prevent browser script loading and leave the widget uninitialized.
 const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live2d-widget/";
+const live2d_runtime_path = "/live2d-widget/";
+const live2d_model_path = "https://fastly.jsdelivr.net/npm/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json";
 
 (() => {
   if (window.__live2dAutoloadStarted) return;
@@ -65,14 +70,15 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
     window.__live2dWidgetInitialized = true;
 
     Promise.all([
-      loadExternalResource(live2d_path + 'waifu.css', 'css'),
-      loadExternalResource(live2d_path + 'live2d.min.js', 'js'),
-      loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
+      loadExternalResource(live2d_runtime_path + 'waifu.css', 'css'),
+      loadExternalResource(live2d_runtime_path + 'live2d.min.js', 'js'),
+      loadExternalResource(live2d_runtime_path + 'waifu-tips.js', 'js')
     ]).then(() => {
       if (typeof window.initWidget !== 'function') throw new Error('Live2D initializer is unavailable');
       window.initWidget({
-        waifuPath: live2d_path + 'waifu-tips.json',
+        waifuPath: live2d_runtime_path + 'waifu-tips.json',
         cdnPath: live2d_path,
+        modelPath: live2d_model_path,
         tools: ['hitokoto', 'switch-texture', 'photo', 'quit']
       });
       syncVisibility();
@@ -90,6 +96,12 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
     }
   };
 
-  if (document.readyState === 'complete') scheduleInit();
-  else window.addEventListener('load', scheduleInit, { once: true });
+  // Do not depend on window.load: a slow third-party counter or image can
+  // keep the load event pending and prevent the widget from ever appearing.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', scheduleInit, { once: true });
+    window.setTimeout(scheduleInit, 3000);
+  } else {
+    scheduleInit();
+  }
 })();
