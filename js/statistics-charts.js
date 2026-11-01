@@ -247,7 +247,8 @@
           name: '访问会话',
           type: 'map',
           map: 'visitor-world',
-          roam: true,
+          // 保留拖动地图，关闭滚轮缩放，避免滚动页面时被地图截获。
+          roam: 'move',
           scaleLimit: { min: 1, max: 8 },
           selectedMode: false,
           layoutCenter: ['50%', '47%'],
@@ -258,6 +259,18 @@
           emphasis: { label: { show: false }, itemStyle: { areaColor: '#f0b35a' } },
           data: mapData
         }]
+      })
+      const mapControls = document.querySelectorAll('[data-map-zoom]')
+      const initialZoom = 1.55
+      mapControls.forEach(control => {
+        control.addEventListener('click', () => {
+          const action = control.dataset.mapZoom
+          const currentZoom = Number(chart.getOption().series?.[0]?.zoom) || initialZoom
+          const zoom = action === 'reset'
+            ? initialZoom
+            : Math.min(8, Math.max(1, currentZoom * (action === 'in' ? 1.2 : 0.8)))
+          chart.setOption({ series: [{ zoom }] })
+        })
       })
       window.addEventListener('resize', () => chart.resize())
       if (updated) {
