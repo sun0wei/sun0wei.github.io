@@ -225,7 +225,8 @@
       const c = color()
       const max = Math.max(1, ...mapData.map(item => Number(item.value) || 0))
       const chart = echarts.init(el, 'light')
-      chart.setOption({
+      const initialZoom = 1.55
+      const worldOption = {
         tooltip: {
           trigger: 'item',
           formatter: params => {
@@ -253,22 +254,26 @@
           selectedMode: false,
           layoutCenter: ['50%', '47%'],
           layoutSize: '122%',
-          zoom: 1.55,
+          zoom: initialZoom,
           label: { show: false },
           itemStyle: { areaColor: 'rgba(160, 170, 180, 0.18)', borderColor: 'rgba(110, 120, 130, 0.55)', borderWidth: 0.7 },
           emphasis: { label: { show: false }, itemStyle: { areaColor: '#f0b35a' } },
           data: mapData
         }]
-      })
+      }
+      chart.setOption(worldOption)
       const mapControls = document.querySelectorAll('[data-map-zoom]')
-      const initialZoom = 1.55
       mapControls.forEach(control => {
         control.addEventListener('click', () => {
           const action = control.dataset.mapZoom
-          const currentZoom = Number(chart.getOption().series?.[0]?.zoom) || initialZoom
-          const zoom = action === 'reset'
-            ? initialZoom
-            : Math.min(8, Math.max(1, currentZoom * (action === 'in' ? 1.2 : 0.8)))
+          if (action === 'reset') {
+            // 使用完整初始配置重建地图视图，同时清除拖动产生的位置偏移。
+            chart.setOption(worldOption, true)
+            return
+          }
+          const currentSeries = chart.getOption().series && chart.getOption().series[0]
+          const currentZoom = Number(currentSeries && currentSeries.zoom) || initialZoom
+          const zoom = Math.min(8, Math.max(1, currentZoom * (action === 'in' ? 1.2 : 0.8)))
           chart.setOption({ series: [{ zoom }] })
         })
       })
