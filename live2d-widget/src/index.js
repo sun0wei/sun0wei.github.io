@@ -18,8 +18,8 @@ function loadWidget(config) {
     }, 0);
 
     (function registerTools() {
-        tools["switch-model"].callback = () => model.loadOtherModel();
-        tools["switch-texture"].callback = () => model.loadRandModel();
+        if (tools["switch-model"]) tools["switch-model"].callback = () => model.loadOtherModel();
+        if (tools["switch-texture"]) tools["switch-texture"].callback = () => model.loadRandModel();
         if (!Array.isArray(config.tools)) {
             config.tools = Object.keys(tools);
         }
