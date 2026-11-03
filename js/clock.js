@@ -45,6 +45,22 @@
   var fixedLocation = typeof clock_default_rectangle_enable !== 'undefined' && clock_default_rectangle_enable === 'true';
   var defaultCity = '赣州市';
   var timeoutMs = 4000;
+  var cityNames = {
+    Nanchang: '南昌市', Ganzhou: '赣州市', Guangzhou: '广州市', Shenzhen: '深圳市',
+    Beijing: '北京市', Shanghai: '上海市', Nanjing: '南京市', Hangzhou: '杭州市',
+    Wuhan: '武汉市', Changsha: '长沙市', Chengdu: '成都市', Chongqing: '重庆市',
+    Xian: '西安市', Zhengzhou: '郑州市', Jinan: '济南市', Hefei: '合肥市',
+    Fuzhou: '福州市', Xiamen: '厦门市', Kunming: '昆明市', Tianjin: '天津市',
+    Shenyang: '沈阳市', Harbin: '哈尔滨市', Haikou: '海口市', Nanning: '南宁市',
+    Guiyang: '贵阳市', Taiyuan: '太原市', Shijiazhuang: '石家庄市', Urumqi: '乌鲁木齐市'
+  };
+
+  function displayCity(value) {
+    var city = String(value || '').trim();
+    if (cityNames[city]) return cityNames[city];
+    if (/^[\u4e00-\u9fff]+$/.test(city) && !/[市区县]$/.test(city)) return city + '市';
+    return city;
+  }
 
   function fetchJson(url) {
     var controller = window.AbortController ? new AbortController() : null;
@@ -164,24 +180,24 @@
     if (data && data.code === 200 && data.data) {
       if (data.data.city && data.data.lng && data.data.lat) {
         return {
-          city: data.data.city,
+          city: displayCity(data.data.city),
           location: data.data.lng + ',' + data.data.lat
         };
       }
     }
 
     if (data && data.success && data.city && data.longitude && data.latitude) {
-      return {
-        city: data.city,
-        location: data.longitude + ',' + data.latitude
-      };
+        return {
+          city: displayCity(data.city),
+          location: data.longitude + ',' + data.latitude
+        };
     }
 
     if (data && data.city && typeof data.loc === 'string') {
       var coordinates = data.loc.split(',');
       if (coordinates.length === 2) {
         return {
-          city: data.city,
+          city: displayCity(data.city),
           location: coordinates[1] + ',' + coordinates[0]
         };
       }
@@ -196,7 +212,7 @@
       locationUrls.push('https://api.nsmao.net/api/ipip/query?key=' + encodeURIComponent(ipApiKey));
     }
     // 备用服务，避免单个 IP 定位服务故障导致始终使用默认城市。
-    locationUrls.push('https://ipwho.is/');
+    locationUrls.push('https://ipwho.is/?lang=zh-CN');
     locationUrls.push('https://ipinfo.io/json');
 
     function tryNext(index, lastError) {
