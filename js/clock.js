@@ -46,6 +46,9 @@
   var defaultCity = '赣州市';
   var timeoutMs = 4000;
   var browserLocationTimeoutMs = 10000;
+  var preciseLocationStorageKey = 'hexo-electric-clock-location-v1';
+  var locationSelectionVersion = 0;
+  var weatherRequestVersion = 0;
   var cityNames = {
     Nanchang: '南昌市', Ganzhou: '赣州市', Guangzhou: '广州市', Shenzhen: '深圳市',
     Beijing: '北京市', Shanghai: '上海市', Nanjing: '南京市', Hangzhou: '杭州市',
@@ -233,14 +236,47 @@
   }
 
   function requestWeather(location, city) {
+    var requestVersion = ++weatherRequestVersion;
     return fetchJson('https://' + weatherHost + '/v7/weather/now?location=' + encodeURIComponent(location) + '&key=' + encodeURIComponent(weatherKey))
       .then(function (data) {
         if (data && data.code === '200') {
-          showWeather(data, city);
+          if (requestVersion === weatherRequestVersion) showWeather(data, city);
           return data;
         }
         throw new Error('weather response invalid');
       });
+  }
+
+  function readPreciseLocation() {
+    try {
+      var saved = JSON.parse(window.localStorage.getItem(preciseLocationStorageKey) || 'null');
+      var latitude = Number(saved && saved.latitude);
+      var longitude = Number(saved && saved.longitude);
+      if (!Number.isFinite(latitude) || latitude < -90 || latitude > 90 ||
+          !Number.isFinite(longitude) || longitude < -180 || longitude > 180) return null;
+      return {
+        latitude: latitude,
+        longitude: longitude,
+        city: String(saved.city || '当前位置')
+      };
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function savePreciseLocation(latitude, longitude, city) {
+    try {
+      window.localStorage.setItem(preciseLocationStorageKey, JSON.stringify({
+        latitude: latitude,
+        longitude: longitude,
+        city: city || '当前位置',
+        savedAt: Date.now()
+      }));
+      return true;
+    } catch (error) {
+      if (window.console && console.warn) console.warn('[electric-clock] precise location could not be saved:', error.message || error);
+      return false;
+    }
   }
 
   function reverseGeocode(latitude, longitude) {
@@ -264,12 +300,14 @@
     locateButton.title = '正在获取精确位置';
 
     navigator.geolocation.getCurrentPosition(function (position) {
+      locationSelectionVersion++;
       var coords = position.coords;
       var location = coords.longitude + ',' + coords.latitude;
       reverseGeocode(coords.latitude, coords.longitude).catch(function (error) {
         if (window.console && console.warn) console.warn('[electric-clock] reverse geocoding unavailable:', error.message || error);
         return '当前位置';
       }).then(function (city) {
+        savePreciseLocation(coords.latitude, coords.longitude, city);
         return requestWeather(location, city);
       }).then(function () {
         locateButton.title = '已使用精确位置';
@@ -294,11 +332,20 @@
 
   function loadWeather() {
     if (!weatherHost || !weatherKey || !rectangle) return;
+    var startupVersion = locationSelectionVersion;
     var location = rectangle;
     var city = defaultCity;
+    var savedLocation = !fixedLocation && readPreciseLocation();
     var locate = fixedLocation
       ? Promise.resolve()
-      : locateVisitor().then(function (result) {
+      : savedLocation
+        ? Promise.resolve().then(function () {
+            location = savedLocation.longitude + ',' + savedLocation.latitude;
+            city = savedLocation.city;
+            var locateButton = document.getElementById('card-clock-locate');
+            if (locateButton) locateButton.title = '使用已保存的精确位置；点击可更新';
+          })
+        : locateVisitor().then(function (result) {
           city = result.city || city;
           location = result.location || location;
         }).catch(function (error) {
@@ -306,6 +353,7 @@
           if (window.console && console.warn) console.warn('[electric-clock] IP location unavailable, using default location:', error.message || error);
         });
     locate.then(function () {
+      if (startupVersion !== locationSelectionVersion) return;
       return requestWeather(location, city);
     }).catch(function (error) {
       /* The local clock is already running; network enhancement may fail silently. */
