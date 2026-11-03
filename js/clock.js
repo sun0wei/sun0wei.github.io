@@ -160,22 +160,72 @@
     }
   }
 
+  function normalizeLocation(data) {
+    if (data && data.code === 200 && data.data) {
+      if (data.data.city && data.data.lng && data.data.lat) {
+        return {
+          city: data.data.city,
+          location: data.data.lng + ',' + data.data.lat
+        };
+      }
+    }
+
+    if (data && data.success && data.city && data.longitude && data.latitude) {
+      return {
+        city: data.city,
+        location: data.longitude + ',' + data.latitude
+      };
+    }
+
+    if (data && data.city && typeof data.loc === 'string') {
+      var coordinates = data.loc.split(',');
+      if (coordinates.length === 2) {
+        return {
+          city: data.city,
+          location: coordinates[1] + ',' + coordinates[0]
+        };
+      }
+    }
+
+    return null;
+  }
+
+  function locateVisitor() {
+    var locationUrls = [];
+    if (ipApiKey) {
+      locationUrls.push('https://api.nsmao.net/api/ipip/query?key=' + encodeURIComponent(ipApiKey));
+    }
+    // 备用服务，避免单个 IP 定位服务故障导致始终使用默认城市。
+    locationUrls.push('https://ipwho.is/');
+    locationUrls.push('https://ipinfo.io/json');
+
+    function tryNext(index, lastError) {
+      if (index >= locationUrls.length) {
+        return Promise.reject(lastError || new Error('IP location unavailable'));
+      }
+      return fetchJson(locationUrls[index]).then(function (data) {
+        var result = normalizeLocation(data);
+        if (!result) throw new Error('IP location response invalid');
+        return result;
+      }).catch(function (error) {
+        return tryNext(index + 1, error);
+      });
+    }
+
+    return tryNext(0);
+  }
+
   function loadWeather() {
     if (!weatherHost || !weatherKey || !rectangle) return;
     var location = rectangle;
     var city = defaultCity;
-    var ipUrl = ipApiKey ? 'https://api.nsmao.net/api/ipip/query?key=' + encodeURIComponent(ipApiKey) : '';
-    var locate = fixedLocation || !ipUrl
+    var locate = fixedLocation
       ? Promise.resolve()
-      : fetchJson(ipUrl).then(function (data) {
-          if (data && data.code === 200 && data.data) {
-            city = data.data.city || city;
-            if (data.data.lng && data.data.lat) location = data.data.lng + ',' + data.data.lat;
-          } else {
-            throw new Error('IP location response invalid');
-          }
+      : locateVisitor().then(function (result) {
+          city = result.city || city;
+          location = result.location || location;
         }).catch(function (error) {
-          // IP 服务不可用时继续使用配置中的默认坐标获取天气。
+          // 所有 IP 服务不可用时继续使用配置中的默认坐标获取天气。
           if (window.console && console.warn) console.warn('[electric-clock] IP location unavailable, using default location:', error.message || error);
         });
     locate.then(function () {
