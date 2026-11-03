@@ -3,22 +3,27 @@
   "windowDays": null,
   "retention": "all",
   "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-01",
-  "updatedAt": "2026-11-02T04:29:41.923Z",
+  "windowEnd": "2026-11-02",
+  "updatedAt": "2026-11-03T05:23:55.727Z",
   "truncated": false,
   "unmappedRegions": {
-    "江西省-赣州市": 17
+    "江西省-赣州市": 24,
+    "湖南省-长沙市": 1
   },
   "countries": [
     {
       "name": "China",
-      "value": 17
+      "value": 25
     }
   ],
   "provinces": [
     {
       "name": "江西省",
-      "value": 17
+      "value": 24
+    },
+    {
+      "name": "湖南省",
+      "value": 1
     }
   ],
   "days": {
@@ -63,6 +68,22 @@
       },
       "truncated": false,
       "updatedAt": "2026-11-02T04:29:41.922Z"
+    },
+    "2026-11-02": {
+      "totalSessions": 8,
+      "countries": {
+        "China": 8
+      },
+      "provinces": {
+        "江西省": 7,
+        "湖南省": 1
+      },
+      "unmapped": {
+        "江西省-赣州市": 7,
+        "湖南省-长沙市": 1
+      },
+      "truncated": false,
+      "updatedAt": "2026-11-03T05:23:55.727Z"
     }
   }
 }
