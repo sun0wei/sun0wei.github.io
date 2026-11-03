@@ -715,6 +715,23 @@ if (document.body.clientWidth > 992) {
         blog_body: "body",
       };
       var setting = $.extend(defaultSetting, option);
+      var getAlignedRight = function () {
+        var nightMode = document.getElementById('nightmode-button');
+        var statistics = document.querySelector('.statistics-entry');
+        if (!nightMode || !statistics) return setting.right;
+
+        var nightRect = nightMode.getBoundingClientRect();
+        var statisticsRect = statistics.getBoundingClientRect();
+        var targetX = (nightRect.right + statisticsRect.left) / 2;
+        var ropeWidth = Number(window.getComputedStyle(document.getElementById('myscoll')).width.replace('px', '')) || 3;
+        return Math.max(12, document.documentElement.clientWidth - targetX - ropeWidth / 2) + 'px';
+      };
+      var applyAlignedRight = function () {
+        var right = getAlignedRight();
+        document.getElementById('myscoll').style.setProperty('right', right, 'important');
+        var neko = document.getElementById(String(setting.nekoname));
+        if (neko) neko.style.setProperty('right', right, 'important');
+      };
       var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +
         this.prop("id") : this.prop("nodeName");
       if ($(".neko").length == 0) {
@@ -730,7 +747,7 @@ if (document.body.clientWidth > 992) {
           'z-index': setting.z_index,
           'background-color': setting.bgcolor,
           "border-radius": setting.borderRadius,
-          'right': setting.right,
+          'right': getAlignedRight(),
           'background-image': 'url(' + setting.scImg + ')',
           'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',
           'background-size': 'contain'
@@ -740,9 +757,10 @@ if (document.body.clientWidth > 992) {
           'position': 'fixed',
           'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',
           'z-index': setting.z_index * 10,
-          'right': setting.right,
+          'right': getAlignedRight(),
           'background-image': 'url(' + setting.nekoImg + ')',
         });
+      applyAlignedRight();
       show(getBasicInfo());
       $(window)
         .scroll(function () {
@@ -757,7 +775,7 @@ if (document.body.clientWidth > 992) {
               'z-index': setting.z_index,
               'background-color': setting.bgcolor,
               "border-radius": setting.borderRadius,
-              'right': setting.right,
+              'right': getAlignedRight(),
               'background-image': 'url(' + setting.scImg + ')',
               'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',
               'background-size': 'contain'
@@ -767,9 +785,10 @@ if (document.body.clientWidth > 992) {
               'position': 'fixed',
               'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',
               'z-index': setting.z_index * 10,
-              'right': setting.right,
+              'right': getAlignedRight(),
               'background-image': 'url(' + setting.nekoImg + ')',
             });
+          applyAlignedRight();
           if (basicInfo.ScrollTop == basicInfo.S_V) {
             $("#" + setting.nekoname)
               .addClass("showMsg")
@@ -792,6 +811,24 @@ if (document.body.clientWidth > 992) {
   })(jQuery);
 
   $(document).ready(function () {
+    // Keep the scroll rope centered in the gap between night mode and statistics.
+    function alignScrollRope() {
+      var scrollRope = document.getElementById('myscoll');
+      var neko = document.querySelector('.neko');
+      var nightMode = document.getElementById('nightmode-button');
+      var statistics = document.querySelector('.statistics-entry');
+      if (!scrollRope || !nightMode || !statistics) return;
+
+      var nightRect = nightMode.getBoundingClientRect();
+      var statisticsRect = statistics.getBoundingClientRect();
+      var targetX = (nightRect.right + statisticsRect.left) / 2;
+      var ropeWidth = Number(window.getComputedStyle(scrollRope).width.replace('px', '')) || 3;
+      var right = Math.max(12, document.documentElement.clientWidth - targetX - ropeWidth / 2);
+
+      scrollRope.style.setProperty('right', right + 'px', 'important');
+      if (neko) neko.style.setProperty('right', right + 'px', 'important');
+    }
+
     //部分自定义
     $("#myscoll").nekoScroll({
       bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效
@@ -799,6 +836,8 @@ if (document.body.clientWidth > 992) {
       zoom: 0.9
     }
     );
+    alignScrollRope();
+    $(window).on('resize scroll', alignScrollRope);
     //自定义（去掉以下注释，并注释掉其他的查看效果）
     /*
     $("#myscoll").nekoScroll({
