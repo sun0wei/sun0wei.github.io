@@ -16,7 +16,7 @@
     '<div class="clock-row"><span id="card-clock-time" class="card-clock-time"></span></div>' +
     '<div class="clock-row">' +
       '<span id="card-clock-windDir" class="card-clock-windDir"><i class="qi-gale"></i></span>' +
-      '<span id="card-clock-location" class="card-clock-location">本地时间</span>' +
+      '<span class="card-clock-location-wrap"><span id="card-clock-location" class="card-clock-location">本地时间</span><button id="card-clock-locate" class="card-clock-locate" type="button" title="使用精确位置" aria-label="使用精确位置"><i class="fas fa-location-crosshairs"></i></button></span>' +
       '<span id="card-clock-dackorlight" class="card-clock-dackorlight"></span>' +
     '</div>';
 
@@ -45,6 +45,7 @@
   var fixedLocation = typeof clock_default_rectangle_enable !== 'undefined' && clock_default_rectangle_enable === 'true';
   var defaultCity = '赣州市';
   var timeoutMs = 4000;
+  var browserLocationTimeoutMs = 10000;
   var cityNames = {
     Nanchang: '南昌市', Ganzhou: '赣州市', Guangzhou: '广州市', Shenzhen: '深圳市',
     Beijing: '北京市', Shanghai: '上海市', Nanjing: '南京市', Hangzhou: '杭州市',
@@ -231,6 +232,48 @@
     return tryNext(0);
   }
 
+  function requestWeather(location, city) {
+    return fetchJson('https://' + weatherHost + '/v7/weather/now?location=' + encodeURIComponent(location) + '&key=' + encodeURIComponent(weatherKey))
+      .then(function (data) {
+        if (data && data.code === '200') {
+          showWeather(data, city);
+          return data;
+        }
+        throw new Error('weather response invalid');
+      });
+  }
+
+  function requestBrowserWeather() {
+    var locateButton = document.getElementById('card-clock-locate');
+    if (!locateButton || !navigator.geolocation || !weatherHost || !weatherKey) return;
+    locateButton.disabled = true;
+    locateButton.setAttribute('aria-busy', 'true');
+    locateButton.title = '正在获取精确位置';
+
+    navigator.geolocation.getCurrentPosition(function (position) {
+      var coords = position.coords;
+      var location = coords.longitude + ',' + coords.latitude;
+      requestWeather(location, '当前位置').then(function () {
+        locateButton.title = '已使用精确位置';
+      }).catch(function (error) {
+        if (window.console && console.warn) console.warn('[electric-clock] precise weather unavailable:', error.message || error);
+        locateButton.title = '精确天气获取失败，点击重试';
+      }).finally(function () {
+        locateButton.disabled = false;
+        locateButton.removeAttribute('aria-busy');
+      });
+    }, function (error) {
+      if (window.console && console.warn) console.warn('[electric-clock] browser location unavailable:', error.message || error);
+      locateButton.disabled = false;
+      locateButton.removeAttribute('aria-busy');
+      locateButton.title = error.code === 1 ? '定位权限被拒绝，点击重试' : '定位失败，点击重试';
+    }, {
+      enableHighAccuracy: true,
+      timeout: browserLocationTimeoutMs,
+      maximumAge: 300000
+    });
+  }
+
   function loadWeather() {
     if (!weatherHost || !weatherKey || !rectangle) return;
     var location = rectangle;
@@ -245,10 +288,7 @@
           if (window.console && console.warn) console.warn('[electric-clock] IP location unavailable, using default location:', error.message || error);
         });
     locate.then(function () {
-      return fetchJson('https://' + weatherHost + '/v7/weather/now?location=' + encodeURIComponent(location) + '&key=' + encodeURIComponent(weatherKey));
-    }).then(function (data) {
-      if (data && data.code === '200') showWeather(data, city);
-      else throw new Error('weather response invalid');
+      return requestWeather(location, city);
     }).catch(function (error) {
       /* The local clock is already running; network enhancement may fail silently. */
       var weather = document.getElementById('card-clock-weather');
@@ -257,5 +297,7 @@
     });
   }
 
+  var locateButton = document.getElementById('card-clock-locate');
+  if (locateButton) locateButton.addEventListener('click', requestBrowserWeather);
   loadWeather();
 })();

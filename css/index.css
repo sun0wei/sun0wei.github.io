@@ -8397,6 +8397,37 @@ span.card-clock-weather {
   font-family: var(--global-font) !important;
 } */
 
+/* 电子钟精确定位按钮 */
+#hexo_electric_clock .card-clock-location-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#hexo_electric_clock .card-clock-locate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+}
+
+#hexo_electric_clock .card-clock-locate:hover {
+  color: var(--theme-color);
+}
+
+#hexo_electric_clock .card-clock-locate:disabled {
+  cursor: wait;
+  opacity: .55;
+}
+
 /* 二级菜单圆角 */
 #nav .menus_items .menus_item .menus_item_child,
 #nav .menus_items .menus_item .menus_item_child li,
