@@ -24,13 +24,20 @@
 
 #waifu {
 	bottom: -1000px;
-	left: 0;
+	/* Slightly shift the model left so it does not cover the statistics icon. */
+	left: -12px;
 	line-height: 0;
 	margin-bottom: -10px;
 	position: fixed;
 	transform: translateY(3px);
 	transition: transform .3s ease-in-out, bottom 3s ease-in-out;
 	z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+	#waifu {
+		left: 0;
+	}
 }
 
 #waifu:hover {
