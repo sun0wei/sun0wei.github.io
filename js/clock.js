@@ -59,7 +59,7 @@
   function displayCity(value) {
     var city = String(value || '').trim();
     if (cityNames[city]) return cityNames[city];
-    if (/^[\u4e00-\u9fff]+$/.test(city) && !/[市区县]$/.test(city)) return city + '市';
+    if (/^[\u4e00-\u9fff]+$/.test(city) && !/[市区县省]$/.test(city) && !/自治区$|特别行政区$/.test(city)) return city + '市';
     return city;
   }
 
@@ -243,9 +243,22 @@
       });
   }
 
+  function reverseGeocode(latitude, longitude) {
+    var url = 'https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=' +
+      encodeURIComponent(latitude) + '&longitude=' + encodeURIComponent(longitude) + '&localityLanguage=zh';
+    return fetchJson(url).then(function (data) {
+      var city = data && (data.city || data.locality || data.principalSubdivision);
+      return city ? displayCity(city) : '当前位置';
+    });
+  }
+
   function requestBrowserWeather() {
     var locateButton = document.getElementById('card-clock-locate');
-    if (!locateButton || !navigator.geolocation || !weatherHost || !weatherKey) return;
+    if (!locateButton || !weatherHost || !weatherKey) return;
+    if (!navigator.geolocation) {
+      locateButton.title = '此浏览器不支持定位';
+      return;
+    }
     locateButton.disabled = true;
     locateButton.setAttribute('aria-busy', 'true');
     locateButton.title = '正在获取精确位置';
@@ -253,7 +266,12 @@
     navigator.geolocation.getCurrentPosition(function (position) {
       var coords = position.coords;
       var location = coords.longitude + ',' + coords.latitude;
-      requestWeather(location, '当前位置').then(function () {
+      reverseGeocode(coords.latitude, coords.longitude).catch(function (error) {
+        if (window.console && console.warn) console.warn('[electric-clock] reverse geocoding unavailable:', error.message || error);
+        return '当前位置';
+      }).then(function (city) {
+        return requestWeather(location, city);
+      }).then(function () {
         locateButton.title = '已使用精确位置';
       }).catch(function (error) {
         if (window.console && console.warn) console.warn('[electric-clock] precise weather unavailable:', error.message || error);
@@ -266,7 +284,7 @@
       if (window.console && console.warn) console.warn('[electric-clock] browser location unavailable:', error.message || error);
       locateButton.disabled = false;
       locateButton.removeAttribute('aria-busy');
-      locateButton.title = error.code === 1 ? '定位权限被拒绝，点击重试' : '定位失败，点击重试';
+      locateButton.title = error.code === 1 ? '定位权限被拒绝，点击重试' : error.code === 3 ? '定位超时，点击重试' : '定位失败，点击重试';
     }, {
       enableHighAccuracy: true,
       timeout: browserLocationTimeoutMs,
