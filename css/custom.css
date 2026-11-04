@@ -225,6 +225,45 @@ opacity: .92;
   display: inline-block;
 }
 
+/* 右下角鼠标按钮：关闭站点自定义右键时显示灰色背景和斜杠。 */
+#rightside button.mouse-mode-button {
+  position: relative;
+}
+
+html[data-rm="off"] #rightside button.mouse-mode-button {
+  background-color: #909090 !important;
+  color: #fff !important;
+}
+
+html[data-rm="off"] #rightside button.mouse-mode-button:hover {
+  background-color: #a8a8a8 !important;
+}
+
+html[data-theme="dark"][data-rm="off"] #rightside button.mouse-mode-button {
+  background-color: #787878 !important;
+}
+
+html[data-theme="dark"][data-rm="off"] #rightside button.mouse-mode-button:hover {
+  background-color: #8d8d8d !important;
+}
+
+html[data-rm="off"] #rightside button.mouse-mode-button > i {
+  opacity: .4;
+}
+
+html[data-rm="off"] #rightside button.mouse-mode-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background: #fff;
+  opacity: .95;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 /* 最新文章缩略图圆角 */
 #aside-content .card-recent-post .aside-list-item .thumbnail > img {
   border-radius: 8px;
