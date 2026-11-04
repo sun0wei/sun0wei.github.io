@@ -3,9 +3,9 @@
   "pv": 1024,
   "totalPv": 1024,
   "monthPv": 183,
-  "curUv": 0,
-  "curPv": 0,
+  "curUv": 1,
+  "curPv": 2,
   "beforeUv": 3,
   "beforePv": 71,
-  "updatedAt": "2026-11-03T18:52:46.059Z"
+  "updatedAt": "2026-11-04T04:52:47.678Z"
 }
