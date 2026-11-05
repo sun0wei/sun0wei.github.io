@@ -1,11 +1,11 @@
 {
-  "uv": 74,
-  "pv": 1024,
-  "totalPv": 1024,
-  "monthPv": 183,
-  "curUv": 1,
-  "curPv": 2,
-  "beforeUv": 3,
-  "beforePv": 71,
-  "updatedAt": "2026-11-04T04:52:47.678Z"
+  "uv": 75,
+  "pv": 1065,
+  "totalPv": 1065,
+  "monthPv": 224,
+  "curUv": 2,
+  "curPv": 17,
+  "beforeUv": 1,
+  "beforePv": 41,
+  "updatedAt": "2026-11-05T05:09:35.752Z"
 }
