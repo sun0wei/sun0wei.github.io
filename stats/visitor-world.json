@@ -3,24 +3,42 @@
   "windowDays": null,
   "retention": "all",
   "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-04",
-  "updatedAt": "2026-11-05T05:09:37.595Z",
+  "windowEnd": "2026-11-05",
+  "updatedAt": "2026-11-06T05:09:28.184Z",
   "truncated": false,
   "unmappedRegions": {
-    "江西省-赣州市": 39,
+    "江西省-赣州市": 43,
     "湖南省-长沙市": 1,
-    "安徽省-滁州市": 1
+    "安徽省-滁州市": 1,
+    "弗吉尼亚州-里士满": 1,
+    "加利福尼亚州-未知": 1
   },
   "countries": [
     {
       "name": "China",
-      "value": 41
+      "value": 45
+    },
+    {
+      "name": "Brazil",
+      "value": 1
+    },
+    {
+      "name": "弗吉尼亚州-里士满",
+      "value": 1
+    },
+    {
+      "name": "Indonesia",
+      "value": 1
+    },
+    {
+      "name": "加利福尼亚州-未知",
+      "value": 1
     }
   ],
   "provinces": [
     {
       "name": "江西省",
-      "value": 39
+      "value": 43
     },
     {
       "name": "湖南省",
@@ -124,6 +142,29 @@
       "articles": {},
       "truncated": false,
       "updatedAt": "2026-11-05T05:09:37.594Z"
+    },
+    "2026-11-05": {
+      "totalSessions": 8,
+      "countries": {
+        "Brazil": 1,
+        "弗吉尼亚州-里士满": 1,
+        "China": 4,
+        "Indonesia": 1,
+        "加利福尼亚州-未知": 1
+      },
+      "provinces": {
+        "江西省": 4
+      },
+      "unmapped": {
+        "弗吉尼亚州-里士满": 1,
+        "江西省-赣州市": 4,
+        "加利福尼亚州-未知": 1
+      },
+      "articles": {
+        "/posts/cf5ee103.html": 1
+      },
+      "truncated": false,
+      "updatedAt": "2026-11-06T05:09:28.183Z"
     }
   }
 }
