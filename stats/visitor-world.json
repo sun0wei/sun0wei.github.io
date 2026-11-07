@@ -3,20 +3,22 @@
   "windowDays": null,
   "retention": "all",
   "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-05",
-  "updatedAt": "2026-11-06T05:09:28.184Z",
+  "windowEnd": "2026-11-06",
+  "updatedAt": "2026-11-07T04:41:27.286Z",
   "truncated": false,
   "unmappedRegions": {
-    "江西省-赣州市": 43,
+    "江西省-赣州市": 48,
     "湖南省-长沙市": 1,
     "安徽省-滁州市": 1,
     "弗吉尼亚州-里士满": 1,
-    "加利福尼亚州-未知": 1
+    "加利福尼亚州-未知": 1,
+    "中国台湾-台北市": 1,
+    "上海市-上海市": 1
   },
   "countries": [
     {
       "name": "China",
-      "value": 45
+      "value": 51
     },
     {
       "name": "Brazil",
@@ -33,12 +35,24 @@
     {
       "name": "加利福尼亚州-未知",
       "value": 1
+    },
+    {
+      "name": "Colombia",
+      "value": 1
+    },
+    {
+      "name": "Italy",
+      "value": 1
+    },
+    {
+      "name": "上海市-上海市",
+      "value": 1
     }
   ],
   "provinces": [
     {
       "name": "江西省",
-      "value": 43
+      "value": 48
     },
     {
       "name": "湖南省",
@@ -46,6 +60,10 @@
     },
     {
       "name": "安徽省",
+      "value": 1
+    },
+    {
+      "name": "上海市",
       "value": 1
     }
   ],
@@ -165,6 +183,29 @@
       },
       "truncated": false,
       "updatedAt": "2026-11-06T05:09:28.183Z"
+    },
+    "2026-11-06": {
+      "totalSessions": 9,
+      "countries": {
+        "China": 6,
+        "Colombia": 1,
+        "Italy": 1,
+        "上海市-上海市": 1
+      },
+      "provinces": {
+        "江西省": 5,
+        "上海市": 1
+      },
+      "unmapped": {
+        "江西省-赣州市": 5,
+        "中国台湾-台北市": 1,
+        "上海市-上海市": 1
+      },
+      "articles": {
+        "/posts/42149b4c.html": 1
+      },
+      "truncated": false,
+      "updatedAt": "2026-11-07T04:41:27.286Z"
     }
   }
 }
