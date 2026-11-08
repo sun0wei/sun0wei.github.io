@@ -3,22 +3,25 @@
   "windowDays": null,
   "retention": "all",
   "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-06",
-  "updatedAt": "2026-11-07T04:41:27.286Z",
+  "windowEnd": "2026-11-07",
+  "updatedAt": "2026-11-08T04:29:47.391Z",
   "truncated": false,
   "unmappedRegions": {
-    "江西省-赣州市": 48,
+    "江西省-赣州市": 51,
     "湖南省-长沙市": 1,
     "安徽省-滁州市": 1,
     "弗吉尼亚州-里士满": 1,
     "加利福尼亚州-未知": 1,
     "中国台湾-台北市": 1,
-    "上海市-上海市": 1
+    "上海市-上海市": 1,
+    "危地马拉": 1,
+    "马尼拉大都会-马尼拉": 1,
+    "法兰西岛大区-巴黎": 1
   },
   "countries": [
     {
       "name": "China",
-      "value": 51
+      "value": 54
     },
     {
       "name": "Brazil",
@@ -47,12 +50,28 @@
     {
       "name": "上海市-上海市",
       "value": 1
+    },
+    {
+      "name": "危地马拉",
+      "value": 1
+    },
+    {
+      "name": "Portugal",
+      "value": 1
+    },
+    {
+      "name": "马尼拉大都会-马尼拉",
+      "value": 1
+    },
+    {
+      "name": "法兰西岛大区-巴黎",
+      "value": 1
     }
   ],
   "provinces": [
     {
       "name": "江西省",
-      "value": 48
+      "value": 51
     },
     {
       "name": "湖南省",
@@ -206,6 +225,30 @@
       },
       "truncated": false,
       "updatedAt": "2026-11-07T04:41:27.286Z"
+    },
+    "2026-11-07": {
+      "totalSessions": 7,
+      "countries": {
+        "危地马拉": 1,
+        "China": 3,
+        "Portugal": 1,
+        "马尼拉大都会-马尼拉": 1,
+        "法兰西岛大区-巴黎": 1
+      },
+      "provinces": {
+        "江西省": 3
+      },
+      "unmapped": {
+        "危地马拉": 1,
+        "江西省-赣州市": 3,
+        "马尼拉大都会-马尼拉": 1,
+        "法兰西岛大区-巴黎": 1
+      },
+      "articles": {
+        "/posts/f7517ad4.html": 1
+      },
+      "truncated": false,
+      "updatedAt": "2026-11-08T04:29:47.390Z"
     }
   }
 }
