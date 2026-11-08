@@ -66,7 +66,7 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
 
     Promise.all([
       // Version the stylesheet so browsers do not keep an older widget position.
-      loadExternalResource(live2d_path + 'waifu.css?v=20261103', 'css'),
+      loadExternalResource(live2d_path + 'waifu.css?v=20261108', 'css'),
       loadExternalResource(live2d_path + 'live2d.min.js', 'js'),
       loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
     ]).then(() => {
