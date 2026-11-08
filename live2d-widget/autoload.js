@@ -1,5 +1,8 @@
 // Live2D is available on desktop pages and starts after the main page is ready.
 const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live2d-widget/";
+// Keep executable assets on the blog origin. OSS marks these files as
+// downloadable attachments, which prevents browsers from executing them.
+const live2d_asset_path = "/live2d-widget/";
 
 (() => {
   if (window.__live2dAutoloadStarted) return;
@@ -66,9 +69,9 @@ const live2d_path = "https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/live
 
     Promise.all([
       // Version the stylesheet so browsers do not keep an older widget position.
-      loadExternalResource(live2d_path + 'waifu.css?v=20261103', 'css'),
-      loadExternalResource(live2d_path + 'live2d.min.js', 'js'),
-      loadExternalResource(live2d_path + 'waifu-tips.js?v=20261108', 'js')
+      loadExternalResource(live2d_asset_path + 'waifu.css?v=20261103', 'css'),
+      loadExternalResource(live2d_asset_path + 'live2d.min.js', 'js'),
+      loadExternalResource(live2d_asset_path + 'waifu-tips.js?v=20261108', 'js')
     ]).then(() => {
       if (typeof window.initWidget !== 'function') throw new Error('Live2D initializer is unavailable');
       window.initWidget({
