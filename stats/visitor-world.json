@@ -3,11 +3,11 @@
   "windowDays": null,
   "retention": "all",
   "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-07",
-  "updatedAt": "2026-11-08T04:29:47.391Z",
+  "windowEnd": "2026-11-08",
+  "updatedAt": "2026-11-09T04:42:02.392Z",
   "truncated": false,
   "unmappedRegions": {
-    "江西省-赣州市": 51,
+    "江西省-赣州市": 62,
     "湖南省-长沙市": 1,
     "安徽省-滁州市": 1,
     "弗吉尼亚州-里士满": 1,
@@ -16,12 +16,14 @@
     "上海市-上海市": 1,
     "危地马拉": 1,
     "马尼拉大都会-马尼拉": 1,
-    "法兰西岛大区-巴黎": 1
+    "法兰西岛大区-巴黎": 1,
+    "纽约州-纽约": 1,
+    "曼谷大都会-曼谷": 1
   },
   "countries": [
     {
       "name": "China",
-      "value": 54
+      "value": 65
     },
     {
       "name": "Brazil",
@@ -66,12 +68,24 @@
     {
       "name": "法兰西岛大区-巴黎",
       "value": 1
+    },
+    {
+      "name": "United States",
+      "value": 1
+    },
+    {
+      "name": "纽约州-纽约",
+      "value": 1
+    },
+    {
+      "name": "曼谷大都会-曼谷",
+      "value": 1
     }
   ],
   "provinces": [
     {
       "name": "江西省",
-      "value": 51
+      "value": 62
     },
     {
       "name": "湖南省",
@@ -249,6 +263,28 @@
       },
       "truncated": false,
       "updatedAt": "2026-11-08T04:29:47.390Z"
+    },
+    "2026-11-08": {
+      "totalSessions": 14,
+      "countries": {
+        "United States": 1,
+        "China": 11,
+        "纽约州-纽约": 1,
+        "曼谷大都会-曼谷": 1
+      },
+      "provinces": {
+        "江西省": 11
+      },
+      "unmapped": {
+        "江西省-赣州市": 11,
+        "纽约州-纽约": 1,
+        "曼谷大都会-曼谷": 1
+      },
+      "articles": {
+        "/posts/5a3aa63a.html": 1
+      },
+      "truncated": false,
+      "updatedAt": "2026-11-09T04:42:02.392Z"
     }
   }
 }
