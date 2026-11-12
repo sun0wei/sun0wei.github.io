@@ -3,11 +3,11 @@
   "windowDays": null,
   "retention": "all",
   "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-10",
-  "updatedAt": "2026-11-11T04:44:51.600Z",
+  "windowEnd": "2026-11-11",
+  "updatedAt": "2026-11-12T05:47:56.446Z",
   "truncated": false,
   "unmappedRegions": {
-    "江西省-赣州市": 65,
+    "江西省-赣州市": 70,
     "湖南省-长沙市": 1,
     "安徽省-滁州市": 1,
     "弗吉尼亚州-里士满": 1,
@@ -23,7 +23,7 @@
   "countries": [
     {
       "name": "China",
-      "value": 68
+      "value": 73
     },
     {
       "name": "纽约州-纽约",
@@ -85,7 +85,7 @@
   "provinces": [
     {
       "name": "江西省",
-      "value": 65
+      "value": 70
     },
     {
       "name": "湖南省",
@@ -302,6 +302,21 @@
       "articles": {},
       "truncated": false,
       "updatedAt": "2026-11-11T04:44:51.600Z"
+    },
+    "2026-11-11": {
+      "totalSessions": 5,
+      "countries": {
+        "China": 5
+      },
+      "provinces": {
+        "江西省": 5
+      },
+      "unmapped": {
+        "江西省-赣州市": 5
+      },
+      "articles": {},
+      "truncated": false,
+      "updatedAt": "2026-11-12T05:47:56.446Z"
     }
   }
 }
