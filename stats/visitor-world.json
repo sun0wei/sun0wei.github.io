@@ -3,11 +3,11 @@
   "windowDays": null,
   "retention": "all",
   "windowStart": "2026-10-30",
-  "windowEnd": "2026-11-11",
-  "updatedAt": "2026-11-12T05:47:56.446Z",
+  "windowEnd": "2026-11-13",
+  "updatedAt": "2026-11-14T04:57:28.013Z",
   "truncated": false,
   "unmappedRegions": {
-    "江西省-赣州市": 70,
+    "江西省-赣州市": 72,
     "湖南省-长沙市": 1,
     "安徽省-滁州市": 1,
     "弗吉尼亚州-里士满": 1,
@@ -18,12 +18,13 @@
     "马尼拉大都会-马尼拉": 1,
     "法兰西岛大区-巴黎": 1,
     "纽约州-纽约": 2,
-    "曼谷大都会-曼谷": 1
+    "曼谷大都会-曼谷": 1,
+    "江西省-南昌市": 1
   },
   "countries": [
     {
       "name": "China",
-      "value": 73
+      "value": 76
     },
     {
       "name": "纽约州-纽约",
@@ -85,7 +86,7 @@
   "provinces": [
     {
       "name": "江西省",
-      "value": 70
+      "value": 73
     },
     {
       "name": "湖南省",
@@ -317,6 +318,24 @@
       "articles": {},
       "truncated": false,
       "updatedAt": "2026-11-12T05:47:56.446Z"
+    },
+    "2026-11-13": {
+      "totalSessions": 3,
+      "countries": {
+        "China": 3
+      },
+      "provinces": {
+        "江西省": 3
+      },
+      "unmapped": {
+        "江西省-南昌市": 1,
+        "江西省-赣州市": 2
+      },
+      "articles": {
+        "/posts/ec7dc34b.html": 1
+      },
+      "truncated": false,
+      "updatedAt": "2026-11-14T04:57:28.013Z"
     }
   }
 }
