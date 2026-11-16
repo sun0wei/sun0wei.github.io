@@ -6,7 +6,7 @@
   <link href="https://blog.sunwei.online/atom.xml" rel="self"/>
   
   <link href="https://blog.sunwei.online/"/>
-  <updated>2026-11-16T06:51:50.468Z</updated>
+  <updated>2026-11-16T09:01:19.917Z</updated>
   <id>https://blog.sunwei.online/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>📊文章统计</title>
+    <link href="https://blog.sunwei.online/posts/f1012788.html"/>
+    <id>https://blog.sunwei.online/posts/f1012788.html</id>
+    <published>2026-11-16T21:00:00.000Z</published>
+    <updated>2026-11-16T09:01:19.917Z</updated>
+    
+    <content type="html"><![CDATA[<div class='article-index-page' data-article-index>  <div class='article-index-toolbar'>    <div class='article-index-heading'>      <strong>文章统计</strong>      <span data-article-count>正在加载</span>    </div>    <label class='article-index-search'>      <i class='fas fa-search' aria-hidden='true'></i>      <input type='search' data-article-search placeholder='搜索文章名称' autocomplete='off'>    </label>    <select class='article-index-select' data-article-category aria-label='按分类筛选'>      <option value=''>全部分类</option>    </select>  </div>  <div class='article-index-summary' data-article-summary>    <span>文章总数：<b data-total-count>0</b></span>    <span>当前显示：<b data-visible-count>0</b></span>  </div>  <div class='article-index-list' data-article-list></div>  <div class='article-index-empty' data-article-empty hidden>没有找到匹配的文章</div>  <div class='article-index-error' data-article-error hidden>文章数据加载失败，请重新生成站点后再试。</div></div><script data-pjax>  (() => {    const initArticleIndex = () => {      const root = document.querySelector('[data-article-index]');      if (!root || root.dataset.ready === 'true') return;      root.dataset.ready = 'true';      const search = root.querySelector('[data-article-search]');      const category = root.querySelector('[data-article-category]');      const list = root.querySelector('[data-article-list]');      const empty = root.querySelector('[data-article-empty]');      const error = root.querySelector('[data-article-error]');      const totalCount = root.querySelector('[data-total-count]');      const visibleCount = root.querySelector('[data-visible-count]');      const articleCount = root.querySelector('[data-article-count]');      let articles = [];      const createText = (tag, className, text) => {        const element = document.createElement(tag);        element.className = className;        element.textContent = text;        return element;      };      const articleUrl = value => {        const url = String(value || '').replace(/^\/+/, '');        return url ? '/' + url : '#';      };      const formatDate = value => {        if (!value) return '未设置日期';        const date = new Date(value);        if (Number.isNaN(date.getTime())) return '未设置日期';        return date.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' });      };      const fillCategoryOptions = () => {        const values = Array.from(new Set(articles.flatMap(article => article.categories || []))).sort((a, b) => a.localeCompare(b, 'zh-CN'));        values.forEach(value => {          const option = document.createElement('option');          option.value = value;          option.textContent = value;          category.appendChild(option);        });      };      const render = () => {        const keyword = (search.value || '').trim().toLocaleLowerCase();        const selectedCategory = category.value;        const filtered = articles.filter(article => {          const title = String(article.title || '').toLocaleLowerCase();          const categories = article.categories || [];          return (!keyword || title.includes(keyword)) && (!selectedCategory || categories.includes(selectedCategory));        });        list.innerHTML = '';        filtered.forEach(article => {          const item = document.createElement('a');          item.className = 'article-index-item';          item.href = articleUrl(article.url);          const main = document.createElement('span');          main.className = 'article-index-item__main';          main.appendChild(createText('strong', 'article-index-item__title', article.title || '未命名文章'));          const meta = document.createElement('span');          meta.className = 'article-index-item__meta';          meta.appendChild(createText('span', '', '分类：' + ((article.categories || []).join(' / ') || '未分类')));          meta.appendChild(createText('span', '', '标签：' + ((article.tags || []).join('、') || '无')));          meta.appendChild(createText('span', '', '更新：' + formatDate(article.updated || article.date)));          main.appendChild(meta);          const side = document.createElement('span');          side.className = 'article-index-item__side';          side.appendChild(createText('time', 'article-index-item__date', formatDate(article.date)));          if (article.sticky) side.appendChild(createText('em', 'article-index-item__sticky', '置顶'));          side.appendChild(createText('i', 'fas fa-angle-right article-index-item__arrow', ''));          item.appendChild(main);          item.appendChild(side);          list.appendChild(item);        });        totalCount.textContent = articles.length;        visibleCount.textContent = filtered.length;        articleCount.textContent = '共 ' + articles.length + ' 篇文章';        empty.hidden = filtered.length !== 0;      };      fetch('/article-index.json', { cache: 'no-store' })        .then(response => {          if (!response.ok) throw new Error('article-index.json request failed');          return response.json();        })        .then(payload => {          articles = Array.isArray(payload.articles) ? payload.articles : [];          fillCategoryOptions();          render();        })        .catch(() => {          error.hidden = false;          articleCount.textContent = '加载失败';        });      search.addEventListener('input', render);      category.addEventListener('change', render);    };    initArticleIndex();    document.addEventListener('pjax:complete', initArticleIndex, { once: true });  })();</script><style>  .article-index-page {    --article-index-border: var(--hr-border, rgba(73, 177, 245, .24));    --article-index-card: var(--card-bg, rgba(255, 255, 255, .9));    --article-index-text: var(--font-color, #52616b);    color: var(--article-index-text);  }  .article-index-toolbar {    display: grid;    grid-template-columns: auto minmax(180px, 1fr) auto;    gap: .8rem;    align-items: center;    margin: 0 0 .8rem;  }  .article-index-heading {    display: flex;    flex-direction: column;    gap: .15rem;    white-space: nowrap;  }  .article-index-heading strong {    color: var(--article-index-text);    font-size: 1.15rem;  }  .article-index-heading span {    color: #8b98a5;    font-size: .75rem;  }  .article-index-search,  .article-index-select {    min-height: 38px;    border: 1px solid var(--article-index-border);    border-radius: 8px;    background: var(--article-index-card);    color: var(--article-index-text);  }  .article-index-search {    display: flex;    gap: .55rem;    align-items: center;    padding: 0 .75rem;  }  .article-index-search input {    width: 100%;    min-width: 0;    border: 0;    outline: 0;    background: transparent;    color: inherit;    font: inherit;    font-size: .86rem;  }  .article-index-select {    min-width: 120px;    padding: 0 .6rem;    outline: 0;    font: inherit;    font-size: .84rem;  }  .article-index-summary {    display: flex;    gap: 1rem;    margin: 0 0 1rem;    color: #8b98a5;    font-size: .8rem;  }  .article-index-summary b {    color: var(--article-index-text);  }  .article-index-list {    display: grid;    gap: .7rem;  }  .article-index-item {    display: flex;    gap: 1rem;    align-items: center;    justify-content: space-between;    min-width: 0;    padding: .85rem 1rem;    border: 1px solid var(--article-index-border);    border-radius: 10px;    background: var(--article-index-card);    color: var(--article-index-text);    text-decoration: none;    transition: border-color .2s ease, box-shadow .2s ease;  }  .article-index-item:hover {    border-color: var(--theme-color, #49b1f5);    box-shadow: 0 8px 18px rgba(52, 73, 94, .08);  }  .article-index-item__main {    display: flex;    min-width: 0;    flex: 1;    flex-direction: column;    gap: .35rem;  }  .article-index-item__title {    overflow: hidden;    color: inherit;    font-size: .96rem;    font-weight: 600;    line-height: 1.35;    text-overflow: ellipsis;    white-space: nowrap;  }  .article-index-item__meta {    display: flex;    gap: .8rem;    overflow: hidden;    color: #8b98a5;    font-size: .75rem;    line-height: 1.4;    white-space: nowrap;  }  .article-index-item__meta span {    overflow: hidden;    text-overflow: ellipsis;  }  .article-index-item__side {    display: flex;    flex: 0 0 auto;    gap: .55rem;    align-items: center;  }  .article-index-item__date {    color: #8b98a5;    font-size: .78rem;    white-space: nowrap;  }  .article-index-item__sticky {    padding: .12rem .35rem;    border-radius: 4px;    color: #fff;    background: #f56c6c;    font-size: .68rem;    font-style: normal;    white-space: nowrap;  }  .article-index-item__arrow {    color: var(--theme-color, #49b1f5);    font-size: .95rem;  }  .article-index-empty,  .article-index-error {    padding: 2rem 1rem;    border: 1px dashed var(--article-index-border);    border-radius: 10px;    color: #8b98a5;    text-align: center;    font-size: .86rem;  }  @media (max-width: 680px) {    .article-index-toolbar {      grid-template-columns: 1fr;    }    .article-index-item {      align-items: flex-start;    }    .article-index-item__meta {      display: block;    }    .article-index-item__meta span {      display: block;    }    .article-index-item__date {      display: none;    }  }</style>]]></content>
+    
+    
+    <summary type="html">自动统计博客全部文章，并在构建时同步新增、删除和修改内容。</summary>
+    
+    
+    
+    <category term="建站后续" scheme="https://blog.sunwei.online/categories/%E5%BB%BA%E7%AB%99%E5%90%8E%E7%BB%AD/"/>
+    
+    
+    <category term="✍" scheme="https://blog.sunwei.online/tags/%E2%9C%8D/"/>
+    
+    <category term="汇总" scheme="https://blog.sunwei.online/tags/%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>📌SMARL论文速读</title>
@@ -454,29 +477,6 @@
     <category term="Java" scheme="https://blog.sunwei.online/tags/Java/"/>
     
     <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📌中转codex安装插件</title>
-    <link href="https://blog.sunwei.online/posts/31ea8b4e.html"/>
-    <id>https://blog.sunwei.online/posts/31ea8b4e.html</id>
-    <published>2026-10-04T07:46:43.486Z</published>
-    <updated>2026-10-04T07:58:03.838Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>使用api登录codex时插件中心没有插件市场，只有固定的几个插件，问ai叫它帮我安装插件，它总叫我用官方chatgpt账号进行登录，谁tm有钱不会用官方的啊，问题是我没钱啊……【麻烦解决一下这个问题，并给我推荐一些常用插件】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/64b21e664a7f3a079ffa151e0c173a72.png" style="height:267px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①首先先下载一个codex++，b站等网站上都有过程，浏览器搜索后是一个github网站，点击下载就行：<a href="https://github.com/BigPizzaV3/CodexPlusPlus">网站</a>，下载教程我不详细教，github下载应用教程一定要会（右边releases选择版本，然后一直下滑选择操作系统，然后点击下载就行了，如下图选择那64位、windows、setup.exe下载就行）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/27f32385a1f3afcff837dd2c717fc3f9.png" style="height:272px;"/><p>②安装后会产生2个启动程序，一个codex++（codex的升级版本，有这个后，codex就没用了，以后也不用打开codex）、一个codex++管理器</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/92d7749f042f26543c84a6e2ef6e22d1.png" style="height:67px;"/><p>③先打开codex++管理工具，然后依次点击图片中3个红框，就能导入ccswitch中配置好的中转站与模型信息了，当然，你也可以自己填写信息导入……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/3c567cc7531d20e606342db0bbd1e5d0.png" style="height:217px;"/><p>④打开codex++，就能发现相关于codex多出来了很多组件，特别是插件页面，左边多出一堆可以选择进行下载</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/76e492c34494ebf44ca752fbec8f0836.png" style="height:290px;"/><p>⑤接下来推荐一些常用的插件&#x2F;扩展</p><p>codex++管理工具中的功能就不详细讲了，自己多看看就会，比如壁纸、转接微信、会话管理……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/979cd6d13b26484a48b7d1c58c054f73.png" style="height:361px;"/><p>⑥codex++的扩展的话，就自己就只装了下面4个，其实尽量不要装太多，说是插件，其实就是提示词，我测试了一个，同一个回答使用插件的话会花费更多的token，所以，少装点吧。（codex++安装时就会自带插件，比如删除会话、会话分支、会话导出、会话分享……够用了）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/10/04/9fde654d1b6b13cd79057ba23b6eee79.png" style="height:263px;"/>]]></content>
-    
-    
-    <summary type="html">codex中转站安装插件市场，以及一些常用插件推荐……</summary>
-    
-    
-    
-    <category term="技术" scheme="https://blog.sunwei.online/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="📌" scheme="https://blog.sunwei.online/tags/%F0%9F%93%8C/"/>
-    
-    <category term="AI" scheme="https://blog.sunwei.online/tags/AI/"/>
     
   </entry>
   
