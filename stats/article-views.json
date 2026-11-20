@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "51la-visitor-detail-entry-page",
-  "updatedAt": "2026-11-19T05:56:14.591Z",
+  "updatedAt": "2026-11-20T05:44:47.487Z",
   "paths": {
     "/posts/92b52f88.html": 2,
     "/posts/442577e4.html": 1,
@@ -13,7 +13,8 @@
     "/posts/f1012788.html": 6,
     "/posts/de55b7d4.html": 1,
     "/posts/56124b73.html": 1,
-    "/posts/17f66458.html": 1
+    "/posts/17f66458.html": 2,
+    "/posts/c1b2995b.html": 1
   },
   "days": {
     "2026-11-03": {
@@ -51,6 +52,10 @@
     },
     "2026-11-18": {
       "/posts/56124b73.html": 1,
+      "/posts/17f66458.html": 1
+    },
+    "2026-11-19": {
+      "/posts/c1b2995b.html": 1,
       "/posts/17f66458.html": 1
     }
   }
