@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/bilibili/wantWatch/0.json</loc>
+    <loc>https://blog.sunwei.online/bilibili/watching/0.json</loc>
     
     <lastmod>2026-11-21</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/bilibili/watching/0.json</loc>
+    <loc>https://blog.sunwei.online/bilibili/wantWatch/0.json</loc>
     
     <lastmod>2026-11-21</lastmod>
     
@@ -173,15 +173,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/life/gallery/index.html</loc>
-    
-    <lastmod>2026-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sunwei.online/life/music/index.html</loc>
     
     <lastmod>2026-11-21</lastmod>
@@ -191,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/life/gallery/girl3/index.html</loc>
+    <loc>https://blog.sunwei.online/life/gallery/index.html</loc>
     
     <lastmod>2026-11-21</lastmod>
     
@@ -201,6 +192,15 @@
   
   <url>
     <loc>https://blog.sunwei.online/life/gallery/girl2/index.html</loc>
+    
+    <lastmod>2026-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/life/gallery/girl3/index.html</loc>
     
     <lastmod>2026-11-21</lastmod>
     
@@ -254,15 +254,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/life/gallery/girl3/p2/index.html</loc>
-    
-    <lastmod>2026-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sunwei.online/life/gallery/girl2/p2/index.html</loc>
     
     <lastmod>2026-11-21</lastmod>
@@ -273,6 +264,15 @@
   
   <url>
     <loc>https://blog.sunwei.online/life/gallery/girl2/p3/index.html</loc>
+    
+    <lastmod>2026-11-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sunwei.online/life/gallery/girl3/p2/index.html</loc>
     
     <lastmod>2026-11-21</lastmod>
     
@@ -299,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/life/gallery/scene2/p2/index.html</loc>
+    <loc>https://blog.sunwei.online/life/gallery/phone/p3/index.html</loc>
     
     <lastmod>2026-11-21</lastmod>
     
@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/life/gallery/phone/p3/index.html</loc>
+    <loc>https://blog.sunwei.online/life/gallery/scene2/p2/index.html</loc>
     
     <lastmod>2026-11-21</lastmod>
     
@@ -1155,14 +1155,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/%E6%9C%AA%E6%9D%A5/</loc>
+    <loc>https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.sunwei.online/tags/%E8%AE%BA%E6%96%87/</loc>
+    <loc>https://blog.sunwei.online/tags/%E6%9C%AA%E6%9D%A5/</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
