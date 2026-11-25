@@ -2,8 +2,8 @@
   "version": 1,
   "source": "51la-trend-day",
   "startDay": "2025-01-01",
-  "endDay": "2026-11-23",
-  "updatedAt": "2026-11-23T23:07:24.214Z",
+  "endDay": "2026-11-25",
+  "updatedAt": "2026-11-25T20:53:00.969Z",
   "days": [
     {
       "time": "2025-01-01",
@@ -6924,6 +6924,26 @@
       "ip": 2,
       "bounceRate": 0.625,
       "avgDuration": 465423
+    },
+    {
+      "time": "2026-11-24",
+      "uv": 2,
+      "newUserCount": 0,
+      "sv": 8,
+      "pv": 21,
+      "ip": 2,
+      "bounceRate": 0.5,
+      "avgDuration": 59413.875
+    },
+    {
+      "time": "2026-11-25",
+      "uv": 2,
+      "newUserCount": 1,
+      "sv": 4,
+      "pv": 20,
+      "ip": 2,
+      "bounceRate": 0.25,
+      "avgDuration": 39990
     }
   ],
   "months": [
@@ -7171,14 +7191,14 @@
     },
     {
       "time": "2026-11",
-      "uv": 60,
-      "newUserCount": 30,
-      "sv": 134,
-      "pv": 701,
-      "ip": 58,
-      "bounceRate": 0.45657826086956516,
-      "avgDuration": 1064600.3314826086,
-      "days": 23
+      "uv": 64,
+      "newUserCount": 31,
+      "sv": 146,
+      "pv": 742,
+      "ip": 62,
+      "bounceRate": 0.45005199999999995,
+      "avgDuration": 983408.459964,
+      "days": 25
     }
   ]
 }
