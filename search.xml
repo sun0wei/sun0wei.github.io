@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>📌C盘空间清理</title>
+      <link href="/posts/fb70721e.html"/>
+      <url>/posts/fb70721e.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>之前我写过一篇C盘扩容的文章，把我的c盘扩容到了210GB，但发现用了一段时间后还是不够用，现在写篇C盘清理的文章</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/be1af792ea17a6ae46537d161ec53182.png" style="height:74px;"/><h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>①去“C:\Users\sunwei\AppData\Local\Temp”路径下，sunwei换成自己的电脑名，或者用下面快捷键</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/bea633c79b2a904edd6edb604aeb9ab4.png" style="height:64px;"/><p>打开后的下面文件夹是缓存文件，可以直接全部删除！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/9ba5bfcd4673554170d61405e2a086b5.png" style="height:185px;"/><p>此操作处理后效果</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/2574de376004bdfe9352887e02a7e7f3.png" style="height:79px;"/><p>②每次这样子清理是很麻烦的，可以用下面方法让它定时进行清理：<br>先点击win，然后进入设置页</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/b4e494d73d0b7d7d72f8e804ffc75601.png" style="height:80px;"/><p>搜索“存储设置”，点击打开</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/20ea35e9b7e80241b68cd6845594aceb.png" style="height:199px;"/><p>点击下面图片中那画红方框的地方</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/4cc7b0372a9d4055f66c11034159d174.png" style="height:128px;"/><p>自己按需求调协自动清理时间</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/b4cd18f17044751d83b8170306babb19.png" style="height:314px;"/><p>③用了一段时间后又会变多，可以再尝试下下面方法，在磁盘那右键“属性”。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/0551c39afa5bdf37fe48c6f1990abc1a.png" style="height:56px;"/><p>点击下面图片中的“磁盘清理”。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/c2ce673640190d72ddb4fae828756553.png" style="height:237px;"/><p>如果有“其它选项”，就点击，然后依次点击下图两个红框，如果没有，就说明你电脑没有设置系统还原点，没产生占用大空间的还原点压缩包，没法通过第三步释放多余空间。</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/e74ed7e7be4d71d0d0f53205fc693253.png" style="height:349px;"/><p>④如何你的电脑一直插电，基本不关机，可以用下面方法【注：会导致电脑启动变慢，且无休眠选项，仅有睡眠选项】</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/deea8026d9ac7bfaa38fa3ebfb0a2850.png" style="height:103px;"/><p>打开cmd后，输入第一条命令就能释放大量空间，我释放了6GB左右，第二条命令是恢复！</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/1ea34ded1e912f72db5f67d52f41f89a.png" style="height:49px;"/><p>不足之处如下所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/adc997ba96e7b5316666447c33b06483.png" style="height:194px;"/><p>⑤最后一招了，能解决100%的空间不足问题，下载下面的应用</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/b741b5b29e669c4f8604f9dc57c21af9.png" style="height:114px;"/><p>打开后，你会发现有个data数据，它占用了整整90多GB，这个数据也是能删除的，但最好针对你不再要用的程序进行删除，乱删的话会导致你的某些应用打不开……</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/2f9bd6e943817f38c6943aabdd84dbe4.png" style="height:266px;"/><p>这两个文件夹中的详细解释如下所示：</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/c3e65eb48bce9b25df7d118877430180.png" style="height:217px;"/><p>加载完成后会对应到详细的应用，比如我之前用的是本地豆包，现在都在用网页版了，然后你就可以直接把那1.5GB的豆包数据删除掉……（注意，删除掉这个后，你后续豆包程序中下载的插件、用户配置信息等东西都会被删除掉，等于直接把本地豆包程序初始化，所有数据都会没）</p><img no-lazy class="inline" src="https://blogsunweionline.oss-cn-guangzhou.aliyuncs.com/images/2026/11/26/0d170075d3ec9765762b1b296ad0a737.png" style="height:281px;"/>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑美化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>✍202611日记</title>
       <link href="/posts/7822bc60.html"/>
       <url>/posts/7822bc60.html</url>
